@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - SiteHub Affordable Websites</title>
+    <meta name="description" content="Explore SiteHub's affordable website packages for South African SMEs — starting from only R150.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Top Banner -->
+<div class="top-banner">
+    <div class="top-banner-content">
+        <span>Empowering South African SMEs with affordable websites — from only R150!</span>
+        <div class="social-icons">
+            <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@sitehubonline" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.twitter.com/sitehubonline" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                  <a href="index.html"><img src="./images/logo.png" alt="SiteHub Logo"></a>
+
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a class="active" href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <img src="./images/hamburger.png" alt="Menu Icon">
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                    <li><a class="active" href="packages.html">Packages</a></li>
+
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a href="contact.html">Contact Us</a></li>
+                   
+		    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+
+            </ul>
+        </nav>
+    </header>
+ <!-- Thin banner -->
+
+<section class="thin-banner" style="background-image: url('./images/packages-banner.jpg');">
+    <div class="thin-banner-content">
+        
+    </div>
+</section>
+
+
+
+    <!-- Packages Section -->
+    <section class="services-section container">
+        <h1>Affordable Website Packages</h1> <h2>Get Online Fast!</h2>
+        <p class="section-subtitle">
+            At SiteHub, we make getting online simple, fast, and affordable.
+Whether you’re a small business, freelancer, or side hustler, our AI-powered website packages are designed to help you launch a professional, mobile-friendly site without breaking the bank.
+
+Starting from just R99 for our pre-launch SPECIAL, you can have a fully functional one page website ready in minutes. The price also includes hosting with Sitehub for the first year— and we handle all the tech, so you can focus on growing your business. Choose the perfect package for your business needs — affordable, mobile-ready, and fast to launch.
+        </p>
+        <div class="packages">
+            <!-- Sitehub Starter -->
+            <div class="package-card">
+                <h3>Sitehub Starter</h3>
+		<p>Perfect for small businesses, startups, and side projects</p>
+                <div class="price">R99</div>
+                <div class="renewal">Renewal R50/year*</div>
+                <ul class="features">
+                    <li>Fully responsive one-page website</li>
+                    <li>1 change request included</li>
+		    <li>Hosting with sitehub included</li>
+                </ul>
+                <a href="pre-launch-sign-up.html" class="cta-button-secondary">Get Started</a>
+            </div>
+
+            <!-- Custom Domain Kit -->
+            <div class="package-card">
+                <h3>Custom Domain Kit</h3>
+		<p>For businesses that want a professional, branded web address.</p>
+
+                <div class="price">R299</div>
+                <div class="renewal"><em>Renewal R200/year**</em></div>
+                <ul class="features">
+                    <li>All features of the SiteHub Starter</li>
+                    <li>1-year hosting - .co.za domain</li>
+                    <li>Domain setup & integration with your site</li>
+		    <li>Email address setup with your domain</li>
+
+                </ul>
+                <a href="pre-launch-sign-up.html" class="cta-button-secondary">Get Started</a>
+            </div>
+	 <!-- Ongoing Support -->
+
+            <div class="package-card">
+                <h3>Ongoing Support</h3>
+		<p>Get reliable, pay-as-you-go support whenever you need updates or fixes.</p>
+
+                <div class="price">R20</div>
+                <div class="renewal"><em>Pay as you go</em></div>
+                <ul class="features">
+                    <li>Hosting</li>
+                    <li>Site updates and changes</li>
+                    <li>Per-ticket technical support</li>
+                </ul>
+                
+                <a href="pre-launch-sign-up.html" class="cta-button-secondary">Get Started</a>
+            </div>
+
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SiteHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileNavToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} SiteHub. All rights reserved.`;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SiteHub - Affordable Websites for South African SMEs</title>
+    <meta name="description" content="Learn more about SiteHub, our vision, mission, and commitment to helping South African SMEs establish a strong online presence.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Top Banner -->
+<div class="top-banner">
+    <div class="top-banner-content">
+        <span>Empowering South African SMEs with affordable websites — from only R150!</span>
+        <div class="social-icons">
+            <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@sitehubonline" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.twitter.com/sitehubonline" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                 <a href="index.html"><img src="./images/logo.png" alt="SiteHub Logo"></a>
+
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <img src="./images/hamburger.png" alt="Menu Icon">
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                    <li><a href="packages.html">Packages</a></li>
+
+                    <li><a class="active" href="about.html">About</a></li>
+                    
+                    <li><a href="contact.html">Contact Us</a></li>
+                   
+		    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+ <!-- Thin banner -->
+
+<section class="thin-banner" style="background-image: url('./images/about-banner.jpg');">
+    <div class="thin-banner-content">
+        
+    </div>
+</section>
+
+    <!-- About Content -->
+    <section class="about-section container">
+        <h1>SiteHub: Empowering SME's</h1> 
+        <div class="about-content">
+            <div class="about-text">
+                <p>SiteHub is a lean, AI-powered digital enablement service dedicated to helping South African SMEs launch a professional online presence. We understand the unique challenges faced by informal traders, township entrepreneurs, freelancers, and side hustlers.</p>
+
+                <p><strong>Our Vision:</strong> To empower underserved SMEs across South Africa to build digital credibility and grow their businesses.</p>
+
+                <p><strong>Our Mission:</strong> We use technology, automation, and smart design to deliver affordable, fast, and frictionless digital presence for every small business — even those with little to no technical experience.</p>
+
+                <p>By leveraging automation, template-driven systems, and a mobile-first onboarding approach, we provide scalable digital identity solutions that make getting online easy, fast, and affordable for everyone.</p>
+            </div>
+            <div class="about-image">
+                <img src="./images/aboutus.jpg" alt="Illustration of business growth and empowerment">
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SiteHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileNavToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} SiteHub. All rights reserved.`;
+    </script>
+
+</body>
+</html>

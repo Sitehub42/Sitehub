@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact SiteHub - Get In Touch</title>
+    <meta name="description" content="Contact SiteHub for affordable, fast, and professional websites for South African SMEs.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Top Banner -->
+<div class="top-banner">
+    <div class="top-banner-content">
+        <span>Empowering South African SMEs with affordable websites — from only R150!</span>
+        <div class="social-icons">
+            <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@sitehubonline" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.twitter.com/sitehubonline" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                  <a href="index.html"><img src="./images/logo.png" alt="SiteHub Logo"></a>
+
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" >Contact Us</a></li>
+                    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <img src="./images/hamburger.png" alt="Menu Icon">
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                    <li><a href="packages.html">Packages</a></li>
+
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a class="active" href="contact.html">Contact Us</a></li>
+                   
+		    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Thin banner -->
+
+<section class="thin-banner" style="background-image: url('./images/contact-banner.jpg');">
+    <div class="thin-banner-content">
+        
+    </div>
+</section>
+
+
+  
+    <!-- Contact Form -->
+    <section id="form" class="form-section container">
+        <h1>Contact US</h1>
+        <p class="section-subtitle">We’re here to answer questions, recommend the right package, or resolve an issue. Use the form or email us—our team aims to respond within 24 hours.
+Please include your business name, preferred contact details, and a short summary of your request. </p>
+        <form action="mailto:info@sitehub.co.za?subject=Website Contact Form Submission" method="post" enctype="text/plain" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="Name" required placeholder="Your Full Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="Email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="Subject" placeholder="e.g., Website Inquiry">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="Message" rows="5" required placeholder="Tell us about your business needs..."></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SiteHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileNavToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} SiteHub. All rights reserved.`;
+    </script>
+
+</body>
+</html>

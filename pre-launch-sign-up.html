@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteHub - Pre-Launch Sign-Up</title>
+    <meta name="description" content="Sign up now for SiteHub's pre-launch offer — only R150, with a chance to win a free website!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Top Banner -->
+<div class="top-banner">
+    <div class="top-banner-content">
+        <span>Empowering South African SMEs with affordable websites — from only R150!</span>
+        <div class="social-icons">
+            <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@sitehubonline" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.twitter.com/sitehubonline" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                 <a href="index.html"><img src="./images/logo.png" alt="SiteHub Logo"></a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a class="active" href="pre-launch-sign-up.html">Get Started</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <img src="./images/hamburger.png" alt="Menu Icon">
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                    <li><a href="packages.html">Packages</a></li>
+
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a href="contact.html">Contact Us</a></li>
+                   
+		    <li><a class="active" href="pre-launch-sign-up.html">Get Started</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+ <!-- Thin banner -->
+
+<section class="thin-banner" style="background-image: url('./images/prelaunch.jpg');">
+    <div class="thin-banner-content">
+        
+    </div>
+</section>
+    <!-- Sign-Up Form Section -->
+    <section id="form" class="form-section container">
+        <h1>Pre-launch SPECIAL</h1> <h2>Let us create your Website for ONLY R99!</h2>
+        <p class="section-subtitle"> Join the waiting list today and create your website for only R99! ** LIMITED OFFER  — 20 winners will get theirs FREE! For R99 you will get a one page website which will also include one year hosting and 2 change requests, renewal **R50 per year 
+**T's & C's apply** </p>
+
+<section class="container form-embed" id="signup-form">
+
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfSYE4MlrIzlW5L03Q4Op1iQLUQXGSge7B1liOd7hktT_jcxQ/viewform?embedded=true"
+    title="SiteHub Pre-Launch Sign-Up Form"
+    loading="lazy"
+    frameborder="0"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowtransparency="true"
+  ></iframe>
+
+  <!-- Helpful on mobile: open the form in a new tab -->
+  <p class="form-alt">
+    Prefer full-screen? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSYE4MlrIzlW5L03Q4Op1iQLUQXGSge7B1liOd7hktT_jcxQ/viewform"
+    target="_blank" rel="noopener">Open the form</a>
+  </p>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SiteHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileNavToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} SiteHub. All rights reserved.`;
+    </script>
+
+</body>
+</html>
