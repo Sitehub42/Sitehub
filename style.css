@@ -204,7 +204,7 @@ a:hover {
     position: relative;
     color: var(--white);
     text-align: center;
-    padding: 70px 0;
+    padding: 70px 0px;
 
     overflow: hidden; /* Ensures background image doesn't overflow */
 }
@@ -222,15 +222,15 @@ a:hover {
 
 .hero-content {
     position: relative; /* To ensure it's above the background */
-    z-index: 2;
-    padding: 20px;
+    z-index: 1;
+    padding: 10px;
     color: var(--white);
 }
 
 .hero-section h1 {
     color: var(--white);
     font-size: 4.5em; /* Larger for hero */
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -897,7 +897,7 @@ footer {
     /* Hero Section */
 
     .hero-section {
-        padding: 80px 0;
+        padding: 20px 20px;
     }
 
     .hero-section h1 {
