@@ -363,10 +363,24 @@ Whether you’re starting a side hustle, promoting your services, or showing off
 </section>
 
 
-    <!-- Footer -->
+ <!-- Footer -->
     <footer>
+      
         <div class="container">
-            <p>&copy; 2023 SiteHub. All rights reserved.</p>
+           <div class="footer-social-icons">
+                <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@sitehubonline" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/sitehubonline" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>
+                &copy; <span id="footer-year">2023</span> SiteHub. All rights reserved.
+                &nbsp;|&nbsp;
+                <a href="privacy.html">Privacy Policy</a>
+                &nbsp;|&nbsp;
+                <a href="terms.html">Terms &amp; Conditions</a>
+            </p>
+           
         </div>
     </footer>
 
@@ -387,7 +401,7 @@ Whether you’re starting a side hustle, promoting your services, or showing off
         });
 
         // Update current year in footer dynamically
-        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} SiteHub. All rights reserved.`;
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
     </script>
 <!-- Small cookie banner (non-blocking) -->
 <div id="cookie-banner" class="cookie-banner" role="region" aria-live="polite" aria-label="Cookie notice">

@@ -15,7 +15,7 @@
 <!-- Top Banner -->
 <div class="top-banner">
     <div class="top-banner-content">
-        <span>Empowering South African SMEs with affordable websites — from only R150!</span>
+        <span>Take your hustle online for ONLY R99!</span>
         <div class="social-icons">
             <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
             <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -87,12 +87,27 @@
   </p>
 </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 SiteHub. All rights reserved.</p>
+            <div class="footer-social-icons">
+                <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/sitehubonline" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@sitehubonline" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/sitehubonline" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>
+                &copy; <span id="footer-year">2023</span> SiteHub. All rights reserved.
+                &nbsp;|&nbsp;
+                <a href="privacy.html">Privacy Policy</a>
+                &nbsp;|&nbsp;
+                <a href="terms.html">Terms &amp; Conditions</a>
+            </p>
         </div>
     </footer>
+     <script>
+        // Update current year in footer dynamically
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
 
     <script>
         const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
@@ -108,7 +123,7 @@
             });
         });
 
-        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} SiteHub. All rights reserved.`;
+        
     </script>
 
 </body>
