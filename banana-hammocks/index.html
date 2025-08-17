@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Hammocks are the best hammocks</title>
+    <meta name="description" content="bananas bananas bananas bananas">
+    
+    <!-- Open Graph Meta Tags for SEO -->
+    <meta property="og:title" content="Banana Hammocks are the best hammocks">
+    <meta property="og:description" content="bananas bananas bananas bananas">
+    <meta property="og:url" content="https://www.bananahammocks.com/">
+    <meta property="og:image" content="https://via.placeholder.com/800x400?text=Banana+Hammock+Hero">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav id="main-nav">
+            <div class="nav-left">
+                <a href="#hero" class="logo-link">
+                    <img src="https://via.placeholder.com/100x50?text=Bananas+In+Pajamas+Logo" alt="Bananas In Pajamas Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form">Form</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-nav-overlay" aria-hidden="true">
+            <ul class="mobile-nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Bananas In Pajamas</h1>
+            <p class="tagline">Bananas are not just for bread</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2>About Us</h2>
+            <p><strong>Our Mission:</strong> Makes great hammocks for the family.</p>
+            <p>Bananas In Pajamas is a leading manufacturer specializing in high-quality consumer goods. We are dedicated to creating innovative and comfortable products that enhance family life, ensuring relaxation and joy for everyone.</p>
+        </div>
+    </section>
+
+    <!-- Services/Products Section -->
+    <section id="products" class="products-section section-padding">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150x150?text=Family+Hammocks" alt="Family Hammocks icon">
+                    <h3>Family Hammocks</h3>
+                    <p>Spacious and durable hammocks designed for the whole family to enjoy together.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150x150?text=Garden+Hammocks" alt="Garden Hammocks icon">
+                    <h3>Garden Hammocks</h3>
+                    <p>Weather-resistant hammocks perfect for relaxing in your backyard or patio.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150x150?text=Travel+Hammocks" alt="Travel Hammocks icon">
+                    <h3>Travel Hammocks</h3>
+                    <p>Lightweight and portable hammocks, ideal for camping, hiking, and outdoor adventures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <address>
+                <p><strong>Address:</strong> 1 Harrington Road</p>
+                <p><strong>Email:</strong> <a href="mailto:bananas@test.com">bananas@test.com</a></p>
+                <p><strong>Social Media:</strong> <a href="https://www.instagram.com/Bananas" target="_blank" rel="noopener noreferrer">@Bananas</a> (Instagram)</p>
+                <p>Connect with us on social media for the latest updates and banana news!</p>
+            </address>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="form" class="form-section section-padding">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form action="mailto:bananas@test.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Bananas In Pajamas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Automatically update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+        hamburger.addEventListener('click', () => {
+            mobileNavOverlay.classList.toggle('active');
+            hamburger.classList.toggle('is-active'); // For animating hamburger icon
+            // Toggle aria-expanded for accessibility
+            const isExpanded = hamburger.classList.contains('is-active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+            // Toggle aria-hidden for the overlay
+            mobileNavOverlay.setAttribute('aria-hidden', !isExpanded);
+        });
+
+        // Close mobile nav when a link is clicked
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavOverlay.classList.remove('active');
+                hamburger.classList.remove('is-active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                mobileNavOverlay.setAttribute('aria-hidden', 'true');
+            });
+        });
+    </script>
+</body>
+</html>
