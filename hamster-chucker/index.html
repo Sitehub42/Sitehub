@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="asdf">
+    <meta name="keywords" content="Hamster, Hospitality, Software Development, asdf">
+    <meta name="author" content="Hamster">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:title" content="asf">
+    <meta property="og:description" content="asdf">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0000FF/FFFFFF?text=Hamster+Social">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.example.com/">
+    <meta property="twitter:title" content="asf">
+    <meta property="twitter:description" content="asdf">
+    <meta property="twitter:image" content="https://via.placeholder.com/1200x630/0000FF/FFFFFF?text=Hamster+Social">
+
+    <title>asf</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero" aria-label="Hamster Home">
+                    <img src="https://via.placeholder.com/150x50/0000FF/FFFFFF?text=Hamster+Logo" alt="Hamster Logo">
+                </a>
+            </div>
+            <nav class="main-nav" role="navigation">
+                <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-links" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id="navbar-links" class="nav-links">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact-form" class="nav-link">Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hamster</h1>
+                <p class="tagline">asdf</p>
+                <a href="#contact-form" class="btn hero-btn">Get in Touch</a>
+            </div>
+            <div class="hero-overlay"></div>
+            <img src="https://via.placeholder.com/800x400/CCCCCC/FFFFFF?text=Hero+Banner" alt="Hero Banner for Hamster" class="hero-background-img">
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section container section-padding">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p class="mission"><strong>Our Mission:</strong> asdf</p>
+                <p class="business-desc">Hamster is a leading company in the <strong>Hospitality</strong> industry. We are dedicated to providing innovative solutions and services that exceed our clients' expectations.</p>
+                <p class="business-desc">Our core focus lies in transforming the Hospitality sector through cutting-edge technology and unparalleled expertise. We strive to be the preferred partner for businesses seeking to enhance their operations and customer experiences.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/150x150/0000FF/FFFFFF?text=Software" alt="Software Development Icon" class="service-icon">
+                        <h3>Software Development</h3>
+                        <p>We specialize in custom software solutions tailored for the Hospitality industry, from booking systems to property management software, ensuring seamless operations and enhanced guest experiences.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/150x150/0000FF/FFFFFF?text=Consulting" alt="Consulting Services Icon" class="service-icon">
+                        <h3>IT Consulting</h3>
+                        <p>Leverage our expertise to optimize your IT infrastructure, enhance cybersecurity, and streamline workflows. We provide strategic guidance for all your technology needs in hospitality.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/150x150/0000FF/FFFFFF?text=Support" alt="Support Services Icon" class="service-icon">
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated support team is available around the clock to ensure your systems run smoothly, minimizing downtime and resolving any technical issues swiftly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container section-padding">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-details">
+                <p><strong>Address:</strong> asdf</p>
+                <p><strong>Email:</strong> <a href="mailto:asdf">asdf</a></p>
+                <p><strong>Social Media:</strong> <a href="#" target="_blank" rel="noopener noreferrer">asdf</a> (Placeholder Link)</p>
+                <p class="cta-text">We'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact-form-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Send Us a Message</h2>
+                <form action="mailto:asdf" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Hamster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
