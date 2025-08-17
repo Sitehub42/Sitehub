@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya's Trinkets</title>
+    <meta name="description" content="A trinket for young and old to make you smile">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Tanya's Trinkets">
+    <meta property="og:description" content="A trinket for young and old to make you smile">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Tanya's+Trinkets+Social">
+    <meta property="og:url" content="https://www.tanyastrinkets.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://via.placeholder.com/32x32?text=TT" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <img src="https://via.placeholder.com/100x50?text=Logo" alt="Tanya's Trinkets Logo">
+                <span>Tanya's Trinkets</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services/Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form">Form</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1>Tanya's Trinkets</h1>
+            <p class="tagline">For young and old</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="mission-statement">Our mission is to supply silly trinkets across South Africa to put a smile on every person's face.</p>
+            <p>Tanya's Trinkets specializes in retail, bringing a wide array of fun, unique, and quirky consumer goods directly to you. We believe that a small, delightful item can brighten anyone's day, whether they're young or just young at heart. Our carefully curated collection includes everything from whimsical gadgets to charming collectibles, all designed to bring joy and a touch of silliness into your life.</p>
+        </div>
+    </section>
+
+    <!-- Services/Products Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <h2>Our Silly Trinkets</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Fun+Keychains" alt="Fun Keychains">
+                    <h3>Fun Keychains</h3>
+                    <p>Add a pop of personality to your keys with our diverse range of quirky keychains!</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Mini+Figurines" alt="Mini Figurines">
+                    <h3>Mini Figurines</h3>
+                    <p>Collect adorable miniature figurines that bring character to any desk or shelf.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Novelty+Pens" alt="Novelty Pens">
+                    <h3>Novelty Pens</h3>
+                    <p>Make writing fun again with our hilariously designed novelty pens.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Tiny+Toys" alt="Tiny Toys">
+                    <h3>Tiny Toys</h3>
+                    <p>Pocket-sized toys perfect for gifting or a spontaneous moment of play.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="icon location"></i>
+                    <p><strong>Address:</strong> 5 Marigold Street</p>
+                </div>
+                <div class="info-item">
+                    <i class="icon email"></i>
+                    <p><strong>Email:</strong> <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="icon social"></i>
+                    <p><strong>Social Media:</strong> <a href="https://www.instagram.com/trinkets" target="_blank" rel="noopener noreferrer">@trinkets</a> (Instagram)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section section-padding">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" action="mailto:tanyaz@sitehub.co.za" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required aria-label="Subject of your message">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required aria-label="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Tanya's Trinkets. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (document.body.classList.contains('mobile-menu-open')) {
+                    document.body.classList.remove('mobile-menu-open');
+                    document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            document.body.classList.toggle('mobile-menu-open');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
