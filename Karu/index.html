@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karu</title>
+    <meta name="description" content="Best beach ever">
+    
+    <!-- Open Graph Meta Tags for SEO -->
+    <meta property="og:title" content="Karu">
+    <meta property="og:description" content="Best beach ever">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.karu.com/">
+    <meta property="og:image" content="https://www.karu.com/og-image.jpg"> <!-- Placeholder, consider replacing -->
+    <meta property="og:site_name" content="Karu">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#hero"><img src="https://via.placeholder.com/100x40?text=Karu+Logo" alt="Karu Company Logo"></a>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form">Contact Form</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" style="background-image: url('https://via.placeholder.com/1200x600/87CEEB/FFFFFF?text=At+The+Beach+Hero')">
+        <div class="hero-content">
+            <h1>Karu</h1>
+            <p>At the beach</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2>About Us</h2>
+            <p><strong>Our Mission:</strong> To have the best time at the beach.</p>
+            <p>Karu specializes in the field of <strong>Education</strong>, offering innovative solutions and a unique approach to learning. We believe in fostering an environment where knowledge meets enjoyment, making every educational experience as refreshing as a day at the beach.</p>
+        </div>
+    </section>
+
+    <!-- Services/Products Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Financial+Planning+Icon" alt="Financial Planning Icon">
+                    <h3>Financial Planning</h3>
+                    <p>Expert guidance to help you navigate your financial journey, ensuring stability and growth for your future.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Medical+Devices+Icon" alt="Medical Devices Icon">
+                    <h3>Medical Devices</h3>
+                    <p>Providing cutting-edge medical devices that enhance healthcare outcomes and improve quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 5 hftg</p>
+            <p><strong>Email:</strong> <a href="mailto:Pillay.karu@gmail.com">Pillay.karu@gmail.com</a></p>
+            <!-- No social media handles provided, so this section is omitted -->
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="form" class="contact-form-section section-padding">
+        <div class="container">
+            <h2>Send us a Message</h2>
+            <form action="mailto:Pillay.karu@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required aria-label="Your Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="Subject" required aria-label="Subject of your message">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" rows="6" required aria-label="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Karu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // JavaScript for mobile navigation toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close nav menu when a link is clicked (for single page nav)
+        document.querySelectorAll('.nav-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
