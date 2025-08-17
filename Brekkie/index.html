@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brekkie</title>
+    <meta name="description" content="Breakfast for the taste buds">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.brekkie.com/">
+    <meta property="og:title" content="Brekkie">
+    <meta property="og:description" content="Breakfast for the taste buds">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/F3E5AB/000000?text=Brekkie%20Banner">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#hero" aria-label="Brekkie Home">
+                    <img src="https://via.placeholder.com/150x50/F8D47C/3A2000?text=Brekkie" alt="Brekkie Logo" width="150" height="50">
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="Learn more about Brekkie">About Us</a></li>
+                <li><a href="#services" aria-label="Explore Brekkie's products">Products</a></li>
+                <li><a href="#contact" aria-label="Get in touch with Brekkie">Contact</a></li>
+                <li><a href="#contact-form" class="btn btn-nav" aria-label="Open contact form">Enquire Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Brekkie</h1>
+                <p class="tagline">Breakfast for the taste buds</p>
+                <a href="#contact-form" class="btn btn-primary" aria-label="Send us a message">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="mission-statement">Our mission: <strong>Provide quality breakfast to hearty South Africans.</strong></p>
+                <p>Brekkie is rooted in the hospitality industry, dedicated to crafting delightful breakfast experiences. We believe that a great day starts with a great breakfast, and we pour our passion into every product to ensure it brings joy to your table.</p>
+                <p>We pride ourselves on sourcing the best ingredients and delivering consumer goods that not only taste incredible but also embody the spirit of hearty South African hospitality.</p>
+            </div>
+        </section>
+
+        <!-- Services/Products Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Delicious Products</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150/F8D47C/3A2000?text=Granola" alt="Gourmet Granola" width="150" height="150">
+                        <h3>Gourmet Granola</h3>
+                        <p>Crunchy, wholesome granola packed with nuts, seeds, and dried fruits for a perfect start to your day.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150/F8D47C/3A2000?text=Jams" alt="Artisan Jams" width="150" height="150">
+                        <h3>Artisan Jams</h3>
+                        <p>Handcrafted jams made from the freshest local fruits, bursting with natural flavors.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150/F8D47C/3A2000?text=Pastries" alt="Freshly Baked Pastries" width="150" height="150">
+                        <h3>Freshly Baked Pastries</h3>
+                        <p>Indulge in our selection of flaky, buttery pastries, baked fresh daily with love.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Connect With Us</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:ziegler.tanya@gmail.com" aria-label="Send us an email">ziegler.tanya@gmail.com</a></p>
+                    <p><strong>Social Media:</strong> Follow us on Instagram <a href="https://www.instagram.com/brekkie/" target="_blank" rel="noopener noreferrer" aria-label="Visit Brekkie on Instagram">@brekkie</a></p>
+                    <p>For detailed location information or business inquiries, please reach out via email.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact-form-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Brekkie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open after clicking a link
+                const navLinks = document.querySelector('.nav-links');
+                const hamburger = document.querySelector('.hamburger');
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const expanded = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
+        });
+
+        // Update Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Close mobile nav when clicking outside (optional, but good UX)
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
