@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bananas bananas bananas bananas">
+    <meta name="keywords" content="banana hammocks, family hammocks, outdoor hammocks, portable hammocks, consumer goods, manufacturing, Bananas In Pajamas">
+    <meta property="og:title" content="Banana Hammocks are the best hammocks">
+    <meta property="og:description" content="bananas bananas bananas bananas">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/F0E68C/556B2F?text=Banana+Hammocks+are+the+best">
+    <meta property="og:url" content="https://www.bananahammocks.com/">
+    <meta property="og:type" content="website">
+    <title>Banana Hammocks are the best hammocks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#hero" aria-label="Bananas In Pajamas Home">
+                    <img src="https://via.placeholder.com/150x50/F0E68C/556B2F?text=Bananas+In+Pajamas+Logo" alt="Bananas In Pajamas Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="About Us section">About Us</a></li>
+                <li><a href="#services" aria-label="Services and Products section">Services & Products</a></li>
+                <li><a href="#contact" aria-label="Contact Us section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Bananas In Pajamas</h1>
+                <p class="tagline">Bananas are not just for bread</p>
+                <a href="#services" class="btn hero-btn" aria-label="Explore our hammocks">Explore Our Hammocks</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At <strong>Bananas In Pajamas</strong>, our mission is simple yet profound: We makes great hammocks for the family. As a dedicated manufacturing company in the consumer goods industry, we focus on creating comfortable, durable, and stylish hammocks that bring joy and relaxation to every family member. We combine innovative design with quality craftsmanship to deliver products that truly enhance your leisure time.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services & Products</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150/F0E68C/556B2F?text=Family" alt="Family Hammock Icon">
+                        <h3>Family Hammocks</h3>
+                        <p>Discover our range of spacious and robust hammocks, perfect for the entire family to enjoy together. Built for comfort and durability.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150/F0E68C/556B2F?text=Outdoor" alt="Outdoor Hammock Icon">
+                        <h3>Outdoor Hammocks</h3>
+                        <p>Experience the ultimate outdoor relaxation with our weather-resistant and portable hammocks, designed for adventures and backyard bliss.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150/F0E68C/556B2F?text=Custom" alt="Custom Hammock Icon">
+                        <h3>Custom Solutions</h3>
+                        <p>Looking for something unique? We offer custom manufacturing solutions to meet specific design and material requirements for bulk orders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 1 Harrington Road</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:bananas@test.com" aria-label="Email Bananas In Pajamas">bananas@test.com</a></p>
+                    <p><i class="fas fa-share-alt"></i> <strong>Social:</strong> <a href="#" aria-label="Follow Bananas In Pajamas on social media">@Bananas</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="form-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <form action="mailto:bananas@test.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Regarding your hammocks...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="I would like to inquire about..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Bananas In Pajamas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (document.querySelector('.nav-links').classList.contains('active')) {
+                    document.querySelector('.nav-links').classList.remove('active');
+                    document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const expanded = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
+        });
+
+        // Set current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
