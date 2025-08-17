@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoesShoesShoes</title>
+    <meta name="description" content="Shoes are shoes and shoes become shoes">
+    
+    <!-- Open Graph Meta Tags for social media sharing -->
+    <meta property="og:title" content="Nike Shoes - ShoesShoesShoes">
+    <meta property="og:description" content="Shoes are shoes and shoes become shoes">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/007bff/FFFFFF?text=Nike+Shoes+Website">
+    <meta property="og:url" content="https://www.shoesshoesshoes.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://via.placeholder.com/32x32?text=👟" type="image/x-icon">
+    
+    <!-- Google Fonts - Roboto (headings) and Open Sans (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation Bar -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#hero" class="logo" aria-label="Nike Shoes Home">
+                <img src="https://via.placeholder.com/150x50?text=Nike+Shoes+Logo" alt="Nike Shoes Company Logo">
+            </a>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services/Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form">Form</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Hamburger Toggle -->
+            <div class="hamburger" aria-label="Open mobile navigation" role="button" tabindex="0" aria-expanded="false">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+        </div>
+        <!-- Mobile Navigation (hidden by default) -->
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services/Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <img src="https://via.placeholder.com/800x400/CCCCCC/000000?text=Hero+Banner" alt="Stylish shoes on display, representing Nike Shoes products" class="hero-bg-image">
+            <div class="hero-content">
+                <h1>Nike Shoes</h1>
+                <p>We love our shoes</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="section-description"><strong>Our Mission:</strong> To provide the best shoes in town.</p>
+                <p>Nike Shoes is a leading name in the <strong>Manufacturing</strong> industry, specializing in high-quality footwear. Our dedication lies in crafting durable, comfortable, and stylish shoes that cater to diverse needs. We continuously innovate to bring the best designs and materials to our customers, ensuring every pair stands out in quality and performance.</p>
+            </div>
+        </section>
+
+        <!-- Services/Products Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <h2>Our Services & Products</h2>
+                <p class="section-description">As a prominent manufacturer, our core focus is on <strong>Consumer Goods</strong>, specifically, an extensive range of footwear for every need and occasion.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150?text=Running+Shoes" alt="Icon depicting running shoes">
+                        <h3>Running Shoes</h3>
+                        <p>Engineered for peak performance and ultimate comfort, our running shoes help athletes achieve their best.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150?text=Casual+Footwear" alt="Icon depicting casual footwear">
+                        <h3>Casual Footwear</h3>
+                        <p>Stylish and versatile, perfect for everyday wear, enhancing your comfort and street style.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://via.placeholder.com/150x150?text=Formal+Shoes" alt="Icon depicting formal shoes">
+                        <h3>Formal Shoes</h3>
+                        <p>Sophistication and elegance for professional settings and special occasions, designed with precision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 1 Harry Road, Sea Point</p>
+                <p><strong>Email:</strong> <a href="mailto:shoes@example.com" aria-label="Email us at shoes@example.com">shoes@example.com</a></p>
+                <p><strong>Social Media:</strong> <a href="https://twitter.com/ShoesAreUse" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter, opens in new tab">@ShoesAreUse</a></p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="form-section section-padding">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <form action="mailto:shoes@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nike Shoes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dynamic year and mobile menu toggle -->
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle functionality
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const header = document.querySelector('.main-header');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            const isExpanded = mobileNav.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+            // Prevent body scroll when mobile menu is open
+            document.body.style.overflowY = isExpanded ? 'hidden' : 'auto';
+        });
+
+        // Close mobile nav when a link is clicked
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflowY = 'auto'; // Restore scrolling
+            });
+        });
+
+        // Close mobile nav on window resize if it transitions to desktop view
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && mobileNav.classList.contains('active')) { // Assuming 768px is the breakpoint
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflowY = 'auto';
+            }
+        });
+
+        // Smooth scrolling for anchor links, accounting for sticky header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = header.offsetHeight; // Get height of the sticky header
+                    // Calculate position adjusted for the sticky header height
+                    const offsetPosition = targetElement.offsetTop - headerHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
