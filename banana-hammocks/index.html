@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bananas bananas bananas bananas">
+    <title>Banana Hammocks are the best hammocks</title>
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Banana Hammocks are the best hammocks">
+    <meta property="og:description" content="bananas bananas bananas bananas">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Banana+Hammocks">
+    <meta property="og:url" content="https://www.bananahammocks.com/">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#hero" aria-label="Bananas In Pajamas Home">
+                    <img src="https://via.placeholder.com/150x50?text=Bananas+In+Pajamas+Logo" alt="Bananas In Pajamas Logo">
+                </a>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services & Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact-form" class="nav-link">Get in Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content container">
+                <h1>Bananas In Pajamas</h1>
+                <p>Bananas are not just for bread</p>
+                <a href="#services" class="btn btn-primary">Explore Our Hammocks</a>
+            </div>
+            <div class="hero-overlay"></div>
+            <img src="https://via.placeholder.com/1600x800?text=Relax+in+a+Banana+Hammock" alt="People relaxing in a comfortable hammock, depicting the company's core product." class="hero-bg-image">
+        </section>
+
+        <section id="about" class="about-section container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p class="mission"><strong>Our Mission:</strong> Makes great hammocks for the family.</p>
+                <p>Bananas In Pajamas is a leader in the manufacturing of high-quality consumer goods, specifically specializing in comfortable and durable hammocks designed for family relaxation. With a focus on innovation and comfort, we ensure every hammock provides unparalleled leisure for you and your loved ones.</p>
+                <p>We combine robust manufacturing processes with a deep understanding of customer needs to deliver products that are not only aesthetically pleasing but also built to last.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section container">
+            <h2>Our Hammocks & Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Family+Hammock" alt="Icon for Family Hammocks" class="service-icon">
+                    <h3>Family Hammocks</h3>
+                    <p>Spacious and sturdy, perfect for shared moments of relaxation with the whole family.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Outdoor+Hammock" alt="Icon for Outdoor Adventure Hammocks" class="service-icon">
+                    <h3>Outdoor Adventure Hammocks</h3>
+                    <p>Lightweight and durable designs built for your next journey into the great outdoors.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Indoor+Hammock" alt="Icon for Indoor Comfort Hammocks" class="service-icon">
+                    <h3>Indoor Comfort Hammocks</h3>
+                    <p>Stylish and cozy options to complement any home decor, creating a personal oasis.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150?text=Custom+Hammock" alt="Icon for Custom Hammocks" class="service-icon">
+                    <h3>Custom Hammocks</h3>
+                    <p>Tailored solutions and bespoke designs to meet your unique specifications and desires.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="icon-location"></i> <strong>Address:</strong> 1 Harrington Road</p>
+                <p><i class="icon-email"></i> <strong>Email:</strong> <a href="mailto:bananas@test.com">bananas@test.com</a></p>
+                <p><i class="icon-social"></i> <strong>Follow Us:</strong> <a href="https://example.com/bananas" target="_blank" rel="noopener noreferrer">@Bananas</a></p>
+            </div>
+        </section>
+
+        <section id="contact-form" class="contact-form-section container">
+            <h2>Send Us a Message</h2>
+            <form action="mailto:bananas@test.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Bananas In Pajamas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navList.classList.contains('active'));
+        });
+
+        // Close nav when a link is clicked (for mobile)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navList.classList.contains('active')) {
+                    navList.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
