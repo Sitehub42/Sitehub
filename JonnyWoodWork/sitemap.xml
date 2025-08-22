@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- sitemap.xml for JonnyWoodWork - generated 2025-08-22 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.johnnywoodwork.com/</loc>
-    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <lastmod>2025-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.johnnywoodwork.com/images/herobanner.png</image:loc>
+      <image:caption>Hero banner</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.johnnywoodwork.com/images/product1.png</image:loc>
+      <image:caption>Product 1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.johnnywoodwork.com/images/product2.png</image:loc>
+      <image:caption>Product 2</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.johnnywoodwork.com/images/product3.png</image:loc>
+      <image:caption>Product 3</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.johnnywoodwork.com/images/product4.png</image:loc>
+      <image:caption>Product 4</image:caption>
+    </image:image>
   </url>
 </urlset>
