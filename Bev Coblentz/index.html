@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Edu | Empowering Minds, Shaping Futures</title>
+    <meta name="description" content="BC Edu offers quality education, consulting, and courses for children and adults. Empowering minds, shaping futures.">
+    <meta name="keywords" content="education, consulting, educational courses, children's education, adult learning, skill development, online courses">
+    <meta name="author" content="BC Edu">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bc-edu.com/">
+    <meta property="og:title" content="BC Edu | Empowering Minds, Shaping Futures">
+    <meta property="og:description" content="BC Edu offers quality education, consulting, and courses for children and adults. Empowering minds, shaping futures.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/2196F3/FFFFFF?text=BC+Edu+Social">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.bc-edu.com/">
+    <meta property="twitter:title" content="BC Edu | Empowering Minds, Shaping Futures">
+    <meta property="twitter:description" content="BC Edu offers quality education, consulting, and courses for children and adults. Empowering minds, shaping futures.">
+    <meta property="twitter:image" content="https://via.placeholder.com/1200x630/2196F3/FFFFFF?text=BC+Edu+Social">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://via.placeholder.com/32x32/2196F3/FFFFFF?text=BC" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#hero">
+                    <img src="https://via.placeholder.com/50x50/2196F3/FFFFFF?text=BC" alt="BC Edu Logo" aria-label="BC Edu Home">
+                    <span>BC Edu</span>
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="main-menu">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>BC Edu</h1>
+                <p>Empowering Minds, Shaping Futures</p>
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section container">
+            <h2>About Us</h2>
+            <p class="mission-statement"><strong>Our Mission:</strong> Provide quality education to children and adults.</p>
+            <p>BC Edu is dedicated to transforming lives through comprehensive educational programs. We focus on fostering critical thinking, creativity, and a lifelong love for learning across various age groups. Our expertise spans a wide range of subjects, ensuring personalized and effective learning experiences tailored to meet individual needs and aspirations.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150/4CAF50/FFFFFF?text=Consulting" alt="Consulting Icon">
+                    <h3>Educational Consulting</h3>
+                    <p>Expert guidance for educational institutions and individuals. We offer strategic advice on curriculum development, learning methodologies, and career pathways to achieve academic and professional excellence.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150x150/4CAF50/FFFFFF?text=Courses" alt="Educational Courses Icon">
+                    <h3>Educational Courses</h3>
+                    <p>Diverse range of courses tailored for children and adults. From foundational subjects to advanced skills, our programs are designed to be engaging, interactive, and outcome-oriented, promoting continuous growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Learning Lane, Knowledge City, KC 98765</p>
+                <p><strong>Email:</strong> <a href="mailto:bev.coblentz@gmail.com">bev.coblentz@gmail.com</a></p>
+                <p><strong>Social Media:</strong> <a href="https://twitter.com/bevcob" target="_blank" rel="noopener noreferrer">@bevcob</a> (Twitter)</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="form" class="contact-form-section container">
+            <h2>Send Us a Message</h2>
+            <form action="mailto:bev.coblentz@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> BC Edu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open after clicking a link
+                const navLinks = document.getElementById('main-menu');
+                const hamburger = document.querySelector('.hamburger');
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Hamburger menu toggle for mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
