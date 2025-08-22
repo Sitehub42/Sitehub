@@ -232,7 +232,7 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: url('https://via.placeholder.com/800x400/D2B48C/8B4513?text=Quality+Woodwork') center/cover no-repeat;
+    background: url('./images/herobanner.png') center/cover no-repeat;
     color: var(--light-text-color);
     text-align: center;
     padding: 100px 0;
