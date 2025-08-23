@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayonaise is the essence of Sushi</title>
+    <meta name="description" content="Mayonaise from the mother land the way mom used to make it. Tomatosauce is for losers">
+    <meta name="keywords" content="Japanese Mayo, Mayo, Mayonaise, Sushi, Japanese Food, South Africa, Consumer Goods">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.japanesemayofactory.com/">
+    <meta property="og:title" content="Mayonaise is the essence of Sushi">
+    <meta property="og:description" content="Mayonaise from the mother land the way mom used to make it. Tomatosauce is for losers">
+    <meta property="og:image" content="https://www.japanesemayofactory.com/hero-800x400.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.japanesemayofactory.com/">
+    <meta property="twitter:title" content="Mayonaise is the essence of Sushi">
+    <meta property="twitter:description" content="Mayonaise from the mother land the way mom used to make it. Tomatosauce is for losers">
+    <meta property="twitter:image" content="https://www.japanesemayofactory.com/hero-800x400.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav id="navbar">
+            <div class="logo">
+                <a href="#home">
+                    <img src="logo.png" alt="Japanese Mayo Factory Logo" width="50" height="50">
+                    <span>Japanese Mayo Factory</span>
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Consumer Goods</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Japanese Mayo Factory</h1>
+                <p>Authentic mayonaise from the heart of china</p>
+                <a href="#form" class="btn-primary">Discover Our Flavors</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p class="mission">Our mission: To be the number 1 choice of mayonaise in South Africa.</p>
+            <p>We are a leading entity in the Retail industry, dedicated to bringing premium Consumer Goods to your table. We believe in crafting the perfect mayonnaise that enhances every dish, from sushi to sandwiches, with an authentic touch.</p>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Delicious Consumer Goods</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="service-1-150x150.png" alt="Classic Japanese Mayo" width="150" height="150">
+                    <h3>Classic Japanese Mayo</h3>
+                    <p>The original, creamy, and rich flavor that started it all. Perfect for sushi, salads, and more.</p>
+                </div>
+                <div class="service-item">
+                    <img src="service-2-150x150.png" alt="Spicy Wasabi Mayo" width="150" height="150">
+                    <h3>Spicy Wasabi Mayo</h3>
+                    <p>A kick of authentic wasabi infused into our classic recipe for a fiery delicious twist.</p>
+                </div>
+                <div class="service-item">
+                    <img src="service-3-150x150.png" alt="Vegan Umami Mayo" width="150" height="150">
+                    <h3>Vegan Umami Mayo</h3>
+                    <p>Experience the deep, savory umami flavor in our plant-based, egg-free mayonnaise.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Online only</p>
+                <p><strong>Email:</strong> <a href="mailto:bestnmayo@theworld.com">bestnmayo@theworld.com</a></p>
+                <p><strong>Social Media:</strong> Follow us on <a href="https://twitter.com/MayoNinja" target="_blank" rel="noopener noreferrer">@MayoNinja</a> for updates and delicious recipes!</p>
+            </div>
+        </section>
+
+        <section id="form" class="form-section">
+            <h2>Order Now or Send Us a Message</h2>
+            <form action="mailto:bestnmayo@theworld.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required aria-label="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" required aria-label="Your Email">
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="Subject" required aria-label="Subject of your message">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="Message" rows="6" required aria-label="Your Message"></textarea>
+                
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Japanese Mayo Factory. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (document.body.classList.contains('nav-open')) {
+                    document.body.classList.remove('nav-open');
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open'); // Toggles a class on the body to handle overall layout
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
