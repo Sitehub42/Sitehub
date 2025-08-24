@@ -11,113 +11,116 @@
     <meta property="og:url" content="https://www.bananahammocks.com/">
     <meta property="og:title" content="Banana Hammocks are the best hammocks">
     <meta property="og:description" content="bananas bananas bananas bananas">
-    <meta property="og:image" content="https://www.bananahammocks.com/hero-800x400.png"> <!-- Placeholder for a relevant image -->
+    <meta property="og:image" content="https://www.bananahammocks.com/hero-800x400.png">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.bananahammocks.com/">
+    <meta property="twitter:title" content="Banana Hammocks are the best hammocks">
+    <meta property="twitter:description" content="bananas bananas bananas bananas">
+    <meta property="twitter:image" content="https://www.bananahammocks.com/hero-800x400.png">
+
+    <!-- Favicon (optional, using a placeholder if not provided) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <!-- Header and Navigation -->
+    <header class="main-header">
         <div class="container nav-container">
-            <a href="#hero" class="logo" aria-label="Bananas In Pajamas homepage">
-                <img src="logo.png" alt="Bananas In Pajamas logo" width="50" height="50">
-                Bananas In Pajamas
+            <a href="#hero" class="logo" aria-label="Bananas In Pajamas home">
+                <img src="logo.png" alt="Bananas In Pajamas Logo">
             </a>
-            <nav class="nav-menu" aria-label="Main navigation">
+            <nav class="main-nav" role="navigation">
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
                 <ul class="nav-list">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services/Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact-form" class="btn btn-primary">Form</a></li>
+                    <li><a href="#about" aria-label="Learn more about us">About Us</a></li>
+                    <li><a href="#services" aria-label="Explore our services and products">Services/Products</a></li>
+                    <li><a href="#contact" aria-label="Get in touch with us">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-nav" aria-label="Fill out our contact form">Form</a></li>
                 </ul>
             </nav>
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                <span class="hamburger-icon"></span>
-            </button>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero" role="banner">
-            <div class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
                 <h1>Bananas In Pajamas</h1>
-                <p class="tagline">Bananas are not just for bread</p>
-                <a href="#services" class="btn btn-secondary">Discover Our Products</a>
+                <p>Bananas are not just for bread</p>
+                <a href="#contact-form" class="btn btn-primary" aria-label="Contact us to learn more">Learn More</a>
             </div>
         </section>
 
-        <section id="about" class="about-us section-padding" aria-labelledby="about-heading">
-            <div class="container">
-                <h2 id="about-heading">About Bananas In Pajamas</h2>
-                <p class="mission-statement">Makes great hammocks for the family</p>
-                <div class="about-content">
-                    <p>At Bananas In Pajamas, we're dedicated to bringing joy and comfort to families through our innovative products. Specializing in Manufacturing, we pride ourselves on creating high-quality, durable, and fun items that stand the test of time.</p>
-                    <p>Our commitment to excellence drives everything we do, from sourcing materials to the final product. We believe in crafting experiences, not just goods.</p>
+        <!-- About Us Section -->
+        <section id="about" class="about-section container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>Makes great hammocks for the family</p>
+                </div>
+                <div class="business">
+                    <h3>Our Business</h3>
+                    <p>We are a leading entity in the Manufacturing industry, specializing in creating high-quality, durable, and comfortable consumer goods. Our commitment is to innovation and customer satisfaction, ensuring every product meets the highest standards of excellence.</p>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services section-padding" aria-labelledby="services-heading">
+        <!-- Services/Products Section -->
+        <section id="services" class="services-section bg-light">
             <div class="container">
-                <h2 id="services-heading">Our Consumer Goods</h2>
-                <p class="section-description">Explore our range of delightful consumer goods designed for comfort and fun.</p>
+                <h2 class="section-title">Our Consumer Goods</h2>
+                <p class="section-description">Discover our range of premium consumer goods, crafted with care and designed for comfort and durability.</p>
                 <div class="service-grid">
                     <div class="service-item">
-                        <img src="service-1-150x150.png" alt="Comfortable Hammocks" width="150" height="150">
-                        <h3>Family Hammocks</h3>
-                        <p>Our signature product – incredibly comfortable and durable hammocks perfect for family relaxation.</p>
+                        <img src="service-1-150x150.png" alt="Product category image 1" class="service-icon">
+                        <h3>Comfort Hammocks</h3>
+                        <p>Experience ultimate relaxation with our ergonomically designed hammocks, perfect for any family setting.</p>
                     </div>
                     <div class="service-item">
-                        <img src="service-2-150x150.png" alt="Outdoor Gear" width="150" height="150">
-                        <h3>Outdoor Essentials</h3>
-                        <p>Beyond hammocks, we offer a selection of outdoor gear to enhance your leisure time.</p>
+                        <img src="service-2-150x150.png" alt="Product category image 2" class="service-icon">
+                        <h3>Durable Outdoor Gear</h3>
+                        <p>Our products are built to last, with high-quality materials resistant to wear and tear, ideal for outdoor adventures.</p>
                     </div>
                     <div class="service-item">
-                        <img src="service-3-150x150.png" alt="Kids Play Items" width="150" height="150">
-                        <h3>Kids Play Items</h3>
-                        <p>Fun and safe products for children, ensuring endless hours of imaginative play.</p>
+                        <img src="service-3-150x150.png" alt="Product category image 3" class="service-icon">
+                        <h3>Eco-Friendly Choices</h3>
+                        <p>Committed to sustainability, we offer a selection of products made from environmentally responsible materials.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact section-padding" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Get in Touch</h2>
-                <p class="section-description">We'd love to hear from you. Reach out through any of these channels.</p>
-                <div class="contact-info-grid">
-                    <div class="contact-info-item">
-                        <h3>Our Address</h3>
-                        <p>1 Harrington Road</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <h3>Email Us</h3>
-                        <p><a href="mailto:bananas@test.com">bananas@test.com</a></p>
-                    </div>
-                    <div class="contact-info-item">
-                        <h3>Connect</h3>
-                        <p>Social Media: <a href="#" aria-label="Follow us on Bananas">Bananas</a></p>
-                    </div>
-                </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <p><i class="icon-location"></i> <strong>Address:</strong> 1 Harrington Road</p>
+                <p><i class="icon-mail"></i> <strong>Email:</strong> <a href="mailto:bananas@test.com">bananas@test.com</a></p>
+                <p><i class="icon-social"></i> <strong>Social Media:</strong> <a href="#" aria-label="Follow Bananas In Pajamas on social media">Bananas</a></p>
             </div>
         </section>
 
-        <section id="contact-form" class="contact-form section-padding" aria-labelledby="form-heading">
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact-form-section bg-light">
             <div class="container">
-                <h2 id="form-heading">Send Us a Message</h2>
-                <form action="mailto:bananas@test.com" method="post" enctype="text/plain">
+                <h2 class="section-title">Send Us a Message</h2>
+                <form action="mailto:bananas@test.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required aria-label="Your Name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-label="Your Email">
+                        <input type="email" id="email" name="email" required aria-label="Your Email Address">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
@@ -125,7 +128,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required aria-label="Your Message"></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-label="Your Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -133,44 +136,48 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="main-footer">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Bananas In Pajamas. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Dynamic year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
         // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        const navLinks = document.querySelectorAll('.nav-list a');
+        const navList = document.querySelector('.nav-list');
 
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+            navList.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const expanded = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
         });
 
-        // Close menu when a link is clicked (for single-page navigation)
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
+        // Close nav when a link is clicked (for mobile)
+        document.querySelectorAll('.nav-list a').forEach(item => {
+            item.addEventListener('click', () => {
+                if (navList.classList.contains('active')) {
+                    navList.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
             });
         });
 
-        // Sticky header functionality
-        const header = document.querySelector('.header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        });
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
+        // Sticky header logic (optional, can be done with CSS sticky as well)
+        // window.addEventListener('scroll', () => {
+        //     const header = document.querySelector('.main-header');
+        //     if (window.scrollY > 0) {
+        //         header.classList.add('scrolled');
+        //     } else {
+        //         header.classList.remove('scrolled');
+        //     }
+        // });
     </script>
 </body>
 </html>
