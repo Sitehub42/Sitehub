@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litchi Catering</title>
+    <meta name="description" content="Litchi Catering provides amazing food for Cape Town events, corporate lunches, and private dinners. Experience culinary excellence with our bespoke catering services.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.litchicatering.com/">
+    <meta property="og:title" content="Litchi Catering">
+    <meta property="og:description" content="Litchi Catering provides amazing food for Cape Town events, corporate lunches, and private dinners. Experience culinary excellence with our bespoke catering services.">
+    <meta property="og:image" content="https://www.litchicatering.com/hero-800x400.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.litchicatering.com/">
+    <meta property="twitter:title" content="Litchi Catering">
+    <meta property="twitter:description" content="Litchi Catering provides amazing food for Cape Town events, corporate lunches, and private dinners. Experience culinary excellence with our bespoke catering services.">
+    <meta property="twitter:image" content="https://www.litchicatering.com/hero-800x400.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" aria-label="Litchi_Catering homepage">
+                Litchi_Catering
+                <!-- <img src="logo.png" alt="Litchi_Catering Logo"> -->
+            </a>
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li><a href="#about" aria-label="About Us section">About Us</a></li>
+                    <li><a href="#services" aria-label="Our Services section">Services</a></li>
+                    <li><a href="#contact" aria-label="Contact Us section">Contact</a></li>
+                    <li><a href="#contact-form" aria-label="Contact Form section">Form</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="mobile-nav">
+                <ul class="nav-menu">
+                    <li><a href="#about" aria-label="About Us section">About Us</a></li>
+                    <li><a href="#services" aria-label="Our Services section">Services</a></li>
+                    <li><a href="#contact" aria-label="Contact Us section">Contact</a></li>
+                    <li><a href="#contact-form" aria-label="Contact Form section">Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="company-name">Litchi_Catering</h1>
+                <p class="tagline">Experience Culinary Excellence</p>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">About Litchi_Catering</h2>
+                <p>Our mission at Litchi_Catering is simple: to provide amazing food for Cape Town. We specialize in Catering Services, bringing delicious and memorable culinary experiences to every event, big or small. From intimate gatherings to grand celebrations, our passion for food and impeccable service shines through.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="service-1-150x150.png" alt="Icon for Event Catering" class="service-icon">
+                        <h3>Event Catering</h3>
+                        <p>Bespoke menus crafted for weddings, parties, and special occasions, ensuring a memorable culinary journey for your guests.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="service-2-150x150.png" alt="Icon for Corporate Lunches" class="service-icon">
+                        <h3>Corporate Lunches</h3>
+                        <p>Professional and delicious catering solutions for business meetings, conferences, and corporate events.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="service-3-150x150.png" alt="Icon for Private Dinners" class="service-icon">
+                        <h3>Private Dinners</h3>
+                        <p>Enjoy a gourmet dining experience in the comfort of your home with our private chef and dinner party services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 123 Catering Lane, Cape Town, South Africa</p>
+                    <p><strong>Email:</strong> <a href="mailto:dohnegreen@gmail.com">dohnegreen@gmail.com</a></p>
+                    <p><strong>Social Media:</strong>
+                        <a href="https://www.facebook.com/litchicatering" target="_blank" rel="noopener noreferrer" aria-label="Litchi Catering on Facebook">Facebook</a>,
+                        <a href="https://www.instagram.com/litchicatering" target="_blank" rel="noopener noreferrer" aria-label="Litchi Catering on Instagram">Instagram</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Send Us a Message</h2>
+                <form action="mailto:dohnegreen@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Litchi_Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Automatically update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navLinks = document.querySelectorAll('.mobile-nav .nav-menu li a');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const isExpanded = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Close mobile nav when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileNav.contains(event.target) && !hamburger.contains(event.target) && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
