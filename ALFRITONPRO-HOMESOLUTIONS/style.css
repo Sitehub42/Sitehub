@@ -2,7 +2,7 @@
 :root {
     --primary-color: #3f51b5; /* A strong blue, often used in professional contexts */
     --secondary-color: #ff9800; /* A vibrant orange for accents */
-    --text-dark: #333;
+    --text-dark: #3f51b5;
     --text-light: #f4f4f4;
     --background-light: #ffffff;
     --background-dark: #f0f2f5;
@@ -49,6 +49,7 @@ h2 {
     text-align: center;
     margin-bottom: 1.5em;
     position: relative;
+    padding-top: 20px;
 }
 
 h2::after {
@@ -261,7 +262,7 @@ img {
 
 /* Section Styling */
 section {
-    padding: 80px 0;
+    padding: 80px;
     background-color: var(--background-light);
 }
 
