@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Sale</title>
+    <meta name="description" content="Browse a curated collection of pre-loved plates, shelves, and various household treasures at GarageSale. Find unique items for your home at great prices!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.garage-sale.com/">
+    <meta property="og:title" content="Garage Sale">
+    <meta property="og:description" content="Browse a curated collection of pre-loved plates, shelves, and various household treasures at GarageSale. Find unique items for your home at great prices!">
+    <meta property="og:image" content="https://www.garage-sale.com/hero-800x400.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.garage-sale.com/">
+    <meta property="twitter:title" content="Garage Sale">
+    <meta property="twitter:description" content="Browse a curated collection of pre-loved plates, shelves, and various household treasures at GarageSale. Find unique items for your home at great prices!">
+    <meta property="twitter:image" content="https://www.garage-sale.com/hero-800x400.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#hero" class="logo" aria-label="GarageSale Home"><img src="logo.png" alt="GarageSale Logo" width="50" height="50"> GarageSale</a>
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="About Us section">About Us</a></li>
+                    <li><a href="#items" aria-label="Our Items section">Items</a></li>
+                    <li><a href="#contact" aria-label="Contact Us section">Contact</a></li>
+                    <li><a href="#form" aria-label="Contact Form section">Form</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>GarageSale</h1>
+                <p>Discover Your Next Treasure!</p>
+                <a href="#items" class="button primary-button">See Our Items</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container text-center">
+                <h2>About Us</h2>
+                <p class="lead-text">Our mission is to offer a unique opportunity to find pre-loved items that can bring new life and character to your home.</p>
+                <p>At GarageSale, we believe in the charm and value of second-hand goods. We're hosting a garage sale dedicated to selling a variety of household items, including beautiful plates, practical shelves, and other delightful treasures. It's an excellent way to find affordable, unique pieces while supporting sustainable living. Explore our collection and uncover something special!</p>
+            </div>
+        </section>
+
+        <section id="items" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="text-center">Our Items</h2>
+                <p class="text-center lead-text">Browse a diverse range of household goods, from decorative pieces to everyday essentials.</p>
+                <div class="item-grid">
+                    <div class="item-card">
+                        <img src="service-1-150x150.png" alt="Collection of Plates and Dishware" width="150" height="150">
+                        <h3>Plates & Dishware</h3>
+                        <p>From classic dinner sets to unique decorative plates, find the perfect additions for your kitchen and dining.</p>
+                    </div>
+                    <div class="item-card">
+                        <img src="service-2-150x150.png" alt="Various Shelves and Storage Units" width="150" height="150">
+                        <h3>Shelving & Storage</h3>
+                        <p>Organize your space with our selection of sturdy shelves and practical storage solutions for every room.</p>
+                    </div>
+                    <div class="item-card">
+                        <img src="service-3-150x150.png" alt="Assorted Home Decor Items" width="150" height="150">
+                        <h3>Home Decor & More</h3>
+                        <p>Explore a variety of household items, including decorative pieces, small appliances, and other essentials to complete your home.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container text-center">
+                <h2>Contact Us</h2>
+                <p class="lead-text">Have questions or need directions? Reach out to us!</p>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 23 the cheviots</p>
+                    <p><strong>Email:</strong> <a href="mailto:ddziegleryt@gmail.com" aria-label="Email GarageSale">ddziegleryt@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="text-center">Send Us a Message</h2>
+                <form class="contact-form" action="mailto:ddziegleryt@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="button primary-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> GarageSale. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Automatically update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
