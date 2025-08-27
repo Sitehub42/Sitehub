@@ -3,148 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Delicious home-based food from NiceTouchCooking, bringing culinary delights to your table.">
-    <meta name="keywords" content="home-based food, NiceTouchCooking, homemade meals, catering, meal prep, baked goods, Claremont food">
-    <meta name="author" content="NiceTouchCooking">
-
     <title>Nice Touch Cooking</title>
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.nicetouchcooking.com/">
+    <meta name="description" content="Nice Touch Cooking offers delicious home-cooked meals, catering, and baked goods in Claremont. Experience the taste of homemade goodness with fresh, quality ingredients for every occasion.">
+    
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Nice Touch Cooking">
-    <meta property="og:description" content="Delicious home-based food from NiceTouchCooking, bringing culinary delights to your table.">
-    <meta property="og:image" content="https://www.nicetouchcooking.com/hero-800x400.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.nicetouchcooking.com/">
-    <meta property="twitter:title" content="Nice Touch Cooking">
-    <meta property="twitter:description" content="Delicious home-based food from NiceTouchCooking, bringing culinary delights to your table.">
-    <meta property="twitter:image" content="https://www.nicetouchcooking.com/hero-800x400.png">
-
+    <meta property="og:description" content="Nice Touch Cooking offers delicious home-cooked meals, catering, and baked goods in Claremont. Experience the taste of homemade goodness with fresh, quality ingredients for every occasion.">
+    <meta property="og:image" content="https://www.nicetouchcooking.com/hero-800x400.png"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://www.nicetouchcooking.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="navbar">
         <div class="container">
-            <a href="#" class="logo" aria-label="NiceTouchCooking Home">
+            <a href="#hero" class="logo" aria-label="NiceTouchCooking Home">
                 <img src="logo.png" alt="NiceTouchCooking Logo" width="50" height="50">
-                NiceTouchCooking
+                <span>NiceTouchCooking</span>
             </a>
-            <nav class="nav" aria-label="Main Navigation">
-                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact-form" class="nav-link">Form</a></li>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Offerings</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form">Order Now</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-            <div class="hero-content">
-                <h1 id="hero-title">NiceTouchCooking</h1>
-                <p class="tagline">Home-based culinary delights.</p>
-                <a href="#services" class="btn">Explore Our Services</a>
+        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>NiceTouchCooking</h1>
+                <p>Bringing Home-Cooked Goodness to Your Table</p>
             </div>
         </section>
 
-        <section id="about" class="about container" aria-labelledby="about-title">
-            <h2 id="about-title" class="section-title">About NiceTouchCooking</h2>
-            <p class="mission">Our Mission: As a home-based food business, NiceTouchCooking is dedicated to bringing the authentic taste of homemade meals to your table.</p>
-            <p class="core-business">NiceTouchCooking specializes in crafting delicious, wholesome meals right from our home kitchen. We bring the warmth and taste of homemade cooking directly to you, using fresh ingredients and a passion for flavor. Every dish is prepared with care, ensuring a delightful culinary experience that feels just like home.</p>
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>NiceTouchCooking is a home-based food business dedicated to bringing the warmth and deliciousness of homemade meals, catering, and baked goods directly to your table. We focus on using fresh, quality ingredients to create memorable culinary experiences for our community, ensuring every bite feels like a touch of home.</p>
+                <p>Our passion lies in crafting dishes with care and attention, just like you would in your own kitchen. We pride ourselves on customer satisfaction and tailor our offerings to meet your needs, making every meal special.</p>
+            </div>
         </section>
 
-        <section id="services" class="services" aria-labelledby="services-title">
+        <section id="services" class="services-section section-padding bg-light">
             <div class="container">
-                <h2 id="services-title" class="section-title">Our Services</h2>
+                <h2>Our Offerings</h2>
                 <div class="service-grid">
                     <div class="service-item">
-                        <img src="service-1-150x150.png" alt="Custom Meal Preparation icon" width="150" height="150">
-                        <h3>Custom Meal Preparation</h3>
-                        <p>Enjoy healthy and delicious meals tailored to your preferences, prepared fresh and ready to eat or heat.</p>
+                        <i class="fas fa-utensils service-icon" aria-hidden="true"></i>
+                        <h3>Daily Meals</h3>
+                        <p>Enjoy freshly prepared, balanced meals perfect for your daily lunch or dinner. Rotating menus ensure variety and deliciousness.</p>
                     </div>
                     <div class="service-item">
-                        <img src="service-2-150x150.png" alt="Catering for Small Events icon" width="150" height="150">
-                        <h3>Catering for Small Events</h3>
-                        <p>Delight your guests with homemade dishes for intimate gatherings, birthdays, or special occasions.</p>
+                        <i class="fas fa-birthday-cake service-icon" aria-hidden="true"></i>
+                        <h3>Catering Services</h3>
+                        <p>From small family gatherings to larger events, we provide delicious catering options tailored to your taste and dietary preferences.</p>
                     </div>
                     <div class="service-item">
-                        <img src="service-3-150x150.png" alt="Freshly Baked Goods icon" width="150" height="150">
-                        <h3>Freshly Baked Goods</h3>
-                        <p>Indulge in a selection of homemade cakes, cookies, and pastries, perfect for any sweet craving.</p>
+                        <i class="fas fa-cookie-bite service-icon" aria-hidden="true"></i>
+                        <h3>Baked Goods</h3>
+                        <p>Indulge in our selection of homemade cakes, cookies, and pastries, baked with love and the finest ingredients.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact" aria-labelledby="contact-title">
+        <section id="contact" class="contact-section section-padding">
             <div class="container">
-                <h2 id="contact-title" class="section-title">Get in Touch</h2>
+                <h2>Contact Us</h2>
                 <div class="contact-info">
-                    <p><strong>Address:</strong> 39 Durham street Claremont</p>
-                    <p><strong>Email:</strong> <a href="mailto:cookwithjanis@gmail.com">cookwithjanis@gmail.com</a></p>
-                    <div class="social-media">
-                        <a href="https://facebook.com/NiceTouchCooking" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-                        <a href="https://instagram.com/NiceTouchCooking" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram"></i> Instagram</a>
-                    </div>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 39 Durham street claremont</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:cookwithjanis@gmail.com">cookwithjanis@gmail.com</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+">Contact for phone number</a></p> <!-- Placeholder for phone number link if available -->
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/your-page" target="_blank" rel="noopener noreferrer" aria-label="NiceTouchCooking on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/your-page" target="_blank" rel="noopener noreferrer" aria-label="NiceTouchCooking on Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="contact-form" class="contact-form" aria-labelledby="form-title">
+        <section id="contact-form" class="contact-form-section section-padding bg-light">
             <div class="container">
-                <h2 id="form-title" class="section-title">Send Us a Message</h2>
+                <h2>Send Us a Message</h2>
                 <form action="mailto:cookwithjanis@gmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-required="true">
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> NiceTouchCooking. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> NiceTouchCooking. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a>.</p>
         </div>
     </footer>
 
     <script>
-        // Automatically update the current year in the footer
+        // Auto-update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.nav-menu a');
 
         hamburger.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            document.body.classList.toggle('no-scroll'); // Prevent scrolling when mobile menu is open
         });
 
         // Close mobile menu when a link is clicked
@@ -152,10 +153,18 @@
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('no-scroll');
             });
         });
+
+        // Close mobile menu if clicked outside
+        document.addEventListener('click', (event) => {
+            if (!navMenu.contains(event.target) && !hamburger.contains(event.target) && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('no-scroll');
+            }
+        });
     </script>
-    <!-- Font Awesome for social media icons - Replace YOUR_FONT_AWESOME_KIT_CODE with your actual kit code -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
