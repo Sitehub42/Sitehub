@@ -4,141 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage Sale</title>
-    <meta name="description" content="Browse a curated collection of pre-loved plates, shelves, and various household treasures at GarageSale. Find unique items for your home at great prices!">
+    <meta name="description" content="Discover unique plates, shelves, and household items at GarageSale. Find your next treasure with us!">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.garage-sale.com/">
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Garage Sale">
-    <meta property="og:description" content="Browse a curated collection of pre-loved plates, shelves, and various household treasures at GarageSale. Find unique items for your home at great prices!">
-    <meta property="og:image" content="https://www.garage-sale.com/hero-800x400.png">
+    <meta property="og:description" content="Discover unique plates, shelves, and household items at GarageSale. Find your next treasure with us!">
+    <meta property="og:image" content="https://www.garagesale.com/hero-800x400.png"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://www.garagesale.com">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.garage-sale.com/">
-    <meta property="twitter:title" content="Garage Sale">
-    <meta property="twitter:description" content="Browse a curated collection of pre-loved plates, shelves, and various household treasures at GarageSale. Find unique items for your home at great prices!">
-    <meta property="twitter:image" content="https://www.garage-sale.com/hero-800x400.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
             <div class="container">
-                <a href="#hero" class="logo" aria-label="GarageSale Home"><img src="logo.png" alt="GarageSale Logo" width="50" height="50"> GarageSale</a>
-                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <a href="#hero" class="logo-link">
+                    <img src="logo.png" alt="GarageSale Logo" class="logo">
+                    <span>GarageSale</span>
+                </a>
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav-links">
                     <li><a href="#about" aria-label="About Us section">About Us</a></li>
-                    <li><a href="#items" aria-label="Our Items section">Items</a></li>
-                    <li><a href="#contact" aria-label="Contact Us section">Contact</a></li>
-                    <li><a href="#form" aria-label="Contact Form section">Form</a></li>
+                    <li><a href="#services" aria-label="Our Products section">Products</a></li>
+                    <li><a href="#contact" aria-label="Contact Information section">Contact</a></li>
+                    <li><a href="#form" class="btn nav-btn" aria-label="Contact Form section">Enquire</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="hero-section">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" role="banner">
+        <div class="hero-overlay"></div>
+        <div class="container">
             <div class="hero-content">
                 <h1>GarageSale</h1>
-                <p>Discover Your Next Treasure!</p>
-                <a href="#items" class="button primary-button">See Our Items</a>
+                <p class="tagline">Your treasure hunt for household delights!</p>
+                <a href="#form" class="btn hero-btn" aria-label="Go to contact form">Find Your Treasure</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="section-padding">
-            <div class="container text-center">
-                <h2>About Us</h2>
-                <p class="lead-text">Our mission is to offer a unique opportunity to find pre-loved items that can bring new life and character to your home.</p>
-                <p>At GarageSale, we believe in the charm and value of second-hand goods. We're hosting a garage sale dedicated to selling a variety of household items, including beautiful plates, practical shelves, and other delightful treasures. It's an excellent way to find affordable, unique pieces while supporting sustainable living. Explore our collection and uncover something special!</p>
-            </div>
-        </section>
+    <!-- About Us Section -->
+    <section id="about" class="about-section" role="region" aria-labelledby="about-heading">
+        <div class="container">
+            <h2 id="about-heading">About Us</h2>
+            <p class="section-intro">At GarageSale, we believe in giving beautiful household items a second life. Our mission is to provide a curated selection of plates, shelves, and other household essentials, making quality accessible and sustainable.</p>
+            <p>We specialize in sourcing unique and durable items, ensuring that every piece tells a story and finds a new home where it will be cherished. Our passion for discovery drives us to constantly refresh our inventory, offering a diverse range of styles and functionalities. We pride ourselves on creating a seamless and enjoyable experience for our customers, helping you effortlessly find those perfect additions to your home.</p>
+            <p>We emphasize client satisfaction and operate with an agile approach to inventory management, ensuring a diverse and constantly evolving collection tailored to your needs.</p>
+        </div>
+    </section>
 
-        <section id="items" class="section-padding bg-light">
-            <div class="container">
-                <h2 class="text-center">Our Items</h2>
-                <p class="text-center lead-text">Browse a diverse range of household goods, from decorative pieces to everyday essentials.</p>
-                <div class="item-grid">
-                    <div class="item-card">
-                        <img src="service-1-150x150.png" alt="Collection of Plates and Dishware" width="150" height="150">
-                        <h3>Plates & Dishware</h3>
-                        <p>From classic dinner sets to unique decorative plates, find the perfect additions for your kitchen and dining.</p>
-                    </div>
-                    <div class="item-card">
-                        <img src="service-2-150x150.png" alt="Various Shelves and Storage Units" width="150" height="150">
-                        <h3>Shelving & Storage</h3>
-                        <p>Organize your space with our selection of sturdy shelves and practical storage solutions for every room.</p>
-                    </div>
-                    <div class="item-card">
-                        <img src="service-3-150x150.png" alt="Assorted Home Decor Items" width="150" height="150">
-                        <h3>Home Decor & More</h3>
-                        <p>Explore a variety of household items, including decorative pieces, small appliances, and other essentials to complete your home.</p>
-                    </div>
+    <!-- Services/Products Section -->
+    <section id="services" class="services-section" role="region" aria-labelledby="services-heading">
+        <div class="container">
+            <h2 id="services-heading">Our Products</h2>
+            <p class="section-intro">Explore our unique collection of household items, perfect for adding character and functionality to your space.</p>
+            <div class="service-grid">
+                <div class="service-item" role="listitem">
+                    <img src="service-1-150x150.png" alt="Collection of Plates" class="service-icon">
+                    <h3>Plates & Dinnerware</h3>
+                    <p>Discover a variety of plates, bowls, and complete dinner sets. From vintage charm to modern elegance, find the perfect pieces for your table.</p>
+                </div>
+                <div class="service-item" role="listitem">
+                    <img src="service-2-150x150.png" alt="Assortment of Shelves" class="service-icon">
+                    <h3>Shelves & Storage</h3>
+                    <p>Organize your home with our selection of shelves and storage solutions. Whether for books, decor, or practical storage, we have options to fit every need.</p>
+                </div>
+                <div class="service-item" role="listitem">
+                    <img src="service-3-150x150.png" alt="Various Decorative Items" class="service-icon">
+                    <h3>Decorative Items</h3>
+                    <p>Adorn your living spaces with our unique decorative items. Vases, figurines, art pieces, and more to add a personal touch to any room.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section-padding">
-            <div class="container text-center">
-                <h2>Contact Us</h2>
-                <p class="lead-text">Have questions or need directions? Reach out to us!</p>
-                <div class="contact-info">
-                    <p><strong>Address:</strong> 23 the cheviots</p>
-                    <p><strong>Email:</strong> <a href="mailto:ddziegleryt@gmail.com" aria-label="Email GarageSale">ddziegleryt@gmail.com</a></p>
+    <!-- Contact Information Section -->
+    <section id="contact" class="contact-info-section" role="region" aria-labelledby="contact-info-heading">
+        <div class="container">
+            <h2 id="contact-info-heading">Get in Touch</h2>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 23 The Cheviots</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:ddziegleryt@gmail.com">ddziegleryt@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Pinterest" class="social-icon"><i class="fab fa-pinterest"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="form" class="section-padding bg-light">
-            <div class="container">
-                <h2 class="text-center">Send Us a Message</h2>
-                <form class="contact-form" action="mailto:ddziegleryt@gmail.com" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                    </div>
-                    <button type="submit" class="button primary-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <!-- Contact Form Section -->
+    <section id="form" class="contact-form-section" role="region" aria-labelledby="form-heading">
+        <div class="container">
+            <h2 id="form-heading">Send Us a Message</h2>
+            <form action="mailto:ddziegleryt@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="Subject" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="container">
             <p>&copy; <span id="current-year"></span> GarageSale. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Automatically update current year in footer
+        // Dynamic current year for footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
+        const navbar = document.querySelector('.navbar');
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+            const expanded = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
         });
 
         // Close mobile nav when a link is clicked
@@ -148,6 +164,16 @@
                 hamburger.setAttribute('aria-expanded', 'false');
             });
         });
+
+        // Sticky header functionality
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
     </script>
 </body>
 </html>
