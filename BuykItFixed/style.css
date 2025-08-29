@@ -265,12 +265,18 @@ a:hover {
 }
 
 /* Contact Section */
+
+.contact-section .container {
+    text-align: center;
+}
+
 .contact-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .contact-details p {
