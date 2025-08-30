@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sitehub.co.za/banana-hammocks</loc>
+    <loc>https://sitehub.co.za/keyboard-warrior</loc>
     <lastmod>2023-10-27T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/keyboard-warrior#about</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/keyboard-warrior#services</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/keyboard-warrior#contact</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/keyboard-warrior#form</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
