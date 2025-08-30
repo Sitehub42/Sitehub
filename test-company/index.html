@@ -3,165 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Website Title]</title>
-    <meta name="description" content="[A short, keyword-rich description of your website]">
-    <meta name="author" content="[Your Company Name]">
+    <title>test-company - Innovating Solutions</title>
+    <meta name="description" content="test-company specializes in software development, mobile apps, and IT consulting, empowering businesses with cutting-edge technology.">
+    <meta name="keywords" content="software development, mobile apps, IT consulting, web development, cloud solutions, technology">
+    <meta name="author" content="Example Company">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="test-company - Innovating Solutions">
+    <meta property="og:description" content="test-company specializes in software development, mobile apps, and IT consulting, empowering businesses with cutting-edge technology.">
+    <meta property="og:image" content="https://example.com/social-share.jpg"> <!-- Replace with a relevant image -->
     <meta property="og:url" content="https://sitehub.co.za/test-company">
-    <meta property="og:title" content="[Your Website Title]">
-    <meta property="og:description" content="[A short, keyword-rich description of your website]">
-    <meta property="og:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
+    <meta property="og:type" content="website">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sitehub.co.za/test-company">
-    <meta property="twitter:title" content="[Your Website Title]">
-    <meta property="twitter:description" content="[A short, keyword-rich description of your website]">
-    <meta property="twitter:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
+    <!-- Favicon (Optional, uncomment and replace if you have one) -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header" role="banner">
         <div class="container nav-container">
-            <a href="#hero" class="logo" aria-label="[Your Company Name] Logo">
-                <img src="logo.png" alt="[Your Company Name] Logo" width="50" height="50">
+            <a href="#hero" class="logo" aria-label="test-company logo">
+                <img src="logo.png" alt="test-company Logo" width="50" height="50">
+                <span class="company-name-text">test-company</span>
             </a>
             <nav class="main-nav" aria-label="Main navigation">
-                <button class="hamburger" aria-expanded="false" aria-controls="main-menu">
-                    <span class="sr-only">Open main menu</span>
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="main-menu" role="menu">
-                    <li role="none"><a href="#about" role="menuitem">About Us</a></li>
-                    <li role="none"><a href="#services" role="menuitem">Services/Products</a></li>
-                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-                    <li role="none"><a href="#contact-form" role="menuitem" class="btn btn-primary">Form</a></li>
+                <ul class="desktop-nav">
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services/Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form" class="button primary-button nav-button">Get in Touch</a></li>
                 </ul>
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </nav>
+        </div>
+        <div class="mobile-menu" aria-hidden="true">
+            <ul role="menu">
+                <li role="none"><a href="#about-us" role="menuitem">About Us</a></li>
+                <li role="none"><a href="#services" role="menuitem">Services/Products</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                <li role="none"><a href="#contact-form" role="menuitem" class="button primary-button">Get in Touch</a></li>
+            </ul>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero" role="region" aria-label="Hero Section">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="fade-in">[Your Company Name]</h1>
-                <p class="fade-in">[Your Catchy Tagline - e.g., Innovating Solutions for a Brighter Future]</p>
-                <a href="#contact-form" class="btn btn-secondary fade-in">Get Started Today</a>
+                <h1>Example Company</h1>
+                <p class="tagline">Innovating Solutions for Tomorrow</p>
+                <a href="#contact-form" class="button primary-button hero-button">Start Your Project</a>
             </div>
         </section>
 
-        <section id="about" class="about-section section-padding" aria-labelledby="about-heading">
+        <section id="about-us" class="section-padding" role="region" aria-labelledby="about-us-heading">
             <div class="container">
-                <h2 id="about-heading">About Us</h2>
-                <p class="lead">Our mission at [Your Company Name] is to [Your Company Mission Statement - e.g., empower businesses with cutting-edge technology and exceptional service].</p>
-                <p>With a deep-rooted expertise in [Your Core Business/Industry - e.g., web development and digital marketing], we are dedicated to crafting solutions that drive real results. We pride ourselves on a client-centric approach, ensuring every project is tailored to meet specific needs and exceed expectations. Our agile methodologies allow us to adapt, innovate, and deliver successful outcomes efficiently, ensuring your success is at the heart of everything we do.</p>
+                <h2 id="about-us-heading">About Us</h2>
+                <p class="section-subtitle">Our Mission to Empower Your Business</p>
+                <div class="about-content">
+                    <p>Our mission is to empower businesses with cutting-edge technology solutions that drive growth, efficiency, and innovation. We are committed to delivering exceptional quality and building lasting partnerships.</p>
+                    <p>At Example Company, we are experts in Software Development & Consulting. We leverage agile methodologies and a client-centric approach to ensure that every solution we deliver not only meets but exceeds expectations. Our focus is on your success, transforming complex challenges into seamless, high-performing digital experiences.</p>
+                    <p>We pride ourselves on our collaborative spirit and our dedication to continuous learning, ensuring that we always bring the latest technologies and best practices to your projects. Partner with us to achieve your digital ambitions.</p>
+                </div>
             </div>
         </section>
 
-        <section id="services" class="services-section section-padding bg-light" aria-labelledby="services-heading">
+        <section id="services" class="section-padding bg-light" role="region" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-heading">Our Services/Products</h2>
-                <p class="lead">We offer a comprehensive suite of services designed to help your business thrive in today's dynamic market. From initial concept to final deployment, our experts are here to guide you.</p>
+                <h2 id="services-heading">Our Services & Products</h2>
+                <p class="section-subtitle">Comprehensive Solutions for Your Digital Needs</p>
+                <p>Example Company offers a range of professional services designed to elevate your business in the digital landscape.</p>
                 <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-desktop icon"></i>
-                        <h3>[Key Service/Product 1 Name]</h3>
-                        <p>Briefly describe [Key Service/Product 1], highlighting its benefits and what it offers your clients.</p>
+                    <div class="service-item">
+                        <i class="fas fa-globe fa-3x"></i>
+                        <h3>Web Development</h3>
+                        <p>Crafting responsive, high-performance websites tailored to your business goals.</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-mobile-alt icon"></i>
-                        <h3>[Key Service/Product 2 Name]</h3>
-                        <p>Briefly describe [Key Service/Product 2], highlighting its benefits and what it offers your clients.</p>
+                    <div class="service-item">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <h3>Mobile App Development</h3>
+                        <p>Building intuitive and engaging mobile applications for iOS and Android platforms.</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-chart-line icon"></i>
-                        <h3>[Key Service/Product 3 Name]</h3>
-                        <p>Briefly describe [Key Service/Product 3], highlighting its benefits and what it offers your clients.</p>
+                    <div class="service-item">
+                        <i class="fas fa-cloud fa-3x"></i>
+                        <h3>Cloud Solutions</h3>
+                        <p>Implementing scalable and secure cloud infrastructure to optimize your operations.</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fas fa-tools icon"></i>
-                        <h3>[Key Service/Product 4 Name]</h3>
-                        <p>Briefly describe [Key Service/Product 4], highlighting its benefits and what it offers your clients.</p>
+                    <div class="service-item">
+                        <i class="fas fa-lightbulb fa-3x"></i>
+                        <h3>IT Consulting</h3>
+                        <p>Providing expert advice and strategic planning to navigate your technology challenges.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Contact Us</h2>
-                <p class="lead">We'd love to hear from you! Reach out to us through the details below or fill out the form.</p>
+        <section id="contact" class="section-padding" role="region" aria-labelledby="contact-heading">
+            <div class="container contact-grid">
                 <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> [Your Company Full Address - e.g., 123 Business St, City, Country, 12345]</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+                    <h2 id="contact-heading">Contact Us</h2>
+                    <p class="section-subtitle">Reach out to us for any inquiries or collaborations.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Tech Avenue, Innovation City, 9001</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
                     <div class="social-media">
-                        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://facebook.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com/company/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact-form" class="contact-form-section section-padding bg-light" aria-labelledby="form-heading">
-            <div class="container">
-                <h2 id="form-heading">Get in Touch</h2>
-                <form action="mailto:your_email@example.com" method="post" enctype="text/plain" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div id="contact-form" class="contact-form-section">
+                    <h3>Send us a Message</h3>
+                    <form action="mailto:info@example.com" method="post" enctype="text/plain" aria-label="Contact Form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="button primary-button">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> [Your Company Name]. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Example Company. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Auto update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
         // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelectorAll('.mobile-menu a');
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-            hamburger.setAttribute('aria-expanded', !isExpanded);
-        });
-
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('.nav-menu a').forEach(item => {
-            item.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                this.classList.toggle('is-active');
+                const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                this.setAttribute('aria-expanded', !expanded);
+                mobileMenu.setAttribute('aria-hidden', expanded);
             });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    hamburger.classList.remove('is-active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    mobileMenu.setAttribute('aria-hidden', 'true');
+                });
+            });
+
+            // Set current year for footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
