@@ -3,195 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Company - Technology Solutions</title>
-    <meta name="description" content="Test Company offers innovative technology solutions including web and mobile app development, cloud services, and digital marketing. Empowering businesses for the future.">
-    
+    <title>[Your Website Title]</title>
+    <meta name="description" content="[A short, keyword-rich description of your website]">
+    <meta name="author" content="[Your Company Name]">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/test-company">
-    <meta property="og:title" content="Test Company - Technology Solutions">
-    <meta property="og:description" content="Test Company offers innovative technology solutions including web and mobile app development, cloud services, and digital marketing. Empowering businesses for the future.">
+    <meta property="og:title" content="[Your Website Title]">
+    <meta property="og:description" content="[A short, keyword-rich description of your website]">
     <meta property="og:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sitehub.co.za/test-company">
-    <meta property="twitter:title" content="Test Company - Technology Solutions">
-    <meta property="twitter:description" content="Test Company offers innovative technology solutions including web and mobile app development, cloud services, and digital marketing. Empowering businesses for the future.">
+    <meta property="twitter:title" content="[Your Website Title]">
+    <meta property="twitter:description" content="[A short, keyword-rich description of your website]">
     <meta property="twitter:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@40400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header and Navigation -->
     <header class="main-header">
-        <div class="container navigation-container">
-            <a href="#hero" class="logo" aria-label="Test Company home">
-                <img src="logo.png" alt="Test Company Logo">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" aria-label="[Your Company Name] Logo">
+                <img src="logo.png" alt="[Your Company Name] Logo" width="50" height="50">
             </a>
             <nav class="main-nav" aria-label="Main navigation">
-                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <button class="hamburger" aria-expanded="false" aria-controls="main-menu">
+                    <span class="sr-only">Open main menu</span>
+                    <i class="fas fa-bars"></i>
                 </button>
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services/Products</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#form" class="nav-link button primary-button">Form</a></li>
+                <ul class="nav-menu" id="main-menu" role="menu">
+                    <li role="none"><a href="#about" role="menuitem">About Us</a></li>
+                    <li role="none"><a href="#services" role="menuitem">Services/Products</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                    <li role="none"><a href="#contact-form" role="menuitem" class="btn btn-primary">Form</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner" aria-label="Test Company homepage banner">
+        <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="hero-title">Test Company</h1>
-                <p class="hero-tagline">Innovating Solutions for a Brighter Future</p>
-                <a href="#form" class="button primary-button hero-button">Get Started Today</a>
+                <h1 class="fade-in">[Your Company Name]</h1>
+                <p class="fade-in">[Your Catchy Tagline - e.g., Innovating Solutions for a Brighter Future]</p>
+                <a href="#contact-form" class="btn btn-secondary fade-in">Get Started Today</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section container" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Test Company</h2>
-            <p class="section-description">
-                Our mission is to empower businesses with cutting-edge technology solutions that drive growth and efficiency. Test Company is a leader in Technology Solutions, delivering unparalleled expertise and innovative approaches to every project. We pride ourselves on fostering client success through collaborative partnerships and agile methodologies, ensuring tailor-made solutions that exceed expectations.
-            </p>
-            <div class="about-grid">
-                <div class="about-item">
-                    <i class="fas fa-lightbulb icon"></i>
-                    <h3>Innovation Driven</h3>
-                    <p>Constantly seeking new ways to solve complex problems and provide modern solutions.</p>
-                </div>
-                <div class="about-item">
-                    <i class="fas fa-handshake icon"></i>
-                    <h3>Client Success</h3>
-                    <p>Our success is measured by the tangible results and growth our clients achieve.</p>
-                </div>
-                <div class="about-item">
-                    <i class="fas fa-rocket icon"></i>
-                    <h3>Agile Methodologies</h3>
-                    <p>Flexible and iterative development processes ensure adaptability and speed.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services/Products Section -->
-        <section id="services" class="services-section" aria-labelledby="services-heading">
+        <section id="about" class="about-section section-padding" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="services-heading">Our Services</h2>
-                <p class="section-description">
-                    Test Company offers a comprehensive suite of technology services designed to propel your business forward. We provide end-to-end solutions that cover your digital needs.
-                </p>
+                <h2 id="about-heading">About Us</h2>
+                <p class="lead">Our mission at [Your Company Name] is to [Your Company Mission Statement - e.g., empower businesses with cutting-edge technology and exceptional service].</p>
+                <p>With a deep-rooted expertise in [Your Core Business/Industry - e.g., web development and digital marketing], we are dedicated to crafting solutions that drive real results. We pride ourselves on a client-centric approach, ensuring every project is tailored to meet specific needs and exceed expectations. Our agile methodologies allow us to adapt, innovate, and deliver successful outcomes efficiently, ensuring your success is at the heart of everything we do.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section section-padding bg-light" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services/Products</h2>
+                <p class="lead">We offer a comprehensive suite of services designed to help your business thrive in today's dynamic market. From initial concept to final deployment, our experts are here to guide you.</p>
                 <div class="services-grid">
                     <div class="service-card">
-                        <i class="fas fa-globe icon"></i>
-                        <h3>Web Development</h3>
-                        <p>Crafting responsive, high-performance websites tailored to your business needs.</p>
+                        <i class="fas fa-desktop icon"></i>
+                        <h3>[Key Service/Product 1 Name]</h3>
+                        <p>Briefly describe [Key Service/Product 1], highlighting its benefits and what it offers your clients.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-mobile-alt icon"></i>
-                        <h3>Mobile App Development</h3>
-                        <p>Building intuitive and engaging mobile applications for iOS and Android platforms.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-cloud icon"></i>
-                        <h3>Cloud Solutions</h3>
-                        <p>Scalable and secure cloud infrastructure and management services.</p>
+                        <h3>[Key Service/Product 2 Name]</h3>
+                        <p>Briefly describe [Key Service/Product 2], highlighting its benefits and what it offers your clients.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-chart-line icon"></i>
-                        <h3>Digital Marketing</h3>
-                        <p>Strategies to boost your online presence and reach your target audience effectively.</p>
+                        <h3>[Key Service/Product 3 Name]</h3>
+                        <p>Briefly describe [Key Service/Product 3], highlighting its benefits and what it offers your clients.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-tools icon"></i>
+                        <h3>[Key Service/Product 4 Name]</h3>
+                        <p>Briefly describe [Key Service/Product 4], highlighting its benefits and what it offers your clients.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section container" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get in Touch</h2>
-            <p class="section-description">We'd love to hear from you. Reach out to us via email, phone, or connect on social media.</p>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt icon"></i> 123 Tech Lane, Innovation City, 9000</p>
-                <p><i class="fas fa-envelope icon"></i> <a href="mailto:info@testcompany.com">info@testcompany.com</a></p>
-                <div class="social-links" role="contentinfo" aria-label="Social Media Links">
-                    <a href="https://facebook.com/testcompany" target="_blank" rel="noopener noreferrer" aria-label="Test Company on Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/testcompany" target="_blank" rel="noopener noreferrer" aria-label="Test Company on Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com/company/testcompany" target="_blank" rel="noopener noreferrer" aria-label="Test Company on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section id="form" class="contact-form-section" aria-labelledby="form-heading">
+        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="form-heading">Send Us a Message</h2>
-                <form action="mailto:info@testcompany.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 id="contact-heading">Contact Us</h2>
+                <p class="lead">We'd love to hear from you! Reach out to us through the details below or fill out the form.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> [Your Company Full Address - e.g., 123 Business St, City, Country, 12345]</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+                    <div class="social-media">
+                        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="contact-form-section section-padding bg-light" aria-labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading">Get in Touch</h2>
+                <form action="mailto:your_email@example.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="Name" placeholder="Your Name" required aria-required="true">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="Email" placeholder="Your Email" required aria-required="true">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="Subject" placeholder="Subject of your message" required aria-required="true">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="Message" rows="6" placeholder="Your Message" required aria-required="true"></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit" class="button primary-button">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="main-footer" role="contentinfo">
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Test Company. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> [Your Company Name]. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Auto-update current year in footer
+        // Auto update copyright year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
-        const navList = document.querySelector('.nav-list');
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navMenu = document.querySelector('.nav-menu');
 
         hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navList.classList.contains('active'));
+            navMenu.classList.toggle('active');
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !isExpanded);
         });
 
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navList.classList.remove('active');
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                navMenu.classList.remove('active');
                 hamburger.setAttribute('aria-expanded', 'false');
             });
         });
