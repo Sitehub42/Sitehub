@@ -3,153 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LensCrafters Photography - Capturing Your Special Moments</title>
-    <meta name="description" content="Professional photography services in Photo City. Specializing in events, portraits, commercial shoots, and stunning landscape prints. Let us capture your memories.">
-
+    <title>Photographer Portfolio - Capture Moments Photography</title>
+    <meta name="description" content="Professional photography services including wedding, portrait, and event photography. Capture your precious memories with Capture Moments Photography.">
+    
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="LensCrafters Photography - Capturing Your Special Moments">
-    <meta property="og:description" content="Professional photography services in Photo City. Specializing in events, portraits, commercial shoots, and stunning landscape prints. Let us capture your memories.">
-    <meta property="og:image" content="https://sitehub.co.za/photographer/hero-800x400.png"> <!-- Replace with actual image URL -->
-    <meta property="og:url" content="https://sitehub.co.za/photographer">
+    <meta property="og:title" content="Photographer Portfolio - Capture Moments Photography">
+    <meta property="og:description" content="Professional photography services including wedding, portrait, and event photography. Capture your precious memories with Capture Moments Photography.">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="LensCrafters Photography">
+    <meta property="og:url" content="https://sitehub.co.za/photographer">
+    <meta property="og:image" content="https://sitehub.co.za/photographer/hero-800x400.png"> <!-- Placeholder image URL -->
+    <meta property="og:image:alt" content="Hero image for Capture Moments Photography">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon (placeholder) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-
     <!-- Header and Navigation -->
     <header class="main-header">
-        <div class="container nav-container">
-            <a href="#hero" class="logo-link" aria-label="LensCrafters Photography home">
-                <img src="logo.png" alt="LensCrafters Photography Logo" class="logo">
-                <span class="company-name-desktop">LensCrafters Photography</span>
-            </a>
+        <div class="container">
+            <div class="logo">
+                <a href="#hero" aria-label="Capture Moments Photography home">
+                    <img src="logo.png" alt="Capture Moments Photography Logo">
+                    <span>Capture Moments Photography</span>
+                </a>
+            </div>
             <nav class="desktop-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary">Book a Session</a></li>
+                    <li><a href="#contact-form">Form</a></li>
                 </ul>
             </nav>
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
+            <nav class="mobile-nav" aria-label="Mobile navigation">
+                <ul>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form">Form</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="mobile-nav" aria-label="Mobile navigation">
-            <ul>
-                <li><a href="#about" class="mobile-nav-link">About Us</a></li>
-                <li><a href="#services" class="mobile-nav-link">Services</a></li>
-                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-                <li><a href="#form" class="mobile-nav-link btn btn-primary">Book a Session</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');">
+        <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1 class="hero-title">LensCrafters Photography</h1>
-                <p class="hero-tagline">Capturing Moments, Creating Memories.</p>
-                <a href="#form" class="btn btn-secondary btn-hero">Get Started</a>
+            <div class="container">
+                <h1>Capture Moments Photography</h1>
+                <p class="tagline">Capturing Your Precious Memories, One Frame at a Time</p>
+                <a href="#contact-form" class="btn btn-primary" aria-label="Contact us for a photography session">Book Your Session</a>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2 class="section-title">About Us</h2>
-                <p>Our mission is to provide high-quality, memorable photographic services that perfectly capture the essence of every moment, person, and event, preserving them for a lifetime. We strive for artistic excellence and client satisfaction.</p>
-                <p>At LensCrafters Photography, we specialize in Professional Photography Services, bringing years of experience and a keen eye for detail to every project. We believe in working closely with our clients to understand their vision, ensuring every shot tells their unique story. Our agile methodologies allow us to adapt to diverse client needs, delivering exceptional results promptly and professionally. Your success and satisfaction are at the heart of everything we do.</p>
+        <section id="about-us" class="about-us-section container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>At Capture Moments Photography, our mission is to artfully capture and preserve life's most cherished moments, providing clients with stunning, high-quality images and an unforgettable experience.</p>
+                <p>We specialize in Photography Services, bringing a blend of artistic vision and technical expertise to every project. Our approach emphasizes collaboration and clear communication, ensuring your unique story is told through beautiful, timeless photographs.</p>
+                <p>Client success is at the heart of what we do. We pride ourselves on our agile methodologies, adapting to your specific needs and delivering exceptional results that exceed expectations. From the initial consultation to the final delivery, we are committed to making your photography experience seamless and enjoyable.</p>
             </div>
         </section>
 
         <!-- Services/Products Section -->
-        <section id="services" class="services-section section-padding">
+        <section id="services" class="services-section">
             <div class="container">
                 <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">We offer a diverse range of photography services tailored to meet your unique needs.</p>
+                <p class="section-subtitle">We offer a range of professional photography services tailored to capture your special moments and professional needs.</p>
                 <div class="service-grid">
-                    <div class="service-item">
-                        <i class="fas fa-camera fa-3x"></i>
-                        <h3>Event Photography</h3>
-                        <p>Capturing the vibrancy and emotions of your special events, from corporate gatherings to private celebrations.</p>
+                    <div class="service-item" role="article" aria-labelledby="service-wedding">
+                        <i class="fas fa-ring service-icon"></i>
+                        <h3 id="service-wedding">Wedding Photography</h3>
+                        <p>Document your special day with elegant and heartfelt photographs, preserving every precious moment from start to finish.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-user-tie fa-3x"></i>
-                        <h3>Portrait Sessions</h3>
-                        <p>Professional headshots, family portraits, and personal branding photos that reflect your true self.</p>
+                    <div class="service-item" role="article" aria-labelledby="service-portrait">
+                        <i class="fas fa-user-circle service-icon"></i>
+                        <h3 id="service-portrait">Portrait Photography</h3>
+                        <p>Create stunning individual, family, or professional portraits that capture personality and emotion in every shot.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-building fa-3x"></i>
-                        <h3>Commercial Photography</h3>
-                        <p>High-quality images for businesses, including product photography, architectural shoots, and marketing campaigns.</p>
+                    <div class="service-item" role="article" aria-labelledby="service-event">
+                        <i class="fas fa-calendar-alt service-icon"></i>
+                        <h3 id="service-event">Event Photography</h3>
+                        <p>From corporate gatherings to private celebrations, we capture the essence and energy of your events discreetly and professionally.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-mountain fa-3x"></i>
-                        <h3>Landscape Prints</h3>
-                        <p>Stunning, high-resolution prints of breathtaking landscapes, perfect for home or office decor.</p>
+                    <div class="service-item" role="article" aria-labelledby="service-commercial">
+                        <i class="fas fa-building service-icon"></i>
+                        <h3 id="service-commercial">Commercial Photography</h3>
+                        <p>High-quality imagery for businesses, products, and branding, designed to enhance your marketing and online presence.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-ring fa-3x"></i>
-                        <h3>Wedding Photography</h3>
-                        <p>Beautifully documenting your most precious day, creating timeless memories of your wedding celebration.</p>
+                    <div class="service-item" role="article" aria-labelledby="service-editing">
+                        <i class="fas fa-magic service-icon"></i>
+                        <h3 id="service-editing">Photo Editing</h3>
+                        <p>Professional post-production services to enhance, retouch, and refine your images to perfection.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Connect With Us</h2>
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Shutter St, Photo City, 45678</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@lenscrafters.com">info@lenscrafters.com</a></p>
-                    <div class="social-media">
-                        <a href="https://facebook.com/lenscrafters" target="_blank" rel="noopener noreferrer" aria-label="Find us on Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
-                        <a href="https://instagram.com/lenscrafters" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                    </div>
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you. Reach out to discuss your photography needs.</p>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Shutter St, Photo City, PC 12345</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@capturemoments.com">info@capturemoments.com</a></p>
+                <div class="social-media">
+                    <a href="https://facebook.com/capturemoments" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/capturemoments" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/capturemoments" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="form" class="form-section section-padding">
+        <section id="contact-form" class="contact-form-section">
             <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">Have a question or want to book a session? Send us a message!</p>
-                <form action="mailto:info@lenscrafters.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 class="section-title">Send Us a Message</h2>
+                <form action="mailto:info@capturemoments.com" method="post" enctype="text/plain" aria-label="Contact form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-label="Your Name">
+                        <input type="text" id="name" name="name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-label="Your Email">
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-label="Subject of your message">
+                        <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required aria-label="Your Message"></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -160,24 +169,27 @@
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> LensCrafters Photography. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+            <p>&copy; <span id="current-year"></span> Capture Moments Photography. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Navigation and Current Year -->
+    <!-- JavaScript for Mobile Nav and Current Year -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Mobile Navigation Toggle
             const hamburger = document.querySelector('.hamburger');
             const mobileNav = document.querySelector('.mobile-nav');
-            const navLinks = document.querySelectorAll('.mobile-nav-link');
+            const navLinks = document.querySelectorAll('.mobile-nav a');
 
             hamburger.addEventListener('click', () => {
                 mobileNav.classList.toggle('active');
                 hamburger.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('active'));
+                const expanded = hamburger.classList.contains('active');
+                hamburger.setAttribute('aria-expanded', expanded);
             });
 
+            // Close mobile nav when a link is clicked
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileNav.classList.remove('active');
@@ -188,19 +200,7 @@
 
             // Set Current Year in Footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
-
-            // Smooth scrolling for all internal links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
         });
     </script>
-
 </body>
 </html>
