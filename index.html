@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test Company specializes in professional testing services for the Beauty & Wellness industry. We ensure product excellence and client satisfaction through rigorous, agile methodologies.">
-    <title>Test Company - Beauty & Wellness Testing</title>
-    
+    <title>Test Company - Beauty & Wellness</title>
+    <meta name="description" content="Test Company provides professional beauty and wellness services in 5 Marigold st. Discover our personalized treatments and commitment to client success. Contact us at ziegler.tanya@gmail.com or 0724354591.">
+    <meta name="keywords" content="beauty, wellness, salon, spa, services, professional, Test Company, 5 Marigold st, ziegler.tanya@gmail.com">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/test-company">
-    <meta property="og:title" content="Test Company - Beauty & Wellness Testing">
-    <meta property="og:description" content="Test Company specializes in professional testing services for the Beauty & Wellness industry. We ensure product excellence and client satisfaction through rigorous, agile methodologies.">
-    <meta property="og:image" content="https://sitehub.co.za/test-company/hero-800x400.png"> <!-- Placeholder, update with actual image URL -->
+    <meta property="og:title" content="Test Company - Beauty & Wellness">
+    <meta property="og:description" content="Test Company provides professional beauty and wellness services in 5 Marigold st. Discover our personalized treatments and commitment to client success. Contact us at ziegler.tanya@gmail.com or 0724354591.">
+    <meta property="og:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sitehub.co.za/test-company">
-    <meta property="twitter:title" content="Test Company - Beauty & Wellness Testing">
-    <meta property="twitter:description" content="Test Company specializes in professional testing services for the Beauty & Wellness industry. We ensure product excellence and client satisfaction through rigorous, agile methodologies.">
-    <meta property="twitter:image" content="https://sitehub.co.za/test-company/hero-800x400.png"> <!-- Placeholder, update with actual image URL -->
+    <meta property="twitter:title" content="Test Company - Beauty & Wellness">
+    <meta property="twitter:description" content="Test Company provides professional beauty and wellness services in 5 Marigold st. Discover our personalized treatments and commitment to client success. Contact us at ziegler.tanya@gmail.com or 0724354591.">
+    <meta property="twitter:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon (placeholder) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
@@ -33,168 +36,138 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header - Navigation Bar -->
     <header class="main-header">
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <a href="#" class="navbar-brand">
+        <div class="container">
+            <a href="#hero" class="logo-link" aria-label="Test Company home">
                 <img src="logo.png" alt="Test Company Logo" class="logo">
-                Test Company
+                <span class="company-name-text">Test Company</span>
             </a>
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="#about" aria-label="Go to About Us section">About Us</a></li>
-                <li><a href="#services" aria-label="Go to Services section">Services</a></li>
-                <li><a href="#contact" aria-label="Go to Contact Us section">Contact</a></li>
-                <li><a href="#contact-form" class="btn btn-primary" aria-label="Go to Contact Form section">Form</a></li>
-            </ul>
-        </nav>
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-links" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navbar-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary">Form</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
-            <div class="hero-content">
+            <div class="container content-center">
                 <h1 class="hero-title">Test Company</h1>
-                <p class="hero-tagline">Precision Testing for Beauty & Wellness Excellence</p>
-                <a href="#contact-form" class="btn btn-secondary hero-btn" aria-label="Learn more about our services">Get in Touch</a>
+                <p class="hero-tagline">Nurturing Your Well-being with Professional Care.</p>
+                <a href="#contact-form" class="btn btn-hero">Get Started Today</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section">
+        <section id="about" class="about-section section-padding" aria-labelledby="about-heading">
             <div class="container">
-                <h2 class="section-title">About Us</h2>
-                <p>At Test Company, our mission is to deliver unparalleled testing services in the Beauty & Wellness industry, ensuring product excellence and client satisfaction through agile and precise methodologies. We are committed to fostering client success and upholding the highest standards of quality.</p>
-                <p>With deep expertise in the Beauty & Wellness sector, we understand the critical importance of safety, efficacy, and regulatory compliance. Our team leverages cutting-edge technology and a client-centric approach to provide tailored solutions that meet the evolving demands of the market.</p>
+                <h2 id="about-heading" class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>At Test Company, our mission is to elevate well-being through professional beauty and wellness services. We are dedicated to providing personalized care, innovative solutions, and exceptional client experiences within the <strong>Beauty & Wellness</strong> industry.</p>
+                    <p>Our approach emphasizes agile methodologies and a relentless focus on client success, ensuring every service leaves you feeling refreshed and revitalized. We believe in building lasting relationships with our clients, understanding their unique needs, and delivering results that truly make a difference.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Services/Products Section -->
-        <section id="services" class="services-section">
+        <section id="services" class="services-section section-padding bg-light" aria-labelledby="services-heading">
             <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">We offer a comprehensive suite of testing services designed to ensure the quality, safety, and performance of your beauty and wellness products. Partner with us for reliable results and expert guidance.</p>
+                <h2 id="services-heading" class="section-title">Our Services</h2>
+                <p class="section-description">We offer a range of specialized beauty and wellness services designed to meet your unique needs. Our commitment to excellence ensures every treatment is performed with the highest standards of care and professionalism.</p>
                 <div class="services-grid">
                     <div class="service-item">
-                        <i class="fas fa-flask service-icon" aria-hidden="true"></i>
-                        <h3>Product Safety & Efficacy Testing</h3>
-                        <p>Rigorous evaluation to ensure your beauty and wellness products are safe for use and perform as claimed.</p>
+                        <i class="fas fa-spa service-icon"></i>
+                        <h3>Personalized Wellness Consultations</h3>
+                        <p>Our 'Testing' service begins with a comprehensive consultation to understand your unique beauty and wellness goals, tailoring a bespoke plan just for you.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-vial service-icon" aria-hidden="true"></i>
-                        <h3>Ingredient Analysis & Verification</h3>
-                        <p>Detailed analysis of raw materials and formulations to confirm quality, purity, and compliance.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-calendar-alt service-icon" aria-hidden="true"></i>
-                        <h3>Stability & Shelf-Life Studies</h3>
-                        <p>Comprehensive testing to determine product stability under various conditions and predict shelf-life.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-user-shield service-icon" aria-hidden="true"></i>
-                        <h3>Dermatological & Clinical Testing</h3>
-                        <p>Partnering with experts for human clinical trials to assess skin compatibility and efficacy.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-clipboard-check service-icon" aria-hidden="true"></i>
-                        <h3>Regulatory Compliance & Documentation</h3>
-                        <p>Guiding you through complex regulations and providing necessary documentation for market entry.</p>
-                    </div>
+                    <!-- Add more services as needed -->
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-description">We'd love to hear from you! Reach out to us through our contact details or social media channels.</p>
+                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                <p class="section-description">We'd love to hear from you! Reach out to us for appointments, inquiries, or just to say hello.</p>
                 <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 5 Marigold st</p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:ziegler.tanya@gmail.com">ziegler.tanya@gmail.com</a></p>
-                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+27724354591">0724354591</a></p>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <p><strong>Address:</strong> 5 Marigold st</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <p><strong>Email:</strong> <a href="mailto:ziegler.tanya@gmail.com">ziegler.tanya@gmail.com</a></p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <p><strong>Phone:</strong> <a href="tel:0724354591">0724354591</a></p>
+                    </div>
                 </div>
-                <div class="social-media">
-                    <a href="https://instagram.com/testcompany" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/company/testcompany" target="_blank" rel="noopener noreferrer" aria-label="Visit us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://facebook.com/testcompany" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <div class="social-links" aria-label="Social media links">
+                    <!-- Placeholder for social media links. If provided, add them here. -->
+                    <!-- Example: <a href="#" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a> -->
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="form-section">
+        <section id="contact-form" class="form-section section-padding bg-light" aria-labelledby="form-heading">
             <div class="container">
-                <h2 class="section-title">Send Us a Message</h2>
-                <form action="mailto:ziegler.tanya@gmail.com?subject=Inquiry from Test Company Website" method="POST" enctype="text/plain" class="contact-form">
+                <h2 id="form-heading" class="section-title">Send Us a Message</h2>
+                <p class="section-description">Have a question or want to book a service? Fill out the form below and we'll get back to you shortly.</p>
+                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required placeholder="Your Name">
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required placeholder="your.email@example.com">
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required placeholder="Service Inquiry, Feedback, etc.">
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required placeholder="Your message..."></textarea>
+                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Test Company. All rights reserved.</p>
-            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+            <p class="footer-text">&copy; <span id="current-year"></span> Test Company. All rights reserved.</p>
+            <p class="footer-text">Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer" class="sitehub-link">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Navigation Toggle and Current Year -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile Navigation Toggle
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.navbar-menu');
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                hamburger.classList.toggle('active');
-                const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-                hamburger.setAttribute('aria-expanded', !expanded);
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
-
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    // Close mobile menu if open
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        hamburger.classList.remove('active');
-                        hamburger.setAttribute('aria-expanded', 'false');
-                    }
-                    
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            // Set current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
