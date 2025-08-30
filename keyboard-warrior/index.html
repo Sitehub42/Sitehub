@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Hammocks are the best hammocks</title>
-    <meta name="description" content="bananas bananas bananas bananas">
-    <meta name="keywords" content="banana hammocks, pajamas, consumer goods, manufacturing, family hammocks">
+    <title>Keyboard repair and sales</title>
+    <meta name="description" content="keyboard come one come all">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Banana Hammocks are the best hammocks">
-    <meta property="og:description" content="bananas bananas bananas bananas">
-    <meta property="og:image" content="https://sitehub.co.za/banana-hammocks/hero-800x400.png"> <!-- Replace with actual image URL -->
-    <meta property="og:url" content="https://sitehub.co.za/banana-hammocks">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="banana-hammocks">
+    <meta property="og:url" content="https://sitehub.co.za/keyboard-warrior">
+    <meta property="og:title" content="Keyboard repair and sales">
+    <meta property="og:description" content="keyboard come one come all">
+    <meta property="og:image" content="https://sitehub.co.za/keyboard-warrior/hero-800x400.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/keyboard-warrior">
+    <meta property="twitter:title" content="Keyboard repair and sales">
+    <meta property="twitter:description" content="keyboard come one come all">
+    <meta property="twitter:image" content="https://sitehub.co.za/keyboard-warrior/hero-800x400.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@404,600&family=Roboto:wght@300,400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@404&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header class="main-header">
         <div class="container">
-            <a href="#hero" class="logo" aria-label="Bananas In Pajamas Home">
-                <img src="logo.png" alt="Bananas In Pajamas Logo">
-                Bananas In Pajamas
+            <a href="#hero" class="logo" aria-label="Keyboard Repairs Home">
+                <img src="logo.png" alt="Keyboard Repairs Logo">
+                <span>Keyboard Repairs</span>
             </a>
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="main-nav" aria-label="Main navigation">
+            <nav class="desktop-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Products</a></li>
+                    <li><a href="#services">Services/Products</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary">Get a Quote</a></li>
+                    <li><a href="#form" class="btn btn-primary">Form</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" aria-label="Mobile navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services/Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form" class="btn btn-primary">Form</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,85 +66,78 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="overlay"></div>
-            <div class="container">
-                <h1>Bananas In Pajamas</h1>
-                <p class="tagline">Bananas are not just for bread</p>
-                <a href="#form" class="btn btn-secondary">Order Your Custom Hammock Today!</a>
+        <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-overlay"></div>
+            <div class="container content">
+                <h1 id="hero-heading">Keyboard Repairs</h1>
+                <p class="tagline">You break it, we fix it</p>
+                <a href="#form" class="btn btn-secondary hero-btn">Get a Quote Today</a>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2>About Us</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3>Our Mission</h3>
-                        <p>At Bananas In Pajamas, our mission is simple: to make great hammocks for the family. We believe in crafting high-quality, comfortable, and durable hammocks that bring joy and relaxation to every home.</p>
-                        <p>With deep roots in the manufacturing industry, we leverage cutting-edge techniques and the finest materials to produce consumer goods that stand the test of time. Our expertise ensures every hammock meets the highest standards of quality and safety.</p>
-                        <p>We pride ourselves on client success, fostering strong relationships built on trust and exceptional service. Embracing agile methodologies, we adapt to market needs and continuously innovate to bring you the best in outdoor and indoor comfort solutions.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://via.placeholder.com/400x300/f0e68c/333333?text=About+Us" alt="Happy family relaxing in a hammock, representing Bananas In Pajamas values.">
-                    </div>
-                </div>
-            </div>
+        <section id="about" class="about-section container" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p class="mission">At Keyboard Repairs, our mission is simple: <strong>If we can't fix it, we will buy you a new one.</strong></p>
+            <p>We are experts in the repair and maintenance of all types of keyboards, from mechanical gaming powerhouses to essential office peripherals. Our team comprises highly skilled technicians passionate about bringing your favorite input device back to life.</p>
+            <p>We pride ourselves on our agile methodologies, ensuring quick diagnostics and efficient repairs. Client success is at the heart of everything we do, and we strive to provide not just a fix, but a lasting solution that gets you back to typing, gaming, or coding in no time.</p>
         </section>
 
         <!-- Services/Products Section -->
-        <section id="services" class="services-section section-padding bg-light">
+        <section id="services" class="services-section" aria-labelledby="services-heading">
             <div class="container">
-                <h2>Our Products</h2>
-                <p class="section-description">We specialize in high-quality Consumer Goods, specifically premium hammocks designed for ultimate comfort and durability. Explore our range of products crafted with care.</p>
+                <h2 id="services-heading">Our Services & Products</h2>
+                <p>Keyboard Repairs offers comprehensive solutions for all your keyboard needs. Whether it's a simple key replacement or a complex PCB repair, we've got you covered. We also offer a selection of high-quality hardware for sale.</p>
                 <div class="service-grid">
                     <div class="service-item">
-                        <i class="fas fa-users-line fa-3x"></i>
-                        <h3>Family Hammocks</h3>
-                        <p>Spacious and sturdy hammocks designed for the entire family to enjoy together, perfect for backyards and patios.</p>
+                        <i class="fas fa-keyboard icon"></i>
+                        <h3>Keyboard Repair</h3>
+                        <p>Expert diagnostics and repair for all keyboard types, including mechanical, membrane, and ergonomic models.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-suitcase-rolling fa-3x"></i>
-                        <h3>Travel Hammocks</h3>
-                        <p>Lightweight and compact hammocks, ideal for adventurers and campers who need comfort on the go.</p>
+                        <i class="fas fa-microchip icon"></i>
+                        <h3>Component Replacement</h3>
+                        <p>Replacing faulty switches, keycaps, PCBs, and other internal components to restore full functionality.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-palette fa-3x"></i>
-                        <h3>Custom Hammocks</h3>
-                        <p>Personalize your relaxation! Choose materials, colors, and sizes to create a hammock that's uniquely yours.</p>
+                        <i class="fas fa-headset icon"></i>
+                        <h3>Custom Builds & Mods</h3>
+                        <p>Personalize your typing experience with custom keyboard builds and modifications tailored to your preferences.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-shield-alt fa-3x"></i>
-                        <h3>Durable Materials</h3>
-                        <p>We use only the highest quality, weather-resistant fabrics and robust construction for long-lasting performance.</p>
+                        <i class="fas fa-cash-register icon"></i>
+                        <h3>Hardware Sales</h3>
+                        <p>Browse our selection of new and refurbished keyboards, keycaps, and accessories from leading brands.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <p class="section-description">We'd love to hear from you. Reach out to us for any inquiries, custom orders, or just to say hello!</p>
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt"></i> 1 Harrington Road</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:bananas@test.com">bananas@test.com</a></p>
-                    <div class="social-media">
-                        <a href="#" aria-label="Our Social Media Profile (Bananas)" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Our Social Media Profile (Bananas)" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Our Social Media Profile (Bananas)" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </div>
+                <h2 id="contact-heading">Get in Touch</h2>
+                <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Shop 47, Waterfront</p>
+                <p class="contact-info"><i class="fas fa-envelope"></i> <a href="mailto:fixit@keyboard.com">fixit@keyboard.com</a></p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/KeyboardWarriors" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/KeyboardWarriors" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/KeyboardWarriors" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="form" class="form-section section-padding bg-light">
+        <section id="form" class="form-section" aria-labelledby="form-heading">
             <div class="container">
-                <h2>Send Us a Message</h2>
-                <form action="mailto:bananas@test.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 id="form-heading">Request a Quote</h2>
+                <form action="mailto:fixit@keyboard.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="Name" required aria-required="true">
@@ -140,7 +152,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
+                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -148,32 +160,49 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Bananas In Pajamas. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Keyboard Repairs. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
+    <!-- JavaScript for year and mobile nav -->
     <script>
         // Auto-update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Mobile Navigation Toggle
+        // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.main-nav');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navLinks = document.querySelectorAll('.mobile-nav ul li a');
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const expanded = navMenu.classList.contains('active') ? 'true' : 'false';
-            hamburger.setAttribute('aria-expanded', expanded);
-        });
+        function toggleMobileMenu() {
+            mobileNav.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('active'));
+        }
+
+        hamburger.addEventListener('click', toggleMobileMenu);
 
         // Close mobile nav when a link is clicked
-        document.querySelectorAll('.main-nav a').forEach(link => {
+        navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
+                if (mobileNav.classList.contains('active')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
