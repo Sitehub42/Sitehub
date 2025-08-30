@@ -3,151 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayonaise is the essence of Sushi</title>
-    <meta name="description" content="Mayonaise from the mother land the way mom used to make it. Tomatosauce is for losers">
-    <meta name="keywords" content="Japanese Mayo, Mayo, Mayonaise, Sushi, Japanese Food, South Africa, Consumer Goods">
-    
+    <meta name="description" content="Discover Umami Gold Mayo, your source for premium, authentic Japanese mayonnaise. Elevate your dishes with our classic, spicy, and specialty mayo flavors.">
+    <meta name="keywords" content="Japanese Mayo, Umami Gold Mayo, premium mayonnaise, authentic Japanese, spicy mayo, wasabi mayo, wholesale mayo">
+    <title>Umami Gold Mayo - Authentic Japanese Mayonnaise</title>
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.japanesemayofactory.com/">
-    <meta property="og:title" content="Mayonaise is the essence of Sushi">
-    <meta property="og:description" content="Mayonaise from the mother land the way mom used to make it. Tomatosauce is for losers">
-    <meta property="og:image" content="https://www.japanesemayofactory.com/hero-800x400.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.japanesemayofactory.com/">
-    <meta property="twitter:title" content="Mayonaise is the essence of Sushi">
-    <meta property="twitter:description" content="Mayonaise from the mother land the way mom used to make it. Tomatosauce is for losers">
-    <meta property="twitter:image" content="https://www.japanesemayofactory.com/hero-800x400.png">
+    <meta property="og:url" content="https://sitehub.co.za/japanese%20mayo">
+    <meta property="og:title" content="Umami Gold Mayo - Authentic Japanese Mayonnaise">
+    <meta property="og:description" content="Discover Umami Gold Mayo, your source for premium, authentic Japanese mayonnaise. Elevate your dishes with our classic, spicy, and specialty mayo flavors.">
+    <meta property="og:image" content="https://sitehub.co.za/japanese%20mayo/hero-800x400.png"> <!-- Placeholder for a social share image -->
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="home">
-        <nav id="navbar">
-            <div class="logo">
-                <a href="#home">
-                    <img src="logo.png" alt="Japanese Mayo Factory Logo" width="50" height="50">
-                    <span>Japanese Mayo Factory</span>
+    <header class="header">
+        <nav class="navbar desktop-nav" aria-label="Main navigation">
+            <div class="container">
+                <a href="#hero" class="logo" aria-label="Umami Gold Mayo logo">
+                    <img src="logo.png" alt="Umami Gold Mayo Logo" width="50" height="50">
+                    <span>Umami Gold Mayo</span>
                 </a>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="Learn more about us">About Us</a></li>
+                    <li><a href="#services" aria-label="Explore our services and products">Services/Products</a></li>
+                    <li><a href="#contact" aria-label="Get in touch with us">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary" aria-label="Fill out our contact form">Form</a></li>
+                </ul>
             </div>
-            <button class="hamburger" aria-label="Toggle navigation menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Consumer Goods</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#form">Order Now</a></li>
-            </ul>
+        </nav>
+
+        <nav class="navbar mobile-nav" aria-label="Mobile navigation">
+            <div class="container">
+                <a href="#hero" class="logo" aria-label="Umami Gold Mayo logo">
+                    <img src="logo.png" alt="Umami Gold Mayo Logo" width="50" height="50">
+                    <span>Umami Gold Mayo</span>
+                </a>
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links mobile-menu">
+                    <li><a href="#about" aria-label="Learn more about us">About Us</a></li>
+                    <li><a href="#services" aria-label="Explore our services and products">Services/Products</a></li>
+                    <li><a href="#contact" aria-label="Get in touch with us">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary" aria-label="Fill out our contact form">Form</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Japanese Mayo Factory</h1>
-                <p>Authentic mayonaise from the heart of china</p>
-                <a href="#form" class="btn-primary">Discover Our Flavors</a>
+        <section id="hero" class="hero-section" role="banner">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Umami Gold Mayo</h1>
+                <p>Savor the Authentic Taste of Japan</p>
+                <a href="#contact-form" class="btn btn-secondary" aria-label="Discover our products and contact us">Get in Touch Today</a>
             </div>
         </section>
 
-        <section id="about" class="about-section">
-            <h2>About Us</h2>
-            <p class="mission">Our mission: To be the number 1 choice of mayonaise in South Africa.</p>
-            <p>We are a leading entity in the Retail industry, dedicated to bringing premium Consumer Goods to your table. We believe in crafting the perfect mayonnaise that enhances every dish, from sushi to sandwiches, with an authentic touch.</p>
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Us</h2>
+                <p>At Umami Gold Mayo, our mission is to bring the authentic, delightful taste of premium Japanese mayonnaise to kitchens worldwide, fostering culinary creativity and enriching every meal with unmatched flavor and quality. We are experts in premium Japanese Mayonnaise Production & Distribution, dedicated to crafting mayo that elevates every dish.</p>
+                <p>We pride ourselves on client success, ensuring every jar of Umami Gold Mayo meets the highest standards. Our agile methodologies in production and distribution guarantee freshness and consistent quality, making us the preferred choice for chefs and home cooks alike. Experience the difference that passion and perfection make.</p>
+            </div>
         </section>
 
-        <section id="services" class="services-section">
-            <h2>Our Delicious Consumer Goods</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <img src="service-1-150x150.png" alt="Classic Japanese Mayo" width="150" height="150">
-                    <h3>Classic Japanese Mayo</h3>
-                    <p>The original, creamy, and rich flavor that started it all. Perfect for sushi, salads, and more.</p>
-                </div>
-                <div class="service-item">
-                    <img src="service-2-150x150.png" alt="Spicy Wasabi Mayo" width="150" height="150">
-                    <h3>Spicy Wasabi Mayo</h3>
-                    <p>A kick of authentic wasabi infused into our classic recipe for a fiery delicious twist.</p>
-                </div>
-                <div class="service-item">
-                    <img src="service-3-150x150.png" alt="Vegan Umami Mayo" width="150" height="150">
-                    <h3>Vegan Umami Mayo</h3>
-                    <p>Experience the deep, savory umami flavor in our plant-based, egg-free mayonnaise.</p>
+        <section id="services" class="services-section" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Products & Services</h2>
+                <p class="section-description">Explore our exquisite range of Japanese mayonnaises and comprehensive services designed to bring the best of Japan to your table and business.</p>
+                <div class="services-grid">
+                    <div class="service-item" role="article">
+                        <i class="fas fa-egg fa-3x" aria-hidden="true"></i>
+                        <h3>Classic Japanese Mayo</h3>
+                        <p>Our signature rich and creamy mayonnaise, perfect for any dish, crafted with traditional Japanese recipes.</p>
+                    </div>
+                    <div class="service-item" role="article">
+                        <i class="fas fa-pepper-hot fa-3x" aria-hidden="true"></i>
+                        <h3>Spicy Sriracha Mayo</h3>
+                        <p>A fiery kick to elevate your favorite snacks and meals, blending the perfect heat with our creamy base.</p>
+                    </div>
+                    <div class="service-item" role="article">
+                        <i class="fas fa-leaf fa-3x" aria-hidden="true"></i>
+                        <h3>Wasabi Infused Mayo</h3>
+                        <p>A subtle, pungent blend for sushi and grilled dishes, offering a unique Japanese culinary experience.</p>
+                    </div>
+                    <div class="service-item" role="article">
+                        <i class="fas fa-boxes fa-3x" aria-hidden="true"></i>
+                        <h3>Wholesale Distribution</h3>
+                        <p>Supplying restaurants and retailers with bulk orders of our premium mayo, ensuring consistent supply and quality.</p>
+                    </div>
+                    <div class="service-item" role="article">
+                        <i class="fas fa-book-open fa-3x" aria-hidden="true"></i>
+                        <h3>Recipe Inspiration</h3>
+                        <p>Curated recipes and culinary tips to unleash your creativity with our mayo, from appetizers to main courses.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <p><strong>Address:</strong> Online only</p>
-                <p><strong>Email:</strong> <a href="mailto:bestnmayo@theworld.com">bestnmayo@theworld.com</a></p>
-                <p><strong>Social Media:</strong> Follow us on <a href="https://twitter.com/MayoNinja" target="_blank" rel="noopener noreferrer">@MayoNinja</a> for updates and delicious recipes!</p>
-            </div>
-        </section>
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get in Touch</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Umami Street, Flavor Town, Japan, 45678</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@umamigoldmayo.com">info@umamigoldmayo.com</a></p>
+                    <div class="social-media">
+                        <a href="https://facebook.com/umamigoldmayo" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/umamigoldmayo" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/umamigoldmayo" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
 
-        <section id="form" class="form-section">
-            <h2>Order Now or Send Us a Message</h2>
-            <form action="mailto:bestnmayo@theworld.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="Name" required aria-label="Your Name">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="Email" required aria-label="Your Email">
-                
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="Subject" required aria-label="Subject of your message">
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="Message" rows="6" required aria-label="Your Message"></textarea>
-                
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
+                <div id="contact-form" class="contact-form-container" aria-labelledby="form-heading">
+                    <h3 id="form-heading">Send Us a Message</h3>
+                    <form action="mailto:info@umamigoldmayo.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="Name" required aria-required="true" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="Email" required aria-required="true" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="Subject" required aria-required="true" placeholder="Query about products, wholesale, etc.">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="Message" rows="5" required aria-required="true" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <span id="current-year"></span> Japanese Mayo Factory. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Umami Gold Mayo. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+        </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Close mobile menu if open
-                if (document.body.classList.contains('nav-open')) {
-                    document.body.classList.remove('nav-open');
-                }
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelectorAll('.mobile-menu a');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        
-        hamburger.addEventListener('click', () => {
-            document.body.classList.toggle('nav-open'); // Toggles a class on the body to handle overall layout
-        });
-
-        // Set current year in footer
+        // Auto update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
