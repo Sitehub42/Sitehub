@@ -3,191 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina Lens Photography | Capturing Your Moments</title>
-    <meta name="description" content="Professional photography services in Studio City, CA. Specializing in portraits, events, weddings, and commercial photography. Capture your precious moments with Lumina Lens.">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitehub.co.za/photographer">
-    <meta property="og:title" content="Lumina Lens Photography | Capturing Your Moments">
-    <meta property="og:description" content="Professional photography services in Studio City, CA. Specializing in portraits, events, weddings, and commercial photography. Capture your precious moments with Lumina Lens.">
-    <meta property="og:image" content="https://sitehub.co.za/photographer/hero-800x400.png"> <!-- Replace with actual image URL -->
+    <title>LensCrafters Photography - Capturing Your Special Moments</title>
+    <meta name="description" content="Professional photography services in Photo City. Specializing in events, portraits, commercial shoots, and stunning landscape prints. Let us capture your memories.">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="LensCrafters Photography - Capturing Your Special Moments">
+    <meta property="og:description" content="Professional photography services in Photo City. Specializing in events, portraits, commercial shoots, and stunning landscape prints. Let us capture your memories.">
+    <meta property="og:image" content="https://sitehub.co.za/photographer/hero-800x400.png"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://sitehub.co.za/photographer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LensCrafters Photography">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon (placeholder) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <!-- Header and Navigation -->
     <header class="main-header">
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <a href="#hero" aria-label="Lumina Lens Photography Home">
-                    <img src="logo.png" alt="Lumina Lens Photography Logo">
-                </a>
-            </div>
-            <button class="navbar__toggle" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+        <div class="container nav-container">
+            <a href="#hero" class="logo-link" aria-label="LensCrafters Photography home">
+                <img src="logo.png" alt="LensCrafters Photography Logo" class="logo">
+                <span class="company-name-desktop">LensCrafters Photography</span>
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form" class="btn btn-primary">Book a Session</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
-            <ul class="navbar__menu" id="navbar-menu">
-                <li><a href="#about" aria-label="About Us">About Us</a></li>
-                <li><a href="#services" aria-label="Our Services">Services</a></li>
-                <li><a href="#contact" aria-label="Contact Information">Contact</a></li>
-                <li><a href="#contact-form" class="button" aria-label="Book a Session">Book Now</a></li>
+        </div>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+                <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li><a href="#form" class="mobile-nav-link btn btn-primary">Book a Session</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner">
+        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');">
             <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>Lumina Lens Photography</h1>
-                <p>Capturing Moments, Crafting Memories</p>
-                <a href="#contact-form" class="button" aria-label="Book a Photography Session">Book a Session Today</a>
+            <div class="container hero-content">
+                <h1 class="hero-title">LensCrafters Photography</h1>
+                <p class="hero-tagline">Capturing Moments, Creating Memories.</p>
+                <a href="#form" class="btn btn-secondary btn-hero">Get Started</a>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="about-section container" role="region" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Lumina Lens Photography</h2>
-            <p>At Lumina Lens Photography, our mission is to provide stunning, high-quality photography that captures the essence of every moment and tells a unique story for our clients. We strive for excellence and client satisfaction in every shot.</p>
-            <p>We are professional photography services experts, dedicated to delivering exceptional visual narratives. Our approach emphasizes client success, ensuring every session is collaborative and results in images that exceed expectations. We adopt agile methodologies in our workflow, adapting to your needs and delivering with precision and creativity.</p>
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p>Our mission is to provide high-quality, memorable photographic services that perfectly capture the essence of every moment, person, and event, preserving them for a lifetime. We strive for artistic excellence and client satisfaction.</p>
+                <p>At LensCrafters Photography, we specialize in Professional Photography Services, bringing years of experience and a keen eye for detail to every project. We believe in working closely with our clients to understand their vision, ensuring every shot tells their unique story. Our agile methodologies allow us to adapt to diverse client needs, delivering exceptional results promptly and professionally. Your success and satisfaction are at the heart of everything we do.</p>
+            </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section container" role="region" aria-labelledby="services-heading">
-            <h2 id="services-heading">Our Services</h2>
-            <p>We offer a diverse range of professional photography services tailored to capture life's most precious moments and significant events. Our expertise ensures every image tells a compelling story.</p>
-            <div class="services-grid">
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-user-circle fa-3x"></i>
-                    <h3>Portrait Photography</h3>
-                    <p>Capturing individual personalities, families, and professional headshots with artistry and precision.</p>
-                </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-calendar-alt fa-3x"></i>
-                    <h3>Event Photography</h3>
-                    <p>Documenting special occasions like birthdays, anniversaries, and corporate gatherings with dynamic coverage.</p>
-                </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-briefcase fa-3x"></i>
-                    <h3>Commercial Photography</h3>
-                    <p>Providing high-quality imagery for businesses, products, and branding to elevate your market presence.</p>
-                </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-heart fa-3x"></i>
-                    <h3>Wedding Photography</h3>
-                    <p>Preserving the magic and emotion of your wedding day with beautiful, timeless photographs.</p>
-                </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-magic fa-3x"></i>
-                    <h3>Photo Retouching</h3>
-                    <p>Enhancing and refining your images to perfection, ensuring every detail shines.</p>
+        <!-- Services/Products Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We offer a diverse range of photography services tailored to meet your unique needs.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-camera fa-3x"></i>
+                        <h3>Event Photography</h3>
+                        <p>Capturing the vibrancy and emotions of your special events, from corporate gatherings to private celebrations.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-tie fa-3x"></i>
+                        <h3>Portrait Sessions</h3>
+                        <p>Professional headshots, family portraits, and personal branding photos that reflect your true self.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-building fa-3x"></i>
+                        <h3>Commercial Photography</h3>
+                        <p>High-quality images for businesses, including product photography, architectural shoots, and marketing campaigns.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-mountain fa-3x"></i>
+                        <h3>Landscape Prints</h3>
+                        <p>Stunning, high-resolution prints of breathtaking landscapes, perfect for home or office decor.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-ring fa-3x"></i>
+                        <h3>Wedding Photography</h3>
+                        <p>Beautifully documenting your most precious day, creating timeless memories of your wedding celebration.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section container" role="region" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get in Touch</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> 123 Photo Lane, Studio City, CA 90210</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:info@luminalens.com">info@luminalens.com</a></p>
-                <div class="social-media">
-                    <a href="https://instagram.com/luminalens" target="_blank" rel="noopener noreferrer" aria-label="Follow Lumina Lens Photography on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="https://facebook.com/luminalens" target="_blank" rel="noopener noreferrer" aria-label="Follow Lumina Lens Photography on Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Connect With Us</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Shutter St, Photo City, 45678</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@lenscrafters.com">info@lenscrafters.com</a></p>
+                    <div class="social-media">
+                        <a href="https://facebook.com/lenscrafters" target="_blank" rel="noopener noreferrer" aria-label="Find us on Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://instagram.com/lenscrafters" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="contact-form" class="contact-form-section container" role="region" aria-labelledby="form-heading">
-            <h2 id="form-heading">Send Us a Message</h2>
-            <form action="mailto:info@luminalens.com" method="post" enctype="text/plain" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="Name" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="Email" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="Subject" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
-                </div>
-                <button type="submit" class="button">Send Message</button>
-            </form>
+        <section id="form" class="form-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have a question or want to book a session? Send us a message!</p>
+                <form action="mailto:info@lenscrafters.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-label="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-label="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-label="Subject of your message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required aria-label="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Lumina Lens Photography. All rights reserved.</p>
-            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+            <p>&copy; <span id="current-year"></span> LensCrafters Photography. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for dynamic elements -->
+    <!-- JavaScript for Mobile Navigation and Current Year -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Update current year in footer
+            // Mobile Navigation Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+            hamburger.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('active'));
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Set Current Year in Footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            // Mobile Navigation Toggle
-            const navbarToggle = document.querySelector('.navbar__toggle');
-            const navbarMenu = document.querySelector('.navbar__menu');
-
-            if (navbarToggle && navbarMenu) {
-                navbarToggle.addEventListener('click', () => {
-                    const expanded = navbarToggle.getAttribute('aria-expanded') === 'true' || false;
-                    navbarToggle.setAttribute('aria-expanded', !expanded);
-                    navbarMenu.classList.toggle('active');
-                });
-
-                // Close mobile menu when a link is clicked
-                navbarMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navbarMenu.classList.remove('active');
-                        navbarToggle.setAttribute('aria-expanded', 'false');
-                    });
-                });
-            }
-
-            // Smooth scrolling for anchor links
+            // Smooth scrolling for all internal links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
 
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - (document.querySelector('.main-header').offsetHeight || 0),
-                            behavior: 'smooth'
-                        });
-                    }
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
         });
     </script>
+
 </body>
 </html>
