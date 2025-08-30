@@ -3,136 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Garage Sale - Find Unique Household Items</title>
-    <meta name="description" content="GarageSale - Your destination for plates, shelves, and other household items. Discover unique finds and home decor today!">
-    <meta name="keywords" content="GarageSale, plates, shelves, household items, second-hand, home decor, unique finds">
+    <meta name="description" content="GarageSale Finders is your go-to online marketplace for discovering unique second-hand goods and connecting with local sellers. Find hidden treasures and declutter with ease.">
+    <title>GarageSale Finders - Discover Hidden Treasures Locally</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Garage Sale - Unique Household Items">
-    <meta property="og:description" content="GarageSale - Your destination for plates, shelves, and other household items. Discover unique finds and home decor today!">
-    <meta property="og:image" content="https://sitehub.co.za/GarageSale/hero-800x400.png"> <!-- Placeholder Image -->
+    <meta property="og:title" content="GarageSale Finders - Discover Hidden Treasures Locally">
+    <meta property="og:description" content="GarageSale Finders is your go-to online marketplace for discovering unique second-hand goods and connecting with local sellers. Find hidden treasures and declutter with ease.">
+    <meta property="og:image" content="https://sitehub.co.za/GarageSale/hero-800x400.png"> <!-- Replace with actual image URL -->
     <meta property="og:url" content="https://sitehub.co.za/GarageSale">
     <meta property="og:type" content="website">
-
-    <!-- Favicon -->
-    <link rel="icon" href="https://sitehub.co.za/GarageSale/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0TLhOwY/HJm/jpSLR9XoOa7v2L+A+g9Lz/5Q+S+y2H+x7fQ/Wc4Qd9/1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="#hero" class="logo" aria-label="GarageSale Home">
-                    <img src="logo.png" alt="GarageSale Logo" width="150">
-                </a>
-                <ul class="nav-links desktop-nav">
-                    <li><a href="#about" aria-label="About Us">About Us</a></li>
-                    <li><a href="#services" aria-label="Our Services and Products">Services/Products</a></li>
-                    <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
-                    <li><a href="#form" class="btn btn-nav" aria-label="Go to Contact Form">Form</a></li>
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" aria-label="GarageSale Finders Home">
+                <img src="logo.png" alt="GarageSale Finders Logo">
+                GarageSale Finders
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#form" class="nav-link nav-button">Get Started</a></li>
                 </ul>
-                <div class="hamburger" aria-label="Toggle mobile menu" role="button" tabindex="0">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-        <ul class="nav-links mobile-nav">
-            <li><a href="#about" aria-label="About Us">About Us</a></li>
-            <li><a href="#services" aria-label="Our Services and Products">Services/Products</a></li>
-            <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
-            <li><a href="#form" aria-label="Go to Contact Form">Form</a></li>
-        </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner">
+        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');">
             <div class="hero-overlay"></div>
-            <div class="container content">
-                <h1 class="hero-title">GarageSale</h1>
-                <p class="hero-subtitle">Your Home for Unique Finds and Household Treasures</p>
-                <a href="#form" class="btn btn-primary" aria-label="Explore our collection and contact us">Contact Us to Buy/Sell</a>
+            <div class="container hero-content">
+                <h1 class="hero-title">GarageSale Finders</h1>
+                <p class="hero-tagline">Discover Hidden Treasures</p>
+                <a href="#form" class="btn btn-primary hero-btn">Start Your Treasure Hunt</a>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="about-section container" role="region" aria-labelledby="about-heading">
-            <h2 id="about-heading">About GarageSale</h2>
-            <p class="mission-statement">
-                At <strong>GarageSale</strong>, our mission is to provide a vibrant marketplace for selling plates, shelves, and other cherished household stuff. We believe in sustainable living and finding new homes for items that still have so much to offer. Our website reflects our aesthetic – a blend of classic elegance with a modern touch, featuring a harmonious palette of gold and white.
-            </p>
-            <p>
-                While we operate as a community-driven garage sale, our approach to connecting buyers and sellers is inspired by best practices in customer satisfaction and efficient service delivery. We aim for a seamless experience, ensuring that every transaction is a success story for both parties, reflecting an agile and client-focused methodology in a casual setting.
-            </p>
+        <section id="about" class="about-section container section-padding">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Connecting communities through sustainable shopping.</p>
+            <div class="about-content">
+                <p>Our mission at GarageSale Finders is to foster sustainable shopping practices and vibrant local economies by providing an intuitive and secure platform for buying and selling pre-loved goods. We aim to connect communities, reduce waste, and bring the joy of discovery to every user, promoting a circular economy where every item finds its next adventure.</p>
+                <p>We leverage our expertise in building user-friendly online marketplaces to ensure a seamless experience for both buyers and sellers of second-hand goods. Our agile methodologies allow us to continuously adapt and enhance our platform, always prioritizing client success and community engagement. Join us in making sustainable choices easier and more fun!</p>
+            </div>
         </section>
 
         <!-- Services/Products Section -->
-        <section id="services" class="services-section" role="region" aria-labelledby="services-heading">
+        <section id="services" class="services-section section-padding">
             <div class="container">
-                <h2 id="services-heading">Our Items</h2>
-                <p class="section-description">Discover a wide array of household items ready for their next home.</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Explore the ways we help you find and sell unique items.</p>
                 <div class="services-grid">
                     <div class="service-item">
-                        <i class="fas fa-utensils service-icon" aria-hidden="true"></i>
-                        <h3>Plates & Dinnerware</h3>
-                        <p>From elegant ceramic sets to unique collector's plates, find dinnerware for every occasion.</p>
+                        <i class="fas fa-search fa-3x"></i>
+                        <h3>Browse Local Listings</h3>
+                        <p>Find unique items in your neighborhood, from vintage decor to practical household goods.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-boxes service-icon" aria-hidden="true"></i>
-                        <h3>Shelves & Storage</h3>
-                        <p>Practical and decorative shelving solutions to organize your space with style.</p>
+                        <i class="fas fa-tags fa-3x"></i>
+                        <h3>Sell Your Items</h3>
+                        <p>Easily list and sell your pre-loved goods, declutter your home, and earn some extra cash.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-couch service-icon" aria-hidden="true"></i>
-                        <h3>Other Household Stuff</h3>
-                        <p>Explore a variety of other treasures, including decor, small furniture, and kitchenware.</p>
+                        <i class="fas fa-calendar-alt fa-3x"></i>
+                        <h3>Community Events</h3>
+                        <p>Stay updated on local garage sales, markets, and community swap meets in your area.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                        <h3>Secure Transactions</h3>
+                        <p>Enjoy a safe and reliable platform for buying and selling, with trusted payment options.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section container" role="region" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get in Touch</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 23 The Cheviots</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:ddziegleryt@gmail.com" aria-label="Email GarageSale at ddziegleryt@gmail.com">ddziegleryt@gmail.com</a></p>
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you!</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Treasure Hunt Lane, Discovery City, 54321</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@garagesalefinders.com">info@garagesalefinders.com</a></p>
+                    <div class="social-media">
+                        <a href="https://facebook.com/garagesalefinders" target="_blank" aria-label="GarageSale Finders on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/garagesalefinders" target="_blank" aria-label="GarageSale Finders on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/garagesalefinders" target="_blank" aria-label="GarageSale Finders on Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="form" class="form-section" role="form" aria-labelledby="form-heading">
+        <section id="form" class="form-section section-padding">
             <div class="container">
-                <h2 id="form-heading">Send Us a Message</h2>
-                <p class="section-description">Have questions about an item or want to sell something? Reach out to us!</p>
-                <form action="mailto:ddziegleryt@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">Reach out with any questions or feedback.</p>
+                <form class="contact-form" action="mailto:info@garagesalefinders.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required aria-required="true" placeholder="Your Name">
+                        <input type="text" id="name" name="Name" required aria-label="Your Name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required aria-required="true" placeholder="your.email@example.com">
+                        <input type="email" id="email" name="Email" required aria-label="Your Email">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required aria-required="true" placeholder="Regarding an item or sale">
+                        <input type="text" id="subject" name="Subject" required aria-label="Message Subject">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required aria-required="true" placeholder="Your message here..."></textarea>
+                        <textarea id="message" name="Message" rows="6" required aria-label="Your Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -140,47 +141,32 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer role="contentinfo">
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> GarageSale. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> GarageSale Finders. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Navigation and Year -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Navigation Toggle
-            const hamburger = document.querySelector('.hamburger');
-            const mobileNav = document.querySelector('.mobile-nav');
-            const navLinks = document.querySelectorAll('.mobile-nav a');
+        // Auto-update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            hamburger.addEventListener('click', function() {
-                mobileNav.classList.toggle('active');
-                // Toggle ARIA expanded attribute for accessibility
-                const isExpanded = mobileNav.classList.contains('active');
-                this.setAttribute('aria-expanded', isExpanded);
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navList.classList.contains('active'));
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
-
-            // Close mobile nav when a link is clicked
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileNav.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                });
-            });
-
-            // Close mobile nav if clicking outside
-            document.addEventListener('click', function(event) {
-                if (!mobileNav.contains(event.target) && !hamburger.contains(event.target) && mobileNav.classList.contains('active')) {
-                    mobileNav.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            // Set current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
