@@ -3,7 +3,31 @@
   <url>
     <loc>https://sitehub.co.za/test-company</loc>
     <lastmod>2023-10-27T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/test-company#about</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/test-company#services</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/test-company#contact</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/test-company#contact-form</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
