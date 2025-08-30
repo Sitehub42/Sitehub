@@ -3,144 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboard repair and sales</title>
+    <title>Keyboard repair and sales - Keyboard Repairs</title>
     <meta name="description" content="keyboard come one come all">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Keyboard repair and sales">
-    <meta property="og:description" content="keyboard come one come all">
-    <meta property="og:url" content="https://sitehub.co.za/keyboard-warrior">
-    <meta property="og:image" content="https://sitehub.co.za/keyboard-warrior/hero-800x400.png"> <!-- Placeholder image -->
-    <meta property="og:type" content="website">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/keyboard-warrior">
+    <meta property="og:title" content="Keyboard repair and sales - Keyboard Repairs">
+    <meta property="og:description" content="keyboard come one come all">
+    <meta property="og:image" content="https://sitehub.co.za/keyboard-warrior/hero-800x400.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/keyboard-warrior">
+    <meta property="twitter:title" content="Keyboard repair and sales - Keyboard Repairs">
+    <meta property="twitter:description" content="keyboard come one come all">
+    <meta property="twitter:image" content="https://sitehub.co.za/keyboard-warrior/hero-800x400.png">
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
+    <header class="main-header">
         <nav class="navbar" aria-label="Main navigation">
-            <div class="container">
-                <a href="#hero" class="logo">
-                    <img src="logo.png" alt="Keyboard Repairs Logo">
-                    <span>Keyboard Repairs</span>
-                </a>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services/Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary">Form</a></li>
-                </ul>
+            <a href="#hero" class="nav-logo" aria-label="Keyboard Repairs home">
+                <img src="logo.png" alt="Keyboard Repairs Logo" width="50" height="50">
+                <span class="company-name">Keyboard Repairs</span>
+            </a>
+            <div class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="About Us section">About Us</a></li>
+                <li><a href="#services" aria-label="Services and Products section">Services/Products</a></li>
+                <li><a href="#contact" aria-label="Contact Information section">Contact</a></li>
+                <li><a href="#form" class="btn btn-primary" aria-label="Contact Form section">Form</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1>Keyboard Repairs</h1>
-                <p>You break it, we fix it</p>
-                <a href="#form" class="btn btn-primary">Get Your Keyboard Fixed!</a>
+            <div class="hero-content">
+                <h1 class="hero-title">Keyboard Repairs</h1>
+                <p class="hero-tagline">You break it, we fix it</p>
+                <a href="#form" class="btn btn-secondary" aria-label="Get a free quote by filling out our form">Get a Free Quote</a>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2>About Us</h2>
-                <p class="lead">Our mission at Keyboard Repairs is simple: If we can't fix it, we will buy you a new one.</p>
-                <div class="about-grid">
-                    <div class="about-item">
-                        <h3>Our Expertise</h3>
-                        <p>Specializing in a broad range of keyboard issues, from mechanical failures to software glitches, Keyboard Repairs has the expertise to bring your device back to life. Our team is passionate about all things keyboards, ensuring every repair is handled with precision and care.</p>
-                    </div>
-                    <div class="about-item">
-                        <h3>Client Success</h3>
-                        <p>We pride ourselves on a strong track record of client success, built on transparent communication and reliable solutions. Your satisfaction is our top priority, and we go the extra mile to ensure your keyboard performs flawlessly after our service.</p>
-                    </div>
-                    <div class="about-item">
-                        <h3>Agile Methodologies</h3>
-                        <p>Leveraging agile methodologies, we adapt quickly to new challenges and evolving technologies in the keyboard industry. This allows us to provide efficient, innovative, and future-proof repair solutions for all types of keyboards, from vintage models to the latest gaming devices.</p>
-                    </div>
-                </div>
+        <section id="about" class="about-section container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <h3>Our Mission</h3>
+                <p class="mission-statement">If we can't fix it, we will buy you a new one</p>
+                <p>At Keyboard Repairs, we pride ourselves on our deep expertise in keyboard repair and maintenance. We understand the critical role your keyboard plays in your daily life, whether for work, gaming, or general use. Our team employs agile methodologies to diagnose and resolve issues efficiently, ensuring minimal downtime and maximum satisfaction.</p>
+                <p>Client success is at the heart of everything we do. We strive to provide unparalleled service, combining technical skill with a customer-first approach to ensure every repair meets our high standards of quality and reliability. Trust us to bring your keyboards back to life!</p>
             </div>
         </section>
 
         <!-- Services/Products Section -->
-        <section id="services" class="services-section section-padding bg-light">
+        <section id="services" class="services-section">
             <div class="container">
-                <h2>Our Services & Products</h2>
-                <p class="lead">From intricate repairs to sourcing the latest gear, we've got your keyboard needs covered.</p>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <i class="fas fa-keyboard fa-3x"></i>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">We offer a range of specialized services to keep your keyboards in top condition and enhance your setup.</p>
+                <div class="service-cards">
+                    <div class="service-card" role="listitem">
+                        <i class="fas fa-keyboard service-icon" aria-hidden="true"></i>
                         <h3>Hardware Sales</h3>
-                        <p>Looking for a new keyboard or specific components? We offer a curated selection of high-quality hardware to meet your demands, whether you're a gamer, programmer, or a casual user. Explore our range and find the perfect match.</p>
+                        <p>Explore our selection of high-quality keyboard hardware, accessories, and replacement parts. From mechanical switches to custom keycaps, we've got your needs covered.</p>
                     </div>
-                    <!-- Add more services as needed -->
+                    <!-- You can add more services here following the same structure -->
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p class="lead">We're here to help with all your keyboard repair and sales needs.</p>
-                <div class="contact-info">
-                    <address>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Shop 47, Waterfront</span>
-                    </address>
-                    <a href="mailto:fixit@keyboard.com" class="email-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>fixit@keyboard.com</span>
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> Shop 47, Waterfront</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:fixit@keyboard.com">fixit@keyboard.com</a></p>
+                <div class="social-media">
+                    <a href="https://facebook.com/KeyboardWarriors" target="_blank" rel="noopener noreferrer" aria-label="Follow Keyboard Repairs on Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
                     </a>
-                    <div class="social-media">
-                        <a href="#" target="_blank" aria-label="KeyboardWarriors on Social Media">
-                            <i class="fab fa-instagram"></i>
-                            <span>KeyboardWarriors</span>
-                        </a>
-                    </div>
+                    <a href="https://twitter.com/KeyboardWarriors" target="_blank" rel="noopener noreferrer" aria-label="Follow Keyboard Repairs on Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://instagram.com/KeyboardWarriors" target="_blank" rel="noopener noreferrer" aria-label="Follow Keyboard Repairs on Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="form" class="form-section section-padding bg-light">
+        <section id="form" class="form-section">
             <div class="container">
-                <h2>Send Us a Message</h2>
-                <p class="lead">Fill out the form below and we'll get back to you as soon as possible.</p>
-                <form action="mailto:fixit@keyboard.com" method="post" enctype="text/plain">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">Have a question or need a repair? Fill out the form below and we'll get back to you shortly.</p>
+                <form action="mailto:fixit@keyboard.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required aria-required="true">
+                        <input type="text" id="name" name="name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required aria-required="true">
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required aria-required="true">
+                        <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -148,39 +130,35 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Keyboard Repairs. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Nav and Current Year -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-            const currentYearSpan = document.getElementById('current-year');
+        // Auto-update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            hamburger.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-                this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-            });
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
 
-            // Close nav when a link is clicked (for mobile)
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                        hamburger.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            });
-
-            // Set current year
-            currentYearSpan.textContent = new Date().getFullYear();
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
         });
+
+        // Close nav menu when a link is clicked (for mobile)
+        document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        }));
     </script>
 </body>
 </html>
