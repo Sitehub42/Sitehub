@@ -3,83 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SiteHub - Affordable Websites for South African SMEs</title>
-    <meta name="description" content="SiteHub offers fast, accessible, and scalable AI-powered website solutions for South African SMEs, starting at just R99/year*. Launch your professional online presence today!">
+    <meta name="description" content="Test Company provides professional Beauty & Wellness services and products. Focused on client success and agile methodologies.">
+    <meta name="keywords" content="Beauty, Wellness, Skincare, Massage, Hair, Nails, Test Company">
+    <meta name="author" content="Test Company">
+    <title>Test Company | Elevating Your Beauty & Wellness Journey</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/test-company">
+    <meta property="og:title" content="Test Company | Elevating Your Beauty & Wellness Journey">
+    <meta property="og:description" content="Test Company provides professional Beauty & Wellness services and products. Focused on client success and agile methodologies.">
+    <meta property="og:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/test-company">
+    <meta property="twitter:title" content="Test Company | Elevating Your Beauty & Wellness Journey">
+    <meta property="twitter:description" content="Test Company provides professional Beauty & Wellness services and products. Focused on client success and agile methodologies.">
+    <meta property="twitter:image" content="https://sitehub.co.za/test-company/hero-800x400.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;6600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./images/logo.png" type="image/png"> <!-- Favicon placeholder -->
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1046803457531448');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1046803457531448&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </head>
 <body>
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-    <!-- Navigation Bar -->
-    <header class="navbar">
-<!-- Top Banner -->
-<div class="top-banner">
-    <div class="top-banner-content">
-        <span>Take your hustle online for ONLY R99/year!*</span> 
-
-        <div class="social-icons">
-            <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61579155480504#" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.tiktok.com/@sitehub5" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/site_hub_hustle" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-         </div>
-    </div>
-</div>
-
+    <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <!-- Logo Placeholder -->
-                <a href="index.html"><img src="./images/logo.png" alt="SiteHub Logo"></a>
-            </div>
-            <nav class="nav-links">
-                <ul>
-		    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="about.html">About</a></li>
-                    
-                    <li><a href="contact.html">Contact Us</a></li>
-                   
-		    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
+            <a href="#hero" class="logo" aria-label="Test Company Logo">
+                <img src="logo.png" alt="Test Company Logo">
+            </a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="About Us">About Us</a></li>
+                    <li><a href="#services" aria-label="Our Services and Products">Services/Products</a></li>
+                    <li><a href="#contact" aria-label="Contact Information">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary" aria-label="Contact Form">Form</a></li>
                 </ul>
             </nav>
-            <!-- Mobile Navigation Toggle -->
-            <div class="mobile-nav-toggle">
-
-                <!-- Hamburger Icon Placeholder -->
-                <img src="./images/hamburger.png" alt="Menu Icon">
-            </div>
         </div>
-        <!-- Mobile Menu (hidden by default) -->
-        <nav class="mobile-menu">
-            <ul>
-		<li><a href="packages.html">Packages</a></li>
-
-                    <li><a href="about.html">About</a></li>
-                    
-                    <li><a href="contact.html">Contact Us</a></li>
-                   
-		    <li><a href="pre-launch-sign-up.html">Get Started</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero/Banner Section -->
@@ -160,306 +132,167 @@ Whether you’re starting a side hustle, promoting your services, or showing off
                 </ul>
                 <a href="pre-launch-sign-up.html" class="cta-button-secondary">Get Started</a>
             </div>
+        </section>
 
-            <!-- Custom Domain Kit -->
-            <div class="package-card">
-                <h3>Custom Domain Kit</h3>
-		<p>For businesses that want a professional, branded web address.</p>
-
-                <div class="price">R299/year</div>
-                <div class="renewal"><em>Renewal R200/year**</em></div>
-                <ul class="features">
-                    <li>All features of the SiteHub Starter</li>
-                    <li>1-year hosting - .co.za domain</li>
-                    <li>Domain setup & integration with your site</li>
-		    <li>Email address setup with your domain</li>
-
-                </ul>
-                <a href="pre-launch-sign-up.html" class="cta-button-secondary">Get Started</a>
+        <section id="services" class="services-section section-padding bg-light" role="region" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services & Products</h2>
+                <p class="section-description">Discover our comprehensive range of beauty and wellness offerings designed to rejuvenate and revitalize you. From advanced treatments to essential care, we have something for everyone.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-spa icon"></i>
+                        <h3>Advanced Skincare</h3>
+                        <p>Specialized facial treatments to nourish, hydrate, and restore your skin's natural glow.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-massage icon"></i>
+                        <h3>Rejuvenating Massages</h3>
+                        <p>Therapeutic massages designed to relieve tension, reduce stress, and promote deep relaxation.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-cut icon"></i>
+                        <h3>Professional Hair Design</h3>
+                        <p>Expert cuts, coloring, and styling to create the perfect look that complements your individual style.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-hand-sparkles icon"></i>
+                        <h3>Manicure & Pedicure</h3>
+                        <p>Pampering nail care services to keep your hands and feet looking pristine and healthy.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-seedling icon"></i>
+                        <h3>Holistic Wellness Consultations</h3>
+                        <p>Personalized guidance to support your overall well-being, focusing on a balanced lifestyle.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-gift icon"></i>
+                        <h3>Signature Products</h3>
+                        <p>Explore our curated selection of 'Test Products' designed to enhance and maintain your beauty regimen at home.</p>
+                    </div>
+                </div>
             </div>
-	 <!-- Ongoing Support -->
+        </section>
 
-            <div class="package-card">
-                <h3>Ongoing Support</h3>
-		<p>Get reliable, pay-as-you-go support whenever you need updates or fixes.</p>
-
-                <div class="price">R20/ticket</div>
-                <div class="renewal"><em>Pay as you go</em></div>
-                <ul class="features">
-                    <li>Hosting</li>
-                    <li>Site updates and changes</li>
-                    <li>Per-ticket technical support</li>
-                </ul>
-                <a href="pre-launch-sign-up.html" class="cta-button-secondary">Get Started</a>
+        <section id="contact" class="contact-section section-padding" role="region" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="section-description">We'd love to hear from you! Reach out to us through any of the channels below.</p>
+                <div class="contact-info-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <h3>Our Location</h3>
+                        <p>5 Marigold st</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope icon"></i>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:ziegler.tanya@gmail.com" aria-label="Email Test Company">ziegler.tanya@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:0724354591" aria-label="Call Test Company">0724354591</a></p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#" aria-label="Visit us on Instagram (link not provided)" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Visit us on TikTok (link not provided)" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Visit us on LinkedIn (link not provided)" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
+        </section>
 
-        </div>
-</section>
-<!-- Who Our Packages Are For -->
-<section class="who-for container" aria-labelledby="who-heading">
-  <h2 id="who-heading">Who Our Packages Are For</h2>
-  <p class="section-subtitle">Built for real South African businesses that need results — quickly and affordably.</p>
-<div class="about-image">
-                <!-- Placeholder for an image related to business growth or empowerment -->
-                <img src="./images/who.jpg" alt="Illustration of business growth and empowerment">
+        <section id="contact-form" class="form-section bg-light section-padding" role="form" aria-labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading">Send Us a Message</h2>
+                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="Name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" aria-label="Send Message">Send Message</button>
+                </form>
             </div>
+        </section>
+    </main>
 
-  <ul class="who-list" role="list">
-    <li><i class="fa-solid fa-briefcase"></i> SMEs & local service providers</li>
-    <li><i class="fa-solid fa-user-tie"></i> Freelancers & consultants</li>
-    <li><i class="fa-solid fa-store"></i> Side hustles & home businesses</li>
-    <li><i class="fa-solid fa-truck"></i> Township & rural entrepreneurs</li>
-    <li><i class="fa-solid fa-bag-shopping"></i> Market vendors & event traders</li>
-  </ul>
-</section>
-
-<!-- Portfolio Slider -->
-<section id="portfolio-slider" class="portfolio-slider container" aria-labelledby="portfolio-slider-heading">
-  <h2 id="portfolio-slider-heading">Recent Work</h2>
-  <p class="section-subtitle"> Fast, mobile-ready, and SEO-friendly sites built for real businesses across South Africa —
-    from Johannesburg to Cape Town, Durban, and beyond. See results and reviews below.
-  </p>
-
-  <div class="carousel" aria-roledescription="carousel">
-    <button class="carousel-btn prev" aria-label="Previous projects">
-      <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-    </button>
-
-    <div class="carousel-viewport" tabindex="0">
-      <ul class="carousel-track">
-        <!-- Slide 1 -->
-        <li class="slide">
-          <article class="site-card" itemscope itemtype="https://schema.org/CreativeWork">
-            <meta itemprop="url" content="https://www.sitehub.co.za/">
-            <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <meta itemprop="name" content="SiteHub">
-              <meta itemprop="url" content="https://www.sitehub.co.za/">
-            </span>
-            <a href="https://sitehub.co.za/yummiorganics" target="_blank" rel="noopener" class="site-thumb" aria-label="Open live site for YummiOrganics">
-              <img src="./images/portfolio3.jpg" alt="Homepage preview of Mama D’s Catering website" loading="lazy" itemprop="image">
-              <span class="site-visit">View live site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-            </a>
-            <div class="review" itemprop="review" itemscope itemtype="https://schema.org/Review">
-              <meta itemprop="itemReviewed" content="https://www.sitehub.co.za/">
-  <!-- Stars (set the rating with --rating: 0–5) -->
-  <div class="stars" style="--rating: 5" aria-label="Rated 5 out of 5">
-    <span class="stars-fill">5</span>
-  </div>
-  <span class="rating-number">5</span>
-
-  <!-- Optional structured data -->
-  <meta itemprop="reviewRating" content="5">
-  <meta itemprop="name" content="Customer review">
-  <p class="review-quote" itemprop="reviewBody">
-    “Incredible value!”
-  </p>
-  <p class="review-author">
-    — <span itemprop="author">Daniella K</span>, Yummi Organics
-  </p>
-</div>
-
-          </article>
-        </li>
-
-        <!-- Slide 2 -->
-        <li class="slide">
-          <article class="site-card" itemscope itemtype="https://schema.org/CreativeWork">
-            <a href="https://sitehub.co.za/dbutlion/" target="_blank" rel="noopener" class="site-thumb" aria-label="Open live site for Dot Butlion">
-              <img src="./images/Portfolio2.jpg" alt="Homepage preview of Tumi Plumbing website" loading="lazy" itemprop="image">
-              <span class="site-visit">View live site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-            </a>
-            <div class="review" itemprop="review" itemscope itemtype="https://schema.org/Review">
-  <!-- Stars (set the rating with --rating: 0–5) -->
-  <div class="stars" style="--rating: 5" aria-label="Rated 5 out of 5">
-    <span class="stars-fill">5</span>
-  </div>
-  <span class="rating-number">5</span>
-
-  <!-- Optional structured data -->
-  <meta itemprop="reviewRating" content="5">
-  <meta itemprop="name" content="Customer review">
-  <p class="review-quote" itemprop="reviewBody">
-    “Great service, thank you!”
-  </p>
-  <p class="review-author">
-    — <span itemprop="author">Dot</span>, D Butlion & Associates
-  </p>
-</div>
-
-          </article>
-        </li>
- <!-- Slide 5 -->
-        <li class="slide">
-          <article class="site-card" itemscope itemtype="https://schema.org/CreativeWork">
-            <a href="https://sitehub.co.za/JonnyWoodWork/" target="_blank" rel="noopener" class="site-thumb" aria-label="Open live site for Handyman Alfred">
-              <img src="./images/portfolio5.jpg" alt="Homepage preview of Bloom Florals website" loading="lazy" itemprop="image">
-              <span class="site-visit">View live site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-            </a>
-             <div class="review" itemprop="review" itemscope itemtype="https://schema.org/Review">
-  <!-- Stars (set the rating with --rating: 0–5) -->
-  <div class="stars" style="--rating: 5" aria-label="Rated 5 out of 5">
-    <span class="stars-fill">5</span>
-  </div>
-  <span class="rating-number">5</span>
-
-  <!-- Optional structured data -->
-  <meta itemprop="reviewRating" content="5">
-  <meta itemprop="name" content="Customer review">
-  <p class="review-quote" itemprop="reviewBody">
-    “Looks good.”
-  </p>
-  <p class="review-author">
-    — <span itemprop="author">Johnny</span>, JohnnyWoodWork
-  </p>
-</div>
-
-          </article>
-        </li>
-        <!-- Slide 3 -->
-        <li class="slide">
-          <article class="site-card" itemscope itemtype="https://schema.org/CreativeWork">
-            <a href="https://strawbz.co.za" target="_blank" rel="noopener" class="site-thumb" aria-label="Open live site for Strawbz">
-              <img src="./images/Portfolio1.jpg" alt="One page website portfolio" loading="lazy" itemprop="image">
-              <span class="site-visit">View live site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-            </a>
-              <div class="review" itemprop="review" itemscope itemtype="https://schema.org/Review">
-  <!-- Stars (set the rating with --rating: 0–5) -->
-  <div class="stars" style="--rating: 5" aria-label="Rated 5 out of 5">
-    <span class="stars-fill">5</span>
-  </div>
-  <span class="rating-number">5</span>
-
-  <!-- Optional structured data -->
-  <meta itemprop="reviewRating" content="5">
-  <meta itemprop="name" content="Customer review">
-  <p class="review-quote" itemprop="reviewBody">
-    “So professional.”
-  </p>
-  <p class="review-author">
-    — <span itemprop="author">Adele</span>, Strawbz </p>
-</div>
-
-          </article>
-        </li>
-
-        <!-- Slide 4 -->
-        <li class="slide">
-          <article class="site-card" itemscope itemtype="https://schema.org/CreativeWork">
-            <a href="https://sitehub.co.za/ALFRITONPRO-HOMESOLUTIONS/" target="_blank" rel="noopener" class="site-thumb" aria-label="Open live site for Handyman Alfred">
-              <img src="./images/portfolio4.jpg" alt="Homepage preview of Bloom Florals website" loading="lazy" itemprop="image">
-              <span class="site-visit">View live site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
-            </a>
-             <div class="review" itemprop="review" itemscope itemtype="https://schema.org/Review">
-  <!-- Stars (set the rating with --rating: 0–5) -->
-  <div class="stars" style="--rating: 5" aria-label="Rated 5 out of 5">
-    <span class="stars-fill">5</span>
-  </div>
-  <span class="rating-number">5</span>
-
-  <!-- Optional structured data -->
-  <meta itemprop="reviewRating" content="5">
-  <meta itemprop="name" content="Customer review">
-  <p class="review-quote" itemprop="reviewBody">
-    “Wow, our site was setup in minutes.”
-  </p>
-  <p class="review-author">
-    — <span itemprop="author">Alfred M</span>, Handyman Alfred</p>
-</div>
-
-          </article>
-        </li>
-
-
-
-        <!-- Add more slides as needed -->
-      </ul>
-    </div>
-
-    <button class="carousel-btn next" aria-label="Next projects">
-      <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-    </button>
-  </div>
-
-  <div class="carousel-dots" role="tablist" aria-label="Slide navigation"></div>
-</section>
-
-
- <!-- Footer -->
-    <footer>
-      
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
-           <div class="footer-social-icons">
-                <a href="mailto:info@sitehub.co.za" title="Email Us"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61579155480504#" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.tiktok.com/@sitehub5" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/site_hub_hustle" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>
-                &copy; <span id="footer-year">2023</span> SiteHub. All rights reserved.
-                &nbsp;|&nbsp;
-                <a href="privacy.html">Privacy Policy</a>
-                &nbsp;|&nbsp;
-                <a href="terms.html">Terms &amp; Conditions</a>
-            &nbsp;|&nbsp;
-                <a href="competition-terms.html">Competition T's&amp;C's</a>
- </p>
-           
+            <p>&copy; <span id="current-year"></span> Test Company. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer" aria-label="Visit SiteHub website">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Simple JavaScript for mobile menu toggle
-        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-        const mobileMenu = document.querySelector('.mobile-menu');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Navigation Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
 
-        mobileNavToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
             });
+
+            // Close mobile nav when a link is clicked
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            // Set Current Year for Footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+             // Sticky navigation adjustment for scroll
+            const header = document.querySelector('.main-header');
+            const heroSection = document.getElementById('hero');
+            const headerHeight = header.offsetHeight;
+
+            if (heroSection) {
+                const observer = new IntersectionObserver(
+                    ([entry]) => {
+                        if (!entry.isIntersecting) {
+                            header.classList.add('sticky-scrolled');
+                        } else {
+                            header.classList.remove('sticky-scrolled');
+                        }
+                    },
+                    { rootMargin: `-${headerHeight}px 0px 0px 0px` }
+                );
+                observer.observe(heroSection);
+            }
         });
-
-        // Update current year in footer dynamically
-        document.getElementById('footer-year').textContent = new Date().getFullYear();
     </script>
-<!-- Small cookie banner (non-blocking) -->
-<div id="cookie-banner" class="cookie-banner" role="region" aria-live="polite" aria-label="Cookie notice">
-  <p>
-    We use cookies to ensure you get the best possible experience.
-    By using this site we assume your consent, view our
-    <a href="/privacy.html" target="_blank" rel="noopener">privacy policy</a> for more information.
-  </p>
-  <div class="cookie-actions">
-    <button type="button" class="btn btn-reject" id="cookie-reject">Reject</button>
-    <button type="button" class="btn btn-accept" id="cookie-accept">Accept</button>
-  </div>
-</div>
-
-<script>
-(function(){
-  const KEY='cookie_consent_v1';
-  const banner=document.getElementById('cookie-banner');
-  const accept=document.getElementById('cookie-accept');
-  const reject=document.getElementById('cookie-reject');
-
-  if(!localStorage.getItem(KEY)) banner.style.display='block';
-
-  function decide(accepted){
-    localStorage.setItem(KEY, JSON.stringify({accepted, ts:new Date().toISOString()}));
-    banner.style.display='none';
-    document.dispatchEvent(new CustomEvent('cookieConsent', {detail:{accepted}}));
-  }
-  accept.addEventListener('click',()=>decide(true));
-  reject.addEventListener('click',()=>decide(false));
-})();
-</script>
-
-<script src="./js/slider.js"></script>
-
 </body>
 </html>
-

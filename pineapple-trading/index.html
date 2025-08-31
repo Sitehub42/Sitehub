@@ -3,159 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>asdf</title>
-    <meta name="description" content="asdf">
+    <title>Pineapple Trading Co. - Global Import & Export Solutions</title>
+    <meta name="description" content="Pineapple Trading Co. specializes in global import/export, logistics, and supply chain management. We offer seamless trade solutions for businesses worldwide.">
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="asdf">
-    <meta property="og:description" content="asdf">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com/">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Pineapple">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://via.placeholder.com/32x32?text=P" type="image/png">
+    <meta property="og:url" content="https://sitehub.co.za/pineapple-trading">
+    <meta property="og:title" content="Pineapple Trading Co. - Global Import & Export Solutions">
+    <meta property="og:description" content="Pineapple Trading Co. specializes in global import/export, logistics, and supply chain management. We offer seamless trade solutions for businesses worldwide.">
+    <meta property="og:image" content="https://sitehub.co.za/pineapple-trading/hero-800x400.png"> <!-- Placeholder for a relevant image -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/pineapple-trading">
+    <meta property="twitter:title" content="Pineapple Trading Co. - Global Import & Export Solutions">
+    <meta property="twitter:description" content="Pineapple Trading Co. specializes in global import/export, logistics, and supply chain management. We offer seamless trade solutions for businesses worldwide.">
+    <meta property="twitter:image" content="https://sitehub.co.za/pineapple-trading/hero-800x400.png">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://sitehub.co.za/pineapple-trading">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Link to external CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header and Navigation Bar -->
     <header class="main-header">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="#hero">
-                    <img src="https://via.placeholder.com/50x50?text=Logo" alt="Pineapple Logo">
-                    <span>Pineapple</span>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a href="#hero" class="logo-link" aria-label="Pineapple Trading Co. Home">
+                    <img src="logo.png" alt="Pineapple Trading Co. Logo" class="logo">
+                    <span class="company-name">Pineapple Trading Co.</span>
                 </a>
-            </div>
-            <nav class="main-nav" aria-label="Main Navigation">
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#about" aria-label="Learn more about us">About Us</a></li>
-                    <li><a href="#services" aria-label="Explore our services">Services</a></li>
-                    <li><a href="#contact" aria-label="Get in touch with us">Contact</a></li>
+                    <li><a href="#about" role="menuitem">About Us</a></li>
+                    <li><a href="#services" role="menuitem">Services</a></li>
+                    <li><a href="#contact" role="menuitem">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary nav-btn" role="menuitem">Get a Quote</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Pineapple</h1>
-            <p class="tagline">trrading</p>
-            <a href="#contact" class="btn btn-primary">Get Started</a>
-        </div>
-        <div class="hero-bg-overlay"></div>
-        <img src="https://via.placeholder.com/800x400?text=Hero+Banner" alt="Abstract technology background" class="hero-background-image">
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="about-section container section-padding">
-        <h2>About Us</h2>
-        <div class="about-content">
-            <p class="mission-statement"><strong>Our Mission:</strong> asdf</p>
-            <p class="core-business">We are a leading firm in the <strong>Technology</strong> industry, specializing in innovative solutions that drive progress and efficiency for businesses worldwide.</p>
-            <p>Our commitment to excellence and client satisfaction sets us apart. We believe in building long-lasting relationships based on trust and mutual success.</p>
-        </div>
-    </section>
-
-    <!-- Services/Products Section -->
-    <section id="services" class="services-section container section-padding">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <img src="https://via.placeholder.com/150x150?text=Software+Dev" alt="Software Development Icon">
-                <h3>Software Development</h3>
-                <p>We provide comprehensive software development services, from custom applications to enterprise-level solutions, tailored to your specific needs.</p>
+    <main>
+        <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <h1 id="hero-heading" class="hero-title">Pineapple Trading Co.</h1>
+                <p class="hero-tagline">Your Trusted Partner in Global Trade & Logistics</p>
+                <a href="#contact-form" class="btn btn-secondary hero-btn">Start Your Global Journey</a>
             </div>
-            <div class="service-item">
-                <img src="https://via.placeholder.com/150x150?text=Consulting" alt="Consulting Icon">
-                <h3>Technology Consulting</h3>
-                <p>Leverage our expertise to guide your digital transformation journey, optimize IT infrastructure, and implement cutting-edge technologies.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://via.placeholder.com/150x150?text=Support" alt="Support Icon">
-                <h3>IT Support & Maintenance</h3>
-                <p>Reliable and proactive IT support to ensure your systems run smoothly, minimizing downtime and maximizing productivity.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section container section-padding">
-        <h2>Get in Touch</h2>
-        <div class="contact-grid">
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p><i class="icon-map-marker"></i> <strong>Address:</strong> asdf</p>
-                <p><i class="icon-envelope"></i> <strong>Email:</strong> <a href="mailto:asdf">asdf</a></p>
-                <p><i class="icon-social"></i> <strong>Social Media:</strong> asdf</p>
-                <div class="social-icons">
-                    <!-- Placeholder for social media icons/links if desired -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>At Pineapple Trading Co., our mission is clear: <strong>To empower businesses worldwide by providing seamless, efficient, and reliable international trade solutions, fostering growth and expanding global reach.</strong></p>
+                    <p>Specializing in International Trade, Import/Export, and Supply Chain Management, we bring unparalleled expertise to every transaction. We pride ourselves on our agile methodologies, adapting quickly to market changes and client needs to deliver optimal results.</p>
+                    <p>Client success is at the heart of everything we do. We build lasting partnerships by ensuring transparency, efficiency, and a deep understanding of the global marketplace. Let us navigate the complexities of international trade so you can focus on your core business.</p>
                 </div>
             </div>
-            <div class="contact-form-container">
-                <h3>Send Us a Message</h3>
-                <form action="mailto:asdf" method="post" enctype="text/plain" class="contact-form">
+        </section>
+
+        <section id="services" class="services-section" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title">Our Services</h2>
+                <p class="section-description">We offer a comprehensive suite of services designed to streamline your global trade operations, ensuring efficiency and compliance at every step.</p>
+                <div class="services-grid">
+                    <div class="service-card" role="listitem">
+                        <i class="fas fa-globe-americas service-icon" aria-hidden="true"></i>
+                        <h3>Global Sourcing & Procurement</h3>
+                        <p>Leverage our extensive network to find the best suppliers and products worldwide, ensuring quality and cost-effectiveness.</p>
+                    </div>
+                    <div class="service-card" role="listitem">
+                        <i class="fas fa-truck-moving service-icon" aria-hidden="true"></i>
+                        <h3>Efficient Logistics & Freight Forwarding</h3>
+                        <p>Seamless management of your cargo's journey, from origin to destination, across all modes of transport.</p>
+                    </div>
+                    <div class="service-card" role="listitem">
+                        <i class="fas fa-file-invoice service-icon" aria-hidden="true"></i>
+                        <h3>Customs Clearance & Compliance</h3>
+                        <p>Navigate complex international regulations with ease, ensuring swift customs clearance and full legal compliance.</p>
+                    </div>
+                    <div class="service-card" role="listitem">
+                        <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
+                        <h3>Market Entry Consulting</h3>
+                        <p>Gain insights and strategies for successful expansion into new international markets.</p>
+                    </div>
+                    <div class="service-card" role="listitem">
+                        <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
+                        <h3>Supply Chain Optimization</h3>
+                        <p>Enhance the efficiency and resilience of your entire supply chain, reducing costs and improving delivery times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+                <p class="section-description">We're here to help you with your global trading needs. Reach out to us!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <p><span class="sr-only">Address:</span> 123 Global Lane, Trade City, World 7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <p><span class="sr-only">Email:</span> <a href="mailto:info@pineappetrading.com">info@pineappetrading.com</a></p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3 class="sr-only">Follow us on social media</h3>
+                    <a href="https://facebook.com/pineappletco" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com/company/pineappletco" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/pineappletco" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="form-section" aria-labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading" class="section-title">Send Us a Message</h2>
+                <p class="section-description">Fill out the form below and we'll get back to you shortly.</p>
+                <form class="contact-form" action="mailto:info@pineappetrading.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-label="Your Name">
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-label="Your Email Address">
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-label="Message Subject">
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required aria-label="Your Message"></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Pineapple. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Pineapple Trading Co. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Automatically update current year in footer
+        // Auto-update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
+        const navButtons = document.querySelectorAll('.nav-links a');
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+            document.body.classList.toggle('no-scroll'); // Prevent scrolling when menu is open
         });
 
-        // Close nav when a link is clicked (for mobile)
-        document.querySelectorAll('.nav-links a').forEach(link => {
+        // Close mobile nav when a link is clicked
+        navButtons.forEach(link => {
             link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', false);
-                }
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('no-scroll');
             });
+        });
+
+        // Sticky header logic (optional, CSS handles most of it, but JS can add a class for styling)
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.main-header');
+            if (window.scrollY > 50) { // Adjust threshold as needed
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
