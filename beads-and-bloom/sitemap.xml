@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sitehub.co.za/beads-and-bloom</loc>
-    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2023-10-27</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/beads-and-bloom#about</loc>
+    <lastmod>2023-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/beads-and-bloom#services</loc>
+    <lastmod>2023-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/beads-and-bloom#contact</loc>
+    <lastmod>2023-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/beads-and-bloom#form-section</loc>
+    <lastmod>2023-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
