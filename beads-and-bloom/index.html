@@ -3,144 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover unique handmade beaded jewellery from Beads & Bloom. From elegant necklaces to custom designs, we craft wearable art that expresses your individuality.">
-    <meta name="keywords" content="Beads & Bloom, handmade jewellery, beaded jewellery, custom jewellery, artisan necklaces, unique earrings, bracelets, South Africa, micro-retail">
-    <meta name="author" content="Beads & Bloom">
-
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Beads & Bloom - Handmade Beaded Jewellery">
-    <meta property="og:description" content="Discover unique handmade beaded jewellery from Beads & Bloom. From elegant necklaces to custom designs, we craft wearable art that expresses your individuality.">
-    <meta property="og:image" content="https://sitehub.co.za/beads-and-bloom/hero-800x400.png"> <!-- Replace with actual image URL -->
-    <meta property="og:url" content="https://sitehub.co.za/beads-and-bloom">
+    <title>Beads & Bloom - Exquisite Handmade Beaded Jewellery</title>
+    <meta name="description" content="Discover unique, handmade beaded jewellery from Beads & Bloom. We offer exquisite designs perfect for spaza shops and micro-retailers, combining artistry with quality craftsmanship. Explore our collections and find your perfect piece.">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/beads-and-bloom">
+    <meta property="og:title" content="Beads & Bloom - Exquisite Handmade Beaded Jewellery">
+    <meta property="og:description" content="Discover unique, handmade beaded jewellery from Beads & Bloom. We offer exquisite designs perfect for spaza shops and micro-retailers, combining artistry with quality craftsmanship. Explore our collections and find your perfect piece.">
+    <meta property="og:image" content="https://sitehub.co.za/beads-and-bloom/hero-800x400.png">
 
-    <title>Beads & Bloom - Handmade Beaded Jewellery</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/beads-and-bloom">
+    <meta property="twitter:title" content="Beads & Bloom - Exquisite Handmade Beaded Jewellery">
+    <meta property="twitter:description" content="Discover unique, handmade beaded jewellery from Beads & Bloom. We offer exquisite designs perfect for spaza shops and micro-retailers, combining artistry with quality craftsmanship. Explore our collections and find your perfect piece.">
+    <meta property="twitter:image" content="https://sitehub.co.za/beads-and-bloom/hero-800x400.png">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon (optional) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="main-header">
         <div class="container nav-container">
-            <a href="#hero" class="logo-link" aria-label="Beads & Bloom Home">
-                <img src="logo.png" alt="Beads & Bloom Logo" class="logo" height="150">
-            </a>
+            <div class="logo">
+                <a href="#hero" aria-label="Beads & Bloom Home">
+                    <img src="logo.png" alt="Beads & Bloom Logo" style="height: 150px;">
+                </a>
+            </div>
             <nav class="main-nav" aria-label="Main Navigation">
-                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
                 <ul class="nav-list">
-                    <li><a href="#about-us" class="nav-link">About Us</a></li>
-                    <li><a href="#services-products" class="nav-link">Our Jewellery</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact-form" class="nav-link button-link">Enquire Now</a></li>
+                    <li><a href="#contact-form" class="nav-link">Form</a></li>
                 </ul>
             </nav>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+                <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li><a href="#contact-form" class="mobile-nav-link">Form</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero-section" role="banner">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="hero-title">Beads & Bloom</h1>
-                <p class="hero-tagline">Crafting Elegance, One Bead at a Time.</p>
-                <a href="#contact-form" class="button hero-button">Discover Your Perfect Piece</a>
+                <h1 class="company-name">Beads & Bloom</h1>
+                <p class="tagline">Crafting Elegance, One Bead at a Time.</p>
+                <a href="#contact-form" class="btn btn-primary" aria-label="Go to contact form">Discover Your Perfect Piece</a>
             </div>
         </section>
 
-        <section id="about-us" class="about-us-section section-padding" aria-labelledby="about-us-heading">
+        <section id="about" class="about-section section-padding" role="region" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="about-us-heading" class="section-title">About Us</h2>
+                <h2 id="about-heading">About Beads & Bloom</h2>
                 <div class="about-content">
-                    <div class="about-text">
-                        <h3 class="section-subtitle">Our Mission</h3>
-                        <p>At Beads & Bloom, our mission is to create unique, high-quality handmade beaded jewellery that brings joy and expresses individuality. We are committed to fostering client success through personalized designs and agile craftsmanship, ensuring every piece tells a story. We believe in the beauty of handmade artistry and the power of a well-chosen accessory to elevate any look.</p>
-                        <p>Our passion lies in the meticulous selection of beads and materials, combined with expert crafting techniques. We pride ourselves on our attention to detail and our ability to translate our clients' visions into beautiful, wearable art.</p>
-                    </div>
-                    <!-- Optional: Add an image here for visual appeal -->
-                    <!-- <div class="about-image">
-                        <img src="about-image-placeholder.png" alt="Beads & Bloom crafting process" class="responsive-img">
-                    </div> -->
+                    <p>At Beads & Bloom, our mission is to handcraft exquisite, unique beaded jewellery that celebrates individuality and artistry. We are dedicated to empowering spaza shops and micro-retailers by providing high-quality, distinctive products.</p>
+                    <p>We foster client success through agile design processes, a commitment to unparalleled craftsmanship, and a passion for creating beautiful, wearable art. Our expertise lies in transforming simple beads into intricate designs, offering pieces that are not just accessories but expressions of style and personality.</p>
                 </div>
             </div>
         </section>
 
-        <section id="services-products" class="services-products-section section-padding bg-light" aria-labelledby="services-products-heading">
+        <section id="services" class="services-section section-padding" role="region" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-products-heading" class="section-title">Our Jewellery</h2>
-                <p class="section-description">Explore our exquisite collection of handmade beaded jewellery, crafted with passion and precision. Each piece is designed to complement your unique style and add a touch of elegance to any occasion.</p>
-
+                <h2 id="services-heading">Our Exquisite Jewellery</h2>
+                <p class="section-description">Beads & Bloom specializes in creating bespoke handmade beaded jewellery. Each piece is crafted with passion and precision, offering a unique blend of traditional techniques and modern aesthetics, perfect for adding a touch of elegance to any collection.</p>
                 <div class="services-grid">
                     <div class="service-item">
-                        <i class="fas fa-gem service-icon" aria-hidden="true"></i>
-                        <h3 class="service-title">Handmade Bracelets</h3>
-                        <p class="service-description">Adorn your wrist with our range of beautifully crafted beaded bracelets, perfect for stacking or as a standalone statement.</p>
+                        <i class="fas fa-gem"></i>
+                        <h3>Custom Beaded Necklaces</h3>
+                        <p>Unique, personalized designs for every style, handcrafted to your specifications.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-necklace service-icon" aria-hidden="true"></i>
-                        <h3 class="service-title">Artisan Necklaces</h3>
-                        <p class="service-description">Discover our elegant necklaces, designed to enhance your neckline with intricate beadwork and captivating designs.</p>
+                        <i class="fas fa-hand-sparkles"></i>
+                        <h3>Handcrafted Bracelets & Bangles</h3>
+                        <p>Elegant and durable wristwear, perfect for daily wear or special occasions.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-earrings service-icon" aria-hidden="true"></i>
-                        <h3 class="service-title">Unique Earrings</h3>
-                        <p class="service-description">Find the perfect pair of earrings, from delicate studs to dazzling drop earrings, all handcrafted with care.</p>
+                        <i class="fas fa-earrings"></i>
+                        <h3>Artisan Beaded Earrings</h3>
+                        <p>From subtle studs to statement drops, each pair is a unique work of art.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-sparkles service-icon" aria-hidden="true"></i>
-                        <h3 class="service-title">Custom Beaded Designs</h3>
-                        <p class="service-description">Bring your vision to life with our custom design service. We'll work with you to create a truly unique piece.</p>
+                        <i class="fas fa-box-open"></i>
+                        <h3>Unique Jewellery Sets</h3>
+                        <p>Coordinated collections designed to complete your look with effortless style.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-heading">
+        <section id="contact" class="contact-section section-padding" role="region" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="contact-heading" class="section-title">Contact Us</h2>
-                <p class="section-description">We'd love to hear from you! Reach out to us for enquiries, custom orders, or just to say hello.</p>
-
+                <h2 id="contact-heading">Connect With Us</h2>
                 <div class="contact-details">
-                    <div class="contact-info">
-                        <h3>Our Details</h3>
-                        <address>
-                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Craft Lane, Jewellery Town, JT 0001</p>
-                            <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:0829334668">082 933 4668</a></p>
-                            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:yumnaanorodien23@yahoo.com">yumnaanorodien23@yahoo.com</a></p>
-                        </address>
-                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Please contact us for our studio address or find our products at local micro-retailers.</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:yumnaanorodien23@yahoo.com">yumnaanorodien23@yahoo.com</a></p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+27829334668">082 933 4668</a></p>
                     <div class="social-media">
-                        <h3>Connect with Us</h3>
-                        <div class="social-icons">
-                            <a href="https://instagram.com/beadsbloom" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <!-- Add other social media links if available -->
-                        </div>
+                        <a href="https://www.instagram.com/beadsbloom" target="_blank" rel="noopener noreferrer" aria-label="Beads & Bloom on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact-form" class="contact-form-section section-padding bg-light" aria-labelledby="form-heading">
+        <section id="contact-form" class="form-section section-padding" role="form" aria-labelledby="form-heading">
             <div class="container">
-                <h2 id="form-heading" class="section-title">Get in Touch</h2>
-                <p class="section-description">Fill out the form below and we'll get back to you as soon as possible!</p>
-                <form action="mailto:yumnaanorodien23@yahoo.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 id="form-heading">Get in Touch</h2>
+                <p class="section-description">Have a question or a custom request? Fill out the form below, and we'll get back to you shortly.</p>
+                <form action="mailto:yumnaanorodien23@yahoo.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="Name" required aria-required="true">
@@ -155,16 +139,16 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="button submit-button">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
+    <footer class="main-footer" role="contentinfo">
+        <div class="container footer-content">
             <p>&copy; <span id="current-year"></span> Beads & Bloom. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
@@ -174,19 +158,28 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         const hamburger = document.querySelector('.hamburger');
-        const navList = document.querySelector('.nav-list');
-        const navLinks = document.querySelectorAll('.nav-list .nav-link');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navLinks = document.querySelectorAll('.mobile-nav-link');
 
         hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navList.classList.contains('active'));
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
+            mobileNav.classList.toggle('active');
         });
 
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navList.classList.remove('active');
+                mobileNav.classList.remove('active');
                 hamburger.setAttribute('aria-expanded', 'false');
             });
+        });
+
+        // Close mobile nav on resize if it's active and width goes desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
         });
     </script>
 </body>
