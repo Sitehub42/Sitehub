@@ -1,0 +1,636 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+/* --- Root Variables & Global Styles --- */
+:root {
+    /* Color Palette derived from Strawbz Logo */
+    --clr-chocolate-dark: hsl(28, 59%, 20%); /* Deep rich chocolate brown */
+    --clr-chocolate-medium: hsl(27, 43%, 35%); /* Medium chocolate brown */
+    --clr-strawberry-red: hsl(350, 78%, 55%); /* Vibrant strawberry red */
+    --clr-leaf-green: hsl(110, 36%, 47%);    /* Fresh green for subtle accents */
+    --clr-cream-white: hsl(30, 100%, 98%);   /* Creamy white for text & light backgrounds */
+    --clr-light-grey: hsl(30, 20%, 95%);     /* Very light warm grey for alternating sections */
+
+    /* Alpha version of dark chocolate for header transparency */
+    --clr-chocolate-dark-alpha: hsla(28, 59%, 20%, 0.8);
+
+    /* Font Families */
+    --ff-heading: 'Fredoka', sans-serif;
+    --ff-body: 'Nunito Sans', sans-serif;
+
+    /* Spacing */
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem; /* For section padding */
+    --container-max-width: 1200px;
+}
+
+/* Basic Reset & Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for nav anchors */
+}
+
+body {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+    color: var(--clr-chocolate-dark);
+    background-color: var(--clr-cream-white);
+    overflow-x: hidden; /* Prevent horizontal scroll from layout shifts */
+    /* Global padding for fixed header - base height approx 90px logo + 10px padding */
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-strawberry-red);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--clr-chocolate-medium);
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-heading);
+    color: var(--clr-chocolate-dark);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Responsive font size */
+    color: var(--clr-cream-white); /* For hero banner */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Make it pop on the image */
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    color: var(--clr-chocolate-medium);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--clr-strawberry-red); /* Using red for subheadings */
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.lead {
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin-bottom: var(--spacing-md);
+    color: var(--clr-chocolate-dark);
+    max-width: 800px; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- Utility Classes --- */
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.section-padded {
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+.bg-light {
+    background-color: var(--clr-light-grey);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px; /* Pill shape for friendly look */
+    font-family: var(--ff-heading);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: var(--clr-strawberry-red);
+    color: var(--clr-cream-white);
+    border: 2px solid var(--clr-strawberry-red);
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-chocolate-medium); /* Chocolate on hover */
+    border-color: var(--clr-chocolate-medium);
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--clr-chocolate-medium);
+    color: var(--clr-cream-white);
+    border: 2px solid var(--clr-chocolate-medium);
+}
+
+.btn-secondary:hover {
+    background-color: var(--clr-strawberry-red); /* Red on hover */
+    border-color: var(--clr-strawberry-red);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--clr-chocolate-dark-alpha); /* Semi-transparent for desktop */
+    padding: 0rem 0; /* Padding is handled by logo img */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between; /* Default for desktop: logo left, nav right */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
+}
+
+/* Logo specific styles */
+.logo {
+    display: flex; /* Allows for easy alignment of the image */
+    align-items: center; /* Vertically centers the image in the nav */
+}
+
+.logo img {
+    height: 100px; /* Logo height */
+    width: auto; /* Maintain aspect ratio */
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.4)); /* Adds a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    padding: 0.5rem 0; /* Add padding for clickable area, contributes to header height */
+}
+
+.logo img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Nav links styling for desktop */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--clr-cream-white);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--clr-strawberry-red);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Hero Banner --- */
+.hero-banner {
+    background: url('./images/hero-banner-bg.jpg') no-repeat center center/cover;
+    height: 80vh; /* Takes up 80% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: var(--spacing-lg);
+    z-index: 0; /* Below the header */
+}
+
+/* Remove the hero-banner::before overlay if you don't want it */
+/*
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+*/
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: var(--clr-cream-white);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* --- About Section --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    text-align: center;
+}
+
+.about-item {
+    background-color: var(--clr-cream-white);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px); /* Subtle lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.about-item svg, .about-item i { /* Font Awesome icons */
+    font-size: 3rem;
+    color: var(--clr-strawberry-red);
+    margin-bottom: 1rem;
+}
+
+.about-item h3 {
+    color: var(--clr-chocolate-medium);
+    margin-bottom: 0.5rem;
+}
+
+/* --- Gallery Section --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-sm); /* Smaller gap for image grid */
+    margin-top: var(--spacing-md);
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent look */
+    object-fit: cover; /* Crops images to fit without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-note {
+    font-style: italic;
+    color: var(--clr-chocolate-dark);
+    margin-top: var(--spacing-md);
+    opacity: 0.8;
+}
+
+/* --- Services Section --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    text-align: center;
+}
+
+.service-item {
+    background-color: var(--clr-cream-white);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item .service-icon {
+    font-size: 3.5rem;
+    color: var(--clr-leaf-green); /* Using green for service icons */
+    margin-bottom: 1rem;
+    display: block; /* Ensures icon is centered */
+}
+
+/* --- Testimonials Section (Simple Carousel) --- */
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if items exceed width */
+    scroll-snap-type: x mandatory; /* For smooth snapping behavior */
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-sm); /* Space for scrollbar */
+    margin-top: var(--spacing-md);
+    -webkit-overflow-scrolling: touch; /* Better scrolling on iOS */
+}
+
+.testimonial-item {
+    flex: 0 0 100%; /* Each item takes full width of container */
+    max-width: 600px; /* Optional: limit width of single testimonial */
+    scroll-snap-align: center;
+    background-color: var(--clr-cream-white);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin: 0 auto; /* Center individual items */
+}
+
+.testimonial-item p {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--clr-chocolate-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-item .client-name {
+    font-weight: 600;
+    color: var(--clr-strawberry-red);
+}
+
+/* --- Contact Section --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack on small screens */
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.contact-details {
+    background-color: var(--clr-cream-white);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-details h3 {
+    color: var(--clr-chocolate-medium);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.6rem;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--clr-chocolate-dark);
+}
+
+.contact-details p i {
+    color: var(--clr-strawberry-red);
+    font-size: 1.2rem;
+}
+
+.contact-details p a {
+    color: var(--clr-chocolate-dark); /* Default link color */
+    transition: color 0.3s ease;
+}
+
+.contact-details p a:hover {
+    color: var(--clr-strawberry-red);
+}
+
+.social-heading {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: var(--spacing-sm);
+    justify-content: flex-start; /* Align with text */
+}
+
+.social-icons a {
+    color: var(--clr-chocolate-medium); /* Dark icons on light background */
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--clr-strawberry-red); /* Red on hover */
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* --- Contact Form --- */
+.contact-form-wrapper {
+    background-color: var(--clr-light-grey); /* Light background for form */
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--clr-chocolate-dark);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    background-color: var(--clr-cream-white);
+    color: var(--clr-chocolate-dark);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--clr-strawberry-red);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--clr-strawberry-red-rgb), 0.2);
+}
+
+/* Helper for the rgba() above, convert HSL to RGB */
+:root {
+    --clr-strawberry-red-rgb: 222, 59, 81; /* Approx RGB for hsl(350, 78%, 55%) */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px;
+}
+
+.contact-form button[type="submit"] {
+    margin-top: 1rem;
+    align-self: flex-start; /* Align button to the left */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--clr-chocolate-dark);
+    color: var(--clr-cream-white);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: var(--spacing-lg); /* Add space above footer */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .fa-heart {
+    color: var(--clr-strawberry-red);
+    margin: 0 0.25rem;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Desktop & larger tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    /* Reset header background for desktop (semi-transparent) */
+    header {
+        background-color: var(--clr-chocolate-dark-alpha);
+    }
+    /* Ensure nav is visible for desktop */
+    nav {
+        display: block; /* Show the nav on desktop */
+    }
+    .nav-wrapper {
+        flex-wrap: nowrap; /* Prevent nav items from wrapping on wider screens */
+        justify-content: space-between; /* Logo left, Nav right */
+    }
+
+    body {
+        padding-top: 100px; /* Standard padding for fixed header on desktop */
+    }
+    /* Existing desktop grid layouts */
+    .about-grid, .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-grid {
+        grid-template-columns: 1fr 2fr;
+        align-items: flex-start;
+    }
+    .contact-details, .contact-form-wrapper {
+        padding: var(--spacing-lg);
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .testimonial-item {
+        flex: 0 0 45%;
+    }
+}
+
+/* Larger desktop adjustments (min-width: 1024px) */
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+    .section-padded {
+        padding: var(--spacing-lg);
+    }
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .testimonial-item {
+        flex: 0 0 30%;
+    }
+}
+
+/* Mobile specific styles (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Solid background for header on mobile */
+    header {
+        background-color: var(--clr-chocolate-dark);
+    }
+
+    /* Hide the entire navigation on mobile */
+    nav {
+        display: none;
+    }
+
+    /* Center the logo within the nav-wrapper on mobile when nav is hidden */
+    .nav-wrapper {
+        justify-content: center; /* Centers the logo horizontally */
+        flex-wrap: nowrap; /* Avoids wrapping the logo if it were to */
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Adjust body padding for reduced header height on mobile (only logo remains) */
+    body {
+        padding-top: 100px; /* Consistent with desktop, or adjust to fit exactly */
+    }
+
+    /* General responsive adjustments for content that was previously in a nested mobile query */
+    .hero-content {
+        padding: 0 1rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .about-grid, .services-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+    .contact-grid {
+        grid-template-columns: 1fr; /* Force stacking on mobile */
+    }
+    .contact-details, .contact-form-wrapper {
+        padding: var(--spacing-md);
+    }
+    .social-icons {
+        justify-content: center; /* Center social icons on mobile */
+    }
+    .testimonial-item {
+        flex: 0 0 90%; /* Almost full width for testimonials on mobile */
+    }
+}
