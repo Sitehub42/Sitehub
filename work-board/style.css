@@ -2,7 +2,7 @@
 :root {
     --primary-blue: #007bff;
     --secondary-grey: #6c757d;
-    --accent-green: #28a745;
+    --accent-green: #007bff;
     --light-grey-bg: #f8f9fa;
     --dark-text: #343a40;
     --white: #ffffff;
@@ -106,8 +106,8 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background-color: #218838;
-    border-color: #218838;
+    background-color: #34385a;
+    border-color: #dce4de;
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
