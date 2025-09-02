@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn to dance amazingly with Michael's Dance Studio. Specializing in West Coast Swing, we focus on client success and agile methodologies.">
+    <meta name="keywords" content="dance studio, West Coast Swing, dance classes, learn to dance, Michael's Dance Studio">
+    <meta name="author" content="Michael's Dance Studio">
+
+    <meta property="og:title" content="Michael's Dance Studio | Learn West Coast Swing">
+    <meta property="og:description" content="Learn to dance amazingly with Michael's Dance Studio. Specializing in West Coast Swing, we focus on client success and agile methodologies.">
+    <meta property="og:image" content="https://sitehub.co.za/michaels-dance-studio/hero-800x400.png">
+    <meta property="og:url" content="https://sitehub.co.za/michaels-dance-studio/index.html">
+    <meta property="og:type" content="website">
+
+    <title>Michael's Dance Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="Main navigation">
+                <a href="#hero" class="logo-link" aria-label="Michael's Dance Studio home">
+                    <img src="logo.png" alt="Michael's Dance Studio Logo" class="logo" height="150">
+                </a>
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="About Michael's Dance Studio">About Us</a></li>
+                    <li><a href="#services" aria-label="Our Dance Services">Services</a></li>
+                    <li><a href="#contact" aria-label="Contact Michael's Dance Studio">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary" aria-label="Fill out our Contact Form">Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero" role="banner">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Michael's Dance Studio</h1>
+                <p class="hero-tagline">We will teach you to dance amazingly</p>
+                <a href="#contact-form" class="btn btn-hero" aria-label="Get started with a dance lesson">Get Started Today</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-us section-padding" role="region" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>At Michael's Dance Studio, our mission is simple: <strong>'We will teach you to dance amazingly'</strong>. We specialize in West Coast Swing, focusing on personalized instruction that empowers our students. We believe in fostering a supportive and energetic environment, where every dancer can achieve their goals through agile learning methodologies and a commitment to client success.</p>
+                    <p>Our expertise in West Coast Swing dancing ensures that whether you're a complete beginner or looking to refine advanced techniques, you'll receive top-tier guidance. Join us and discover the joy of movement, connection, and amazing dance!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section-padding bg-light" role="region" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title">Our Services</h2>
+                <p class="services-summary">Master the art of West Coast Swing with Michael's Dance Studio. Our dedicated classes offer expert guidance, whether you're a beginner or looking to refine your moves. We break down complex steps into easily digestible lessons, ensuring a fun and effective learning experience.</p>
+                <div class="service-list">
+                    <div class="service-item">
+                        <i class="fas fa-users fa-3x service-icon" aria-hidden="true"></i>
+                        <h3>West Coast Swing Dancing</h3>
+                        <p>Join our dynamic West Coast Swing classes designed for all levels. Learn fundamental techniques, musicality, and partner connection in a fun and engaging atmosphere.</p>
+                    </div>
+                    <!-- Add more services as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding" role="region" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Contact Us</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:meandmichael@gmail.com">meandmichael@gmail.com</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> Phone: <a href="tel:0621957490">0621957490</a></p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Address: Your City, Your Country (placeholder)</p>
+                    <div class="social-media">
+                        <a href="https://instagram.com/michael" target="_blank" rel="noopener noreferrer" aria-label="Visit Michael's Dance Studio on Instagram">
+                            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="contact-form" class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form action="mailto:meandmichael@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="Name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="Email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="Subject" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Michael's Dance Studio. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
