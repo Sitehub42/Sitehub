@@ -2,10 +2,10 @@
 :root {
     --primary-color: #2C3E50; /* Dark Blue */
     --secondary-color: #3498DB; /* Bright Blue */
-    --accent-color: #ECF0F1; /* Light Gray/Off-white */
+    --accent-color: #F8F9FA; /* Light Gray/Off-white */
     --light-bg-color: #F8F9FA; /* Very Light Gray */
     --text-color: #333;
-    --light-text-color: #666;
+    --light-text-color: #333;
     --white: #fff;
     --border-radius: 8px;
     --transition-speed: 0.3s ease;
@@ -219,7 +219,7 @@ a:hover {
 
 /* Section Styling */
 section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 section:nth-child(even) {
@@ -297,20 +297,21 @@ section:nth-child(even) {
 /* Contact Section */
 .contact-section {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--primary-color);
     text-align: center;
 }
 
 .contact-section h2 {
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .contact-info p {
     font-size: 1.1em;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--primary-color);
 }
 
 .contact-info p i {
@@ -319,12 +320,12 @@ section:nth-child(even) {
 }
 
 .contact-info a {
-    color: var(--accent-color);
+    color: var(--acc--primary-color);
     transition: color var(--transition-speed);
 }
 
 .contact-info a:hover {
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 .social-links {
@@ -334,7 +335,7 @@ section:nth-child(even) {
 .social-links a {
     font-size: 2em;
     margin: 0 15px;
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .social-links a:hover {
@@ -349,12 +350,12 @@ section:nth-child(even) {
 
 .form-section h2, .form-section p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-section p {
     max-width: 600px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 0px auto;
     color: var(--light-text-color);
 }
 
@@ -362,7 +363,7 @@ section:nth-child(even) {
     max-width: 700px;
     margin: 0 auto;
     background-color: var(--white);
-    padding: 40px;
+    padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
