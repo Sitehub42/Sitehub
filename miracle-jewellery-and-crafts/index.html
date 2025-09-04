@@ -3,173 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miracle Jewellery and Crafts | Handcrafted Elegance</title>
-    <meta name="description" content="Discover unique, handcrafted jewellery and artisan crafts. Miracle Jewellery and Crafts offers custom designs, repairs, and creative workshops.">
+    <meta name="description" content="Miracle Jewellery and Crafts specializes in exquisite handcrafted jewellery and unique artisanal crafts. Discover bespoke necklaces, bracelets, earrings, and custom gifts, crafted with passion and precision.">
+    <meta name="keywords" content="handcrafted jewellery, unique crafts, bespoke jewellery, artisanal gifts, custom necklaces, handmade bracelets, Miracle Jewellery and Crafts">
     <meta name="author" content="Miracle Jewellery and Crafts">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitehub.co.za/miracle-jewellery-and-crafts">
-    <meta property="og:title" content="Miracle Jewellery and Crafts | Handcrafted Elegance">
-    <meta property="og:description" content="Discover unique, handcrafted jewellery and artisan crafts. Miracle Jewellery and Crafts offers custom designs, repairs, and creative workshops.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Miracle Jewellery and Crafts - Exquisite Handcrafted Creations">
+    <meta property="og:description" content="Miracle Jewellery and Crafts specializes in exquisite handcrafted jewellery and unique artisanal crafts. Discover bespoke necklaces, bracelets, earrings, and custom gifts, crafted with passion and precision.">
     <meta property="og:image" content="https://sitehub.co.za/miracle-jewellery-and-crafts/hero-800x400.png">
+    <meta property="og:url" content="https://sitehub.co.za/miracle-jewellery-and-crafts">
+    <meta property="og:type" content="website">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sitehub.co.za/miracle-jewellery-and-crafts">
-    <meta property="twitter:title" content="Miracle Jewellery and Crafts | Handcrafted Elegance">
-    <meta property="twitter:description" content="Discover unique, handcrafted jewellery and artisan crafts. Miracle Jewellery and Crafts offers custom designs, repairs, and creative workshops.">
-    <meta property="twitter:image" content="https://sitehub.co.za/miracle-jewellery-and-crafts/hero-800x400.png">
+    <title>Miracle Jewellery and Crafts - Exquisite Handcrafted Creations</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header and Navigation -->
-    <header class="main-header">
-        <nav class="navbar" role="navigation" aria-label="Main Navigation">
-            <div class="container">
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
                 <a href="#hero" class="logo-link" aria-label="Miracle Jewellery and Crafts Home">
-                    <img src="logo.png" alt="Miracle Jewellery and Crafts Logo" class="logo">
+                    <img src="logo.png" alt="Miracle Jewellery and Crafts Logo" class="logo" height="150">
                 </a>
-                <button class="hamburger" aria-label="Open menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="#about" role="menuitem">About Us</a></li>
-                    <li><a href="#services" role="menuitem">Services/Products</a></li>
-                    <li><a href="#contact" role="menuitem">Contact</a></li>
-                    <li><a href="#contact-form" role="menuitem">Form</a></li>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Creations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form" class="btn btn-primary">Enquire Now</a></li>
                 </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner" aria-label="Hero Section with Company Tagline">
+        <section id="hero" class="hero-section" role="banner">
             <div class="hero-overlay"></div>
-            <div class="hero-content container">
-                <h1 class="company-name">Miracle Jewellery and Crafts</h1>
-                <p class="tagline">Handcrafted Elegance, Uniquely Yours</p>
-                <a href="#contact-form" class="btn btn-primary" aria-label="Go to contact form">Get Started Today</a>
+            <div class="container hero-content">
+                <h1 class="fade-in">Miracle Jewellery and Crafts</h1>
+                <p class="tagline fade-in delay-1">Exquisite Handcrafted Jewellery & Unique Creations</p>
+                <a href="#form" class="btn btn-hero fade-in delay-2" aria-label="Link to enquiry form">Start Your Miracle Piece</a>
             </div>
         </section>
 
         <!-- About Us Section -->
         <section id="about" class="about-section container" role="region" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Us</h2>
-            <div class="about-content">
-                <p>At Miracle Jewellery and Crafts, our mission is to inspire joy and self-expression through exquisite, handcrafted pieces. We are dedicated to creating high-quality, unique jewellery and crafts that tell a story, celebrate individuality, and stand the test of time. We believe in sustainable practices, ethical sourcing, and fostering a creative community through our workshops.</p>
-                <p>With deep expertise in Custom Jewellery Design, Artisan Crafts, Jewellery Repair, and Workshops, we bring your visions to life. We pride ourselves on client success, ensuring every piece reflects our commitment to quality and your unique style. Our agile methodologies ensure a seamless creative process from concept to completion, adapting to your needs every step of the way.</p>
-            </div>
+            <h2 id="about-heading">About Miracle Jewellery and Crafts</h2>
+            <p>Our mission at Miracle Jewellery and Crafts is to ignite joy and express individuality through our exquisite handcrafted jewellery and unique artisanal crafts. We believe in creating pieces that are not just accessories, but treasures that tell a story, crafted with passion, precision, and a touch of magic. We are committed to client success, ensuring every custom piece perfectly captures their vision, and operate with agile methodologies to adapt and innovate in the ever-evolving world of artisan craft.</p>
+            <p>We pride ourselves on the meticulous attention to detail and the personal touch woven into every piece. From concept to creation, we work closely with our clients, transforming ideas into tangible works of art that are cherished for a lifetime. Your satisfaction is our greatest reward, and our agile approach ensures we can bring your dreams to life with flexibility and excellence.</p>
         </section>
 
         <!-- Services/Products Section -->
         <section id="services" class="services-section" role="region" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-heading">Our Services & Products</h2>
-                <p class="section-summary">Explore our range of handcrafted jewellery, unique artisan crafts, expert repair services, and engaging workshops designed to unleash your creativity.</p>
+                <h2 id="services-heading">Our Handcrafted Creations</h2>
+                <p class="section-description">Discover a world of unique artistry where every piece tells a story. From bespoke jewellery to enchanting crafts, our creations are designed to captivate and inspire.</p>
                 <div class="services-grid">
-                    <div class="service-item" role="article">
-                        <i class="fas fa-gem fa-3x" aria-hidden="true"></i>
+                    <div class="service-item" role="listitem" tabindex="0">
+                        <i class="fas fa-gem"></i>
                         <h3>Custom Jewellery Design</h3>
-                        <p>Bring your dream pieces to life with our bespoke design service.</p>
+                        <p>Bring your vision to life with a one-of-a-kind piece. We specialize in custom designs tailored to your unique style and story.</p>
                     </div>
-                    <div class="service-item" role="article">
-                        <i class="fas fa-palette fa-3x" aria-hidden="true"></i>
-                        <h3>Handmade Artisan Crafts</h3>
-                        <p>Explore unique, handcrafted items from home decor to personal accessories.</p>
+                    <div class="service-item" role="listitem" tabindex="0">
+                        <i class="fas fa-necklace"></i>
+                        <h3>Handmade Necklaces & Pendants</h3>
+                        <p>Explore our collection of exquisite necklaces and pendants, crafted with intricate details and precious materials.</p>
                     </div>
-                    <div class="service-item" role="article">
-                        <i class="fas fa-tools fa-3x" aria-hidden="true"></i>
+                    <div class="service-item" role="listitem" tabindex="0">
+                        <i class="fas fa-bracelet"></i>
+                        <h3>Unique Bracelets & Bangles</h3>
+                        <p>Adorn your wrist with our stunning range of handcrafted bracelets and bangles, perfect for any occasion.</p>
+                    </div>
+                    <div class="service-item" role="listitem" tabindex="0">
+                        <i class="fas fa-earrings"></i>
+                        <h3>Artisanal Earrings</h3>
+                        <p>Discover elegant and contemporary earring designs, from delicate studs to statement dangling pieces.</p>
+                    </div>
+                    <div class="service-item" role="listitem" tabindex="0">
+                        <i class="fas fa-palette"></i>
+                        <h3>Bespoke Craft Gifts</h3>
+                        <p>Find the perfect handcrafted gift for loved ones or a special treat for yourself from our diverse craft collection.</p>
+                    </div>
+                    <div class="service-item" role="listitem" tabindex="0">
+                        <i class="fas fa-tools"></i>
                         <h3>Jewellery Repair & Restoration</h3>
-                        <p>Expert repairs to restore the beauty and integrity of your cherished items.</p>
-                    </div>
-                    <div class="service-item" role="article">
-                        <i class="fas fa-chalkboard-teacher fa-3x" aria-hidden="true"></i>
-                        <h3>Crafting Workshops</h3>
-                        <p>Learn the art of jewellery making and various crafts in our hands-on workshops.</p>
+                        <p>Trust us with the delicate task of repairing and restoring your cherished jewellery to its original glory.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section container" role="region" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get in Touch</h2>
-            <div class="contact-details">
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Artisan Alley, Craftsville, CA 90210</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@miraclejewellery.com">info@miraclejewellery.com</a></p>
-                <div class="social-links" aria-label="Social Media Links">
-                    <a href="https://facebook.com/miraclejewellery" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
-                    <a href="https://instagram.com/miraclejewellery" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="https://pinterest.com/miraclejewellery" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest-p fa-2x"></i></a>
+        <section id="contact" class="contact-section" role="region" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="section-description">We'd love to hear from you! Reach out to us for enquiries, custom orders, or just to say hello.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Craft Lane, Artisan City, ART 4567</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:m88.duplessis@gmail.com" aria-label="Email Miracle Jewellery and Crafts">m88.duplessis@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+27824702489" aria-label="Call Miracle Jewellery and Crafts">082-470-2489</a></p>
+                    <div class="social-links" aria-label="Social Media Links">
+                        <a href="https://www.instagram.com/miraclejewellerycrafts" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="contact-form" class="contact-form-section" role="region" aria-labelledby="form-heading">
+        <section id="form" class="form-section" role="form" aria-labelledby="form-heading">
             <div class="container">
                 <h2 id="form-heading">Send Us a Message</h2>
-                <form action="mailto:info@miraclejewellery.com" method="post" enctype="text/plain" aria-label="Contact form">
+                <p class="section-description">Fill out the form below and we'll get back to you as soon as possible!</p>
+                <form action="mailto:m88.duplessis@gmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-required="true">
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="main-footer" role="contentinfo">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Miracle Jewellery and Crafts. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Nav and Current Year -->
     <script>
-        // Auto-update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Navigation Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.getElementById('navLinks');
 
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-        });
-
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                }
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('nav-active');
+                hamburger.setAttribute('aria-expanded', navLinks.classList.contains('nav-active'));
             });
+
+            // Close mobile nav when a link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('nav-active')) {
+                        navLinks.classList.remove('nav-active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            // Set Current Year in Footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
