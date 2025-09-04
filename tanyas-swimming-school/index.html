@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanya's Swimming School - Learn to Swim with Confidence</title>
-    <meta name="description" content="Tanya's Swimming School offers expert swimming lessons for kids, from basics to advanced training, in individual or group settings. Build confidence in the water.">
-    <meta name="keywords" content="swimming lessons, kids swimming, learn to swim, swimming training, individual classes, group classes, swimming school, Tanya's Swimming School">
-
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Tanya's Swimming School - Dive into Confidence!">
-    <meta property="og:description" content="Expert swimming lessons for kids, from basics to advanced training. Individual and group classes available.">
-    <meta property="og:image" content="https://sitehub.co.za/tanyas-swimming-school/hero-800x400.png"> <!-- Replace with actual image URL if hosted -->
-    <meta property="og:url" content="https://sitehub.co.za/tanyas-swimming-school/">
+    <title>Tanya's Swimming School - Learn to Swim</title>
+    <meta name="description" content="Tanya's Swimming School offers swimming lessons for kids from basics to advanced training, including individual and group classes. Located at 5 Marigold st.">
+    <meta name="keywords" content="swimming lessons, kids swimming, learn to swim, swimming classes, individual swimming, group swimming, Pretoria, Tanya's Swimming School">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/tanyas-swimming-school">
+    <meta property="og:title" content="Tanya's Swimming School - Learn to Swim">
+    <meta property="og:description" content="Tanya's Swimming School offers swimming lessons for kids from basics to advanced training, including individual and group classes. Located at 5 Marigold st.">
+    <meta property="og:image" content="https://sitehub.co.za/tanyas-swimming-school/hero-800x400.png">
 
-    <!-- Favicon (Optional, but good practice) -->
+    <!-- Favicon (optional, but good practice) -->
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
@@ -29,191 +29,154 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header and Navigation Bar -->
-    <header>
-        <nav id="navbar" aria-label="Main Navigation">
-            <div class="container nav-content">
-                <a href="#hero" class="logo" aria-label="Tanya's Swimming School Home">
-                    <img src="logo.png" alt="Tanya's Swimming School Logo" height="150">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">
+                    <img src="logo.png" alt="Tanya's Swimming School Logo" style="height: 150px;">
                 </a>
-                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-links" id="navLinks">
+            </div>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact-form" class="button nav-button">Enroll Now</a></li>
+                    <li><a href="#form" class="btn btn-primary">Enroll Today!</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" aria-label="Mobile navigation">
+                <ul>
+                    <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                    <li><a href="#form" class="btn btn-primary mobile-nav-link">Enroll Today!</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero" aria-label="Welcome to Tanya's Swimming School">
+    <main id="main-content">
+        <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1>Tanya's Swimming School</h1>
-                <p class="tagline">Dive into Confidence: Expert Swimming Lessons for Kids!</p>
-                <a href="#contact-form" class="button primary-button">Get Started Today!</a>
+                <p>Teaching kids to swim from basics to training.</p>
+                <a href="#form" class="btn btn-secondary" aria-label="Enroll today by filling out our contact form">Enroll Today!</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-us section-padding" aria-label="About Tanya's Swimming School">
+        <section id="about" class="about-section">
             <div class="container">
-                <h2>About Us</h2>
-                <p class="section-description">At Tanya's Swimming School, we believe every child deserves to feel safe and confident in the water. Our mission is to empower children with essential swimming skills, fostering confidence, safety, and a lifelong love for the water.</p>
-                <div class="about-grid">
-                    <div class="about-item">
-                        <i class="fas fa-child icon-large"></i>
-                        <h3>Child-Focused Approach</h3>
-                        <p>We specialize in teaching kids, from the very basics of water familiarity to advanced stroke training, ensuring a fun and supportive learning environment.</p>
+                <h2>About Tanya's Swimming School</h2>
+                <p>At Tanya's Swimming School, our mission is to empower children with essential swimming skills, building confidence and fostering a love for the water. We believe every child deserves to be safe and proficient in the aquatic environment.</p>
+                <p>With expertise in teaching kids from basics to advanced training, we offer a nurturing and supportive learning environment. Our programs are designed to cater to various skill levels, ensuring personalized attention whether it's their first time in the water or they're refining their strokes.</p>
+                <p>We pride ourselves on our agile methodologies, adapting our teaching techniques to suit each child's individual pace and learning style. Our focus is always on client success, celebrating every milestone and ensuring a positive, engaging experience for all our young swimmers.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Swimming Programs</h2>
+                <p class="section-summary">We offer comprehensive swimming programs tailored for children of all ages and skill levels, ensuring a safe, fun, and effective learning experience.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-water"></i>
+                        <h3>Basic Water Safety</h3>
+                        <p>Fundamental skills for water awareness and safety, crucial for all young swimmers.</p>
                     </div>
-                    <div class="about-item">
-                        <i class="fas fa-check-circle icon-large"></i>
-                        <h3>Proven Success</h3>
-                        <p>Our methodologies emphasize practical skills, safety, and continuous improvement, leading to confident and skilled young swimmers.</p>
+                    <div class="service-item">
+                        <i class="fas fa-child-reaching"></i>
+                        <h3>Learn-to-Swim Classes</h3>
+                        <p>Step-by-step instruction to help beginners feel comfortable and confident in the water.</p>
                     </div>
-                    <div class="about-item">
-                        <i class="fas fa-lightbulb icon-large"></i>
-                        <h3>Effective & Fun Learning</h3>
-                        <p>We use engaging and agile teaching techniques, making lessons enjoyable and highly effective for children of all ages and skill levels.</p>
+                    <div class="service-item">
+                        <i class="fas fa-swimmer"></i>
+                        <h3>Stroke Development & Refinement</h3>
+                        <p>Focus on improving technique for various strokes, enhancing efficiency and endurance.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Group Lessons</h3>
+                        <p>Enjoyable group sessions that foster social interaction and peer learning in a fun atmosphere.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Individual Coaching</h3>
+                        <p>Personalized one-on-one sessions for focused attention and accelerated learning.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services section-padding bg-light" aria-label="Our Swimming Services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <p class="section-description">Tanya's Swimming School provides comprehensive swimming programs designed to cater to every child's needs, whether they are just starting out or looking to refine their technique.</p>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-swimmer service-icon"></i>
-                        <h3>Beginner Lessons</h3>
-                        <p>Introducing children to water safety, basic water confidence, floating, and fundamental swimming movements.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-medal service-icon"></i>
-                        <h3>Advanced Training</h3>
-                        <p>Focus on stroke correction, endurance building, and advanced techniques for proficient swimmers looking to improve.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-user service-icon"></i>
-                        <h3>Individual Classes</h3>
-                        <p>Personalized one-on-one instruction tailored to the child's specific needs, pace, and learning style.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-users service-icon"></i>
-                        <h3>Group Sessions</h3>
-                        <p>Learn and grow with peers in a fun, social, and motivating group environment, suitable for various skill levels.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding" aria-label="Contact Information">
+        <section id="contact" class="contact-section">
             <div class="container">
                 <h2>Get in Touch</h2>
-                <p class="section-description">We'd love to hear from you! Reach out with any questions or to schedule your child's swimming lessons.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt contact-icon"></i>
-                        <address>5 Marigold st</address>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <a href="mailto:ziegler.tanya@gmail.com">ziegler.tanya@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt contact-icon"></i>
-                        <a href="tel:+27724354591">0724354591</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-instagram contact-icon"></i>
-                        <a href="https://instagram.com/Tschool" target="_blank" rel="noopener noreferrer">@Tschool</a>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 5 Marigold st</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:ziegler.tanya@gmail.com">ziegler.tanya@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+27724354591">0724354591</a></p>
+                    <div class="social-media">
+                        <a href="https://instagram.com/Tschool" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="contact-form bg-light section-padding" aria-label="Enrollment Contact Form">
-            <div class="container">
-                <h2>Enroll Your Child Today!</h2>
-                <p class="section-description">Fill out the form below and we'll get back to you to discuss class options and scheduling.</p>
-                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain" class="contact-form-grid">
+                <h2 id="form">Send Us a Message</h2>
+                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required aria-required="true" placeholder="Your Full Name">
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required aria-required="true" placeholder="your@example.com">
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
-                    <div class="form-group full-width">
+                    <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required aria-required="true" placeholder="Inquiry about lessons...">
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
-                    <div class="form-group full-width">
+                    <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required aria-required="true" placeholder="Tell us about your child's age and swimming experience."></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
-                    <div class="form-group full-width">
-                        <button type="submit" class="button primary-button">Send Message</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Tanya's Swimming School. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Navigation and Current Year -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.getElementById('navLinks');
-            const navBar = document.getElementById('navbar');
-            const currentYearSpan = document.getElementById('current-year');
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-            // Toggle mobile navigation
-            hamburger.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-                this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-            });
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            mobileNav.classList.toggle('active');
+        });
 
-            // Close mobile nav when a link is clicked
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                });
-            });
-
-            // Set current year in footer
-            currentYearSpan.textContent = new Date().getFullYear();
-
-            // Add sticky class on scroll (if not handled purely by CSS sticky)
-            // For purely CSS sticky, this JS is not strictly needed, but good for adding extra classes if desired.
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 0) {
-                    navBar.classList.add('scrolled');
-                } else {
-                    navBar.classList.remove('scrolled');
-                }
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
+
+        // Set Current Year for Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
