@@ -5,138 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Hammocks are the best hammocks</title>
     <meta name="description" content="bananas bananas bananas bananas">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Banana Hammocks are the best hammocks">
     <meta property="og:description" content="bananas bananas bananas bananas">
-    <meta property="og:image" content="https://www.sitehub.co.za/hero-800x400.png"> <!-- Replace with actual hero image URL -->
-    <meta property="og:url" content="https://www.sitehub.co.za/banana-hammocks">
+    <meta property="og:image" content="https://sitehub.co.za/Banana%20Hammocks%20are%20the%20best%20hammocks/hero-800x400.png"> <!-- Placeholder for OG image -->
+    <meta property="og:url" content="https://sitehub.co.za/Banana%20Hammocks%20are%20the%20best%20hammocks">
     <meta property="og:type" content="website">
-    
+
+    <!-- Favicon - Basic placeholder -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header class="main-header">
-        <div class="container">
-            <a href="#" class="logo" aria-label="Bananas In Pajamas logo - Home">
+        <div class="container nav-content">
+            <a href="#hero" class="logo" aria-label="Bananas In Pajamas Home">
                 <img src="logo.png" alt="Bananas In Pajamas Logo" style="height: 150px;">
             </a>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services/Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact-form-section" class="btn btn-primary">Form</a></li>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a href="#about" role="menuitem">About Us</a></li>
+                    <li role="none"><a href="#services" role="menuitem">Services/Products</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                    <li role="none"><a href="#form-section" class="button primary nav-button" role="menuitem">Get a Hammock!</a></li>
                 </ul>
             </nav>
-            <button class="hamburger-menu" aria-label="Open mobile menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
-        <nav class="mobile-nav">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services/Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact-form-section" class="btn btn-primary">Form</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
             <div class="hero-overlay"></div>
-            <div class="container content">
-                <h1 class="hero-title">Bananas In Pajamas</h1>
-                <p class="hero-tagline">Bananas are not just for bread</p>
-                <a href="#contact-form-section" class="btn btn-secondary hero-btn">Get a Free Quote</a>
+            <div class="container hero-content">
+                <h1 id="hero-title" class="company-name">Bananas In Pajamas</h1>
+                <p class="tagline">Bananas are not just for bread</p>
+                <a href="#form-section" class="button primary hero-button">Enquire About Hammocks</a>
             </div>
         </section>
 
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2 class="section-title">About Bananas In Pajamas</h2>
-                <p class="lead-text">At Bananas In Pajamas, we are dedicated to crafting the finest hammocks for families, ensuring comfort and joy in every swing.</p>
-                <p>As leaders in the Manufacturing industry, Bananas In Pajamas excels in creating high-quality consumer goods that stand the test of time. Our mission is clear: we makes great hammocks for the family, blending innovative design with durable materials. We pride ourselves on our agile methodologies, adapting to market needs and client feedback to deliver products that truly make a difference.</p>
-                <p>Client success is at the heart of everything we do. We believe in building lasting relationships by providing exceptional products and service, ensuring every customer experience with Bananas In Pajamas is nothing short of delightful.</p>
-            </div>
+        <!-- About Us Section -->
+        <section id="about" class="about-section container" aria-labelledby="about-title">
+            <h2 id="about-title">About Bananas In Pajamas</h2>
+            <p>At <strong>Bananas In Pajamas</strong>, our mission is simple: "Makes great hammocks for the family." We are dedicated to crafting high-quality consumer goods that bring comfort and joy to families everywhere.</p>
+            <p>As experts in the Manufacturing industry, we leverage agile methodologies and a deep understanding of product development to deliver innovative and reliable solutions. Our commitment to client success is at the heart of everything we do, ensuring every hammock we produce meets the highest standards of quality and design.</p>
+            <p>We pride ourselves on our meticulous attention to detail and our passion for creating products that enhance relaxation and family time. Discover the difference that dedication and expertise can make with Bananas In Pajamas.</p>
         </section>
 
-        <section id="services" class="services-section section-padding">
+        <!-- Services/Products Section -->
+        <section id="services" class="services-section" aria-labelledby="services-title">
             <div class="container">
-                <h2 class="section-title">Our Consumer Goods & Services</h2>
-                <p class="lead-text">Bananas In Pajamas offers a range of high-quality consumer goods, from premium hammocks to custom designs and essential outdoor accessories. Our products are crafted with care, ensuring comfort, durability, and style for every family.</p>
+                <h2 id="services-title">Our Services & Products</h2>
+                <p class="section-description">Bananas In Pajamas specializes in creating exceptional consumer goods tailored for comfort and durability. Our focus on quality manufacturing ensures every product meets the high standards our customers expect.</p>
                 <div class="services-grid">
-                    <div class="service-item">
-                        <i class="fas fa-couch service-icon" aria-hidden="true"></i>
-                        <h3>Premium Hammocks</h3>
-                        <p>High-quality, durable hammocks designed for ultimate relaxation and long-lasting comfort in any setting.</p>
+                    <div class="service-item" role="article" aria-labelledby="service1-title">
+                        <i class="fas fa-bed" aria-hidden="true"></i>
+                        <h3 id="service1-title">Family Hammocks</h3>
+                        <p>Comfortable and durable hammocks designed for the whole family to relax in. Perfect for gardens, patios, and indoor spaces.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-palette service-icon" aria-hidden="true"></i>
-                        <h3>Custom Designs</h3>
-                        <p>Bespoke hammock designs crafted to perfectly match your personal style and complement your living space.</p>
+                    <div class="service-item" role="article" aria-labelledby="service2-title">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <h3 id="service2-title">Custom Manufacturing</h3>
+                        <p>Need a unique product? We offer custom manufacturing services to bring your consumer good ideas to life with precision and quality.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-sun service-icon" aria-hidden="true"></i>
-                        <h3>Outdoor Gear</h3>
-                        <p>A curated selection of accessories and gear to enhance your outdoor lounging and adventure experience.</p>
+                    <div class="service-item" role="article" aria-labelledby="service3-title">
+                        <i class="fas fa-box-open" aria-hidden="true"></i>
+                        <h3 id="service3-title">Retail Packaging Solutions</h3>
+                        <p>From design to production, we provide comprehensive packaging solutions that protect your product and attract customers.</p>
+                    </div>
+                    <div class="service-item" role="article" aria-labelledby="service4-title">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                        <h3 id="service4-title">Sustainable Materials</h3>
+                        <p>Committed to the environment, we incorporate sustainable materials and practices into our manufacturing processes.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding">
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
             <div class="container">
-                <h2 class="section-title">Get In Touch With Us</h2>
+                <h2 id="contact-title">Contact Us</h2>
                 <div class="contact-info">
                     <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 1 Harrington Road</p>
                     <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:bananas@test.com">bananas@test.com</a></p>
-                    <div class="social-links">
-                        <strong>Follow Us:</strong>
-                        <a href="#" aria-label="Bananas In Pajamas on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Bananas In Pajamas on Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Bananas In Pajamas on Instagram"><i class="fab fa-instagram"></i></a>
+                    <div class="social-media">
+                        <a href="https://twitter.com/Bananas" target="_blank" rel="noopener noreferrer" aria-label="Follow Bananas In Pajamas on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/Bananas" target="_blank" rel="noopener noreferrer" aria-label="Follow Bananas In Pajamas on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/Bananas" target="_blank" rel="noopener noreferrer" aria-label="Follow Bananas In Pajamas on Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="contact-form-section" class="contact-form-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Send Us a Message</h2>
-                <form action="mailto:bananas@test.com" method="post" enctype="text/plain" class="contact-form" aria-label="Contact Form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <!-- Contact Form Section -->
+                <div id="form-section" class="contact-form-container" aria-labelledby="form-title">
+                    <h3 id="form-title">Send Us a Message</h3>
+                    <form action="mailto:bananas@test.com" method="post" enctype="text/plain" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="button primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Bananas In Pajamas. All rights reserved.</p>
@@ -144,28 +148,45 @@
         </div>
     </footer>
 
+    <!-- JavaScript for dynamic year and mobile navigation -->
     <script>
-        // Automatically update current year in footer
+        // Auto update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger-menu');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const mainHeader = document.querySelector('.main-header');
+        // Mobile navigation toggle functionality
+        const hamburger = document.querySelector('.hamburger');
+        const mainNav = document.querySelector('.main-nav');
 
         hamburger.addEventListener('click', () => {
-            mobileNav.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('active'));
-            mainHeader.classList.toggle('nav-open'); // To adjust header height if needed
+            mainNav.classList.toggle('active');
+            const isExpanded = mainNav.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+            // Toggle body scroll lock to prevent scrolling when mobile nav is open
+            if (isExpanded) {
+                document.body.style.overflowY = 'hidden';
+            } else {
+                document.body.style.overflowY = '';
+            }
         });
 
         // Close mobile nav when a link is clicked
-        document.querySelectorAll('.mobile-nav a').forEach(link => {
+        document.querySelectorAll('.nav-list a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileNav.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                mainHeader.classList.remove('nav-open');
+                if (window.innerWidth <= 768) { // Adjust breakpoint as needed
+                    mainNav.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', false);
+                    document.body.style.overflowY = ''; // Re-enable body scroll
+                }
             });
+        });
+
+        // Close mobile nav if window is resized above mobile breakpoint while open
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', false);
+                document.body.style.overflowY = '';
+            }
         });
     </script>
 </body>
