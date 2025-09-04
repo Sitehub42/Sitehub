@@ -3,7 +3,31 @@
   <url>
     <loc>https://sitehub.co.za/tanyas-swimming-school</loc>
     <lastmod>2023-10-27T10:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/tanyas-swimming-school/#about</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/tanyas-swimming-school/#services</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/tanyas-swimming-school/#contact</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sitehub.co.za/tanyas-swimming-school/#contact-form</loc>
+    <lastmod>2023-10-27T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
