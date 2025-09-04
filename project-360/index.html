@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 360 - Your Partner in Project & Time Management Success</title>
-    <meta name="description" content="Project 360 provides leading SaaS solutions for project and time management, empowering businesses with agile tools for success. Specializing in timekeeping, project management, and enterprise setups.">
+    <meta name="description" content="Project 360 offers intuitive SaaS solutions for project management and time tracking, helping businesses streamline operations and achieve goals. From timekeeping to enterprise solutions, we empower your team.">
+    <meta name="keywords" content="Project 360, SaaS, project management, time tracking, timekeeping software, enterprise solutions, agile methodologies">
+    <meta name="author" content="Project 360">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/project-360">
-    <meta property="og:title" content="Project 360 - Your Partner in Project & Time Management Success">
-    <meta property="og:description" content="Project 360 provides leading SaaS solutions for project and time management, empowering businesses with agile tools for success. Specializing in timekeeping, project management, and enterprise setups.">
+    <meta property="og:title" content="Project 360 - Project & Time Management Software">
+    <meta property="og:description" content="Project 360 offers intuitive SaaS solutions for project management and time tracking, helping businesses streamline operations and achieve goals. From timekeeping to enterprise solutions, we empower your team.">
     <meta property="og:image" content="https://sitehub.co.za/project-360/hero-800x400.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sitehub.co.za/project-360">
-    <meta property="twitter:title" content="Project 360 - Your Partner in Project & Time Management Success">
-    <meta property="twitter:description" content="Project 360 provides leading SaaS solutions for project and time management, empowering businesses with agile tools for success. Specializing in timekeeping, project management, and enterprise setups.">
-    <meta property="twitter:image" content="https://sitehub.co.za/project-360/hero-800x400.png">
+    <title>Project 360 - Project & Time Management Software</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 
@@ -32,92 +28,119 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="sticky-header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="#hero" class="logo-link" aria-label="Project 360 Home">
-                    <img src="logo.png" alt="Project 360 Logo" class="logo">
-                </a>
-                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu">
+    <header class="main-header">
+        <div class="container">
+            <a href="#hero" class="logo-link" aria-label="Project 360 Home">
+                <img src="logo.png" alt="Project 360 Logo" class="logo">
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#contact-form" class="btn btn-primary">Form</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" aria-label="Mobile navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form">Form</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');">
+        <section id="hero" class="hero" aria-label="Project 360 Homepage Banner">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1>Project 360</h1>
-                <p class="tagline">Your Partner in Project & Time Management Success</p>
-                <a href="#contact-form" class="btn btn-secondary">Get Started Today</a>
+                <h1 class="hero-title">Project 360</h1>
+                <p class="hero-tagline">Streamline Your Projects, Master Your Time.</p>
+                <a href="#contact-form" class="btn btn-primary hero-btn">Get Started Today</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section section-padding">
+        <section id="about" class="about-us section-padding" aria-labelledby="about-us-heading">
             <div class="container">
-                <h2>About Project 360</h2>
-                <p class="section-description">At Project 360, our mission is to empower businesses and individuals with cutting-edge SaaS solutions for project and time management. We specialize in developing agile, user-friendly software that streamlines operations, enhances productivity, and ensures client success in every endeavor.</p>
-                <p>We are experts in the SaaS software industry, specifically tailored for project and time management. Our commitment to client success is at the core of everything we do, utilizing agile methodologies to adapt, innovate, and deliver solutions that truly make a difference for your business.</p>
-                <p>From small teams to large enterprises, Project 360 provides the tools you need to stay on track, manage resources effectively, and achieve your strategic objectives with confidence.</p>
+                <h2 id="about-us-heading" class="section-title">About Us</h2>
+                <p class="section-description">At Project 360, our mission is to supply SaaS software services for people who want project and time management services. We empower businesses to optimize their workflows, enhance team collaboration, and achieve strategic goals with precision.</p>
+                <div class="about-content">
+                    <div class="about-item">
+                        <h3>Our Mission</h3>
+                        <p>Our core mission is to provide intuitive and powerful SaaS solutions that simplify complex project and time management challenges. We believe in delivering tools that genuinely make a difference in productivity and operational efficiency.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>Our Expertise</h3>
+                        <p>With deep expertise in SaaS development and a keen understanding of modern business needs, we craft platforms that are not only robust and scalable but also user-friendly. We specialize in agile methodologies, ensuring our solutions adapt to your evolving requirements.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>Client Success</h3>
+                        <p>Client success is at the heart of everything we do. We partner with our clients, providing continuous support and insights to ensure they maximize the value of our software. Your achievements are our benchmark for success.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Services/Products Section -->
-        <section id="services" class="services-section section-padding bg-light">
+        <section id="services" class="services section-padding" aria-labelledby="services-heading">
             <div class="container">
-                <h2>Our Services & Products</h2>
-                <p class="section-description">Project 360 offers a comprehensive suite of SaaS solutions designed to meet your project and time management needs at every scale. Explore our flexible packages built for efficiency and growth.</p>
+                <h2 id="services-heading" class="section-title">Our Services</h2>
+                <p class="section-description">Project 360 offers a tiered approach to project and time management, designed to scale with your business needs. Choose the plan that best fits your team and operations.</p>
                 <div class="services-grid">
-                    <div class="service-item">
-                        <i class="fas fa-stopwatch service-icon" aria-hidden="true"></i>
-                        <h3>Starter Pack: Timekeeping Only</h3>
-                        <p>Perfect for individuals or small teams focused solely on accurate time tracking. Monitor work hours, breaks, and project allocations with ease.</p>
+                    <div class="service-card">
+                        <i class="fas fa-clock service-icon" aria-hidden="true"></i>
+                        <h3>Starter Pack</h3>
+                        <p>Perfect for individuals or small teams focused solely on tracking work hours. Our Starter pack provides essential timekeeping features to accurately log and manage time spent on tasks.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-card">
                         <i class="fas fa-tasks service-icon" aria-hidden="true"></i>
-                        <h3>Standard Pack: Timekeeping & Projects</h3>
-                        <p>Our most popular option for growing businesses. Combines robust timekeeping with powerful project management tools, including task assignment, progress tracking, and collaboration features.</p>
+                        <h3>Standard Plan</h3>
+                        <p>For growing teams needing comprehensive tools for both timekeeping and project management. The Standard plan combines robust time tracking with features for task assignment, progress monitoring, and project collaboration.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-card">
                         <i class="fas fa-building service-icon" aria-hidden="true"></i>
-                        <h3>Enterprise Pack: Custom Setup</h3>
-                        <p>Tailored for large organizations requiring extensive customization, dedicated support, and advanced integrations. Get a full enterprise setup designed to scale with your complex business needs.</p>
+                        <h3>Enterprise Solution</h3>
+                        <p>Tailored for large businesses and corporations requiring an extensive, custom enterprise setup. This solution offers advanced features, dedicated support, and scalable infrastructure to meet complex organizational demands.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding">
+        <section id="contact" class="contact section-padding" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Get in Touch</h2>
-                <p class="section-description">We'd love to hear from you! Reach out to discuss your project and time management needs.</p>
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 5 Marigold Street</p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:deank@sitehub.co.za">deank@sitehub.co.za</a></p>
-                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+0827085462">0827085462</a></p>
-                    <div class="social-media">
-                        <a href="https://instagram.com/Project360" target="_blank" rel="noopener noreferrer" aria-label="Project 360 on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://linkedin.com/company/Project360" target="_blank" rel="noopener noreferrer" aria-label="Project 360 on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                <h2 id="contact-heading" class="section-title">Contact Us</h2>
+                <p class="section-description">We'd love to hear from you! Reach out to us through any of the following channels.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <p>5 Marigold Street</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <p><a href="mailto:deank@sitehub.co.za">deank@sitehub.co.za</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <p><a href="tel:0827085462">0827085462</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                        <div class="social-links">
+                            <a href="https://instagram.com/Project360" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/company/Project360" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="form-section bg-light section-padding">
+        <section id="contact-form" class="contact-form section-padding" aria-labelledby="form-heading">
             <div class="container">
-                <h2>Send Us a Message</h2>
+                <h2 id="form-heading" class="section-title">Get in Touch</h2>
                 <p class="section-description">Fill out the form below and we'll get back to you as soon as possible.</p>
                 <form action="mailto:deank@sitehub.co.za" method="post" enctype="text/plain">
                     <div class="form-group">
@@ -134,7 +157,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -142,9 +165,10 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Project 360. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a>.</p>
+            <p>&copy; <span id="current-year"></span> Project 360. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
@@ -154,21 +178,19 @@
 
         // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
 
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
             const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
             hamburger.setAttribute('aria-expanded', !expanded);
+            mobileNav.classList.toggle('active');
         });
 
         // Close mobile nav when a link is clicked
-        document.querySelectorAll('.nav-menu a').forEach(item => {
-            item.addEventListener('click', () => {
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                }
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
     </script>
