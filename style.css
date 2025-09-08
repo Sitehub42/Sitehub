@@ -1,3 +1,39 @@
+/* Mailchimp Form Centering & Responsiveness */
+#mc_embed_shell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 32px auto;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #mc_embed_shell {
+    padding: 0 8px;
+  }
+  #mc_embed_signup {
+    padding: 18px 6px;
+    max-width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+}
+
+@media (max-width: 480px) {
+  #mc_embed_signup {
+    padding: 8px 2px;
+    font-size: 1em;
+  }
+}
 /* Global Styles */
 :root {
     --primary-color: #020101; /* Black */
