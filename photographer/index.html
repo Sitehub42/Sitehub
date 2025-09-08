@@ -3,154 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Photographer - Professional photography services capturing life's beautiful moments. Specializing in portraits, events, commercial, and product photography.">
-    <meta name="keywords" content="photographer, professional photography, portrait photography, event photography, commercial photography, product photography, South Africa">
+    <title>Photographer - Capturing Life's Beautiful Moments</title>
+    <meta name="description" content="Professional Photographer capturing life's beautiful moments. Specializing in weddings, portraits, events, and commercial photography.">
     <meta name="author" content="Photographer">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/photographer">
     <meta property="og:title" content="Photographer - Capturing Life's Beautiful Moments">
-    <meta property="og:description" content="Professional photography services capturing life's beautiful moments. Specializing in portraits, events, commercial, and product photography.">
+    <meta property="og:description" content="Professional Photographer capturing life's beautiful moments. Specializing in weddings, portraits, events, and commercial photography.">
     <meta property="og:image" content="https://sitehub.co.za/photographer/hero-800x400.png">
 
-    <!-- Title -->
-    <title>Photographer - Capturing Life's Beautiful Moments</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/photographer">
+    <meta property="twitter:title" content="Photographer - Capturing Life's Beautiful Moments">
+    <meta property="twitter:description" content="Professional Photographer capturing life's beautiful moments. Specializing in weddings, portraits, events, and commercial photography.">
+    <meta property="twitter:image" content="https://sitehub.co.za/photographer/hero-800x400.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="container">
                 <a href="#hero" class="logo-link" aria-label="Photographer Home">
                     <img src="logo.png" alt="Photographer Logo" class="logo" height="150">
                 </a>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
-                <ul class="nav-menu">
-                    <li><a href="#about" aria-label="Learn more about us">About Us</a></li>
-                    <li><a href="#services" aria-label="Explore our photography services">Services</a></li>
-                    <li><a href="#contact" aria-label="Get in touch with us">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary" aria-label="Send us a message">Form</a></li>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="About Us">About Us</a></li>
+                    <li><a href="#services" aria-label="Our Services">Services</a></li>
+                    <li><a href="#contact" aria-label="Contact Information">Contact</a></li>
+                    <li><a href="#form" class="btn btn-nav" aria-label="Contact Form">Get a Quote</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <!-- Hero Section -->
+        <section id="hero" class="hero" aria-label="Introduction to Photographer">
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
+            <div class="container content">
                 <h1 class="hero-title">Photographer</h1>
-                <p class="hero-tagline">Capturing Life's Beautiful Moments, Professionally.</p>
-                <a href="#form" class="btn btn-hero" aria-label="Book a photography session">Book a Session Today</a>
+                <p class="hero-tagline">Capturing Life's Beautiful Moments</p>
+                <a href="#form" class="btn btn-primary" aria-label="Book a Session">Book a Session Today</a>
             </div>
         </section>
 
-        <section id="about" class="about-section container section-padding">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p class="mission-statement">
-                    At Photographer, we believe every moment tells a story. Our mission is to artfully capture those fleeting moments,
-                    transforming them into timeless memories and compelling visual narratives that resonate deeply with our clients.
-                    We are committed to delivering exceptional quality, creativity, and a personalized experience, ensuring every photograph
-                    reflects the unique essence of its subject.
-                </p>
-                <p class="expertise-statement">
-                    With a keen eye for detail and a passion for visual storytelling, our expertise spans various photographic genres.
-                    We blend artistic vision with technical precision, utilizing agile methodologies to adapt to diverse client needs and project requirements.
-                    Our dedication to client success drives us to not only meet expectations but to exceed them, delivering stunning imagery that makes a lasting impact.
-                </p>
-            </div>
-        </section>
-
-        <section id="services" class="services-section section-padding">
+        <!-- About Us Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
             <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">We offer a diverse range of professional photography services tailored to your unique needs.</p>
-                <div class="services-grid">
-                    <div class="service-card" role="listitem">
-                        <i class="fas fa-portrait service-icon" aria-hidden="true"></i>
+                <h2 id="about-heading">About Us</h2>
+                <p class="section-intro">At Photographer, our mission is to beautifully capture and preserve life's precious moments, creating lasting memories through stunning imagery.</p>
+                <div class="about-content">
+                    <p>As professional photographers, we bring a wealth of expertise in various photographic styles and techniques, ensuring every shot tells a unique story. Our passion lies in documenting authentic emotions and significant events, transforming fleeting moments into timeless art.</p>
+                    <p>We believe in a client-centric approach, working closely with you to understand your vision and deliver results that exceed expectations. Our agile methodologies ensure flexibility and adaptability throughout the creative process, from initial consultation to final delivery. Your success and satisfaction are at the heart of everything we do, and we are dedicated to crafting images that you will cherish for a lifetime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services/Products Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services</h2>
+                <p class="section-intro">We offer a comprehensive range of professional photography services tailored to your unique needs.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-ring service-icon" aria-hidden="true"></i>
+                        <h3>Wedding Photography</h3>
+                        <p>Documenting your special day with elegant and heartfelt imagery, preserving every precious moment.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-friends service-icon" aria-hidden="true"></i>
                         <h3>Portrait Photography</h3>
-                        <p>Capture your individuality, family bonds, or professional persona with stunning portraits that reflect your unique story.</p>
+                        <p>Capturing the true essence and personality of individuals and families with stunning portraits.</p>
                     </div>
-                    <div class="service-card" role="listitem">
-                        <i class="fas fa-camera-retro service-icon" aria-hidden="true"></i>
+                    <div class="service-item">
+                        <i class="fas fa-calendar-alt service-icon" aria-hidden="true"></i>
                         <h3>Event Photography</h3>
-                        <p>From grand celebrations to intimate gatherings, we expertly document your special events, preserving every joyous memory.</p>
+                        <p>Professional coverage for corporate events, parties, and gatherings, ensuring every highlight is captured.</p>
                     </div>
-                    <div class="service-card" role="listitem">
-                        <i class="fas fa-lightbulb service-icon" aria-hidden="true"></i>
-                        <h3>Commercial & Branding</h3>
-                        <p>Elevate your brand with high-quality, impactful images that showcase your products, services, and brand identity.</p>
-                    </div>
-                    <div class="service-card" role="listitem">
-                        <i class="fas fa-box-open service-icon" aria-hidden="true"></i>
-                        <h3>Product Photography</h3>
-                        <p>Highlight the intricate details and appeal of your products with crisp, professional photography that drives sales.</p>
+                    <div class="service-item">
+                        <i class="fas fa-briefcase service-icon" aria-hidden="true"></i>
+                        <h3>Commercial Photography</h3>
+                        <p>High-quality visual content for businesses, products, and brands to enhance your marketing efforts.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding">
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 id="contact-heading">Contact Us</h2>
+                <p class="section-intro">We'd love to hear from you. Reach out to discuss your photography needs.</p>
                 <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Shutter Street, Photo City, 4001, South Africa</p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:natscc@gmail.com" aria-label="Send us an email">natscc@gmail.com</a></p>
-                </div>
-                <div class="social-media">
-                    <a href="https://instagram.com/photographer_co" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://tiktok.com/@photographer_co" target="_blank" rel="noopener noreferrer" aria-label="Visit us on TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://linkedin.com/company/photographer_co" target="_blank" rel="noopener noreferrer" aria-label="Visit us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 123 Photo Lane, Snapshot City, PC 45678</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:natscc@gmail.com">natscc@gmail.com</a></p>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/yourphotographer/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <!-- Add more social media links as needed -->
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="form" class="form-section section-padding">
+        <!-- Contact Form Section -->
+        <section id="form" class="contact-form-section" aria-labelledby="form-heading">
             <div class="container">
-                <h2 class="section-title">Send Us a Message</h2>
-                <p class="section-description">Have a question or want to discuss your photography needs? Fill out the form below!</p>
+                <h2 id="form-heading">Get Your Free Quote</h2>
+                <p class="section-intro">Fill out the form below to inquire about our services or request a personalized quote.</p>
                 <form action="mailto:natscc@gmail.com" method="post" enctype="text/plain" class="contact-form" aria-label="Contact form">
                     <div class="form-group">
-                        <label for="name" class="sr-only">Name:</label>
-                        <input type="text" id="name" name="Name" placeholder="Your Name" required aria-required="true">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="email" class="sr-only">Email:</label>
-                        <input type="email" id="email" name="Email" placeholder="Your Email" required aria-required="true">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="subject" class="sr-only">Subject:</label>
-                        <input type="text" id="subject" name="Subject" placeholder="Subject" required aria-required="true">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="message" class="sr-only">Message:</label>
-                        <textarea id="message" name="Message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; <span id="current-year"></span> Photographer. All rights reserved.</p>
@@ -164,25 +159,35 @@
 
         // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const navbar = document.querySelector('.navbar');
 
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            const expanded = hamburger.classList.contains('active');
-            hamburger.setAttribute('aria-expanded', expanded);
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+            navbar.classList.toggle('nav-open'); // To adjust sticky nav for mobile menu
         });
 
         // Close mobile menu when a link is clicked
-        document.querySelectorAll('.nav-menu li a').forEach(link => {
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                    hamburger.classList.remove('active');
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
+                    navbar.classList.remove('nav-open');
                 }
             });
         });
+
+        // Sticky Navigation
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
     </script>
 </body>
 </html>
