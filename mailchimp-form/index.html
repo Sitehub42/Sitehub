@@ -3,136 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MailChimp Form Solutions</title>
-    <meta name="description" content="MailChimp Form Solutions provides expert solutions for digital form design, development, and data management to streamline your business operations.">
-    <meta name="keywords" content="MailChimp forms, digital forms, data collection, form design, form development, MailChimp integration, user experience, Cape Town">
+    <meta name="description" content="MailChimp Form specializes in creating custom, efficient, and reliable form solutions for businesses, enhancing data collection and user engagement.">
+    <title>MailChimp Form - Seamless Form Solutions</title>
 
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="MailChimp Form Solutions">
-    <meta property="og:description" content="Streamlining your digital interactions with expert form solutions.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MailChimp Form - Seamless Form Solutions">
+    <meta property="og:description" content="MailChimp Form specializes in creating custom, efficient, and reliable form solutions for businesses, enhancing data collection and user engagement.">
     <meta property="og:image" content="https://sitehub.co.za/mailchimp-form/hero-800x400.png"> <!-- Replace with actual image URL -->
     <meta property="og:url" content="https://sitehub.co.za/mailchimp-form">
     <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@40400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-content">
-            <a href="#hero" class="logo" aria-label="MailChimp Form Solutions Home">
-                <img src="logo.png" alt="MailChimp Form Solutions Logo" style="height: 150px;" class="logo-img">
-            </a>
-            <nav aria-label="Main Navigation">
-                <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Open menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="nav-menu" id="main-menu">
+    <header class="sticky-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#hero" aria-label="MailChimp Form Home">
+                    <img src="logo.png" alt="MailChimp Form Logo" style="height: 150px;">
+                </a>
+            </div>
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">Services/Products</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#form" class="btn btn-primary">Form</a></li>
                 </ul>
             </nav>
+            <div class="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services/Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section" role="banner" aria-label="Welcome to MailChimp Form Solutions">
+        <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
-            <div class="hero-content container">
-                <h1>MailChimp Form Solutions</h1>
-                <p>Streamlining Your Digital Interactions with Expert Form Solutions.</p>
-                <a href="#form" class="btn btn-primary hero-btn">Get Started Today</a>
+            <div class="container hero-content">
+                <h1>MailChimp Form</h1>
+                <p class="tagline">Seamless Integrations for Your Business Needs.</p>
+                <a href="#form" class="btn btn-secondary" role="button">Get Started with a Form</a>
             </div>
         </section>
 
-        <section id="about" class="about-section container" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Us</h2>
-            <p>Our mission at MailChimp Form Solutions is to empower businesses by providing seamless, efficient, and user-friendly digital form experiences that drive data collection, enhance engagement, and optimize operational workflows. We believe in the power of well-crafted forms to transform how you connect with your audience and manage crucial information.</p>
-            <p>With deep expertise in digital form design & data management, we specialize in creating bespoke solutions that are not only aesthetically pleasing but also highly functional and integrated. We are committed to client success, employing agile methodologies to deliver projects that exceed expectations. From initial concept to final implementation, our focus is on delivering secure, reliable, and effective solutions tailored to your unique business needs.</p>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About MailChimp Form</h2>
+                <p>Our mission at <strong>MailChimp Form</strong> is to empower businesses with efficient and reliable form solutions, streamlining data collection and improving user engagement. We specialize in developing tailored form systems that seamlessly integrate with your existing workflows, making data management simple and effective.</p>
+                <p>Leveraging our expertise in form solutions and agile methodologies, we commit to delivering projects that exceed expectations. We believe in collaborative partnerships, ensuring every solution is not just functional but also a catalyst for your business's growth and client success.</p>
+                <p>From initial concept to deployment and ongoing support, our team ensures a smooth, transparent process, focusing on innovation and measurable results in the dynamic landscape of digital data collection.</p>
+            </div>
         </section>
 
-        <section id="services" class="services-section" aria-labelledby="services-heading">
+        <section id="services" class="services-section">
             <div class="container">
-                <h2 id="services-heading">Our Services</h2>
-                <p class="section-description">We offer a comprehensive suite of services designed to optimize your digital data collection and enhance user interaction.</p>
+                <h2>Our Services & Products</h2>
+                <p class="section-summary">MailChimp Form offers a comprehensive suite of services designed to optimize your data collection and enhance user interaction. We provide robust, scalable, and user-friendly form solutions tailored to your unique business needs.</p>
                 <div class="service-grid">
-                    <div class="service-item" role="article" aria-labelledby="service-design-title">
-                        <i class="fas fa-paint-brush service-icon"></i>
-                        <h3 id="service-design-title">Form Design & Development</h3>
-                        <p>Crafting intuitive and responsive forms tailored to your brand, ensuring a seamless user experience across all devices.</p>
+                    <div class="service-card">
+                        <i class="fas fa-file-alt icon"></i>
+                        <h3>Custom Form Development</h3>
+                        <p>We design and develop bespoke forms that perfectly match your brand and specific data collection requirements, from simple contact forms to complex multi-step surveys.</p>
                     </div>
-                    <div class="service-item" role="article" aria-labelledby="service-integration-title">
-                        <i class="fas fa-plug service-icon"></i>
-                        <h3 id="service-integration-title">Data Integration & Management</h3>
-                        <p>Seamlessly connect form data with your existing systems, including MailChimp, CRM, and other essential business tools.</p>
+                    <div class="service-card">
+                        <i class="fas fa-database icon"></i>
+                        <h3>Data Integration Services</h3>
+                        <p>Seamlessly connect your forms with CRM systems, email marketing platforms, databases, and other third-party applications to automate workflows.</p>
                     </div>
-                    <div class="service-item" role="article" aria-labelledby="service-ux-title">
-                        <i class="fas fa-user-check service-icon"></i>
-                        <h3 id="service-ux-title">User Experience Optimization</h3>
-                        <p>Enhancing form usability, accessibility, and conversion rates through thoughtful design and rigorous testing.</p>
+                    <div class="service-card">
+                        <i class="fas fa-user-check icon"></i>
+                        <h3>User Experience Optimization</h3>
+                        <p>Improve conversion rates and user satisfaction with intuitive, accessible, and responsive form designs that work flawlessly on any device.</p>
                     </div>
-                    <div class="service-item" role="article" aria-labelledby="service-analytics-title">
-                        <i class="fas fa-chart-line service-icon"></i>
-                        <h3 id="service-analytics-title">Analytics & Reporting</h3>
-                        <p>Gaining actionable insights from your form submissions to inform business decisions and refine your strategies.</p>
-                    </div>
-                    <div class="service-item" role="article" aria-labelledby="service-security-title">
-                        <i class="fas fa-shield-alt service-icon"></i>
-                        <h3 id="service-security-title">Security & Compliance</h3>
-                        <p>Ensuring your forms are secure, protect sensitive data, and meet relevant data privacy regulations like GDPR.</p>
+                    <div class="service-card">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>Analytics & Reporting</h3>
+                        <p>Gain valuable insights into form performance, user behavior, and data trends with integrated analytics and custom reporting tools.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+        <section id="contact" class="contact-section">
             <div class="container">
-                <h2 id="contact-heading">Contact Us</h2>
-                <p class="section-description">We'd love to hear from you. Reach out to discuss your project or any questions you may have.</p>
+                <h2>Get in Touch</h2>
                 <div class="contact-details">
-                    <address>
-                        <p><i class="fas fa-map-marker-alt"></i> 5 Marigold St, Milnerton, Cape Town, 7441, South Africa</p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:ziegler.tanya@gmail.com">ziegler.tanya@gmail.com</a></p>
-                    </address>
-                    <div class="social-media">
-                        <a href="https://www.instagram.com/formlinkinsta" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/MailChimpFormSolutions" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/mailchimp-form-solutions" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i> 5 Marigold st, Milnerton, Cape Town, 7441, ZA</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ziegler.tanya@gmail.com">ziegler.tanya@gmail.com</a></p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/formlinkinsta" target="_blank" rel="noopener noreferrer" aria-label="MailChimp Form Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="form" class="contact-form-section" aria-labelledby="form-heading">
+        <section id="form" class="contact-form-section">
             <div class="container">
-                <h2 id="form-heading">Get In Touch</h2>
-                <p class="section-description">Fill out the form below and we'll get back to you as soon as possible.</p>
-                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="mailto:ziegler.tanya@gmail.com" method="post" enctype="text/plain" aria-label="Contact Form">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
+                        <label for="subject">Subject:</label>
                         <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -141,42 +144,40 @@
         </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> MailChimp Form Solutions. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> MailChimp Form. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Dynamic year for footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Mobile navigation toggle
         const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navLinks = document.querySelectorAll('.mobile-nav a');
 
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
             const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
             hamburger.setAttribute('aria-expanded', !expanded);
+            mobileNav.classList.toggle('active');
         });
 
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('.nav-menu a').forEach(link => {
+        navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
-                    hamburger.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                }
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // Sticky navigation bar behavior (if not handled purely by CSS position: sticky)
-        // No specific JS needed here as CSS `position: sticky` is used, but if more complex behavior was needed,
-        // this is where it would go.
+        // Close mobile nav on resize if open
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
     </script>
 </body>
 </html>
