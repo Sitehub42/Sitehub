@@ -3,154 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="YoEnglish offers online English lessons for children aged 4 to 16, providing personalized 1:1 tutoring with expert teachers from the UK and USA. Learn with our engaging Starlight curriculum.">
-    <meta name="keywords" content="YoEnglish, online English lessons, English for kids, 1:1 tutoring, UK English teachers, USA English teachers, Starlight curriculum, Oxford University Press, personalized learning, children English, learn English online">
-    <meta name="author" content="YoEnglish">
-
+    <title>YoEnglish - Engaging 1:1 Online English Lessons for Children</title>
+    <meta name="description" content="YoEnglish offers online 1:1 English lessons for children aged 4-16, structured on Oxford University Press curriculum, taught by expert UK/USA teachers. Fun, interactive, and personalized learning.">
+    <meta name="keywords" content="online English lessons, children's English, 1:1 tutoring, Oxford University Press, UK teachers, USA teachers, English for kids, interactive English, YoEnglish">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/yoenglish">
-    <meta property="og:title" content="YoEnglish - Online English Lessons for Children">
-    <meta property="og:description" content="YoEnglish offers online English lessons for children aged 4 to 16, providing personalized 1:1 tutoring with expert teachers from the UK and USA. Learn with our engaging Starlight curriculum.">
-    <meta property="og:image" content="https://sitehub.co.za/yoenglish/hero-800x400.png"> <!-- Placeholder for your hero image -->
+    <meta property="og:title" content="YoEnglish - Engaging 1:1 Online English Lessons for Children">
+    <meta property="og:description" content="YoEnglish offers online 1:1 English lessons for children aged 4-16, structured on Oxford University Press curriculum, taught by expert UK/USA teachers. Fun, interactive, and personalized learning.">
+    <meta property="og:image" content="https://sitehub.co.za/yoenglish/hero-800x400.png"> <!-- Replace with actual image URL if available -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sitehub.co.za/yoenglish">
-    <meta property="twitter:title" content="YoEnglish - Online English Lessons for Children">
-    <meta property="twitter:description" content="YoEnglish offers online English lessons for children aged 4 to 16, providing personalized 1:1 tutoring with expert teachers from the UK and USA. Learn with our engaging Starlight curriculum.">
-    <meta property="twitter:image" content="https://sitehub.co.za/yoenglish/hero-800x400.png"> <!-- Placeholder for your hero image -->
-
-    <title>YoEnglish - Online English Lessons for Children</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta property="twitter:title" content="YoEnglish - Engaging 1:1 Online English Lessons for Children">
+    <meta property="twitter:description" content="YoEnglish offers online 1:1 English lessons for children aged 4-16, structured on Oxford University Press curriculum, taught by expert UK/USA teachers. Fun, interactive, and personalized learning.">
+    <meta property="twitter:image" content="https://sitehub.co.za/yoenglish/hero-800x400.png"> <!-- Replace with actual image URL if available -->
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@404;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container navigation-container">
-            <a href="#hero" class="logo" aria-label="YoEnglish Home">
-                <img src="logo.png" alt="YoEnglish Logo" height="150">
+        <div class="container">
+            <a href="#hero" class="logo-link" aria-label="YoEnglish home">
+                <img src="logo.png" alt="YoEnglish Logo - Online English Lessons" class="logo">
             </a>
-            <nav class="main-nav" aria-label="Main navigation">
-                <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+            <nav class="nav" aria-label="Main navigation">
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-menu">
                     <i class="fas fa-bars"></i>
                 </button>
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services/Products</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact-form" class="nav-link nav-button">Enroll Now!</a></li>
+                <ul class="nav-menu" id="main-menu">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services/Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form-section" class="btn btn-primary">Enroll Today</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner" aria-label="Welcome to YoEnglish">
+        <section id="hero" class="hero" role="banner">
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1 class="hero-title">YoEnglish</h1>
-                <p class="hero-tagline">Unlock Your Child's English Potential</p>
-                <a href="#contact-form" class="btn btn-primary" role="button">Start Learning Today!</a>
+            <div class="container">
+                <h1>YoEnglish</h1>
+                <p class="tagline">Engaging 1:1 Online English Lessons for Children</p>
+                <a href="#form-section" class="btn btn-secondary" aria-label="Sign up for lessons">Start Learning Today!</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section" aria-labelledby="about-heading">
+        <section id="about" class="about-us" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="about-heading" class="section-title">About YoEnglish</h2>
-                <div class="about-content">
-                    <p class="about-mission"><strong>Our Mission:</strong> Our mission is to provide engaging and effective online English lessons that foster a love for learning and equip children with strong language skills for a global future.</p>
-                    <p>At YoEnglish, we specialize in 1:1 online tutoring for children aged 4 to 16, delivered by expert teachers from the UK and USA. We leverage agile methodologies to adapt our teaching approach to each child's unique learning style, ensuring client success and measurable progress. Our live English lessons are designed to be an exciting, interactive experience, utilizing songs, stories, and videos to make learning fun and effective. We base our structured curriculum on the renowned Starlight program from Oxford University Press, reinforced with homework and audio tracks to ensure perfect pronunciation. Each lesson is 25 minutes long, designed to maintain focus and engagement.</p>
+                <h2 id="about-heading">About YoEnglish</h2>
+                <p>At YoEnglish, our mission is to provide high-quality, personalized online English lessons for children, fostering a love for learning with expert teachers and an interactive curriculum. We believe in making learning fun and accessible for every child.</p>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Expert Teachers</h3>
+                        <p>Our team comprises expert teachers from the UK and USA, bringing native-level proficiency and a wealth of experience in child education.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Structured Curriculum</h3>
+                        <p>We use the renowned Starlight curriculum from Oxford University Press, ensuring a well-rounded and effective learning path for children aged 4 to 16.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-comments"></i>
+                        <h3>Interactive & Engaging</h3>
+                        <p>Our online lessons are designed to be an exciting, interactive experience, incorporating songs, stories, and videos to keep young learners captivated.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-child"></i>
+                        <h3>Personalized 1:1 Learning</h3>
+                        <p>We focus on 1:1 tutoring, providing high-quality, personalized learning that caters to each student's unique needs and pace.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services/Products Section -->
-        <section id="services" class="services-section" aria-labelledby="services-heading">
+        <section id="services" class="services" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-heading" class="section-title">Our Services & Products</h2>
-                <p class="services-summary">At YoEnglish, we offer a range of comprehensive English lesson packages designed to provide high-quality, personalized learning experiences for children. Explore our options below:</p>
-                <div class="services-grid">
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-chalkboard-teacher service-icon" aria-hidden="true"></i>
+                <h2 id="services-heading">Our Services & Products</h2>
+                <p class="section-description">YoEnglish offers live, online 1:1 English lessons specifically designed for children aged 4 to 16. Our classes are 25 minutes long and are reinforced with homework and audio tracks for perfect pronunciation.</p>
+                
+                <div class="service-grid">
+                    <div class="service-card">
+                        <i class="fas fa-lightbulb icon-large"></i>
                         <h3>Demonstration Lesson</h3>
-                        <p>Your first class is charged at a lower rate. Try it and see if you would like to purchase a package or some single lessons.</p>
-                        <span class="service-price">¥50</span>
+                        <p><strong>Description:</strong> Your first class is charged at a lower rate. Try it and see if you would like to purchase a package or some single lessons.</p>
+                        <span class="price">¥50</span>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-book-open service-icon" aria-hidden="true"></i>
+                    <div class="service-card">
+                        <i class="fas fa-box-open icon-large"></i>
                         <h3>Lesson Package 10</h3>
-                        <p>10 Lessons - ¥140 per class. This lesson package is for 1 student.</p>
-                        <span class="service-price">¥1400</span>
+                        <p><strong>Description:</strong> 10 Lessons - ¥140 per class. This lesson package is for 1 student.</p>
+                        <span class="price">¥1400</span>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-graduation-cap service-icon" aria-hidden="true"></i>
+                    <div class="service-card">
+                        <i class="fas fa-boxes icon-large"></i>
                         <h3>Lesson Package 20</h3>
-                        <p>20 Lessons - ¥120 per class.This lesson package is for 1 student.</p>
-                        <span class="service-price">¥2400</span>
+                        <p><strong>Description:</strong> 20 Lessons - ¥120 per class. This lesson package is for 1 student.</p>
+                        <span class="price">¥2400</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="contact-heading" class="section-title">Get in Touch</h2>
-                <p class="contact-intro">Have questions or ready to enroll? We're here to help!</p>
+                <h2 id="contact-heading">Get in Touch</h2>
+                <p class="section-description">We'd love to hear from you! Reach out to us for any inquiries or to enroll your child.</p>
                 <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <p>Online Platform</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <p><a href="mailto:yolande@gmail.com">yolande@gmail.com</a></p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <p><a href="tel:+27742922192">+27 74 292 2192</a></p>
-                    </div>
-                    <div class="info-item social-links">
-                        <a href="https://instagram.com/Yoenglish" target="_blank" rel="noopener noreferrer" aria-label="YoEnglish Instagram">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:yolande@gmail.com">yolande@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+27742922192">+27 74 292 2192</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Online Worldwide</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/Yoenglish" target="_blank" rel="noopener noreferrer" aria-label="Visit YoEnglish on Instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="contact-form-section" aria-labelledby="form-heading">
+        <section id="form-section" class="contact-form" aria-labelledby="form-heading">
             <div class="container">
-                <h2 id="form-heading" class="section-title">Enroll or Ask a Question</h2>
-                <p class="form-intro">Fill out the form below to get started or send us a message directly.</p>
-                <form action="mailto:yolande@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 id="form-heading">Enroll or Inquire Today!</h2>
+                <form action="mailto:yolande@gmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required placeholder="Your Name">
+                        <input type="text" id="name" name="Name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required placeholder="your.email@example.com">
+                        <input type="email" id="email" name="Email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required placeholder="Inquiry Subject">
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required placeholder="Your message or enrollment inquiry..."></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -158,7 +160,7 @@
         </section>
     </main>
 
-    <footer class="footer" aria-label="Site Footer">
+    <footer class="footer">
         <div class="container">
             <p>&copy; <span id="current-year"></span> YoEnglish. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
@@ -166,24 +168,24 @@
     </footer>
 
     <script>
-        // Dynamic year for footer
+        // Automatically update current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navList = document.querySelector('.nav-list');
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
         hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-            hamburger.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('active');
+            const expanded = navMenu.classList.contains('active') ? 'true' : 'false';
+            hamburger.setAttribute('aria-expanded', expanded);
         });
 
         // Close mobile nav when a link is clicked
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navList.classList.contains('active')) {
-                    navList.classList.remove('active');
+        document.querySelectorAll('.nav-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
                 }
             });
