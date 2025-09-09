@@ -3,176 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ SANJ - I Am The Brand</title>
-    <meta name="description" content="Experience dynamic DJ sets, seamless event management, and top-tier audio-visual solutions with DJ SANJ. Your brand, amplified.">
+    <title>DJ SANJ - Professional DJ, Event & Project Management</title>
+    <meta name="description" content="Official website of DJ SANJ, offering professional DJ services, event management, project management, and audio-visual equipment hire. Experience top-tier entertainment and flawless event execution.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitehub.co.za/DJ%20SANJ">
-    <meta property="og:title" content="DJ SANJ - I Am The Brand">
-    <meta property="og:description" content="Experience dynamic DJ sets, seamless event management, and top-tier audio-visual solutions with DJ SANJ. Your brand, amplified.">
-    <meta property="og:image" content="https://sitehub.co.za/DJ%20SANJ/hero-800x400.png">
+    <meta property="og:url" content="https://sitehub.co.za/djsanj">
+    <meta property="og:title" content="DJ SANJ - Professional DJ, Event & Project Management">
+    <meta property="og:description" content="Official website of DJ SANJ, offering professional DJ services, event management, project management, and audio-visual equipment hire. Experience top-tier entertainment and flawless event execution.">
+    <meta property="og:image" content="https://sitehub.co.za/djsanj/hero-800x400.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sitehub.co.za/DJ%20SANJ">
-    <meta property="twitter:title" content="DJ SANJ - I Am The Brand">
-    <meta property="twitter:description" content="Experience dynamic DJ sets, seamless event management, and top-tier audio-visual solutions with DJ SANJ. Your brand, amplified.">
-    <meta property="twitter:image" content="https://sitehub.co.za/DJ%20SANJ/hero-800x400.png">
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
             <div class="logo">
                 <a href="#hero">
-                    <img src="logo.png" alt="DJ SANJ Logo" style="height: 150px;">
+                    <img src="logo.png" alt="DJ SANJ Logo" height="150" aria-label="DJ SANJ Home">
                 </a>
             </div>
-            <nav class="main-nav" aria-label="Main navigation">
-                <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="#about" aria-label="About DJ SANJ">About Us</a></li>
-                    <li><a href="#services" aria-label="Our Services">Services/Products</a></li>
-                    <li><a href="#contact" aria-label="Contact DJ SANJ">Contact</a></li>
-                    <li><a href="#form" class="btn btn-nav" aria-label="Fill out our contact form">Form</a></li>
-                </ul>
-            </nav>
-        </div>
+            <button class="nav-toggle" aria-controls="main-menu" aria-expanded="false" label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="main-menu" role="menu">
+                <li role="none"><a href="#about" role="menuitem">About Us</a></li>
+                <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                <li role="none"><a href="#form" role="menuitem">Book Now</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" role="banner" aria-label="Welcome to DJ SANJ">
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1 class="hero-title">DJ SANJ</h1>
-                <p class="hero-tagline">I am the brand</p>
-                <a href="#form" class="btn btn-primary" aria-label="Get in touch with DJ SANJ">Book Now</a>
+            <div class="hero-content">
+                <h1>DJ SANJ</h1>
+                <p>I am the brand</p>
+                <a href="#form" class="btn btn-primary" role="button">Let's Make Magic!</a>
             </div>
         </section>
 
-        <section id="about" class="about-section container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p>At DJ SANJ, we don't just provide services; we craft experiences. Our mission is to provide dynamic DJ sets, seamless event management, expert project management, and top-tier audio-visual equipment hire, ensuring every event is a resounding success and every client's vision is amplified. We believe in the power of a perfectly orchestrated event, where every beat, every light, and every detail contributes to an unforgettable moment.</p>
-                <p>With expertise rooted in the vibrant world of entertainment and event production, DJ SANJ brings a unique blend of creativity and precision to every project. We pride ourselves on our client-centric approach, working closely with you to understand your needs and exceed your expectations. Our agile methodologies ensure flexibility and adaptability, delivering high-quality results even in dynamic environments. Your success is our ultimate measure, and we are dedicated to amplifying your brand and bringing your vision to life.</p>
+        <!-- About Us Section -->
+        <section id="about" class="container section-padding" aria-labelledby="about-heading">
+            <h2 id="about-heading">About DJ SANJ</h2>
+            <p class="section-summary">As DJ SANJ, my mission is to deliver unforgettable experiences through exceptional DJ services, meticulous event and project management, and high-quality audio-visual solutions, ensuring every client's vision comes to life.</p>
+            <div class="about-details">
+                <p>With extensive expertise in the entertainment and event management industry, DJ SANJ brings a unique blend of creativity and precision to every project. I pride myself on client success, understanding that each event is a unique narrative waiting to unfold.</p>
+                <p>My approach is rooted in agile methodologies, ensuring flexibility, efficiency, and a proactive response to evolving needs. Whether it's a pulsating DJ set, seamless event coordination, or critical project oversight, I am dedicated to exceeding expectations and crafting truly memorable moments.</p>
             </div>
         </section>
 
-        <section id="services" class="services-section">
+        <!-- Services Section -->
+        <section id="services" class="bg-light section-padding" aria-labelledby="services-heading">
             <div class="container">
-                <h2 class="section-title">Our Services & Products</h2>
-                <p class="section-intro">DJ SANJ offers a comprehensive suite of services designed to elevate your events and projects. From electrifying DJ sets to meticulous event planning and cutting-edge audio-visual solutions, we are your trusted partner for impactful experiences.</p>
-                <div class="service-grid">
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-compact-disc service-icon" aria-hidden="true"></i>
-                        <h3>DJ</h3>
-                        <p>Delivering high-energy, customized DJ sets that electrify any crowd and perfectly match the vibe of your event. Experience the sound of excellence.</p>
+                <h2 id="services-heading">Our Services</h2>
+                <p class="section-summary">DJ SANJ offers a comprehensive suite of services designed to elevate your events and projects. From electrifying musical performances to precise operational management and top-tier equipment hire, I ensure every detail is handled with professionalism.</p>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-music fa-3x" aria-hidden="true"></i>
+                        <h3>DJ Services</h3>
+                        <p>Delivering high-energy, customized DJ sets that perfectly match the mood and audience of your event, keeping the dance floor alive all night.</p>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-calendar-alt service-icon" aria-hidden="true"></i>
+                    <div class="service-item">
+                        <i class="fas fa-calendar-check fa-3x" aria-hidden="true"></i>
                         <h3>Event Management</h3>
-                        <p>From concept to execution, we handle every detail of your event, ensuring a seamless, stress-free, and memorable experience for all attendees.</p>
+                        <p>From concept to execution, I meticulously plan and manage all aspects of your event, ensuring a seamless, stress-free, and memorable experience.</p>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-project-diagram service-icon" aria-hidden="true"></i>
+                    <div class="service-item">
+                        <i class="fas fa-project-diagram fa-3x" aria-hidden="true"></i>
                         <h3>Project Management</h3>
-                        <p>Expert oversight for complex projects, ensuring timely delivery, budget adherence, and successful outcomes through meticulous planning and execution.</p>
+                        <p>Expert oversight for complex projects, ensuring timely delivery, budget adherence, and successful outcomes through agile and efficient strategies.</p>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-volume-up service-icon" aria-hidden="true"></i>
+                    <div class="service-item">
+                        <i class="fas fa-headset fa-3x" aria-hidden="true"></i>
                         <h3>Audio Visual Equipment Hire</h3>
-                        <p>Access to top-tier sound systems, lighting, screens, and specialized AV gear to make your event visually stunning and acoustically perfect.</p>
+                        <p>Access to a curated selection of high-quality sound systems, lighting, and visual equipment to enhance any event or production.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
+        <!-- Contact Section -->
+        <section id="contact" class="container section-padding" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p class="section-summary">Have a question or want to discuss your next event? Reach out to DJ SANJ directly!</p>
+            <div class="contact-details">
                 <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <p><strong>Address:</strong> Your City, Your Country (Placeholder)</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <p><strong>Email:</strong> <a href="mailto:info@djsanj.com" aria-label="Email DJ SANJ">info@djsanj.com</a> (Placeholder)</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                        <p><strong>Phone:</strong> <a href="tel:+27603472035" aria-label="Call DJ SANJ">060 347 2035</a></p>
-                    </div>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Your City, Your Street, South Africa</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@djsanj.com">info@djsanj.com</a></p>
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+27603472035">060 347 2035</a></p>
                 </div>
                 <div class="social-media">
-                    <a href="#" aria-label="Facebook Profile" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram Profile" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter Profile" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn Profile" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit DJ SANJ on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit DJ SANJ on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit DJ SANJ on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit DJ SANJ on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="form" class="form-section">
+        <!-- Contact Form Section -->
+        <section id="form" class="bg-light section-padding" aria-labelledby="form-heading">
             <div class="container">
-                <h2 class="section-title">Send Us a Message</h2>
+                <h2 id="form-heading">Send Us a Message</h2>
                 <form action="mailto:info@djsanj.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required aria-required="true">
+                        <input type="text" id="name" name="name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required aria-required="true">
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required aria-required="true">
+                        <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-submit" aria-label="Submit your message">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer role="contentinfo">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> DJ SANJ. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a>.</p>
+            <p>&copy; <span id="current-year"></span> DJ SANJ. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Auto-update current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Auto-update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            // Mobile navigation toggle
-            const hamburger = document.querySelector('.hamburger');
-            const navList = document.querySelector('.nav-list');
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
 
-            hamburger.addEventListener('click', function() {
-                navList.classList.toggle('active');
-                this.setAttribute('aria-expanded', navList.classList.contains('active'));
-            });
+        navToggle.addEventListener('click', () => {
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
 
-            // Close mobile nav when a link is clicked
-            navList.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navList.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                });
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
     </script>
