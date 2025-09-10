@@ -3,125 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vyz - Mentorship Program for Young Teenagers</title>
-    <meta name="description" content="Vyz offers a mentorship program for young teenagers seeking clarity through group coaching, monthly speaking events, and support.">
-    <meta name="keywords" content="Vyz, mentorship, teenagers, clarity, group coaching, speaking events, youth development, personal growth">
-
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Vyz - Mentorship Program for Young Teenagers">
-    <meta property="og:description" content="Vyz offers a mentorship program for young teenagers seeking clarity through group coaching, monthly speaking events, and support.">
-    <meta property="og:image" content="https://sitehub.co.za/Vyz/hero-800x400.png"> <!-- Placeholder for a better image -->
-    <meta property="og:url" content="https://sitehub.co.za/Vyz">
+    <meta name="description" content="Vyz offers a comprehensive mentorship program for young teenagers, providing group coaching, monthly speaking events, and dedicated support to help them find clarity and achieve success.">
+    <meta name="keywords" content="Vyz, mentorship, teenagers, youth program, coaching, speaking events, support, personal growth, clarity">
+    <meta name="author" content="Vyz">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/Vyz">
+    <meta property="og:title" content="Vyz Mentorship Program - Guiding Young Minds">
+    <meta property="og:description" content="Vyz offers a comprehensive mentorship program for young teenagers, providing group coaching, monthly speaking events, and dedicated support to help them find clarity and achieve success.">
+    <meta property="og:image" content="https://sitehub.co.za/Vyz/hero-800x400.png"> <!-- Placeholder image for social sharing -->
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/Vyz">
+    <meta property="twitter:title" content="Vyz Mentorship Program - Guiding Young Minds">
+    <meta property="twitter:description" content="Vyz offers a comprehensive mentorship program for young teenagers, providing group coaching, monthly speaking events, and dedicated support to help them find clarity and achieve success.">
+    <meta property="twitter:image" content="https://sitehub.co.za/Vyz/hero-800x400.png"> <!-- Placeholder image for social sharing -->
+
+    <title>Vyz Mentorship Program - Guiding Young Minds</title>
+    
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Kit -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
-    <!-- Custom Stylesheet -->
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="container" role="navigation" aria-label="Main navigation">
+    <header class="main-header">
+        <div class="container">
             <div class="logo">
                 <a href="#hero" aria-label="Vyz Home">
-                    <img src="logo.png" alt="Vyz Logo" height="150px">
+                    <img src="logo.png" alt="Vyz Logo" height="150" style="max-height: 150px; width: auto;">
                 </a>
             </div>
-            <button class="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about" aria-label="About Vyz">About Us</a></li>
-                <li><a href="#services" aria-label="Our Mentorship Program and Services">Services/Products</a></li>
-                <li><a href="#contact" aria-label="Contact Information">Contact</a></li>
-                <li><a href="#form" class="btn btn-primary" aria-label="Get in touch with us">Form</a></li>
-            </ul>
-        </nav>
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Programs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form" class="btn btn-nav">Join Now</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle" aria-controls="mobile-menu" aria-expanded="false" role="button" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Programs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form">Join Now</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="hero" class="hero-section" style="background-image: url('hero-800x400.png');" role="banner">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1 class="animate-fade-in">Vyz</h1>
-                <p class="tagline animate-fade-in-delay">Guiding Young Teenagers Towards Clarity and Purpose</p>
-                <a href="#form" class="btn btn-secondary animate-fade-in-delay-more">Join Vyz Today</a>
+        <section id="hero" class="hero-section">
+            <div class="overlay"></div>
+            <div class="container content">
+                <h1 class="hero-title">Vyz</h1>
+                <p class="hero-tagline">Guiding Young Minds to Future Success</p>
+                <a href="#form" class="btn btn-hero">Get Started Today</a>
             </div>
         </section>
 
-        <section id="about" class="container content-section" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Us</h2>
-            <p>At Vyz, our mission is to provide a comprehensive mentorship program specifically designed for young teenagers seeking clarity and guidance. We leverage our expertise in youth development and personal growth to foster an environment where every participant can thrive.</p>
-            <p>We emphasize client success and integrate agile methodologies into our program structure, ensuring our support is responsive, relevant, and impactful. Our goal is to empower young individuals to navigate their journey with confidence, purpose, and a strong sense of self.</p>
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title">About Vyz</h2>
+                <p class="section-description">At Vyz, our mission is to empower young teenagers with the clarity, confidence, and essential life skills they need to navigate their future with purpose. We are dedicated to fostering an environment of growth, self-discovery, and unwavering support, helping each mentee unlock their full potential and achieve meaningful success.</p>
+                <p>Leveraging our expertise in youth development and personal growth, we implement agile methodologies to adapt our programs to the evolving needs of our mentees. We believe in a personalized approach that prioritizes individual success, ensuring every teenager receives the guidance and resources necessary to thrive. Join a community where your potential is recognized and nurtured.</p>
+            </div>
         </section>
 
-        <section id="services" class="content-section bg-light" aria-labelledby="services-heading">
+        <section id="services" class="services-section section-padding bg-light">
             <div class="container">
-                <h2 id="services-heading">Our Program & Services</h2>
-                <p class="section-description">Our program is based on a monthly fee that allows members access to a range of valuable resources and support systems designed to foster growth and clarity.</p>
+                <h2 class="section-title">Our Programs</h2>
+                <p class="section-description">Our comprehensive program is designed to provide holistic support and development for young teenagers, offered through a flexible monthly fee.</p>
                 <div class="services-grid">
-                    <div class="service-item" role="article" aria-label="Group Coaching Service">
-                        <i class="fas fa-users icon-large"></i>
-                        <h3>Group Coaching</h3>
-                        <p>Engage in dynamic group coaching sessions led by experienced mentors, fostering peer support and collective learning in a safe environment.</p>
+                    <div class="service-item">
+                        <i class="fas fa-users-line service-icon"></i>
+                        <h3>Group Coaching Sessions</h3>
+                        <p>Interactive virtual or in-person sessions fostering peer learning, collaborative discussions, and collective problem-solving skills.</p>
                     </div>
-                    <div class="service-item" role="article" aria-label="Monthly Speaking Events Service">
-                        <i class="fas fa-microphone-alt icon-large"></i>
+                    <div class="service-item">
+                        <i class="fas fa-microphone-lines service-icon"></i>
                         <h3>Monthly Speaking Events</h3>
-                        <p>Attend inspiring in-person monthly speaking events featuring influential figures and experts who share insights on personal growth, career, and life skills.</p>
+                        <p>Inspiring in-person talks and workshops from industry leaders, motivational speakers, and successful professionals.</p>
                     </div>
-                    <div class="service-item" role="article" aria-label="Dedicated Support Service">
-                        <i class="fas fa-hands-helping icon-large"></i>
-                        <h3>Dedicated Support</h3>
-                        <p>Receive ongoing support and guidance, ensuring you have the resources and encouragement needed to achieve your personal and academic goals.</p>
+                    <div class="service-item">
+                        <i class="fas fa-handshake-angle service-icon"></i>
+                        <h3>Dedicated Mentorship & Support</h3>
+                        <p>Personalized guidance and continuous support from experienced mentors, tailored to individual needs and aspirations.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-calendar-check service-icon"></i>
+                        <h3>Exclusive Member Access</h3>
+                        <p>A convenient monthly subscription grants full access to all program resources, events, and our supportive community network.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container content-section" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact Us</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt icon-small"></i> 123 Mentorship Blvd, Clarity City, Youthland 12345</p>
-                <p><i class="fas fa-envelope icon-small"></i> <a href="mailto:info@vyz.com" aria-label="Email Vyz at info@vyz.com">info@vyz.com</a></p>
-            </div>
-            <div class="social-media">
-                <a href="#" target="_blank" aria-label="Vyz on Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank" aria-label="Vyz on Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" aria-label="Vyz on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">We'd love to hear from you. Reach out to us through any of the following channels.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Mentorship Lane, Youth City, YC 12345</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@vyz.com">info@vyz.com</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Vyz on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Vyz on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Vyz on Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="form" class="content-section bg-light" aria-labelledby="form-heading">
+        <section id="form" class="form-section section-padding bg-light">
             <div class="container">
-                <h2 id="form-heading">Get In Touch</h2>
-                <form action="mailto:info@vyz.com" method="post" enctype="text/plain" aria-label="Contact Form">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form action="mailto:info@vyz.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                        <input type="text" id="name" name="name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+                        <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -137,25 +163,49 @@
     </footer>
 
     <script>
-        // Auto-update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dynamic Year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navLinks = document.querySelector('.nav-links');
+            // Mobile Navigation Toggle
+            const navToggle = document.querySelector('.mobile-nav-toggle');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav ul li a');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-        });
+            navToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true' || false;
+                this.setAttribute('aria-expanded', !isExpanded);
+                mobileNav.classList.toggle('active');
+                document.body.classList.toggle('no-scroll'); // Optional: prevent scrolling when mobile menu is open
+            });
 
-        // Close mobile nav when a link is clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
+            // Close mobile nav when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileNav.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+
+            // Close mobile nav when clicking outside of it (optional)
+            document.addEventListener('click', function(event) {
+                if (!mobileNav.contains(event.target) && !navToggle.contains(event.target) && mobileNav.classList.contains('active')) {
+                    mobileNav.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('no-scroll');
                 }
+            });
+
+             // Smooth scrolling for anchor links
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
             });
         });
     </script>
