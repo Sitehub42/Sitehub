@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sitehub.co.za/holiday-house</loc>
+    <loc>https://sitehub.co.za/holiday-house/</loc>
     <lastmod>2023-10-27</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sitehub.co.za/holiday-house#about</loc>
+    <loc>https://sitehub.co.za/holiday-house/#about</loc>
     <lastmod>2023-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sitehub.co.za/holiday-house#services</loc>
+    <loc>https://sitehub.co.za/holiday-house/#services</loc>
     <lastmod>2023-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sitehub.co.za/holiday-house#contact</loc>
+    <loc>https://sitehub.co.za/holiday-house/#contact</loc>
     <lastmod>2023-10-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sitehub.co.za/holiday-house#contact-form</loc>
+    <loc>https://sitehub.co.za/holiday-house/#contact-form</loc>
     <lastmod>2023-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
