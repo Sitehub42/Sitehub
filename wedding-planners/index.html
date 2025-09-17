@@ -3,158 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Planners - Your Dream Wedding, Flawlessly Executed.</title>
-    <meta name="description" content="Professional wedding planning and event management services. We make your dream wedding a reality, flawlessly executed from start to finish.">
+    <title>Wedding Planners - Crafting Unforgettable Moments</title>
+    <meta name="description" content="Expert wedding planning and event management services to make your dream day a reality. Personalized, agile, and client-focused solutions.">
+    <meta name="keywords" content="wedding planners, event management, wedding services, bespoke weddings, wedding coordination, wedding design, South Africa weddings">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitehub.co.za/Wedding%20Planners">
-    <meta property="og:title" content="Wedding Planners - Your Dream Wedding, Flawlessly Executed.">
-    <meta property="og:description" content="Professional wedding planning and event management services. We make your dream wedding a reality, flawlessly executed from start to finish.">
-    <meta property="og:image" content="https://sitehub.co.za/Wedding%20Planners/hero-800x400.png">
+    <meta property="og:url" content="https://sitehub.co.za/wedding-planners/">
+    <meta property="og:title" content="Wedding Planners - Crafting Unforgettable Moments">
+    <meta property="og:description" content="Expert wedding planning and event management services to make your dream day a reality. Personalized, agile, and client-focused solutions.">
+    <meta property="og:image" content="https://sitehub.co.za/wedding-planners/hero-800x400.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sitehub.co.za/Wedding%20Planners">
-    <meta property="twitter:title" content="Wedding Planners - Your Dream Wedding, Flawlessly Executed.">
-    <meta property="twitter:description" content="Professional wedding planning and event management services. We make your dream wedding a reality, flawlessly executed from start to finish.">
-    <meta property="twitter:image" content="https://sitehub.co.za/Wedding%20Planners/hero-800x400.png">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="main-header">
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <div class="navbar-brand">
-                <img src="logo.png" alt="Wedding Planners Logo" class="logo" height="150">
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="logo-container">
+                <a href="#hero" aria-label="Wedding Planners home">
+                    <img src="logo.png" alt="Wedding Planners Logo" class="logo">
+                </a>
             </div>
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
-            <ul class="navbar-links" aria-label="Main menu">
-                <li><a href="#about" role="menuitem">About Us</a></li>
-                <li><a href="#services" role="menuitem">Services</a></li>
-                <li><a href="#contact" role="menuitem">Contact</a></li>
-                <li><a href="#contact-form" class="button-link" role="menuitem">Get Started</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form" class="btn btn-primary">Plan My Wedding</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section" role="banner" aria-label="Hero section with company tagline">
+        <section id="hero" class="hero-section">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Wedding Planners</h1>
-                <p>Your Dream Wedding, Flawlessly Executed.</p>
-                <a href="#contact-form" class="btn btn-primary" role="button">Plan Your Dream Day</a>
+                <h1 class="hero-title">Wedding Planners</h1>
+                <p class="hero-tagline">Crafting Unforgettable Moments, One Wedding at a Time.</p>
+                <a href="#form" class="btn btn-hero">Plan Your Dream Wedding</a>
             </div>
         </section>
 
-        <section id="about" class="about-section container" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Us</h2>
-            <p class="lead-text">At Wedding Planners, our mission is to transform your wedding vision into an unforgettable reality. We blend creativity with meticulous planning to ensure every detail reflects your unique love story, making your special day seamless, joyful, and truly magical.</p>
-            <p>With years of expertise in <strong>wedding planning and wedding event management</strong>, we are dedicated to crafting personalized experiences. We pride ourselves on client success, employing agile methodologies to adapt to your needs and preferences, guaranteeing a stress-free journey to your perfect wedding day.</p>
+        <section id="about" class="about-section section-padding" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="section-title">About Wedding Planners</h2>
+            <div class="about-content">
+                <p>Our mission is to bring your dream wedding to life with seamless planning, exquisite execution, and a touch of magic. We believe every couple deserves a unique and stress-free journey to their special day, achieved through dedicated support and innovative solutions.</p>
+                <p>With extensive expertise in wedding planning and wedding event management, Wedding Planners is dedicated to delivering personalized experiences. We emphasize client success, agile methodologies, and meticulous attention to detail to ensure every celebration is unique and unforgettable.</p>
+            </div>
         </section>
 
-        <section id="services" class="services-section container" aria-labelledby="services-heading">
-            <h2 id="services-heading">Our Services</h2>
-            <p class="lead-text">We offer a comprehensive suite of services designed to cover every aspect of your wedding, ensuring a flawless and memorable celebration.</p>
-            <div class="service-grid">
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-ring service-icon" aria-hidden="true"></i>
+        <section id="services" class="services-section section-padding" aria-labelledby="services-heading">
+            <h2 id="services-heading" class="section-title">Our Services</h2>
+            <p class="section-description">We offer a comprehensive range of wedding planning and event management services designed to make your journey to 'I do' as magical and stress-free as possible. From initial concept to the final farewell, we're with you every step of the way.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-heart fa-3x service-icon"></i>
                     <h3>Full-Service Wedding Planning</h3>
-                    <p>From concept to completion, we manage all details, allowing you to relax and enjoy the journey.</p>
+                    <p>Comprehensive support from concept to execution, handling every detail.</p>
                 </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-clipboard-check service-icon" aria-hidden="true"></i>
+                <div class="service-card">
+                    <i class="fas fa-calendar-check fa-3x service-icon"></i>
                     <h3>Day-Of Coordination</h3>
-                    <p>For couples who have planned everything but need professional execution on their special day.</p>
+                    <p>Ensuring your wedding day runs smoothly and flawlessly, behind the scenes.</p>
                 </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-palette service-icon" aria-hidden="true"></i>
-                    <h3>Event Design & Decor</h3>
-                    <p>Transforming venues into breathtaking settings that reflect your unique style and vision.</p>
+                <div class="service-card">
+                    <i class="fas fa-map-marker-alt fa-3x service-icon"></i>
+                    <h3>Venue Selection & Management</h3>
+                    <p>Helping you find and secure the perfect location that matches your vision.</p>
                 </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-handshake service-icon" aria-hidden="true"></i>
+                <div class="service-card">
+                    <i class="fas fa-handshake fa-3x service-icon"></i>
                     <h3>Vendor Management</h3>
-                    <p>Connecting you with top-tier vendors and managing all communications and contracts.</p>
+                    <p>Curating and coordinating top-tier suppliers for all your wedding needs.</p>
                 </div>
-                <div class="service-item" role="listitem">
-                    <i class="fas fa-chart-pie service-icon" aria-hidden="true"></i>
-                    <h3>Budget Planning</h3>
-                    <p>Expert guidance to help you allocate your budget effectively without compromising on quality.</p>
+                <div class="service-card">
+                    <i class="fas fa-wallet fa-3x service-icon"></i>
+                    <h3>Budget Management</h3>
+                    <p>Expert guidance to optimize your wedding budget without compromising quality.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette fa-3x service-icon"></i>
+                    <h3>Design & Decor</h3>
+                    <p>Creating stunning aesthetics and a cohesive design tailored to your unique vision.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section container" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get In Touch</h2>
-            <p class="lead-text">Ready to start planning your dream wedding? Contact us today to discuss your vision.</p>
+        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-heading">
+            <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+            <p class="section-description">Have questions or ready to start planning? Contact us today!</p>
             <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 5 Marigold Street</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@weddingplanners.com">info@weddingplanners.com</a></p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> 0724354591</p>
-                <div class="social-media">
-                    <a href="https://instagram.com/weddingPlanner" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>
+                <p><i class="fas fa-map-marker-alt"></i> 5 Maridold Street</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ziegler.tanya+wedding@gmail.com">ziegler.tanya+wedding@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="https://instagram.com/weddingPlanner" target="_blank" rel="noopener noreferrer" aria-label="Wedding Planners Instagram"><i class="fab fa-instagram fa-2x"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="contact-form" class="contact-form-section container" aria-labelledby="form-heading">
-            <h2 id="form-heading">Send Us A Message</h2>
-            <form action="mailto:info@weddingplanners.com" method="post" enctype="text/plain" aria-label="Contact form">
+        <section id="form" class="contact-form-section section-padding" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="section-title">Plan Your Wedding with Us</h2>
+            <p class="section-description">Fill out the form below and we'll get back to you to discuss your dream wedding.</p>
+            <form action="mailto:ziegler.tanya+wedding@gmail.com" method="post" enctype="text/plain" class="contact-form">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
+                    <input type="text" id="name" name="Name" required aria-required="true">
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+                    <input type="email" id="email" name="Email" required aria-required="true">
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required aria-required="true">
+                    <input type="text" id="subject" name="Subject" required aria-required="true">
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                    <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-submit">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer class="main-footer" role="contentinfo">
-        <p>&copy; <span id="current-year"></span> Wedding Planners. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> Wedding Planners. All rights reserved.</p>
+        <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
     </footer>
 
     <script>
-        // Auto-update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Mobile navigation toggle
+        // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.navbar-links');
+        const navLinks = document.querySelector('.nav-links');
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-            hamburger.setAttribute('aria-expanded', !isExpanded);
+            hamburger.classList.toggle('active');
+            const expanded = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
         });
 
         // Close mobile nav when a link is clicked
-        document.querySelectorAll('.navbar-links a').forEach(link => {
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                }
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
+        });
+
+        // Auto-update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Sticky Nav Bar on Desktop (CSS handles this, but adding JS for potential future enhancements)
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.main-header');
+            if (window.innerWidth > 768) { // Apply sticky behavior only on desktop
+                if (window.scrollY > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            }
         });
     </script>
 </body>
