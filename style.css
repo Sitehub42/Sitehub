@@ -143,6 +143,7 @@ h2 {
 
 h3 {
     font-size: 1.8em;
+    text-align: center;
     color: var(--primary-color);
 }
 
@@ -376,6 +377,13 @@ a:hover {
 
 }
 
+/* Show all 6 benefit cards in one row on large screens */
+@media (min-width: 1200px) {
+  .benefits-grid {
+    grid-template-columns: repeat( 1fr);
+  }
+}
+
 .benefit-card {
   background-color: var(--black);
   color: var(--accent-color);
@@ -417,6 +425,54 @@ color: var(--white);
   color: var(--accent-color);
   line-height: 1.5;
   margin: 0;
+}
+
+/* How It Works - Six Step Cards */
+.how-it-works { padding: 0px 16px; }
+.how-it-works h2 { text-align: center; margin-bottom: 8px; }
+.how-it-works .section-subtitle { max-width: 900px; margin: 0 auto 28px; text-align: center; color: var(--black); }
+
+.steps-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  counter-reset: steps;
+  margin: 0; padding: 0; list-style: none;
+}
+
+.step-card {
+  background: var(--accent-color);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 2px;
+  border-top: 2px solid var(--black);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.step-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 2px;
+  
+}
+
+.step-icon { color: var(--accent-color); font-size: 22px; margin-bottom: 8px; }
+.step-title { font-size: 1.05rem; margin: 8px 0; color: var(--white); }
+.step-text { color: var(--accent-color); margin: 0; line-height: 1.5; }
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+/* Force 6 in a row on large screens for steps too */
+@media (min-width: 1200px) {
+  .steps-grid { grid-template-columns: repeat(6, 1fr); }
 }
 /* Services Overview */
 .services-overview { padding: 48px 16px; }
@@ -527,7 +583,8 @@ color: var(--white);
 
 /* Services/Products Section */
 .services-section {
-    padding: 20px 20px;
+  
+    padding: 10px 0px;
 }
 
 .packages {
@@ -537,10 +594,10 @@ color: var(--white);
 }
 
 .package-card {
-    background-color: var(--white);
+    background-color: #ff66c4;
     border: 1px solid #e0e0e0;
     border-radius: var(--border-radius);
-    padding: 30px;
+    padding: 5px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -562,7 +619,7 @@ color: var(--white);
 .package-card .price {
     font-size: 2.8em;
     font-weight: bold;
-    color: var(--accent-color);
+    color: var(--white);
     margin-bottom: 10px;
 }
 
@@ -574,7 +631,7 @@ color: var(--white);
 
 .package-card .features {
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: left;
     flex-grow: 1; /* Allows features list to take available space */
 }
@@ -587,7 +644,7 @@ color: var(--white);
 
 .package-card .features li::before {
     content: '✔'; /* Checkmark */
-    color: var(--accent-color);
+    color: var(--white);
     position: absolute;
     left: 0;
     font-weight: bold;
