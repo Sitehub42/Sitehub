@@ -102,6 +102,9 @@ a:hover {
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--text-light);
+    padding-left: 2px;
+    padding-right: 2px;
+
 }
 
 .btn-primary:hover {
@@ -179,6 +182,13 @@ a:hover {
     width: 100%;
 }
 
+/* Desktop: make header CTA button roomier and disable underline */
+.desktop-nav ul li a.btn {
+    padding: 10px 22px;
+    margin-left: 12px;
+}
+.desktop-nav ul li a.btn::after { display: none; }
+
 .hamburger-menu {
     display: none; /* Hidden on desktop */
     background: none;
@@ -232,6 +242,16 @@ a:hover {
     color: var(--text-light);
     font-size: 1.5em;
     font-weight: 500;
+}
+
+/* Mobile: present CTA as a clear button */
+.mobile-nav ul li a.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 12px 28px;
+    border-radius: 28px;
+    margin-top: 4px;
 }
 
 .hamburger-menu.active .bar:nth-child(1) {

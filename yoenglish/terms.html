@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoEnglish - Terms & Conditions</title>
+    <meta name="description" content="Terms and Conditions for YoEnglish: bookings, cancellations, lateness, and absence policies.">
+    <link rel="canonical" href="https://sitehub.co.za/yoenglish/terms">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header & Navigation (same as index) -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html#hero" class="logo" aria-label="YoEnglish logo, go to home">
+                <img src="logo.png" alt="YoEnglish Logo" height="150">
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about" aria-label="Learn more about us">About Us</a></li>
+                    <li><a href="index.html#services" aria-label="Explore our lessons">Lessons</a></li>
+                    <li><a href="index.html#method" aria-label="Learn about our teaching method">Teaching Method</a></li>
+                    <li><a href="index.html#homework" aria-label="See homework and study books">Homework</a></li>
+                    <li><a href="index.html#contact" aria-label="Get in touch with us">Contact</a></li>
+                    <li><a href="index.html#form" class="btn btn-primary" aria-label="Enroll now for a lesson">Enroll Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero-section" role="banner" style="min-height: 300px; padding: 80px 20px;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 style="margin-bottom: 0.3em;">Terms & Conditions</h1>
+            <p class="tagline" style="font-size:1.2em;">Please review our bookings, cancellations, lateness and absence policies.</p>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="content-section" aria-labelledby="terms-heading" style="background: var(--background-light);">
+        <div class="container" style="max-width: 900px; text-align: left;">
+            <h2 id="terms-heading">Terms and Conditions</h2>
+
+            <article>
+                <h3>Bookings</h3>
+                <ul>
+                    <li>To book lessons, please contact us on WeChat.</li>
+                    <li>Students may schedule fixed classes at the same time every week.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Cancellations</h3>
+                <ul>
+                    <li>If class is cancelled <strong>24 hours in advance</strong>, there will be no penalty. You will not lose the class if it is part of a package. However, if you know that you need to cancel a class, we would be grateful if you could cancel as far ahead as possible.</li>
+                    <li>If a class is cancelled <strong>less than 24 hours</strong> in advance, the class will be forfeited.</li>
+                    <li>To allow for illness or unexpected emergencies, a class may be cancelled in less than 24 hours <strong>once per calendar month</strong> without penalty.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Lateness</h3>
+                <ul>
+                    <li>The teacher will remain in the classroom for the full 25 minutes of class time.</li>
+                    <li>Should the student arrive late, the remaining time will be used to teach.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Absence</h3>
+                <p>If the student misses a class, it will still be deducted from your package of lessons.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> YoEnglish. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Auto update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle (same as index)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.main-nav');
+        const mainHeader = document.querySelector('.main-header');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+            if (navMenu.classList.contains('active')) {
+                mainHeader.classList.add('fixed-mobile-nav');
+            } else {
+                mainHeader.classList.remove('fixed-mobile-nav');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.main-nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                mainHeader.classList.remove('fixed-mobile-nav');
+            });
+        });
+    </script>
+</body>
+</html>
