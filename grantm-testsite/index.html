@@ -3,146 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="grantm-testsite specializes in granting wishes and amazing things. Discover our services, mission, and contact us.">
-    <meta name="keywords" content="grantm-testsite, wishes, amazing things, services, contact, about us">
-    <meta name="author" content="grantm-testsite">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta name="description" content="grantm-testsite: I am the brand. Grant wishes and amazing things. Realize your dreams with our magical solutions.">
+    <title>grantm-testsite</title>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="grantm-testsite">
+    <meta property="og:description" content="grantm-testsite: I am the brand. Grant wishes and amazing things. Realize your dreams with our magical solutions.">
+    <meta property="og:image" content="https://sitehub.co.za/grantm-testsite/hero-800x400.png"> <!-- Update with actual image URL -->
     <meta property="og:url" content="https://sitehub.co.za/grantm-testsite">
-    <meta property="og:title" content="grantm-testsite - Granting Wishes and Amazing Things">
-    <meta property="og:description" content="grantm-testsite specializes in granting wishes and amazing things. Discover our services, mission, and contact us.">
-    <meta property="og:image" content="https://sitehub.co.za/grantm-testsite/hero-800x400.png">
+    <meta property="og:type" content="website">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sitehub.co.za/grantm-testsite">
-    <meta property="twitter:title" content="grantm-testsite - Granting Wishes and Amazing Things">
-    <meta property="twitter:description" content="grantm-testsite specializes in granting wishes and amazing things. Discover our services, mission, and contact us.">
-    <meta property="twitter:image" content="https://sitehub.co.za/grantm-testsite/hero-800x400.png">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Placeholder for favicon -->
 
-    <title>grantm-testsite - Granting Wishes and Amazing Things</title>
-
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <a href="#hero" class="logo" aria-label="grantm-testsite home">
-                <img src="logo.png" alt="grantm-testsite Logo" style="height: 150px;">
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" aria-label="grantm-testsite homepage">
+                <img src="logo.png" alt="grantm-testsite logo" height="150">
             </a>
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary">Form</a></li>
+            <nav class="nav" aria-label="Main navigation">
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" role="menu">
+                    <li role="none"><a href="#about" role="menuitem">About Us</a></li>
+                    <li role="none"><a href="#services" role="menuitem">Services/Products</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                    <li role="none"><a href="#contact-form" class="btn btn-primary" role="menuitem">Form</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero-section" aria-labelledby="hero-title">
-            <div class="overlay"></div>
-            <div class="container">
-                <h1 id="hero-title" class="hero-title">grantm-testsite</h1>
-                <p class="hero-tagline">I am the brand</p>
-                <a href="#form" class="btn btn-primary hero-btn">Discover How We Can Help</a>
+        <section id="hero" class="hero" aria-label="Hero section with company tagline and call to action">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>grantm-testsite</h1>
+                <p>Grant wishes and amazing things</p>
+                <a href="#contact-form" class="btn btn-hero">Make a Wish!</a>
             </div>
         </section>
 
-        <section id="about" class="about-section section-padding" aria-labelledby="about-heading">
+        <section id="about" class="about section-padding" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="about-heading">About grantm-testsite</h2>
-                <p class="lead">Our mission at grantm-testsite is simple: I am the brand. We are dedicated to delivering exceptional value and fostering strong, lasting relationships with our clients.</p>
+                <h2 id="about-heading" class="section-title">About Us</h2>
                 <div class="about-content">
-                    <p>grantm-testsite is an expert in granting wishes and amazing things. We bring unparalleled expertise and a passion for innovation to every challenge. Our approach is rooted in understanding your unique needs and crafting tailor-made solutions that drive success.</p>
-                    <p>We pride ourselves on our client-centric philosophy, where your success is our ultimate goal. Through agile methodologies and a collaborative spirit, we ensure transparent communication and adaptable strategies, consistently exceeding expectations and delivering results that truly matter.</p>
+                    <p>At grantm-testsite, our mission is simple: <strong>I am the brand</strong>. We specialize in the art of wish granting and creating amazing things, transforming dreams into reality with unparalleled dedication and magical precision.</p>
+                    <p>Our expertise lies in the intricate processes of manifesting desires, from the simplest requests to the most extraordinary ambitions. We pride ourselves on a client-centric approach, where your success and happiness are at the heart of everything we do.</p>
+                    <p>Embracing agile methodologies, we adapt and innovate, ensuring that every wish is approached with flexibility and a commitment to delivering truly spectacular results. Join us on a journey where the impossible becomes possible, and every dream finds its way to fruition.</p>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services-section section-padding bg-light" aria-labelledby="services-heading">
+        <section id="services" class="services section-padding bg-light" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-heading">Our Services & Products</h2>
-                <p class="lead">At grantm-testsite, we offer a comprehensive suite of services designed to grant wishes and amazing things, transforming your ideas into reality. Our solutions are crafted to be innovative, efficient, and tailored to your specific requirements.</p>
+                <h2 id="services-heading" class="section-title">Our Services</h2>
+                <p class="section-description">We specialize in granting wishes and creating amazing things. Our magical solutions are tailored to bring your deepest desires to life.</p>
                 <div class="service-grid">
                     <div class="service-item">
-                        <i class="fas fa-star fa-3x service-icon" aria-hidden="true"></i>
-                        <h3>Wish Granting</h3>
-                        <p>We specialize in bringing your deepest desires to life, ensuring every wish is granted with precision and care.</p>
+                        <i class="fas fa-magic icon-large" aria-hidden="true"></i>
+                        <h3>Wish Fulfillment</h3>
+                        <p>Experience the joy of having your heartfelt wishes come true. We meticulously craft pathways to manifest your desires into tangible realities.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-magic fa-3x service-icon" aria-hidden="true"></i>
-                        <h3>Amazing Experiences</h3>
-                        <p>Beyond wishes, we create truly amazing and unforgettable experiences that leave a lasting impact.</p>
+                        <i class="fas fa-sparkles icon-large" aria-hidden="true"></i>
+                        <h3>Dream Manifestation</h3>
+                        <p>Turn your abstract dreams into concrete experiences. Our methods ensure your visions are not just imagined, but truly lived.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-lightbulb fa-3x service-icon" aria-hidden="true"></i>
-                        <h3>Innovative Solutions</h3>
-                        <p>Our team develops creative and groundbreaking solutions for complex challenges, making the impossible possible.</p>
+                        <i class="fas fa-hat-wizard icon-large" aria-hidden="true"></i>
+                        <h3>Magical Solutions</h3>
+                        <p>Facing a challenge? Our bespoke magical solutions provide innovative and enchanting ways to overcome obstacles and achieve your goals.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-heart fa-3x service-icon" aria-hidden="true"></i>
-                        <h3>Personalized Approach</h3>
-                        <p>Every client is unique. We offer a highly personalized service to ensure your specific needs are met with dedication.</p>
+                        <i class="fas fa-stars icon-large" aria-hidden="true"></i>
+                        <h3>Awe-Inspiring Creations</h3>
+                        <p>Beyond wishes, we specialize in crafting unique and amazing things that inspire wonder and leave a lasting impression.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding" aria-labelledby="contact-heading">
+        <section id="contact" class="contact section-padding" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="contact-heading">Get In Touch</h2>
-                <p class="lead">We'd love to hear from you! Reach out to grantm-testsite for any inquiries or to discuss your amazing project.</p>
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 123 Dreamland Ave, Fantasy City, F1R5T-W1SH</p>
+                <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 123 Magic Lane, Wonderland, Earth</p>
                     <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:grantm@sitehub.co.za">grantm@sitehub.co.za</a></p>
-                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+0123456789">0123456789</a></p>
-                    <div class="social-links" aria-label="Social media links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+0123456789">0123456789</a></p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/grantm-testsite" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/grantm-testsite" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com/company/grantm-testsite" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="form" class="form-section section-padding bg-light" aria-labelledby="form-heading">
+        <section id="contact-form" class="contact-form-section section-padding bg-light" aria-labelledby="form-heading">
             <div class="container">
-                <h2 id="form-heading">Send Us a Message</h2>
-                <p class="lead">Have a question or a wish? Fill out the form below, and we'll get back to you as soon as possible.</p>
+                <h2 id="form-heading" class="section-title">Send Us a Message</h2>
                 <form action="mailto:grantm@sitehub.co.za" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required aria-required="true" placeholder="Your Name">
+                        <input type="text" id="name" name="name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required aria-required="true" placeholder="your.email@example.com">
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject" required aria-required="true" placeholder="What's your message about?"></n>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required aria-required="true" placeholder="Tell us your wish or message..."></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="container">
             <p>&copy; <span id="current-year"></span> grantm-testsite. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
@@ -150,41 +147,42 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile navigation toggle
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('.main-nav');
+        // Automatic year update for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            hamburger.addEventListener('click', () => {
-                nav.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', nav.classList.contains('active'));
-            });
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navToggle = () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active'); // Toggle active class on hamburger as well
+            const isExpanded = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+            // Prevent scrolling when mobile nav is open
+            document.body.style.overflow = isExpanded ? 'hidden' : '';
+        };
+        hamburger.addEventListener('click', navToggle);
 
-            // Close mobile nav when a link is clicked
-            nav.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    nav.classList.remove('active');
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
-                });
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
             });
+        });
 
-            // Auto update current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
-
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - (document.querySelector('.main-header').offsetHeight + 20), // Offset for sticky header
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
+        // Sticky header logic (for subtle styling changes on scroll)
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
