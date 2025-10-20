@@ -3,183 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bearded Buddys - Premium Reptile Products</title>
-    <meta name="description" content="Bearded Buddys specializes in dropshipping high-quality reptile products, ensuring healthy pets and satisfied clients. Explore our range of terrariums, heating, lighting, food, and accessories.">
-    
+    <meta name="description" content="Bearded Buddys - Dropshipping of Reptile products. Your go-to for quality reptile pet products. We offer a wide range of essential pet supplies for your beloved reptiles.">
+    <meta name="keywords" content="Bearded Buddys, reptile products, pet products, dropshipping, reptile care, snake supplies, lizard supplies, tortoise products, pet supplies South Africa">
+    <meta name="author" content="Bearded Buddys">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitehub.co.za/bearded-buddys">
-    <meta property="og:title" content="Bearded Buddys - Premium Reptile Products">
-    <meta property="og:description" content="Bearded Buddys specializes in dropshipping high-quality reptile products, ensuring healthy pets and satisfied clients. Explore our range of terrariums, heating, lighting, food, and accessories.">
-    <meta property="og:image" content="https://sitehub.co.za/bearded-buddys/hero-800x400.png"> <!-- Placeholder image -->
+    <meta property="og:url" content="https://sitehub.co.za/beardedbuddys">
+    <meta property="og:title" content="Bearded Buddys - Quality Reptile Pet Products">
+    <meta property="og:description" content="Bearded Buddys - Dropshipping of Reptile products. Your go-to for quality reptile pet products. We offer a wide range of essential pet supplies for your beloved reptiles.">
+    <meta property="og:image" content="https://sitehub.co.za/beardedbuddys/hero-800x400.png"> <!-- Placeholder image URL -->
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-    
-    <!-- Google Fonts -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/beardedbuddys">
+    <meta property="twitter:title" content="Bearded Buddys - Quality Reptile Pet Products">
+    <meta property="twitter:description" content="Bearded Buddys - Dropshipping of Reptile products. Your go-to for quality reptile pet products. We offer a wide range of essential pet supplies for your beloved reptiles.">
+    <meta property="twitter:image" content="https://sitehub.co.za/beardedbuddys/hero-800x400.png"> <!-- Placeholder image URL -->
+
+    <title>Bearded Buddys - Quality Reptile Pet Products</title>
+
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header and Navigation -->
+
     <header class="main-header">
-        <nav class="navbar">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container">
-                <a href="#hero" class="logo-link">
+                <a href="#hero" class="logo-link" aria-label="Bearded Buddys home">
                     <img src="logo.png" alt="Bearded Buddys Logo" class="logo" height="150">
                 </a>
-                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <ul class="nav-links" id="navbar-menu">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services/Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact-form" class="btn btn-primary nav-btn">Get a Quote</a></li>
+                <ul class="nav-links">
+                    <li><a href="#about" aria-label="About Us">About Us</a></li>
+                    <li><a href="#services" aria-label="Our Services and Products">Services/Products</a></li>
+                    <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-nav" aria-label="Fill out our contact form">Form</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1>Bearded Buddys</h1>
-            <p class="tagline">Your trusted source for premium reptile products.</p>
-            <a href="#contact-form" class="btn btn-secondary">Discover Our Products</a>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="about-section section-padding">
-        <div class="container">
-            <h2 class="section-title">About Bearded Buddys</h2>
-            <p class="section-intro">At Bearded Buddys, we are passionate about the well-being of your reptiles. We believe that happy, healthy pets start with quality products.</p>
-            <div class="about-content">
-                <p><strong>Our Mission:</strong> To provide high-quality reptile products through an efficient dropshipping model, ensuring client satisfaction and healthy pets.</p>
-                <p>We specialize in the reptile products industry, bringing you a curated selection of essentials and luxuries for your scaly friends. Our expertise lies in sourcing reliable and innovative products, from specialized lighting to nutritious feeds, always with an eye on sustainability and ethical practices.</p>
-                <p>Client success and the health of your pets are at the core of everything we do. We operate with agile methodologies to ensure our product range is constantly updated with the best on the market, adapting quickly to the needs of the reptile community and our valued customers.</p>
+    <main>
+        <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 id="hero-heading">Bearded Buddys</h1>
+                <p class="tagline">Your Partner in Reptile Care - Quality Pet Products Delivered.</p>
+                <a href="#contact-form" class="btn btn-primary" aria-label="Get in touch with us via our form">Get Started</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services/Products Section -->
-    <section id="services" class="services-section section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title">Our Products & Services</h2>
-            <p class="section-intro">Explore our wide range of premium products designed to create the perfect environment for your beloved reptiles.</p>
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-house-chimney service-icon"></i>
-                    <h3>Terrariums & Enclosures</h3>
-                    <p>High-quality habitats to ensure comfort and safety for your reptiles.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-sun service-icon"></i>
-                    <h3>Heating & Lighting</h3>
-                    <p>Essential climate control solutions for optimal reptile health.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-tree service-icon"></i>
-                    <h3>Substrates & Decor</h3>
-                    <p>Natural and enriching options to stimulate and decorate their environment.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-bowl-food service-icon"></i>
-                    <h3>Food & Supplements</h3>
-                    <p>Nutritious diets and vital supplements for a balanced reptile lifestyle.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-kit-medical service-icon"></i>
-                    <h3>Accessories & Health</h3>
-                    <p>Everything from feeding tools to health monitors to keep your pets thriving.</p>
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Us</h2>
+                <p class="lead-text">At Bearded Buddys, we are passionate about reptiles and committed to supporting their well-being through high-quality products.</p>
+                <div class="about-content">
+                    <p>Our mission at Bearded Buddys is to provide reptile enthusiasts with high-quality, essential pet products through efficient dropshipping, ensuring their beloved pets thrive. We are committed to client success and utilize agile methodologies to adapt to market needs and deliver exceptional service.</p>
+                    <p>Specializing in dropshipping of Reptile products, we understand the unique needs of these fascinating creatures. We meticulously select products that promote health, comfort, and safety for all types of reptiles, from bearded dragons to snakes, geckos, and more. Our agile approach means we're constantly seeking out the best and latest in reptile care to bring directly to your doorstep, making it easier than ever to provide top-tier care for your scaly friends.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-intro">We'd love to hear from you! Reach out to us through any of the channels below.</p>
-            <div class="contact-info-grid">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <h3>Our Location</h3>
-                    <p>78 LANDDROST STREET</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <h3>Email Us</h3>
-                    <p><a href="mailto:beardedbuddysza@gmail.com">beardedbuddysza@gmail.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone contact-icon"></i>
-                    <h3>Call Us</h3>
-                    <p><a href="tel:0784846799">078 484 6799</a></p>
+        <section id="services" class="services-section" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services & Products</h2>
+                <p class="lead-text">At Bearded Buddys, we offer a curated selection of essential pet products, specializing in reptile care. Our commitment is to quality and convenience for all reptile enthusiasts.</p>
+                <div class="service-list">
+                    <div class="service-item" role="listitem">
+                        <i class="fas fa-snake fa-3x" aria-hidden="true"></i>
+                        <h3>Reptile Pet Products</h3>
+                        <p>Discover a wide range of essential products specifically chosen for your reptile's health and happiness. From terrarium decor to feeding supplies, we've got you covered.</p>
+                    </div>
+                    <div class="service-item" role="listitem">
+                        <i class="fas fa-paw fa-3x" aria-hidden="true"></i>
+                        <h3>General Pet Supplies</h3>
+                        <p>While specializing in reptiles, we also offer select general pet supplies to ensure a holistic approach to your pet's needs. Quality and reliability in every item.</p>
+                    </div>
+                    <div class="service-item" role="listitem">
+                        <i class="fas fa-truck fa-3x" aria-hidden="true"></i>
+                        <h3>Efficient Dropshipping</h3>
+                        <p>Enjoy the convenience of direct delivery. We leverage efficient dropshipping to ensure your products reach you swiftly and safely, without hassle.</p>
+                    </div>
                 </div>
             </div>
-            <div class="social-media">
-                <a href="https://instagram.com/bearded_buddys" target="_blank" aria-label="Visit us on Instagram" class="social-icon-link"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/beardedbuddys" target="_blank" aria-label="Visit us on Facebook" class="social-icon-link"><i class="fab fa-facebook-f"></i></a>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="lead-text">We'd love to hear from you! Reach out to Bearded Buddys for inquiries, support, or just to say hello.</p>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <p><a href="https://maps.google.com/?q=78%20LANDDROST%20STREET%20VRYHEID%203100" target="_blank" rel="noopener noreferrer" aria-label="Our address on Google Maps">78 LANDDROST STREET VRYHEID 3100</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <p><a href="mailto:beardedbuddysza@gmail.com" aria-label="Email us at beardedbuddysza@gmail.com">beardedbuddysza@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <p><a href="tel:+27784846799" aria-label="Call us at 0784846799">0784846799</a></p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://instagram.com/bearded_buddys" target="_blank" rel="noopener noreferrer" aria-label="Follow Bearded Buddys on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://facebook.com/beardedbuddys" target="_blank" rel="noopener noreferrer" aria-label="Follow Bearded Buddys on Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact-form" class="contact-form-section section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title">Send Us a Message</h2>
-            <p class="section-intro">Have a question or need a quote? Fill out the form below and we'll get back to you.</p>
-            <form class="contact-form" action="mailto:beardedbuddysza@gmail.com" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="Email" placeholder="your@example.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="Subject" placeholder="Inquiry Subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
+        <section id="contact-form" class="form-section" aria-labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading">Send Us a Message</h2>
+                <p class="lead-text">Have a question or need assistance? Fill out the form below and we'll get back to you shortly.</p>
+                <form action="mailto:beardedbuddysza@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Bearded Buddys. All rights reserved. Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a>.</p>
+            <p>&copy; <span id="current-year"></span> Bearded Buddys. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Auto-update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Mobile navigation toggle
+        // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-            hamburger.setAttribute('aria-expanded', !expanded);
+            const expanded = navLinks.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
         });
 
         // Close mobile nav when a link is clicked
@@ -189,6 +172,20 @@
                     navLinks.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
                 }
+            });
+        });
+
+        // Set Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
