@@ -1,0 +1,626 @@
+/* General Styling & Variables */
+:root {
+    --primary-color: #0056b3; /* A strong blue */
+    --accent-color: #dc3545; /* A vibrant red */
+    --dark-color: #333;
+    --light-color: #f8f9fa;
+    --text-color: #555;
+    --white: #fff;
+    --grey-light: #eee;
+    --grey-medium: #ccc;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.sticky {
+    padding: 5px 0;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent when sticky */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-container img {
+    height: 150px; /* Default height as specified */
+    transition: height 0.3s ease;
+}
+
+header.sticky .logo-container img {
+    height: 70px; /* Reduced height when sticky for better UX */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1.1em;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links .btn {
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none; /* Hidden on desktop */
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    background: url('hero-800x400.png') no-repeat center center/cover; /* Placeholder for hero image */
+    padding-top: 100px; /* Offset for fixed header */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Light overlay for text readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhance text visibility */
+}
+
+.hero-content p {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--white);
+}
+
+.about-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    padding-left: 25px;
+    position: relative;
+}
+
+.about-section ul li .fa-arrow-right {
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+/* Services Section */
+.services-section {
+    background-color: var(--grey-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-item i {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 3.5em;
+}
+
+.service-item h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.service-item p {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--white);
+}
+
+.contact-info {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info p i {
+    color: var(--accent-color);
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    font-weight: 500;
+}
+
+.social-media {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--grey-medium);
+    color: var(--white);
+    font-size: 1.8em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-media a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Specific social media brand colors (optional, for aesthetics) */
+.social-media .fa-facebook-f { background-color: #3b5998; }
+.social-media .fa-twitter { background-color: #00acee; }
+.social-media .fa-linkedin-in { background-color: #0077b5; }
+.social-media a:hover.fa-facebook-f, .social-media a:hover.fa-twitter, .social-media a:hover.fa-linkedin-in {
+    background-color: var(--primary-color); /* Hover to primary color */
+}
+
+/* Form Section */
+.form-section {
+    background-color: var(--grey-light);
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--grey-medium);
+    border-radius: var(--border-radius);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: var(--dark-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2); /* Subtle focus highlight */
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn-primary {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--grey-light);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .logo-container img {
+        height: 100px; /* Adjust logo height for medium screens */
+    }
+    header.sticky .logo-container img {
+        height: 60px;
+    }
+    .hero-content h1 {
+        font-size: 3.5em;
+    }
+    .hero-content p {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .form-section .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        border-top: 1px solid var(--grey-light);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+        border-bottom: 1px solid var(--grey-light);
+    }
+
+    .nav-links a:hover {
+        background-color: var(--grey-light);
+    }
+
+    .nav-links a::after {
+        display: none; /* Hide hover underline for mobile menu */
+    }
+
+    .nav-links .btn {
+        margin: 20px auto 0 auto; /* Center button in mobile menu */
+        width: calc(100% - 40px);
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 80vh;
+        padding-top: 80px;
+    }
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+    .hero-content p {
+        font-size: 1.3em;
+    }
+
+    /* Sections */
+    .section-padding {
+        padding: 60px 0;
+    }
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+    p.section-description {
+        margin-bottom: 40px;
+    }
+    .contact-info p {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .contact-info p i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .social-media a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+    }
+    .logo-container img {
+        height: 80px; /* Adjust logo height for mobile */
+    }
+    header.sticky .logo-container img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container img {
+        height: 60px; /* Further adjust logo height for smaller mobiles */
+    }
+    header.sticky .logo-container img {
+        height: 45px;
+    }
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+    .hero-content p {
+        font-size: 1.1em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .service-item i {
+        font-size: 3em;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+}
