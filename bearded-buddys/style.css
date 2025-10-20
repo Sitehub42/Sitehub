@@ -79,7 +79,7 @@ p {
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
-    color: var(--light-text);
+    color: var(--dark-text);
     padding: 12px 25px;
     border-radius: 30px;
     text-transform: uppercase;
@@ -130,6 +130,7 @@ p {
 .nav-links {
     list-style: none;
     display: flex;
+
 }
 
 .nav-links li {
@@ -455,6 +456,7 @@ section:nth-of-type(even) {
 
     .nav-links li {
         margin: 10px 0;
+      
     }
 
     .nav-links a {
