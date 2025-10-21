@@ -3,159 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SiteHub Test Company offers innovative solutions in technology and consulting. Explore our services, mission, and contact us today for expert assistance.">
-    <meta name="keywords" content="technology, consulting, software development, IT solutions, digital transformation, SiteHub Test Company">
-    <title>SiteHub Test Company - Empowering Your Digital Future</title>
+    <title>InnovateTech Solutions - Driving Digital Transformation</title>
+    <meta name="description" content="InnovateTech Solutions offers expert software development, IT consulting, and cloud solutions. We drive digital transformation with agile methodologies for client success.">
+    <meta name="keywords" content="InnovateTech, software development, IT consulting, cloud solutions, agile, digital transformation, web development">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="SiteHub Test Company - Empowering Your Digital Future">
-    <meta property="og:description" content="SiteHub Test Company offers innovative solutions in technology and consulting. Explore our services, mission, and contact us today for expert assistance.">
-    <meta property="og:image" content="https://sitehub.co.za/test-company-website/hero-800x400.png"> <!-- Placeholder image URL -->
-    <meta property="og:url" content="https://sitehub.co.za/test-company-website">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://sitehub.co.za/innovatetech-solutions">
+    <meta property="og:title" content="InnovateTech Solutions - Driving Digital Transformation">
+    <meta property="og:description" content="InnovateTech Solutions offers expert software development, IT consulting, and cloud solutions. We drive digital transformation with agile methodologies for client success.">
+    <meta property="og:image" content="https://sitehub.co.za/innovatetech-solutions/hero-800x400.png"> <!-- Placeholder image -->
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon Placeholder -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Header and Navigation -->
     <header class="header">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="#hero">
-                    <img src="logo.png" alt="SiteHub Test Company Logo" height="150" aria-label="SiteHub Test Company Home">
-                </a>
-            </div>
-            <nav class="desktop-nav" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary">Form</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" aria-label="Toggle mobile navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="mobile-nav" aria-label="Mobile Navigation">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#form" class="btn btn-primary">Form</a></li>
+        <div class="container">
+            <a href="#" class="logo-link" aria-label="InnovateTech Solutions home">
+                <img src="logo.png" alt="InnovateTech Solutions Logo" class="logo" height="150">
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="hamburger-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list" id="mobile-menu">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary nav-btn">Get Started</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero" role="banner" aria-label="Company Introduction">
+        <section id="hero" class="hero-section" role="banner" aria-label="InnovateTech Solutions Hero Section">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="hero-title">SiteHub Test Company</h1>
-                <p class="hero-tagline">Empowering Your Digital Future</p>
-                <a href="#form" class="btn btn-secondary btn-large">Get Started Today</a>
+                <h1>InnovateTech Solutions</h1>
+                <p class="tagline">Driving Digital Transformation with Agile Expertise</p>
+                <a href="#contact-form" class="btn btn-primary hero-btn">Explore Our Solutions</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-us section-padding" role="region" aria-labelledby="about-heading">
+        <section id="about" class="about-section section-padding" role="region" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="about-heading" class="section-title">About Us</h2>
-                <p class="section-description">
-                    Our mission at SiteHub Test Company is to deliver cutting-edge technology solutions that empower businesses to thrive in the digital age. We are committed to client success through agile methodologies and innovative approaches. This is a test submission.
-                </p>
-                <p>
-                    With expertise in technology and consulting, we pride ourselves on building strong relationships with our clients, understanding their unique challenges, and delivering solutions that exceed expectations. Our agile methodologies ensure flexibility, efficiency, and a focus on delivering tangible value at every stage of a project.
-                </p>
-                <p>
-                    We believe in continuous improvement and staying ahead of industry trends to provide the most effective and future-proof solutions. Our team of dedicated professionals is passionate about leveraging technology to help your business achieve its full potential.
-                </p>
+                <h2 id="about-heading">About InnovateTech Solutions</h2>
+                <p class="section-description">At InnovateTech Solutions, we are committed to transforming businesses through technology.</p>
+                <div class="about-content">
+                    <p>Our mission at InnovateTech Solutions is to empower businesses with cutting-edge technology and innovative strategies, fostering growth and efficiency through a client-centric approach. We specialize in software development and IT consulting, bringing a wealth of expertise to every project.</p>
+                    <p>We pride ourselves on our agile methodologies, which ensure flexibility, transparency, and rapid delivery of high-quality solutions. Our focus is always on client success, working collaboratively to understand unique challenges and deliver impactful, measurable results.</p>
+                    <p>Join us in building the future of your business, one innovative solution at a time.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Services/Products Section -->
-        <section id="services" class="services section-padding section-bg" role="region" aria-labelledby="services-heading">
+        <section id="services" class="services-section section-padding bg-light" role="region" aria-labelledby="services-heading">
             <div class="container">
-                <h2 id="services-heading" class="section-title">Our Services</h2>
-                <p class="section-description">
-                    At SiteHub Test Company, we offer a comprehensive suite of services designed to accelerate your digital journey and enhance operational efficiency. This is a test submission.
-                </p>
+                <h2 id="services-heading">Our Services</h2>
+                <p class="section-description">We offer a comprehensive suite of services designed to accelerate your digital journey.</p>
                 <div class="service-grid">
-                    <div class="service-item">
+                    <div class="service-item" role="article">
                         <i class="fas fa-code service-icon" aria-hidden="true"></i>
                         <h3>Custom Software Development</h3>
-                        <p>Tailored software solutions designed to meet your specific business needs and drive efficiency.</p>
+                        <p>Building bespoke applications tailored to specific business needs, ensuring perfect fit and optimal performance.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" role="article">
                         <i class="fas fa-cloud service-icon" aria-hidden="true"></i>
-                        <h3>Cloud Solutions</h3>
-                        <p>Seamless migration and management of cloud services, enhancing scalability and reducing operational costs.</p>
+                        <h3>Cloud Solutions &amp; Migration</h3>
+                        <p>Seamless transition to cloud platforms and optimization of cloud infrastructure for scalability and efficiency.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" role="article">
                         <i class="fas fa-lightbulb service-icon" aria-hidden="true"></i>
-                        <h3>IT Consulting</h3>
-                        <p>Expert guidance and strategic planning to optimize your IT infrastructure and achieve your business objectives.</p>
+                        <h3>IT Consulting &amp; Strategy</h3>
+                        <p>Expert guidance to align technology with business objectives and drive strategic growth through informed decisions.</p>
                     </div>
-                    <div class="service-item">
-                        <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
-                        <h3>Digital Transformation</h3>
-                        <p>Helping businesses adapt to the digital landscape with innovative strategies and modern technologies. This is a test submission.</p>
+                    <div class="service-item" role="article">
+                        <i class="fas fa-palette service-icon" aria-hidden="true"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Crafting intuitive and engaging user experiences for digital products that delight users and achieve business goals.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding" role="region" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading" class="section-title">Contact Us</h2>
-                <p class="section-description">We'd love to hear from you. Reach out through any of the channels below.</p>
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> This is a test submission</p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:grantm@sitehub.co.za">grantm@sitehub.co.za</a></p>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/www.test.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/www.test.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/www.test.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.linkedin.com/company/www.zylker.com" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="service-item" role="article">
+                        <i class="fas fa-users-cog service-icon" aria-hidden="true"></i>
+                        <h3>Agile Coaching</h3>
+                        <p>Implementing agile methodologies to enhance team productivity, streamline workflows, and ensure efficient project delivery.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="form" class="contact-form section-padding section-bg" role="form" aria-labelledby="form-heading">
+        <section id="contact" class="contact-section section-padding" role="region" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="form-heading" class="section-title">Send Us a Message</h2>
-                <form action="mailto:grantm@sitehub.co.za" method="post" enctype="text/plain">
+                <h2 id="contact-heading">Contact Us</h2>
+                <p class="section-description">Get in touch with us today to discuss your next project or any inquiries.</p>
+                <div class="contact-info">
+                    <address>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> This is a test submission</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:grantm@sitehub.co.za">grantm@sitehub.co.za</a></p>
+                        <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:0123456789">0123456789</a></p>
+                    </address>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/www.test.com" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/www.test.com" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.tiktok.com/@www.test.com" target="_blank" rel="noopener noreferrer" aria-label="Visit us on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/www.zylker.com" target="_blank" rel="noopener noreferrer" aria-label="Visit us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="form-section section-padding bg-light" role="form" aria-labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading">Send Us a Message</h2>
+                <p class="section-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form action="mailto:grantm@sitehub.co.za" method="post" enctype="text/plain" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
+                        <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
+                        <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required aria-required="true">
+                        <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Subject of your message">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Your message here..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -163,35 +146,38 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; <span id="current-year"></span> SiteHub Test Company. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> InnovateTech Solutions. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Automatically update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const navLinks = document.querySelectorAll('.mobile-nav ul li a');
-
-        hamburger.addEventListener('click', () => {
-            mobileNav.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('active'));
-        });
-
-        // Close mobile nav when a link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNav.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (document.body.classList.contains('nav-open')) {
+                    document.body.classList.remove('nav-open');
+                    document.querySelector('.hamburger-toggle').setAttribute('aria-expanded', 'false');
+                }
             });
         });
+
+        // Toggle mobile navigation
+        document.querySelector('.hamburger-toggle').addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true' || false;
+            this.setAttribute('aria-expanded', !isExpanded);
+            document.body.classList.toggle('nav-open');
+        });
+
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
