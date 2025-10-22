@@ -10,8 +10,9 @@
     --border-color: #ddd;
     --shadow-light: rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s ease;
-    --header-height-desktop: 180px; /* logo height + padding */
-    --header-height-mobile: 140px; /* adjusted for smaller logo on mobile */
+    /* Smaller header heights */
+    --header-height-desktop: 72px;
+    --header-height-mobile: 56px;
 }
 
 * {
@@ -29,6 +30,8 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: #fff;
+    /* Keep content below fixed header */
+    padding-top: var(--header-height-desktop);
 }
 
 body.nav-open {
@@ -89,7 +92,7 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: black;
 }
 
 /* Buttons */
@@ -107,7 +110,7 @@ a:hover {
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: var(--light-text-color);
+    color: white;
 }
 
 .btn-primary:hover {
@@ -117,7 +120,7 @@ a:hover {
 
 .btn-secondary {
     background-color: var(--secondary-color);
-    color: var(--light-text-color);
+    color: white;
 }
 
 .btn-secondary:hover {
@@ -128,7 +131,7 @@ a:hover {
 /* Header & Navigation */
 .main-header {
     background-color: #fff;
-    padding: 15px 0;
+    padding: 4px 0; /* reduce header padding */
     position: fixed;
     width: 100%;
     top: 0;
@@ -150,7 +153,7 @@ a:hover {
 }
 
 .logo img {
-    height: var(--header-height-desktop); /* As per requirement */
+    height: var(--header-height-desktop); /* auto-shrinks with smaller var */
     display: block;
     max-width: none; /* Override any potential max-width from a reset */
 }
@@ -229,7 +232,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     color: var(--light-text-color);
-    margin-top: calc(-1 * var(--header-height-desktop)); /* Pull hero up behind fixed header */
+    margin-top: 0;              /* was negative */
 }
 
 .hero-overlay {
@@ -245,7 +248,7 @@ a:hover {
 .hero-content {
     position: relative;
     z-index: 2;
-    padding-top: var(--header-height-desktop); /* Push content down to clear fixed header */
+    padding-top: 0;             /* was var(--header-height-desktop) */
 }
 
 .hero-content h1 {
@@ -278,7 +281,7 @@ a:hover {
 
 /* Common Section Styling */
 .common-section {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .common-section.bg-light {
@@ -478,25 +481,25 @@ a:hover {
     }
 
     .main-header {
-        padding: 10px 0; /* Smaller padding for mobile header */
+        padding: 4px 0; /* tighter mobile header */
     }
 
     .logo img {
-        height: var(--header-height-mobile); /* Smaller logo on mobile */
+        height: var(--header-height-mobile);
     }
 
     .main-nav {
         position: fixed;
         top: 0;
-        right: -100%; /* Off-screen by default */
-        width: 70%;
-        max-width: 300px; /* Limit menu width */
-        height: 100vh;
+        right: -100vw;                 /* fully off-screen by its own width */
+        width: 100vw;                  /* take entire viewport width */
+        max-width: none;               /* remove 300px cap */
+        height: 100vh;                 /* full viewport height */
         background-color: var(--background-dark);
         padding-top: calc(var(--header-height-mobile) + 30px); /* Space for logo/hamburger */
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
         transition: right var(--transition-speed);
-        z-index: 999; /* Below hamburger, above content */
+        z-index: 999;                  /* below hamburger so it can close */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -504,7 +507,7 @@ a:hover {
     }
 
     .main-nav.active {
-        right: 0; /* Slide in */
+        right: 0;                      /* slide fully into view */
     }
 
     .nav-list {
@@ -520,9 +523,6 @@ a:hover {
         padding: 10px 0;
         width: 80%; /* Make links wider in mobile menu */
         text-align: center;
-    }
-    .nav-list a:not(.btn):hover::after {
-        background-color: var(--accent-color);
     }
     .nav-list a.btn {
         margin-top: 1rem;
@@ -556,19 +556,12 @@ a:hover {
     }
 
     .hero-section {
-        margin-top: calc(-1 * var(--header-height-mobile) - 20px); /* Adjust for smaller mobile header height and its padding */
-        height: 80vh; /* Make hero a bit smaller */
+        margin-top: 0;          /* was negative on mobile */
+        /* height: 80vh; keep as-is if desired */
     }
     .hero-content {
-        padding-top: calc(var(--header-height-mobile) + 20px); /* Adjust content for smaller mobile header */
+        padding-top: 0;         /* was calc(var(--header-height-mobile) + 20px) */
     }
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-    .hero-content .tagline {
-        font-size: 1.2rem;
-    }
-
 }
 
 @media (max-width: 480px) {

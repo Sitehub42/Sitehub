@@ -83,6 +83,16 @@
                         <h3>Onsite Weighing & Payment</h3>
                         <p>Experience convenience with our onsite weighing and payment service. We provide transparent and fair evaluations for your scrap and e-waste, with immediate payment, making the process effortless for you.</p>
                     </div>
+                    <div class="service-item">
+                        <i class="fas fa-truck-loading service-icon" aria-hidden="true"></i>
+                        <h3>Scheduled Collections</h3>
+                        <p>We offer flexible scheduling options for regular scrap and e-waste collections. Whether you need weekly, bi-weekly, or monthly pickups, we tailor our services to fit your needs.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-balance-scale service-icon" aria-hidden="true"></i>
+                        <h3>Ferrous & Non‑Ferrous Metal Testing</h3>
+                        <p>On-site testing and verification of ferrous and non‑ferrous metals for accurate grading and pricing.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -91,9 +101,9 @@
             <div class="container">
                 <h2 id="contact-heading">Get in Touch</h2>
                 <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 55 Orleans Road Kya Sands</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 55 Orleans Road, Kya Sands, Randburg</p>
                     <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:henriquesjnr@gmail.com">henriquesjnr@gmail.com</a></p>
-                    <p><i class="fas fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+27725758723">0725758723</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+27725758723">0725758723</a>/ <a href="tel:+27676897761">0676897761</a></p>
                     <div class="social-links">
                         <a href="https://facebook.com/clrecycling" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="https://twitter.com/clrecycling" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -174,6 +184,28 @@
                 mainHeader.classList.remove('sticky');
             }
         });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const header = document.querySelector('.main-header');
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.main-nav');
+        if (!hamburger || !nav) return;
+
+        const setOpen = (open) => {
+          const isOpen = open ?? !nav.classList.contains('active');
+          nav.classList.toggle('active', isOpen);       // makes the panel slide in
+          hamburger.classList.toggle('active', isOpen); // animates the icon
+          document.body.classList.toggle('nav-open', isOpen);
+          header && header.classList.toggle('nav-open', isOpen);
+        };
+
+        hamburger.addEventListener('click', (e) => { e.preventDefault(); setOpen(); });
+        // Close when a menu link is clicked
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+        // Close on ESC
+        document.addEventListener('keyup', (e) => { if (e.key === 'Escape') setOpen(false); });
+      });
     </script>
 </body>
 </html>
