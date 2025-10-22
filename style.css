@@ -470,9 +470,32 @@ color: var(--white);
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
-/* Force 6 in a row on large screens for steps too */
+
+/* How it works: center the step cards and their images */
+.how-it-works .steps-grid {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center; /* center the whole track group */
+}
+
+.how-it-works .step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.how-it-works .step-card a { display: inline-block; }
+.how-it-works .step-card img { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+
+/* Put all 6 steps on one line on large screens */
 @media (min-width: 1200px) {
-  .steps-grid { grid-template-columns: repeat(6, 1fr); }
+  .how-it-works .steps-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 /* Services Overview */
 .services-overview { padding: 48px 16px; }
