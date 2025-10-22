@@ -1,0 +1,507 @@
+/* General Styles & Reset */
+:root {
+    --primary-color: #4CAF50; /* Green - healthy, vibrant */
+    --secondary-color: #FFC107; /* Yellow - sunny, energetic */
+    --accent-blue: #2196F3; /* Blue - trustworthy, fresh */
+    --accent-orange: #FF9800; /* Orange - fun, creative */
+    --text-color: #333;
+    --light-text-color: #f8f8f8;
+    --background-light: #fdfdfd;
+    --background-grey: #f0f0f0;
+    --border-color: #ddd;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --font-heading: 'Nunito', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--accent-blue);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.btn-nav {
+    background-color: var(--accent-blue);
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
+
+.btn-nav:hover {
+    background-color: var(--primary-color);
+}
+
+/* Header and Navigation */
+#main-nav {
+    background-color: var(--background-light);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px var(--shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand img {
+    height: 100px; /* Adjusted to fit the 150px height requirement and look good in nav */
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Light overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content .company-name {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: var(--light-text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content .company-tagline {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: var(--light-text-color);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Section General Styling */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Us Section */
+.about-section {
+    text-align: center;
+    background-color: var(--background-light);
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.about-section p strong {
+    color: var(--accent-blue);
+}
+
+/* Services/Products Section */
+.services-section {
+    background-color: var(--background-grey);
+    text-align: center;
+}
+
+.services-summary {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--light-text-color);
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 20px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    color: var(--accent-blue);
+    background-color: rgba(33, 150, 243, 0.15);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-media a {
+    color: var(--accent-blue);
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-media a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Contact Form Section */
+.form-section {
+    background-color: var(--background-grey);
+    text-align: center;
+}
+
+.form-section form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--background-light);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 20px var(--shadow-light);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px; /* Rounded corners for inputs */
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-section .btn-primary {
+    width: auto;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: var(--light-text-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--background-light);
+        box-shadow: 0 5px 10px var(--shadow-light);
+        padding: 20px 0;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 10px 20px;
+        color: var(--text-color);
+    }
+
+    .nav-menu a::after {
+        width: 0%; /* Hide underline on mobile */
+    }
+
+    .nav-menu a:hover::after {
+        width: 0%; /* Keep hidden on hover */
+    }
+
+    .btn-nav {
+        margin-top: 15px;
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: var(--light-text-color);
+        border-radius: 30px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-content .company-name {
+        font-size: 3rem;
+    }
+
+    .hero-content .company-tagline {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    #main-nav {
+        padding: 10px 20px;
+    }
+
+    .nav-brand img {
+        height: 80px;
+    }
+
+    .hero-content .company-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .company-tagline {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    .service-icon {
+        font-size: 3rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .social-media a {
+        font-size: 1.8rem;
+    }
+
+    .form-section form {
+        padding: 25px;
+    }
+}
