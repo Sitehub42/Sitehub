@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Kann House</title>
+    <meta name="description" content="Official lost and found service for items in the Kann House. Helping you reunite with your lost possessions.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/Lost%20and%20Found">
+    <meta property="og:title" content="Lost and Found - Kann House">
+    <meta property="og:description" content="Official lost and found service for items in the Kann House. Helping you reunite with your lost possessions.">
+    <meta property="og:image" content="https://sitehub.co.za/Lost%20and%20Found/hero-800x400.png"> <!-- Placeholder for OG image -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#hero" class="logo" aria-label="Lost and Found Home">
+                    <img src="logo.png" alt="Lost and Found Logo" height="150">
+                </a>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form" class="btn btn-primary">Report Item</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <img src="hero-800x400.png" alt="Lost and Found items like keys, wallets, and glasses" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <h1>Lost and Found</h1>
+                <p>Reuniting you with your lost treasures in Kann House.</p>
+                <a href="#contact-form" class="btn btn-secondary">Report an Item</a>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Our mission is to efficiently reunite individuals with their lost possessions within the Kann House, fostering a community of trust and responsibility.</p>
+                <p>At Lost and Found, we specialize in managing and tracking items lost and found within the Kann House. Our expertise lies in creating seamless processes for item registration, secure storage, and efficient retrieval. We pride ourselves on our client success stories and our agile methodologies that adapt to the needs of our community, ensuring every lost item has the best chance of finding its way home.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p class="section-subtitle">We make the process of finding and returning items simple and stress-free.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-clipboard-list fa-3x"></i>
+                        <h3>Item Registration</h3>
+                        <p>Quick and easy registration for both lost and found items to maximize visibility.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-box-open fa-3x"></i>
+                        <h3>Secure Storage</h3>
+                        <p>Safe and temporary storage solutions for all found items until they are claimed.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-bell fa-3x"></i>
+                        <h3>Notification System</h3>
+                        <p>Automated alerts when a matching item is registered, bringing peace of mind.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-handshake fa-3x"></i>
+                        <h3>Retrieval Assistance</h3>
+                        <p>A guided and verified process for reuniting you with your valuable belongings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p class="section-subtitle">Have you lost or found something? Contact us directly or use our form below.</p>
+                <div class="contact-info-wrapper">
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 5 Marigold Street</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:tanya.kann85@gmail.com">tanya.kann85@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+27724354591">+27724354591</a></p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="form-section">
+            <div class="container">
+                <h2>Report / Inquire</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you promptly.</p>
+                <form action="mailto:tanya.kann85@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="Name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="Subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="Message" rows="6" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Lost and Found. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const expanded = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return; // Do not scroll for empty hash links
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const offset = document.querySelector('.navbar').offsetHeight; // Account for sticky header
+
+                if (targetElement) {
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile nav after clicking a link
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        });
+
+        // Auto-update Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Add shadow to navbar on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            n}
+        });
+    </script>
+</body>
+</html>
