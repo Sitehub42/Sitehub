@@ -1,0 +1,573 @@
+/* General Styles & Resets */
+:root {
+    --primary-grey: #4A4A4A;
+    --secondary-grey: #7D7D7D;
+    --light-grey: #E0E0E0;
+    --off-white: #F8F8F8;
+    --accent-gold: #B8860B; /* A subtle golden brown accent */
+    --text-color: #333;
+    --background-color: #ffffff;
+    --border-color: #ccc;
+    --link-hover-color: var(--accent-gold);
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-grey);
+    margin-bottom: 0.8em;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    color: var(--off-white);
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--primary-grey);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: var(--off-white);
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-grey);
+    transform: translateY(-2px);
+}
+
+/* Header & Navigation */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px; /* Adjusted height for better navigation fit */
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.desktop-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.desktop-nav ul li {
+    margin-left: 30px;
+}
+
+.desktop-nav ul li a {
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 5px 0;
+    position: relative;
+    color: var(--primary-grey);
+}
+
+.desktop-nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.desktop-nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: var(--primary-grey);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-nav {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background-color: var(--off-white);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.mobile-nav.active {
+    display: flex;
+    max-height: 300px; /* Adjust as needed */
+}
+
+.mobile-nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.mobile-nav ul li {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.mobile-nav ul li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: var(--primary-grey);
+    font-weight: 500;
+}
+
+.mobile-nav ul li a:hover {
+    background-color: var(--light-grey);
+    color: var(--accent-gold);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 70vh;
+    background: url('hero-800x400.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--off-white);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Light overlay for text visibility */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+
+.hero-btn {
+    padding: 15px 35px;
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-section, .contact-section, .form-section {
+    background-color: var(--off-white);
+    padding: 80px 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.mission-statement {
+    font-weight: 600;
+    font-style: italic;
+    color: var(--secondary-grey);
+    margin-bottom: 2em;
+    text-align: center !important;
+}
+
+/* Services Section */
+.services-section {
+    background-color: var(--background-color);
+    padding-bottom: 60px;
+}
+
+.section-summary {
+    font-size: 1.2em;
+    color: var(--secondary-grey);
+    margin-bottom: 3em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background-color: var(--off-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-item i {
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    font-size: 3.5em;
+}
+
+.service-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 0.95em;
+    color: var(--secondary-grey);
+    line-height: 1.7;
+}
+
+/* Contact Section */
+.contact-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    line-height: 2;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    color: var(--accent-gold);
+}
+
+.contact-info a {
+    color: var(--primary-grey);
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: var(--primary-grey);
+    margin: 0 15px;
+    font-size: 2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: var(--accent-gold);
+    transform: scale(1.15);
+}
+
+/* Contact Form Section */
+.form-section {
+    background-color: var(--light-grey);
+    padding: 80px 20px;
+}
+
+.form-section form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    background-color: var(--off-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-grey);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1em;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-section .btn {
+    width: auto;
+    display: block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-grey);
+    color: var(--off-white);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: var(--accent-gold);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--off-white);
+}
+
+/* Accessibility & High Contrast */
+/* Already covered by defining colors and transitions for readability. */
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-content {
+        padding-right: 15px; /* Adjust for hamburger */
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .about-section p, .section-summary {
+        font-size: 1em;
+    }
+
+    .form-section form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .social-media a {
+        font-size: 1.8em;
+        margin: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
