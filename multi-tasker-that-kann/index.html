@@ -3,148 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-tasker That Kann - Your Life, Simplified</title>
-    <meta name="description" content="Multi-tasker That Kann offers driving, household goods, thrifting, companionship, and errand services to simplify your life.">
-    <meta name="keywords" content="multi-tasker, driving services, household goods, thrifting, companionship, errand running, personal assistant, simplify life, South Africa">
+    <title>Multi-tasker That Kann - Making Your Life Easier</title>
+    <meta name="description" content="Your reliable partner for driving, household goods, thrifting, companionship, and errands, making your life easier.">
+    <meta name="keywords" content="Multi-tasker That Kann, driving services, household goods, thrifting, companionship, errands, personal assistant, task management, South Africa">
+    <meta name="author" content="Multi-tasker That Kann">
 
-    <!-- Open Graph Tags for Social Sharing -->
-    <meta property="og:title" content="Multi-tasker That Kann - Your Life, Simplified">
-    <meta property="og:description" content="Multi-tasker That Kann offers driving, household goods, thrifting, companionship, and errand services to simplify your life.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Multi-tasker That Kann - Making Your Life Easier">
+    <meta property="og:description" content="Your reliable partner for driving, household goods, thrifting, companionship, and errands, making your life easier.">
+    <meta property="og:image" content="https://example.com/hero-800x400.png"> <!-- Placeholder: Replace with actual image URL -->
+    <meta property="og:url" content="https://sitehub.co.za/multi-tasker-that-kann/">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sitehub.co.za/Multi-tasker%20That%20Kann">
-    <meta property="og:image" content="https://sitehub.co.za/Multi-tasker%20That%20Kann/hero-800x400.png"> <!-- Placeholder image for OG -->
-    <meta property="og:site_name" content="Multi-tasker That Kann">
 
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@40400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="main-header">
-        <div class="container nav-content">
-            <a href="#" class="logo" aria-label="Multi-tasker That Kann Home">
-                <img src="logo.png" alt="Multi-tasker That Kann Logo" height="150">
-            </a>
-            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav-list">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="main-nav" aria-label="Main Navigation">
-                <ul class="nav-list" id="main-nav-list">
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact-form" class="nav-link primary-button">Book Now</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav id="main-nav" aria-label="Main navigation">
+            <div class="logo">
+                <a href="#hero" aria-label="Multi-tasker That Kann Home">
+                    <img src="logo.png" alt="Multi-tasker That Kann Logo" height="150">
+                </a>
+            </div>
+            <div class="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="About Us">About Us</a></li>
+                <li><a href="#services" aria-label="Our Services">Services/Products</a></li>
+                <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
+                <li><a href="#form" class="btn btn-nav" aria-label="Send a Message">Form</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner" aria-label="Welcome to Multi-tasker That Kann">
+        <section id="hero" class="hero" role="banner">
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1 class="hero-title">Multi-tasker That Kann</h1>
-                <p class="hero-tagline">Making Your Life Easier, One Task at a Time.</p>
-                <a href="#contact-form" class="primary-button hero-button">Simplify My Life!</a>
+            <div class="hero-content">
+                <h1 class="animate-fade-in">Multi-tasker That Kann</h1>
+                <p class="animate-fade-in delay-1">Making your life easier, one task at a time.</p>
+                <a href="#form" class="btn btn-primary animate-fade-in delay-2" aria-label="Get started by sending us a message">Get Started Now</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section container" aria-labelledby="about-heading">
-            <h2 id="about-heading" class="section-title">About Multi-tasker That Kann</h2>
-            <div class="about-content">
-                <p>Our mission at Multi-tasker That Kann is to provide flexible, reliable, and compassionate support for a wide array of daily needs. From safe driving and efficient errand running to sourcing unique household treasures and offering friendly companionship, we are dedicated to simplifying our clients' lives and enhancing their well-being with our versatile services.</p>
-                <p>We pride ourselves on our expertise in <span class="highlight">personal support services, home management, and lifestyle assistance</span>. At Multi-tasker That Kann, client success is at the heart of everything we do. We understand that every individual's needs are unique, which is why we adopt an agile and adaptable approach, ensuring our services are tailored to provide maximum convenience and peace of mind. Let us handle the details so you can focus on what truly matters.</p>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services-section" aria-labelledby="services-heading">
+        <section id="about" class="about" aria-labelledby="about-heading">
             <div class="container">
-                <h2 id="services-heading" class="section-title">Our Services</h2>
-                <p class="services-summary">Multi-tasker That Kann offers a diverse range of personalized services designed to lighten your load and make daily life more manageable. Whether you need an extra pair of hands or a trusted companion, we're here to help.</p>
-                <div class="services-grid">
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-car-alt service-icon" aria-hidden="true"></i>
+                <h2 id="about-heading">About Multi-tasker That Kann</h2>
+                <p>At <strong>Multi-tasker That Kann</strong>, our mission is to provide reliable, flexible, and comprehensive multi-tasking services that simplify our clients' lives and bring convenience to their daily routines. We aim to be the go-to solution for busy individuals needing assistance with driving, household management, personal shopping, and companionship.</p>
+                <p>We pride ourselves on our agile methodologies, adapting quickly to your unique needs and delivering solutions with efficiency and a personal touch. Your success and peace of mind are our top priorities, and we're dedicated to helping you reclaim your time and focus on what matters most.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services & Products</h2>
+                <p>Multi-tasker That Kann offers a diverse range of services designed to seamlessly integrate into your life, providing convenience and support wherever you need it. We handle the tasks that free up your valuable time.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-car-side fa-3x" aria-hidden="true"></i>
                         <h3>Driving Services</h3>
-                        <p>Safe and reliable transportation for appointments, shopping, or leisurely outings, ensuring you get where you need to be comfortably and on time.</p>
+                        <p>Reliable and safe transportation for appointments, errands, or simply getting from A to B.</p>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-couch service-icon" aria-hidden="true"></i>
-                        <h3>Household Goods & Thrifting</h3>
-                        <p>Discover unique treasures for your home. We assist with sourcing, selling, and delivering pre-loved household items, promoting sustainability and finding hidden gems.</p>
+                    <div class="service-item">
+                        <i class="fas fa-box-open fa-3x" aria-hidden="true"></i>
+                        <h3>Selling Household Goods</h3>
+                        <p>Assistance with decluttering and selling unwanted household items, from listing to delivery.</p>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-users service-icon" aria-hidden="true"></i>
+                    <div class="service-item">
+                        <i class="fas fa-shopping-bag fa-3x" aria-hidden="true"></i>
+                        <h3>Thrifting & Personal Shopping</h3>
+                        <p>Finding unique items, deals, or specific products you need, saving you time and money.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-friends fa-3x" aria-hidden="true"></i>
                         <h3>Companionship</h3>
-                        <p>Friendly and engaging company for social outings, appointments, or simply a chat over coffee. We provide compassionate support and reduce feelings of isolation.</p>
+                        <p>Friendly and supportive companionship for social outings, appointments, or simply a chat.</p>
                     </div>
-                    <div class="service-item" role="listitem">
-                        <i class="fas fa-shopping-basket service-icon" aria-hidden="true"></i>
-                        <h3>Errand Running</h3>
-                        <p>Efficient handling of your daily to-do list, including grocery shopping, post office visits, prescription pickups, and other essential tasks, freeing up your valuable time.</p>
+                    <div class="service-item">
+                        <i class="fas fa-clipboard-list fa-3x" aria-hidden="true"></i>
+                        <h3>Running Errands</h3>
+                        <p>Handling your daily to-do list, from groceries to post office runs, with efficiency.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <h2 id="contact-heading" class="section-title">Connect With Us</h2>
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span class="sr-only">Address:</span> 123 Versatile Way, Taskville, SA</p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <span class="sr-only">Email:</span> <a href="mailto:shelleykann987@gmail.com">shelleykann987@gmail.com</a></p>
-                    <p><i class="fas fa-phone" aria-hidden="true"></i> <span class="sr-only">Phone:</span> <a href="tel:+27824292137">+27 82 429 2137</a></p>
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p>Have questions or need a helping hand? Don't hesitate to reach out. We're here to make your life easier.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Serenity Lane, Helperton, GP 0001</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:shelleykann987@gmail.com">shelleykann987@gmail.com</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+27824292137">+27 82 429 2137</a></p>
                 </div>
                 <div class="social-media">
-                    <a href="https://facebook.com/multitaskerkann" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://instagram.com/multitaskerkann" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/company/multitaskerkann" target="_blank" rel="noopener noreferrer" aria-label="Visit us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com/multitaskerthatkann" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/multitaskerthatkann" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/multitaskerthatkann" target="_blank" rel="noopener noreferrer" aria-label="Visit us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact-form" class="contact-form-section" aria-labelledby="form-heading">
+        <section id="form" class="contact-form" aria-labelledby="form-heading">
             <div class="container">
-                <h2 id="form-heading" class="section-title">Get In Touch</h2>
-                <p>Have a question or need assistance? Fill out the form below to send us an email directly.</p>
-                <form action="mailto:shelleykann987@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <h2 id="form-heading">Send Us a Message</h2>
+                <form action="mailto:shelleykann987@gmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                        <input type="text" id="name" name="Name" required aria-required="true" placeholder="Your Name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required aria-required="true">
+                        <input type="email" id="email" name="Email" required aria-required="true" placeholder="your.email@example.com">
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" placeholder="Service Inquiry, Question, etc." required aria-required="true">
+                        <input type="text" id="subject" name="Subject" required aria-required="true" placeholder="Service Inquiry, General Question, etc.">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required aria-required="true"></textarea>
+                        <textarea id="message" name="Message" rows="5" required aria-required="true" placeholder="Tell us how we can help..."></textarea>
                     </div>
-                    <button type="submit" class="primary-button">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
+    <footer>
         <div class="container">
             <p>&copy; <span id="current-year"></span> Multi-tasker That Kann. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
@@ -152,28 +154,37 @@
     </footer>
 
     <script>
-        // Mobile Navigation Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navList = document.querySelector('.nav-list');
-        const navLinks = document.querySelectorAll('.nav-list .nav-link');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
 
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            hamburger.setAttribute('aria-expanded', navList.classList.contains('active'));
+            // Mobile navigation toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                    this.setAttribute('aria-expanded', !expanded);
+                });
+
+                // Close nav when a link is clicked (for single-page navigation)
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            hamburger.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                });
+            }
         });
-
-        // Close mobile nav when a link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (navList.classList.contains('active')) {
-                    navList.classList.remove('active');
-                    hamburger.setAttribute('aria-expanded', false);
-                }
-            });
-        });
-
-        // Dynamic Year for Footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
