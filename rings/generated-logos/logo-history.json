@@ -4,6 +4,16 @@
     "timestamp": "2025-11-02T17:02:52.640Z",
     "businessName": "rings",
     "type": "edited",
+    "isCurrent": false,
+    "isAutoApplied": true,
+    "operations": [],
+    "creditsUsed": 0
+  },
+  {
+    "filename": "logo.png",
+    "timestamp": "2025-11-02T17:54:38.450Z",
+    "businessName": "rings",
+    "type": "edited",
     "isCurrent": true,
     "isAutoApplied": true,
     "operations": [],
