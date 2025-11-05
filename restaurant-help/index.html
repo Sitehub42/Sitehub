@@ -3,173 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your definitive guide to Cape Town's vibrant culinary scene. Discover restaurants, cafes, and eateries with detailed insights and curated recommendations.">
-    <meta name="keywords" content="Restaurant Help, Cape Town restaurants, culinary guide, food discovery, dining experiences, restaurant reviews">
-    <meta name="author" content="Restaurant Help">
+    <title>Restaurant Help | Info and details provided for restaurants in and around Cape town</title>
+    <meta name="description" content="Restaurant Help provides comprehensive information, details, and support for restaurants in and around Cape Town. Discover local insights, connect with suppliers, and enhance your culinary business.">
     
-    <title>Restaurant Help - Your Guide to Cape Town's Culinary Scene</title>
-
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Restaurant Help - Your Guide to Cape Town's Culinary Scene">
-    <meta property="og:description" content="Your definitive guide to Cape Town's vibrant culinary scene. Discover restaurants, cafes, and eateries with detailed insights and curated recommendations.">
-    <meta property="og:image" content="https://sitehub.co.za/Restaurant%20Help/hero-800x400.png"> <!-- Placeholder image -->
-    <meta property="og:url" content="https://sitehub.co.za/Restaurant%20Help/">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/restaurant-help">
+    <meta property="og:title" content="Restaurant Help | Info and details provided for restaurants in and around Cape town">
+    <meta property="og:description" content="Restaurant Help provides comprehensive information, details, and support for restaurants in and around Cape Town. Discover local insights, connect with suppliers, and enhance your culinary business.">
+    <meta property="og:image" content="https://sitehub.co.za/restaurant-help/hero-800x400.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sitehub.co.za/restaurant-help">
+    <meta property="twitter:title" content="Restaurant Help | Info and details provided for restaurants in and around Cape town">
+    <meta property="twitter:description" content="Restaurant Help provides comprehensive information, details, and support for restaurants in and around Cape Town. Discover local insights, connect with suppliers, and enhance your culinary business.">
+    <meta property="twitter:image" content="https://sitehub.co.za/restaurant-help/hero-800x400.png">
 
-    <!-- Google Fonts -->
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header and Navigation -->
-    <header class="main-header">
-        <div class="container">
-            <a href="#hero" class="logo-link" aria-label="Restaurant Help Home">
+    <header class="header" role="banner">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-link" aria-label="Restaurant Help home">
                 <img src="logo.png" alt="Restaurant Help Logo" class="logo" height="150">
             </a>
-            <nav class="main-nav" aria-label="Main navigation">
-                <button class="hamburger-menu" aria-label="Open navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#form" class="nav-link">Form</a></li>
+            <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services/Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#form">Form</a></li>
                 </ul>
             </nav>
+            <button class="hamburger-menu" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+        <nav class="nav-mobile" role="navigation" aria-label="Mobile Navigation">
+            <ul>
+                <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+                <li><a href="#services" class="mobile-nav-link">Services/Products</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li><a href="#form" class="mobile-nav-link">Form</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" role="banner" aria-label="Welcome to Restaurant Help">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1 class="hero-title">Restaurant Help</h1>
-                <p class="hero-tagline">Your Culinary Compass in Cape Town</p>
-                <a href="#form" class="btn btn-primary hero-btn">Find Your Next Spot</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" role="main" aria-labelledby="hero-heading">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 id="hero-heading">Restaurant Help</h1>
+            <p class="tagline">Info and details provided for restaurants in and around Cape town</p>
+            <a href="#form" class="btn btn-primary" aria-label="Enroll Your Child Today via our form">Enroll Today</a>
+        </div>
+    </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section section-padding background-light" role="region" aria-labelledby="about-heading">
-            <div class="container">
-                <h2 id="about-heading">About Restaurant Help</h2>
-                <p class="section-description">
-                    Restaurant Help is dedicated to being the definitive guide for discovering and experiencing the vibrant culinary landscape of Cape Town. Our mission is to connect food lovers with exceptional dining experiences, offering detailed insights, recommendations, and up-to-date information on restaurants, cafes, and eateries across the city.
-                </p>
-                <p class="section-description">
-                    We pride ourselves on our deep local knowledge and commitment to providing accurate, curated information. Our agile approach ensures our listings are always fresh, reflecting the dynamic nature of Cape Town's food scene. We believe in fostering success for both diners and establishments, making every meal an adventure.
-                </p>
+    <!-- About Us Section -->
+    <section id="about" class="about-section section-padding" role="complementary" aria-labelledby="about-heading">
+        <div class="container">
+            <h2 id="about-heading">About Restaurant Help</h2>
+            <p class="about-description">Our mission at Restaurant Help is to be the leading resource for the culinary community in and around Cape Town, providing invaluable information, connections, and support to help restaurants thrive and innovate.</p>
+            <div class="about-content">
+                <p>Restaurant Help is dedicated to empowering the vibrant restaurant industry in Cape Town. We leverage our deep expertise in culinary trends, operational efficiency, and local market dynamics to deliver tailored information and insights.</p>
+                <p>We are passionate about client success, adopting agile methodologies to constantly update our resources and adapt to the evolving needs of the hospitality sector. Our goal is to foster growth, streamline operations, and ultimately enhance the dining experience for everyone in the Mother City.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Services/Products Section -->
-        <section id="services" class="services-section section-padding" role="region" aria-labelledby="services-heading">
-            <div class="container">
-                <h2 id="services-heading">What We Offer</h2>
-                <p class="section-description">Restaurant Help provides comprehensive information and resources to help you navigate Cape Town's diverse food scene.</p>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <i class="fas fa-utensils service-icon" aria-hidden="true"></i>
-                        <h3>Detailed Restaurant Listings</h3>
-                        <p>In-depth profiles of restaurants, including cuisine, ambiance, pricing, and contact information.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-star service-icon" aria-hidden="true"></i>
-                        <h3>Curated Recommendations</h3>
-                        <p>Expertly selected suggestions for various occasions and tastes, ensuring a perfect match for you.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-chart-line service-icon" aria-hidden="true"></i>
-                        <h3>Local Insights & Trends</h3>
-                        <p>Stay updated on the latest culinary trends, exciting new openings, and local specialties unique to Cape Town.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-comments service-icon" aria-hidden="true"></i>
-                        <h3>User Reviews & Ratings</h3>
-                        <p>A vibrant platform for the community to share their dining experiences, insights, and recommendations.</p>
-                    </div>
+    <!-- Services/Products Section -->
+    <section id="services" class="services-section section-padding background-light" role="region" aria-labelledby="services-heading">
+        <div class="container">
+            <h2 id="services-heading">Our Services & Products</h2>
+            <p class="services-summary">Restaurant Help offers a suite of comprehensive services designed to support and elevate your culinary business in Cape Town. From insightful directories to powerful marketing tools, we provide everything you need to succeed.</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-utensils service-icon" aria-hidden="true"></i>
+                    <h3>Comprehensive Restaurant Directory</h3>
+                    <p>Detailed listings, menus, and reviews for eateries across Cape Town, making it easier for diners to find you.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-truck-moving service-icon" aria-hidden="true"></i>
+                    <h3>Local Supplier Network</h3>
+                    <p>Connecting restaurants with top-quality local suppliers for fresh ingredients, equipment, and essential services.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-bullhorn service-icon" aria-hidden="true"></i>
+                    <h3>Marketing & Promotion</h3>
+                    <p>Tools and strategies to boost your restaurant's visibility, attract more diners, and build your brand online.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-newspaper service-icon" aria-hidden="true"></i>
+                    <h3>Industry News & Trends</h3>
+                    <p>Stay updated with the latest in the restaurant world, from culinary innovations to operational best practices.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-calendar-alt service-icon" aria-hidden="true"></i>
+                    <h3>Event & Workshop Listings</h3>
+                    <p>Discover and promote culinary events, training workshops, and networking opportunities within the community.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section-padding background-light" role="region" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Get In Touch</h2>
-                <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> Cape Town, South Africa</p>
-                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+27724354591">+27724354591</a></p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:grantm@sitehub.co.za">grantm@sitehub.co.za</a></p>
-                    <div class="social-media">
-                        <a href="https://Instagram.com/Restauranthelp" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding" role="contentinfo" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <address>123 Culinary Way, De Waterkant, Cape Town, South Africa</address>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:grantm@sitehub.co.za">grantm@sitehub.co.za</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    <a href="tel:+27724354591">+27 72 435 4591</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <a href="https://instagram.com/Restauranthelp" target="_blank" rel="noopener noreferrer" aria-label="Restaurant Help on Instagram">Instagram.com/Restauranthelp</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Form Section -->
-        <section id="form" class="form-section section-padding background-light" role="form" aria-labelledby="form-heading">
-            <div class="container">
-                <h2 id="form-heading">Discover Your Next Favorite Restaurant!</h2>
-                <iframe 
-                    aria-label="Client Contact Us" 
-                    frameborder="0" 
-                    style="height: 800px; width: 100%; border:none;" 
-                    src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI">
-                </iframe>
-            </div>
-        </section>
-    </main>
+    <!-- Contact Form Section -->
+    <section id="form" class="form-section section-padding background-light" role="form" aria-labelledby="form-heading">
+    	<div class="container">
+    		<h2 id="form-heading">Enroll Your Child Today!</h2>
+    		<iframe 
+    			aria-label="Client Contact Us" 
+    			frameborder="0" 
+    			style="height: 800px; width: 100%; border:none;" 
+    			src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=7030006000001107001">
+    		</iframe>
+    	</div>
+    </section>
 
     <!-- Footer -->
-    <footer class="main-footer" role="contentinfo">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; <span id="current-year"></span> Restaurant Help. All rights reserved.</p>
             <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Navigation Toggle and Current Year -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.querySelector('.hamburger-menu');
-            const navList = document.querySelector('.nav-list');
-            const navLinks = document.querySelectorAll('.nav-list a');
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const mobileNav = document.querySelector('.nav-mobile');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-            hamburger.addEventListener('click', () => {
-                navList.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', navList.classList.contains('active'));
-            });
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navList.classList.contains('active')) {
-                        navList.classList.remove('active');
-                        hamburger.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            });
-
-            // Set current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('active'));
         });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
