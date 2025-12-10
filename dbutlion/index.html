@@ -3,207 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D. Butlion and Associates - Legal Expertise</title>
-    <meta name="description" content="Experienced legal services in family law, civil litigation, and estate administration. Serving clients with dedication and expertise for over 35 years.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>DButlion - Web Development Agency</title>
+    <meta name="description" content="DButlion specializes in bespoke web development, crafting innovative digital solutions with a focus on client success and agile methodologies, based in Cape Town.">
+    <meta name="keywords" content="web development, custom websites, UI/UX design, e-commerce, SEO, digital solutions, Cape Town">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="DButlion - Crafting Innovative Digital Solutions">
+    <meta property="og:description" content="DButlion specializes in bespoke web development, crafting innovative digital solutions with a focus on client success and agile methodologies, based in Cape Town.">
+    <meta property="og:image" content="https://example.com/social-share.jpg"> <!-- Replace with actual social share image -->
+    <meta property="og:url" content="https://www.dbutlion.co.za"> <!-- Replace with actual website URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Header Section -->
     <header>
-        <nav class="desktop-nav">
-            <div class="logo-placeholder">
-                <!-- Placeholder for company logo -->
-                <img src="./images/dbutlionlogo.png" alt="D. Butlion and Associates Logo">
-            </div>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#form">Enquire Now</a></li>
-            </ul>
-        </nav>
-
-        <nav class="mobile-nav">
-            <div class="mobile-nav-header">
-                <div class="logo-placeholder">
-                    <!-- Placeholder for company logo -->
-                    <img src="./images/dbutlionlogo.png" alt="D. Butlion and Associates Logo">
-                </div>
-                <button id="hamburger-menu" aria-label="Toggle navigation menu">
-                    <i class="fas fa-bars"></i>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <a href="#hero" class="logo-link" aria-label="DButlion Home">
+                    <img src="logo.png" alt="DButlion Logo" class="logo" height="150">
+                </a>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </button>
+                <ul class="nav-links" id="navbar-menu">
+                    <li><a href="#about" aria-label="About Us section">About Us</a></li>
+                    <li><a href="#services" aria-label="Services section">Services</a></li>
+                    <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+                    <li><a href="#form" class="btn btn-primary" aria-label="Go to contact form">Form</a></li>
+                </ul>
             </div>
-            <ul id="mobile-menu" class="hidden">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#form">Enquire Now</a></li>
-            </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero/Banner Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>D. Butlion and Associates</h1>
-                <h2>Your trusted legal partner for expert counsel and representation.</h2>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" role="banner" aria-label="DButlion: Crafting Innovative Digital Solutions">
+            <div class="hero-overlay"></div>
+            <div class="container text-center">
+                <h1 class="hero-title">DButlion</h1>
+                <p class="hero-tagline">Crafting Innovative Digital Solutions</p>
+                <a href="#form" class="btn btn-secondary" aria-label="Get started with your project">Start Your Project Today</a>
             </div>
-            <img src="./images/herobanner.png" alt="Professional legal services background" class="hero-background">
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="about-section">
+        <section id="about" class="about-section section-padding" role="region" aria-labelledby="about-heading">
             <div class="container">
-                <h2>About Us</h2>
-                <p class="core-business">
-                    D. Butlion and Associates is a distinguished legal practice founded by Dorota Barbara Butlion, LLB, admitted as an Attorney in 1990, bringing over 35 years of invaluable experience to the legal landscape.
-                </p>
-                <p>
-                    Since establishing her own practice in 1998 and maintaining a consistent presence in Milnerton for the past 21 years, Ms. Butlion has built a reputation for her thoroughness, dedication, and strategic approach to legal matters.
-                </p>
-                <p>
-                    Our mission is to provide comprehensive and compassionate legal solutions, particularly in the complex areas of family law and general civil litigation. We are committed to guiding our clients through challenging times with clarity, integrity, and a deep understanding of the law. We pride ourselves on our ability to navigate the intricacies of the Magistrates', Regional, and High Courts, ensuring our clients' rights are robustly defended.
-                </p>
-            </div>
-        </section>
-
-        <!-- Services/Products Section -->
-        <section id="services" class="services-section">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="service-list">
-                    <div class="service-item">
-                        <img src="./images/familylaw.png" alt="Family Law Services Icon">
-                        <h3>Family Law</h3>
-                        <ul>
-                            <li>Mediation for Parenting Plans and Consent Papers</li>
-                            <li>Unopposed Divorces</li>
-                            <li>Domestic Violence & Harassment Cases</li>
-                            <li>Maintenance Cases</li>
-                            <li>Opposed Divorces & Trials</li>
-                            <li>Wills</li>
-                        </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="./images/general.png" alt="Civil Litigation Services Icon">
-                        <h3>General Civil Litigation</h3>
-                        <ul>
-                            <li>Collections</li>
-                            <li>Evictions</li>
-                            <li>Defamation</li>
-                            <li>Breach of Contract</li>
-                            <li>Delictual Claims for Damages</li>
-                            <li>Curatorship Applications</li>
-                            <li>Insolvency (Sequestration, Liquidation & Rehabilitation)</li>
-                            <li>Formation of Family Trusts</li>
-                        </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="./images/estates.png" alt="Estate Administration Services Icon">
-                        <h3>Estates</h3>
-                        <ul>
-                            <li>Reporting and Winding Up of Estates</li>
-                        </ul>
-             <h3>Property Transactions</h3>
-                        <ul>
-                            <li>Deeds of Sale / Transfers of Immovable Property (in association with Conveyancer)</li>
-                        </ul>
-                    </div>
-                
+                <h2 id="about-heading" class="section-title">About DButlion</h2>
+                <div class="about-content">
+                    <p>Our mission at DButlion is to empower businesses with cutting-edge web development, delivering robust, scalable, and user-friendly digital experiences that drive growth and innovation. Specializing in bespoke web solutions, we pride ourselves on transforming complex ideas into intuitive, high-performance websites.</p>
+                    <p>With deep expertise in the web development industry, DButlion is committed to client success. We adopt agile methodologies, ensuring flexibility, transparency, and timely delivery throughout the entire development lifecycle. Our approach is collaborative, putting your vision at the forefront to build digital products that not only meet but exceed expectations.</p>
+                    <p>From initial concept to final deployment and ongoing support, we are your dedicated partners in navigating the digital landscape. Let's build something exceptional together.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Us Section -->
-        <section id="contact" class="contact-section">
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding background-light" role="region" aria-labelledby="services-heading">
             <div class="container">
-                <h2>Contact Us</h2>
-                <div class="contact-details">
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 39 Alamein Rd, Milnerton, Cape Town, 7441</p>
-                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:dot@butlion.co.za">dot@butlion.co.za</a></p>
-                        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +27 82 774 3795</p>
-                        <div class="social-media">
-                            <h3>Connect With Us</h3>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <!-- Add other social media links as needed -->
-                        </div>
+                <h2 id="services-heading" class="section-title">Our Services</h2>
+                <p class="section-description">At DButlion, we offer a comprehensive suite of web development services designed to elevate your online presence and streamline your business operations.</p>
+                <div class="services-grid">
+                    <div class="service-item" role="article" aria-labelledby="service-web-dev">
+                        <i class="fas fa-code fa-3x service-icon" aria-hidden="true"></i>
+                        <h3 id="service-web-dev">Custom Web Development</h3>
+                        <p>Building tailor-made websites and web applications from the ground up, ensuring unique functionality and design that aligns with your business goals.</p>
                     </div>
-                    <div class="contact-form-placeholder">
-                        <!-- Placeholder for a map or contact image if needed -->
-                        <img src="./images/contact.png" alt="Contact information visual">
+                    <div class="service-item" role="article" aria-labelledby="service-ui-ux">
+                        <i class="fas fa-palette fa-3x service-icon" aria-hidden="true"></i>
+                        <h3 id="service-ui-ux">UI/UX Design</h3>
+                        <p>Crafting intuitive and engaging user interfaces and experiences that delight your visitors and drive conversions.</p>
                     </div>
+                    <div class="service-item" role="article" aria-labelledby="service-ecommerce">
+                        <i class="fas fa-shopping-cart fa-3x service-icon" aria-hidden="true"></i>
+                        <h3 id="service-ecommerce">E-commerce Solutions</h3>
+                        <p>Developing secure, scalable, and feature-rich online stores that provide a seamless shopping experience for your customers.</p>
+                    </div>
+                    <div class="service-item" role="article" aria-labelledby="service-seo">
+                        <i class="fas fa-chart-line fa-3x service-icon" aria-hidden="true"></i>
+                        <h3 id="service-seo">Search Engine Optimization (SEO)</h3>
+                        <p>Optimizing your website to rank higher in search engine results, increasing visibility and attracting more organic traffic.</p>
+                    </div>
+                    <div class="service-item" role="article" aria-labelledby="service-maintenance">
+                        <i class="fas fa-headset fa-3x service-icon" aria-hidden="true"></i>
+                        <h3 id="service-maintenance">Website Maintenance & Support</h3>
+                        <p>Providing ongoing support, updates, and maintenance to ensure your website remains secure, fast, and up-to-date.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding" role="region" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong>Address:</strong> 39 Alamein Rd, Milnerton, Cape Town, 7441</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:dot@butlion.co.za">dot@butlion.co.za</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+27827743795">+27 82 774 3795</a></p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.linkedin.com/company/dbutlion" target="_blank" rel="noopener noreferrer" aria-label="Follow DButlion on LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.facebook.com/dbutlion" target="_blank" rel="noopener noreferrer" aria-label="Follow DButlion on Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/dbutlion" target="_blank" rel="noopener noreferrer" aria-label="Follow DButlion on Instagram"><i class="fab fa-instagram-square fa-2x"></i></a>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="form" class="form-section">
+        <section id="form" class="form-section section-padding background-light" role="form" aria-labelledby="form-heading">
             <div class="container">
-                <h2>Enquire Now</h2>
-                <p>Have a legal question or need to discuss your case? Fill out the form below, and we'll get back to you promptly.</p>
-                <form action="mailto:dot@butlion.co.za?subject=Website%20Contact%20Form%20Submission" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="Subject">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="Message" rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+                <h2 id="form-heading">Start Your Project With Us</h2>
+                <iframe 
+                    aria-label="DButlion Contact Form" 
+                    frameborder="0" 
+                    style="height: 800px; width: 100%; border:none;" 
+                    src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=7030006000001607002">
+                </iframe>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>
-                &copy; <span id="current-year"></span> D. Butlion and Associates. All rights reserved.
-                &nbsp;|&nbsp;
-                <a href="https://www.sitehub.co.za/" target="_blank" rel="noopener">Created by SiteHub</a>
-            </p>
+    <!-- Footer Section -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container text-center">
+            <p>&copy; <span id="current-year"></span> DButlion. All rights reserved.</p>
+            <p>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener noreferrer">SiteHub</a></p>
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Navigation Toggle -->
     <script>
-        // Mobile menu toggle functionality
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
 
-        hamburgerMenu.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            hamburgerMenu.querySelector('i').classList.toggle('fa-bars');
-            hamburgerMenu.querySelector('i').classList.toggle('fa-times');
-        });
-
-        // Close mobile menu when a link is clicked
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                hamburgerMenu.querySelector('i').classList.remove('fa-times');
-                hamburgerMenu.querySelector('i').classList.add('fa-bars');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
             });
-        });
 
-        // Dynamically update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+            // Close nav when a link is clicked (for mobile)
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
     </script>
 </body>
 </html>
