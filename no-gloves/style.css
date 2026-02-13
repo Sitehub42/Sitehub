@@ -542,3 +542,47 @@ section:nth-of-type(even) {
         padding: 20px;
     }
 }
+
+/* === CUSTOM STYLING START === */
+:root {
+}
+
+body {
+}
+
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  .container, .main-content {
+    padding: 0 16px;
+  }
+  
+  section, .section {
+    padding: calc(var(--section-spacing) * 0.6) 0;
+  }
+  
+  .btn, button, .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .logo, .site-logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container, .main-content {
+    padding: 0 12px;
+  }
+  
+  .card, .service-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* === CUSTOM STYLING END === */
