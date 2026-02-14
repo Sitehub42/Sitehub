@@ -1,0 +1,46 @@
+name: Deploy Staging Branch
+
+on:
+  push:
+    branches:
+      - staging
+    paths:
+      - 'fans/**'
+      - 'rings/**'
+      - 'beads-and-bloom/**'
+      - 'jane-photography/**'
+      - 'buyit/**'
+      - 'wedding-planners/**'
+      - 'deanscoffee/**'
+      - 'pineapple-trading/**'
+      - 'nail-polish/**'
+      - 'no-gloves/**'
+
+jobs:
+  deploy-staging:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v3
+        with:
+          ref: staging
+      
+      - name: Deploy staging to sitehub.co.za via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /staging/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
+      
+      - name: Deployment complete
+        run: |
+          echo "✅ Staging branch deployed to https://sitehub.co.za/staging/"
+          echo "📝 Changes are now live for preview"
