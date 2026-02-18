@@ -590,3 +590,33 @@ body {
 }
 
 /* === CUSTOM STYLING END === */
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --primary-blue: #7c3aed;
+  --secondary-blue: #d59915;
+  --accent-color: #06d6a0;
+  --text-color: #111827;
+  --background-color: #f9fafb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', serif;
+}
+
+body, p, div, span, li {
+  font-family: 'Times New Roman', serif;
+}
+
+body {
+  background-image: url('https://raw.githubusercontent.com/Sitehub42/Sitehub/main/no-gloves/hero-dalle-1762501151121.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* === END CUSTOM STYLING === */
