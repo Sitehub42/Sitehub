@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No Gloves - Showcase Your Manicured Nails</title>
+    <title>No Gloves</title>
     <meta name="description" content="Gloves to showcase your manicured nails">
 
     <!-- Open Graph Tags -->
@@ -16,6 +16,62 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+<style>
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
     <header class="main-header">
@@ -51,9 +107,11 @@
         <section id="hero" class="hero-section" role="banner" aria-label="Hero Section">
             <div class="hero-overlay"></div>
             <div class="hero-content container">
-                <h1 class="hero-title">No Gloves</h1>
+                <h1 id="hero-heading" class="hero-title">No Gloves</h1>
                 <p class="hero-tagline">Gloves to showcase your manicured nails</p>
-                <a href="#form" class="btn btn-primary">Discover Our Collection</a>
+                <a href="#form" class="btn btn-primary">
+                    Discover Our Collection <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </section>
 
