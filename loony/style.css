@@ -1,0 +1,458 @@
+/* General Styling */
+:root {
+    --primary-blue: #3498db;
+    --dark-blue: #2c3e50;
+    --light-blue: #ecf0f1;
+    --text-dark: #333;
+    --text-light: #fff;
+    --accent-color: #e67e22; /* A complementary orange for accent */
+    --border-radius: 8px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--light-blue);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.background-light {
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-blue);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+}
+
+.btn-secondary:hover {
+    background-color: darken(var(--accent-color), 10%);
+    transform: translateY(-2px);
+}
+
+/* Header and Navigation */
+.header {
+    background-color: var(--dark-blue);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 150px; /* Specific height as per requirements */
+    width: auto;
+    display: block;
+}
+
+.main-nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav .nav-links a {
+    color: var(--text-light);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-nav .nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.main-nav .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.main-nav .nav-links a:hover::after {
+    width: 100%;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: var(--text-light);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-800x400.png') no-repeat center center/cover;
+    color: var(--text-light);
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    height: 100vh; /* Make hero full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Light overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.hero-content .tagline {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    font-weight: 300;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Us Section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Services Section */
+.section-summary {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: var(--text-light);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 3.5em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+}
+
+.service-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-details {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media a {
+    font-size: 2.5em;
+    margin: 0 15px;
+    color: var(--dark-blue);
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: var(--primary-blue);
+}
+
+/* Form Section (Zoho Embed) */
+.form-section {
+    text-align: center;
+}
+
+.form-section iframe {
+    max-width: 1000px; /* Limit max width of iframe */
+    margin: 0 auto; /* Center the iframe */
+    display: block;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--text-light);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: var(--primary-blue);
+}
+
+.footer a:hover {
+    color: var(--light-blue);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .main-nav .nav-links {
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5em;
+    }
+
+    .hero-content .tagline {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .main-nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 180px; /* Adjust based on logo height */
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-blue);
+        box-shadow: var(--box-shadow);
+        padding: 20px 0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        border-top: 1px solid var(--primary-blue);
+    }
+
+    .main-nav .nav-links.active {
+        display: flex;
+    }
+
+    .main-nav .nav-links li {
+        margin: 10px 0;
+    }
+
+    .main-nav .nav-links a {
+        font-size: 1.2em;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .hero-section {
+        padding: 100px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+
+    .hero-content .tagline {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    .social-media a {
+        font-size: 2em;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content .tagline {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .section-summary {
+        font-size: 1em;
+    }
+
+    .contact-details p {
+        font-size: 1em;
+    }
+
+    .social-media a {
+        font-size: 1.8em;
+    }
+}
