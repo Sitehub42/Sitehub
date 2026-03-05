@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://example.com/orangejuice">
     <meta property="og:type" content="website">
 
-    <title>Orange Juice - Best orange juice in Cape Town</title>
+    <title>Orange Juice</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,62 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+<style>
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
     <!-- Header and Navigation -->
@@ -50,8 +106,8 @@
     <section id="hero" class="hero-section" role="banner" aria-label="Welcome to Orange Juice">
         <div class="hero-overlay"></div>
         <div class="container">
-            <h1 class="hero-title">Orange Juice</h1>
-            <p class="hero-tagline">Best orange juice in Cape Town</p>
+            <h1 id="hero-heading" class="hero-title">Orange Juice</h1>
+            <p class="hero-tagline">Best orange juice EVER!</p>
             <a href="#form" class="btn btn-secondary">Order Now</a>
         </div>
     </section>
@@ -71,27 +127,27 @@
             <h2 id="services-heading">Our Services/Products</h2>
             <p class="section-summary">Discover our range of refreshing orange juice products and convenient services designed to bring you the best of nature's goodness.</p>
             <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-tint fa-3x"></i>
-                    <h3>Freshly Squeezed Orange Juice</h3>
-                    <p>Experience the pure, natural taste of oranges, squeezed fresh daily for unparalleled flavor and nutrition.</p>
+                    <div class="service-item">
+                        <i class="fas fa-tint fa-3x icon-large" aria-hidden="true"></i>
+                        <h3>Freshly Squeezed Orange Juice</h3>
+                        <p>Experience the pure, natural taste of oranges, squeezed fresh daily for unparalleled flavor and nutrition.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-boxes fa-3x icon-large" aria-hidden="true"></i>
+                        <h3>Bulk Orders & Catering</h3>
+                        <p>Perfect for events, offices, or large families. Enjoy our delicious orange juice in larger quantities.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-truck fa-3x icon-large" aria-hidden="true"></i>
+                        <h3>Home Delivery Service</h3>
+                        <p>Get your favorite orange juice delivered right to your doorstep, fresh and ready to enjoy.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-blender fa-3x icon-large" aria-hidden="true"></i>
+                        <h3>Custom Blend Juices</h3>
+                        <p>Looking for something unique? Inquire about our custom blend options to create your perfect juice.</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <i class="fas fa-boxes fa-3x"></i>
-                    <h3>Bulk Orders & Catering</h3>
-                    <p>Perfect for events, offices, or large families. Enjoy our delicious orange juice in larger quantities.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-truck fa-3x"></i>
-                    <h3>Home Delivery Service</h3>
-                    <p>Get your favorite orange juice delivered right to your doorstep, fresh and ready to enjoy.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-blender fa-3x"></i>
-                    <h3>Custom Blend Juices</h3>
-                    <p>Looking for something unique? Inquire about our custom blend options to create your perfect juice.</p>
-                </div>
-            </div>
         </div>
     </section>
 
