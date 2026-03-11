@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream CT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl">
+                <img src="./logo.png" alt="Ice cream CT Logo" class="h-8 inline-block">
+            </a>
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="nav-menu" class="hidden lg:flex lg:items-center lg:space-x-6">
+                <li><a href="#about" class="text-white">About</a></li>
+                <li><a href="#services" class="text-white">Services</a></li>
+                <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-64" style="background-image: url('./banner.jpg');">
+        <div class="bg-blue-900 bg-opacity-50 h-full flex items-center justify-center">
+            <h1 class="text-white text-4xl font-bold">Welcome to Ice cream CT</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p>At Ice cream CT, we are passionate about bringing you the finest ice cream with all flavors imaginable. Our mission is to delight your taste buds with quality ingredients and exceptional service.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8">Our Services</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="bg-white shadow-md rounded-lg p-6 m-4 w-80">
+                    <h3 class="text-xl font-bold mb-4">Ice Cream</h3>
+                    <p>All Flavours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8">Contact Us</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+                    <input class="w-full p-3 border rounded" type="text" id="name" name="name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                    <input class="w-full p-3 border rounded" type="email" id="email" name="email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                    <textarea class="w-full p-3 border rounded" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>Ice cream CT &copy; 2023</p>
+        <p>Address: 5 Marigold Street | Phone: +27724354591 | Email: <a href="mailto:tanyaz@sitehub.co.za" class="underline">tanyaz@sitehub.co.za</a></p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            var navMenu = document.getElementById('nav-menu');
+            if (navMenu.classList.contains('hidden')) {
+                navMenu.classList.remove('hidden');
+            } else {
+                navMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
