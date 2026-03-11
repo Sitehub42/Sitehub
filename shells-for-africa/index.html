@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shells for Africa</title>
+</head>
+<body class="font-sans">
+    <nav class="sticky top-0 bg-white shadow-md z-50 flex items-center justify-between p-4">
+        <img src="./logo.png" class="h-12" alt="Shells for Africa Logo">
+        <div class="hidden md:flex gap-6">
+            <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col p-4">
+        <button class="self-end mb-4">✕</button>
+        <a href="#" class="text-gray-600 hover:text-gray-800 mb-2">Home</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800 mb-2">About</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800 mb-2">Services</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+    </div>
+    <section class="min-h-screen flex items-center justify-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./banner.jpg'); background-size: cover;">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl text-white">Shells for Africa</h1>
+            <p class="text-xl md:text-2xl text-white">Professional services</p>
+            <button class="mt-4 px-6 py-2 bg-[#06b6d4] text-white rounded hover:bg-[#0ea5e9]">Get Started</button>
+        </div>
+    </section>
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-3xl md:text-5xl mb-4">About Us</h2>
+                    <p class="text-gray-600">Shells for Africa offers professional services in the business industry, focusing on providing top-quality shells to our clients. Our mission is to deliver exceptional service and unmatched quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl mb-8 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="text-center">
+                        <h3 class="text-2xl mb-2">Shell Selling</h3>
+                        <p class="text-gray-600">Providing a wide variety of high-quality shells for all your business needs.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="text-center">
+                        <h3 class="text-2xl mb-2">Consultation</h3>
+                        <p class="text-gray-600">Expert advice and consultation to help you choose the right shells.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="text-center">
+                        <h3 class="text-2xl mb-2">Customization</h3>
+                        <p class="text-gray-600">Custom shell solutions tailored to meet your specific requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl mb-8 text-center">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700">Name</label>
+                        <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700">Message</label>
+                        <textarea id="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="px-6 py-2 bg-[#06b6d4] text-white rounded hover:bg-[#0ea5e9]">Send</button>
+                </form>
+                <div>
+                    <h3 class="text-2xl mb-2">Contact Details</h3>
+                    <p class="text-gray-600">Phone: +27724354591</p>
+                    <p class="text-gray-600">Email: tanyaz@sitehub.co.za</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2023 Shells for Africa. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
