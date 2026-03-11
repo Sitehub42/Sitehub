@@ -12,94 +12,91 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- Navigation -->
+<body class="bg-white text-gray-800">
     <nav class="bg-blue-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white font-bold text-xl">
-                <img src="./logo.png" alt="Ice cream CT Logo" class="h-8 inline-block">
-            </a>
-            <div class="block lg:hidden">
-                <button id="nav-toggle" class="text-white focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
+            <div class="flex items-center">
+                <img src="./logo.png" alt="Ice cream CT Logo" class="h-10">
+                <span class="ml-3 text-white font-bold text-lg">Ice cream CT</span>
             </div>
-            <ul id="nav-menu" class="hidden lg:flex lg:items-center lg:space-x-6">
-                <li><a href="#about" class="text-white">About</a></li>
-                <li><a href="#services" class="text-white">Services</a></li>
-                <li><a href="#contact" class="text-white">Contact</a></li>
-            </ul>
+            <div class="hidden md:flex space-x-6 text-white">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#services" class="hover:underline">Services</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </div>
+            <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="#about" class="block px-4 py-2 text-white hover:bg-blue-700">About</a>
+            <a href="#services" class="block px-4 py-2 text-white hover:bg-blue-700">Services</a>
+            <a href="#contact" class="block px-4 py-2 text-white hover:bg-blue-700">Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="bg-cover bg-center h-64" style="background-image: url('./banner.jpg');">
-        <div class="bg-blue-900 bg-opacity-50 h-full flex items-center justify-center">
-            <h1 class="text-white text-4xl font-bold">Welcome to Ice cream CT</h1>
+    <header class="bg-cover bg-center h-64 flex items-center justify-center" style="background-image: url('./banner.jpg');">
+        <div class="text-center">
+            <h1 class="text-4xl text-white font-bold">Welcome to Ice cream CT</h1>
+            <p class="text-xl text-white">aLL FLAVOURS</p>
         </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-12 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4">About Us</h2>
-            <p>At Ice cream CT, we are passionate about bringing you the finest ice cream with all flavors imaginable. Our mission is to delight your taste buds with quality ingredients and exceptional service.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-12">
+    <section id="about" class="py-12">
         <div class="container mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-8">Our Services</h2>
-            <div class="flex flex-wrap justify-center">
-                <div class="bg-white shadow-md rounded-lg p-6 m-4 w-80">
-                    <h3 class="text-xl font-bold mb-4">Ice Cream</h3>
+            <h2 class="text-3xl text-blue-900 font-bold mb-4">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat lobortis justo, nec lacinia ex efficitur ut. Curabitur non turpis ac sapien aliquam volutpat. Integer vehicula lectus in nisl tempor, et dictum urna aliquam.</p>
+        </div>
+    </section>
+
+    <section id="services" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-blue-900 font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-bold mb-3">Ice Cream</h3>
                     <p>All Flavours</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-12 bg-white">
+    <section id="contact" class="py-12">
         <div class="container mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-8">Contact Us</h2>
-            <form class="max-w-lg mx-auto">
-                <div class="mb-4">
-                    <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
-                    <input class="w-full p-3 border rounded" type="text" id="name" name="name" required>
+            <h2 class="text-3xl text-blue-900 font-bold mb-4">Contact Us</h2>
+            <form class="space-y-4 max-w-md">
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="name">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required>
                 </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
-                    <input class="w-full p-3 border rounded" type="email" id="email" name="email" required>
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="email">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
                 </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
-                    <textarea class="w-full p-3 border rounded" id="message" name="message" rows="4" required></textarea>
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="message">Message</label>
+                    <textarea id="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
                 </div>
-                <button class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700" type="submit">Send Message</button>
+                <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white text-center py-4">
-        <p>Ice cream CT &copy; 2023</p>
-        <p>Address: 5 Marigold Street | Phone: +27724354591 | Email: <a href="mailto:tanyaz@sitehub.co.za" class="underline">tanyaz@sitehub.co.za</a></p>
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Ice cream CT. All rights reserved.</p>
+            <p>Address: 5 Marigold Street | Phone: +27724354591 | Email: <a href="mailto:tanyaz@sitehub.co.za" class="hover:underline">tanyaz@sitehub.co.za</a></p>
+        </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
     <script>
-        document.getElementById('nav-toggle').addEventListener('click', function() {
-            var navMenu = document.getElementById('nav-menu');
-            if (navMenu.classList.contains('hidden')) {
-                navMenu.classList.remove('hidden');
-            } else {
-                navMenu.classList.add('hidden');
-            }
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
 </body>
