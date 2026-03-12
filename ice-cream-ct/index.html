@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ice cream CT - Professional services providing top-quality business services.">
+    <meta name="description" content="Providing top-quality business services">
     <meta property="og:title" content="Ice cream CT">
-    <meta property="og:description" content="Professional services providing top-quality business services.">
+    <meta property="og:description" content="Providing top-quality business services">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/ice-cream-ct/">
-    <meta property="og:image" content="hero-800x400.png">
+    <meta property="og:image" content="logo.png">
     <title>Ice cream CT</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
@@ -17,19 +17,23 @@
 <body>
     <header>
         <nav aria-label="Main Navigation">
-            <img src="logo.png" alt="Ice cream CT Logo" style="max-height: 60px; width: auto;">
-            <ul>
+            <div class="logo">
+                <img src="logo.png" alt="Ice cream CT Logo" style="max-height: 60px; width: auto;">
+            </div>
+            <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services/Products</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#form">Form</a></li>
             </ul>
-            <button aria-label="Toggle Navigation" id="hamburger">&#9776;</button>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
     <main>
-        <section id="hero" style="background-image: url('hero-800x400.png');">
-            <div class="overlay">
+        <section id="hero">
+            <div class="hero-content">
                 <h1>Ice cream CT</h1>
                 <p>Professional services</p>
                 <a href="#form" class="cta-button">Contact Us</a>
@@ -37,23 +41,23 @@
         </section>
         <section id="about">
             <h2>About Us</h2>
-            <p>Our mission is providing top-quality business services.</p>
+            <p>Providing top-quality business services.</p>
         </section>
         <section id="services">
             <h2>Services/Products</h2>
-            <div class="service-card">
-                <i class="fas fa-ice-cream"></i>
-                <h3>Ice cream</h3>
-                <p>All Flavours</p>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-ice-cream"></i>
+                    <h3>Ice cream</h3>
+                    <p>aLL FLAVOURS</p>
+                </div>
             </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <address>
-                <p>5 Marigold Street</p>
-                <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
-                <p>Phone: <a href="tel:+27724354591">+27724354591</a></p>
-            </address>
+            <p>Address: 5 Marigold Street</p>
+            <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+            <p>Phone: <a href="tel:+27724354591">+27724354591</a></p>
         </section>
         <section id="form">
             <h2>Contact Form</h2>
@@ -64,10 +68,10 @@
         <p>© <span id="year"></span> Ice cream CT. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></p>
     </footer>
     <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('open');
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
-        document.querySelectorAll('nav a').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
