@@ -1,8 +1,8 @@
 :root {
   --color-primary: #06b6d4;
   --color-secondary: #0ea5e9;
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Roboto', sans-serif;
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Open Sans', sans-serif;
   --section-padding: 80px 20px;
   --max-width: 1100px;
   --border-radius: 12px;
@@ -12,7 +12,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* Base */
-body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: #333; }
+body { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: #333; }
+p { font-size: 0.875rem; line-height: 1.65; }
+.card p, .about-text p, section > .container > p { font-size: 0.875rem; }
 h1, h2, h3 { font-family: var(--font-heading); }
 
 /* Container */
@@ -57,7 +59,8 @@ section h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1.5rem; color
 /* CONTACT */
 .contact-details { display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 2rem; }
 .contact-details p { margin: 0; }
-.form-wrapper { overflow: hidden; border-radius: var(--border-radius); }
+.form-wrapper { overflow: hidden; border-radius: var(--border-radius); width: 100%; }
+.form-wrapper iframe { display: block; overflow: hidden; }
 .social-links a { margin-right: 12px; color: var(--color-primary); font-size: 1.2rem; }
 
 /* FOOTER */
