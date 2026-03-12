@@ -1,132 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="description" content="Ice cream CT - Providing top-quality business services">
+    <meta property="og:title" content="Ice cream CT">
+    <meta property="og:description" content="Providing top-quality business services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/ice-cream-ct/">
+    <meta property="og:image" content="logo.png">
     <title>Ice cream CT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans">
-
-<nav class="sticky top-0 bg-white shadow-md z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <img src="./logo.png" class="h-12" alt="Ice cream CT Logo">
-        <div class="hidden md:flex gap-6 items-center">
-            <a href="#home" class="hover:text-[#1e40af]">Home</a>
-            <a href="#about" class="hover:text-[#1e40af]">About</a>
-            <a href="#services" class="hover:text-[#1e40af]">Services</a>
-            <a href="#contact" class="hover:text-[#1e40af]">Contact</a>
-        </div>
-        <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
-    </div>
-</nav>
-
-<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-    <button id="close-menu" class="mb-8 text-2xl">✖</button>
-    <a href="#home" class="text-xl mb-4 hover:text-[#1e40af]">Home</a>
-    <a href="#about" class="text-xl mb-4 hover:text-[#1e40af]">About</a>
-    <a href="#services" class="text-xl mb-4 hover:text-[#1e40af]">Services</a>
-    <a href="#contact" class="text-xl mb-4 hover:text-[#1e40af]">Contact</a>
-</div>
-
-<section class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('./banner.jpg');">
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Ice cream CT</h1>
-        <p class="text-xl md:text-2xl mb-8">Professional services</p>
-        <a href="#contact" class="inline-block px-8 py-3 rounded-full text-white font-bold transition" style="background-color: #1e40af">Get Started</a>
-    </div>
-</section>
-
-<section class="py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
-                <p>Welcome to Ice cream CT, where we offer professional services in the ice cream business with all flavors you can imagine. Our mission is to delight our customers with the finest ice cream experience.</p>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <img src="logo.png" alt="Ice cream CT Logo" height="150">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services/Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+            <button aria-label="Toggle Navigation" class="hamburger">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="overlay">
+                <h1>Ice cream CT</h1>
+                <p>Professional services</p>
+                <a href="#form" class="cta-button">Contact Us</a>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 px-4 bg-gray-50">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <i class="fas fa-ice-cream text-4xl text-[#1e40af] mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">All Flavours</h3>
-            <p>Explore a variety of flavors crafted with passion and precision to satisfy your ice cream cravings.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <i class="fas fa-utensils text-4xl text-[#1e40af] mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Custom Orders</h3>
-            <p>We provide tailored ice cream orders for events and parties to make your occasion special.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <i class="fas fa-coffee text-4xl text-[#1e40af] mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Café Services</h3>
-            <p>Enjoy our ice creams with a cup of freshly brewed coffee in a cozy setting.</p>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <div>
-            <form>
-                <div class="mb-4">
-                    <label class="block mb-2 text-sm font-bold">Name</label>
-                    <input type="text" class="w-full px-3 py-2 border rounded-md" placeholder="Your name">
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Ice cream CT is dedicated to providing top-quality business services. Our mission is to deliver excellence in every scoop.</p>
+        </section>
+        <section id="services">
+            <h2>Services/Products</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-ice-cream"></i>
+                    <h3>Ice Cream</h3>
+                    <p>All Flavours</p>
                 </div>
-                <div class="mb-4">
-                    <label class="block mb-2 text-sm font-bold">Email</label>
-                    <input type="email" class="w-full px-3 py-2 border rounded-md" placeholder="Your email">
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2 text-sm font-bold">Message</label>
-                    <textarea class="w-full px-3 py-2 border rounded-md" rows="4" placeholder="Your message"></textarea>
-                </div>
-                <button type="submit" class="bg-[#1e40af] text-white px-4 py-2 rounded-md">Send Message</button>
-            </form>
-        </div>
-        <div>
-            <h3 class="text-xl font-bold mb-4">Contact Details</h3>
-            <p><i class="fas fa-map-marker-alt mr-2"></i>123 Ice Cream St, Flavor Town</p>
-            <p><i class="fas fa-phone mr-2"></i>+27724354591</p>
-            <p><i class="fas fa-envelope mr-2"></i>tanyaz@sitehub.co.za</p>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-gray-900 text-white py-8 text-center">
-    <p>&copy; 2023 Ice cream CT. All rights reserved.</p>
-</footer>
-
-<script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    closeMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-    });
-
-    document.querySelectorAll('nav a, footer a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            window.scrollTo({
-                top: target.offsetTop,
-                behavior: 'smooth'
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                <p>5 Marigold Street</p>
+                <p><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+                <p><a href="tel:+27724354591">+27724354591</a></p>
+            </address>
+        </section>
+        <section id="form">
+            <iframe aria-label="Client Contact Us" frameborder="0" style="height:800px;width:99%;border:none;" src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Ice cream CT. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></p>
+    </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('open');
+        });
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
-
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
