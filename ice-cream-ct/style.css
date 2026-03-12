@@ -11,7 +11,7 @@
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Base — CRITICAL: font-family must be applied to ALL text elements explicitly */
+/* Base */
 body { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: #333; }
 p, li, a, span, label, input, textarea, button { font-family: var(--font-body); }
 p { font-size: 0.875rem; line-height: 1.65; margin-bottom: 0.75rem; }
@@ -20,7 +20,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); }
 /* Container */
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
 
-/* NAV - CRITICAL: hamburger hidden on desktop, links visible on desktop */
+/* NAV */
 header { position: sticky; top: 0; z-index: 1000; background: var(--color-primary); }
 header .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 20px;
   display: flex; justify-content: space-between; align-items: center; min-height: 70px; }
@@ -41,7 +41,7 @@ nav #nav-links a { color: white; text-decoration: none; font-weight: 500; font-f
   transition: transform 0.2s, box-shadow 0.2s; }
 .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
 
-/* SECTIONS — alternating backgrounds */
+/* SECTIONS */
 section { padding: var(--section-padding); }
 section h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1.5rem; color: var(--color-primary); }
 #about { background: #fff; }
