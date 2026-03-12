@@ -3,105 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Providing top-quality business services">
+    <meta property="og:title" content="Shells for Africa">
+    <meta property="og:description" content="Professional services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/shells-for-africa/">
+    <meta property="og:image" content="logo.png">
     <title>Shells for Africa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans">
-    <nav class="sticky top-0 bg-white shadow-md z-50 flex items-center justify-between p-4">
-        <img src="./logo.png" class="h-12" alt="Shells for Africa Logo">
-        <div class="hidden md:flex gap-6">
-            <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
-            <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
-            <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
-            <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
-        </div>
-        <button id="mobile-menu-btn" class="md:hidden">☰</button>
-    </nav>
-    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col p-4">
-        <button class="self-end mb-4">✕</button>
-        <a href="#" class="text-gray-600 hover:text-gray-800 mb-2">Home</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800 mb-2">About</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800 mb-2">Services</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
-    </div>
-    <section class="min-h-screen flex items-center justify-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./banner.jpg'); background-size: cover;">
-        <div class="text-center">
-            <h1 class="text-4xl md:text-6xl text-white">Shells for Africa</h1>
-            <p class="text-xl md:text-2xl text-white">Professional services</p>
-            <button class="mt-4 px-6 py-2 bg-[#06b6d4] text-white rounded hover:bg-[#0ea5e9]">Get Started</button>
-        </div>
-    </section>
-    <section class="py-16 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h2 class="text-3xl md:text-5xl mb-4">About Us</h2>
-                    <p class="text-gray-600">Shells for Africa offers professional services in the business industry, focusing on providing top-quality shells to our clients. Our mission is to deliver exceptional service and unmatched quality.</p>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo">
+                <img src="logo.png" alt="Shells for Africa Logo" style="max-height: 60px; width: auto;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services/Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+            <button aria-label="Toggle Navigation" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="overlay">
+                <h1>Shells for Africa</h1>
+                <p>Professional services</p>
+                <a href="#form" class="cta">Contact Us</a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Providing top-quality business services</p>
+        </section>
+        <section id="services">
+            <h2>Services/Products</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Shells</h3>
+                    <p>High-quality shells for various needs.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="py-16 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-5xl mb-8 text-center">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
-                    <div class="text-center">
-                        <h3 class="text-2xl mb-2">Shell Selling</h3>
-                        <p class="text-gray-600">Providing a wide variety of high-quality shells for all your business needs.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
-                    <div class="text-center">
-                        <h3 class="text-2xl mb-2">Consultation</h3>
-                        <p class="text-gray-600">Expert advice and consultation to help you choose the right shells.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
-                    <div class="text-center">
-                        <h3 class="text-2xl mb-2">Customization</h3>
-                        <p class="text-gray-600">Custom shell solutions tailored to meet your specific requirements.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-16 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-5xl mb-8 text-center">Contact Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <form class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-gray-700">Name</label>
-                        <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-gray-700">Email</label>
-                        <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-gray-700">Message</label>
-                        <textarea id="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="px-6 py-2 bg-[#06b6d4] text-white rounded hover:bg-[#0ea5e9]">Send</button>
-                </form>
-                <div>
-                    <h3 class="text-2xl mb-2">Contact Details</h3>
-                    <p class="text-gray-600">Phone: +27724354591</p>
-                    <p class="text-gray-600">Email: tanyaz@sitehub.co.za</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="max-w-6xl mx-auto text-center">
-            <p>&copy; 2023 Shells for Africa. All rights reserved.</p>
-        </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Address: 5 Marigold Street</p>
+            <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+            <p>Phone: <a href="tel:+27724354591">+27 72 435 4591</a></p>
+        </section>
+        <section id="form">
+            <iframe aria-label='Client Contact Us' frameborder="0" style="height:800px;width:99%;border:none;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Shells for Africa. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></p>
     </footer>
     <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+        const yearSpan = document.getElementById('year');
+        yearSpan.textContent = new Date().getFullYear();
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
         });
     </script>
 </body>
