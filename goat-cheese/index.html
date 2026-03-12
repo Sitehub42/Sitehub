@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Providing top-quality business services">
+    <meta property="og:title" content="Goat Cheese">
+    <meta property="og:description" content="Providing top-quality business services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitehub.co.za/goat-cheese/">
+    <meta property="og:image" content="logo.png">
+    <title>Goat Cheese - Professional Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <img src="logo.png" alt="Goat Cheese Logo" style="max-height: 60px; width: auto;">
+            <ul class="desktop-menu">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#offerings">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Goat Cheese</h1>
+                <p>Professional services</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our mission is to provide top-quality business services.</p>
+                </div>
+                <div class="about-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+            </div>
+        </section>
+        <section id="offerings">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cheese"></i>
+                    <h3>Goat Cheese</h3>
+                    <p>Offering a wide range of premium goat cheese products.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Address: 5 Marigold Street</p>
+                    <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+                    <p>Phone: <a href="tel:+27724354591">+27 72 435 4591</a></p>
+                </div>
+                <div class="contact-form">
+                    <iframe aria-label='Client Contact Us' frameborder="0" style="height:550px;width:100%;border:none;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Goat Cheese. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></p>
+    </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
