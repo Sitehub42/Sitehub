@@ -5,77 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Providing top-quality business services">
     <meta property="og:title" content="Shells for Africa">
-    <meta property="og:description" content="Professional services">
+    <meta property="og:description" content="Providing top-quality business services">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/shells-for-africa/">
     <meta property="og:image" content="logo.png">
     <title>Shells for Africa</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav aria-label="Main Navigation">
-            <div class="logo">
-                <img src="logo.png" alt="Shells for Africa Logo" style="max-height: 60px; width: auto;">
-            </div>
-            <ul class="nav-links">
+        <nav role="navigation">
+            <img src="logo.png" alt="Shells for Africa Logo" style="max-height: 60px; width: auto;">
+            <ul>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services/Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#form">Form</a></li>
+                <li><a href="#offerings">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <button aria-label="Toggle Navigation" class="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button aria-label="Toggle Menu" id="hamburger">☰</button>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <div class="overlay">
-                <h1>Shells for Africa</h1>
-                <p>Professional services</p>
-                <a href="#form" class="cta">Contact Us</a>
-            </div>
+        <section class="hero">
+            <h1>Shells for Africa</h1>
+            <p>Professional services</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
         </section>
         <section id="about">
             <h2>About Us</h2>
-            <p>Providing top-quality business services</p>
+            <div class="about-content">
+                <i class="fas fa-briefcase"></i>
+                <p>Our mission is to provide top-quality business services to our clients.</p>
+            </div>
         </section>
-        <section id="services">
-            <h2>Services/Products</h2>
+        <section id="offerings">
+            <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-conch"></i>
                     <h3>Shells</h3>
-                    <p>High-quality shells for various needs.</p>
+                    <p>We offer a wide variety of high-quality shells for various uses.</p>
                 </div>
             </div>
         </section>
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Address: 5 Marigold Street</p>
-            <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
-            <p>Phone: <a href="tel:+27724354591">+27 72 435 4591</a></p>
-        </section>
-        <section id="form">
-            <iframe aria-label='Client Contact Us' frameborder="0" style="height:800px;width:99%;border:none;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Address: 5 Marigold Street</p>
+                    <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+                    <p>Phone: <a href="tel:+27724354591">+27724354591</a></p>
+                </div>
+                <div class="contact-form">
+                    <iframe aria-label='Client Contact Us' frameborder="0" style="height:550px;width:100%;border:none;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>© <span id="year"></span> Shells for Africa. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></p>
     </footer>
     <script>
-        const yearSpan = document.getElementById('year');
-        yearSpan.textContent = new Date().getFullYear();
-
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('open');
         });
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
