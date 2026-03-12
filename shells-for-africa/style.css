@@ -1,168 +1,139 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-}
-
+/* CSS Variables */
 :root {
     --primary-color: #06b6d4;
     --secondary-color: #0ea5e9;
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 header {
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    z-index: 10;
+    padding: 10px 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul.open {
+nav ul.show {
     display: block;
 }
 
-nav button {
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-toggle {
     display: none;
 }
 
-.hero {
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+#hero {
+    min-height: 100vh;
     background-image: url('hero-800x400.png');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
-.hero::before {
+#hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
-
-.hero h1, .hero p {
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
     background-color: var(--secondary-color);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 1;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.cta-button:hover {
-    background-color: var(--primary-color);
+#about, #offerings, #contact {
+    padding: 40px 20px;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.about-content i {
-    font-size: 2rem;
-    color: var(--primary-color);
+    gap: 20px;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 20px;
 }
 
 .service-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.contact-info {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.contact-info a {
-    color: white;
-    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #f8f8f8;
     text-align: center;
-    padding: 1rem;
+    padding: 10px 0;
 }
 
+/* Responsive Styles */
 @media (min-width: 768px) {
     .about-content {
         grid-template-columns: 1fr 1fr;
     }
+
     .services-grid {
         grid-template-columns: 1fr 1fr;
-    }
-    .contact-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    nav button {
-        display: block;
-    }
-    nav ul {
-        display: none;
-    }
-    nav ul.open {
-        display: flex;
     }
 }
 
 @media (min-width: 1024px) {
     .services-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+    }
+
+    nav ul {
+        display: none;
     }
 }
