@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ice cream CT - Providing top-quality business services">
+    <meta name="description" content="Providing top-quality business services">
     <meta property="og:title" content="Ice cream CT">
     <meta property="og:description" content="Providing top-quality business services">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sitehub.co.za/ice-cream-ct/">
-    <meta property="og:image" content="logo.png">
     <title>Ice cream CT</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main Navigation">
+    <header role="banner">
+        <nav role="navigation" class="sticky">
             <img src="logo.png" alt="Ice cream CT Logo" height="150">
-            <ul>
+            <ul class="desktop-nav">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services/Products</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#form">Form</a></li>
             </ul>
-            <button aria-label="Toggle Navigation" class="hamburger">&#9776;</button>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <section id="hero" class="hero">
             <div class="overlay">
                 <h1>Ice cream CT</h1>
                 <p>Professional services</p>
@@ -37,28 +38,26 @@
         </section>
         <section id="about">
             <h2>About Us</h2>
-            <p>Ice cream CT is dedicated to providing top-quality business services. Our mission is to deliver excellence in every scoop.</p>
+            <p>Our mission is to provide top-quality business services.</p>
         </section>
         <section id="services">
             <h2>Services/Products</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-ice-cream"></i>
-                    <h3>Ice Cream</h3>
-                    <p>All Flavours</p>
+                    <h3>Ice cream</h3>
+                    <p>All flavours</p>
                 </div>
             </div>
         </section>
         <section id="contact">
-            <h2>Contact Us</h2>
-            <address>
-                <p>5 Marigold Street</p>
-                <p><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
-                <p><a href="tel:+27724354591">+27724354591</a></p>
-            </address>
+            <h2>Contact</h2>
+            <p>Address: 5 Marigold Street</p>
+            <p>Email: <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></p>
+            <p>Phone: <a href="tel:+27724354591">+27724354591</a></p>
         </section>
         <section id="form">
-            <iframe aria-label="Client Contact Us" frameborder="0" style="height:800px;width:99%;border:none;" src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI"></iframe>
+            <iframe aria-label='Client Contact Us' frameborder="0" style="height:800px;width:99%;border:none;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
         </section>
     </main>
     <footer>
@@ -66,9 +65,10 @@
     </footer>
     <script>
         document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('open');
+            document.querySelector('.desktop-nav').classList.toggle('active');
         });
-        document.querySelectorAll('nav a').forEach(anchor => {
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -76,6 +76,7 @@
                 });
             });
         });
+
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
