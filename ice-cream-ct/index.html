@@ -1,165 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream CT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1e40af',
-                        secondary: '#3b82f6',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Ice cream CT</title>
 </head>
-<body class="font-Inter">
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
-        <div class="container max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <img src="./logo.png" alt="Logo" class="h-10">
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="text-primary hover:text-secondary">Home</a>
-                <a href="#about" class="text-primary hover:text-secondary">About</a>
-                <a href="#services" class="text-primary hover:text-secondary">Services</a>
-                <a href="#contact" class="text-primary hover:text-secondary">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-primary focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden absolute w-full bg-white shadow-lg z-40">
-            <a href="#home" class="block text-primary hover:text-secondary p-4">Home</a>
-            <a href="#about" class="block text-primary hover:text-secondary p-4">About</a>
-            <a href="#services" class="block text-primary hover:text-secondary p-4">Services</a>
-            <a href="#contact" class="block text-primary hover:text-secondary p-4">Contact</a>
-        </div>
-    </nav>
+<body class="font-sans">
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('./banner.jpg');">
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="relative text-center text-white p-4 md:p-8">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Ice Cream CT</h1>
-            <p class="text-xl md:text-2xl mt-4">Delicious Flavors for Every Taste</p>
-            <a href="#contact" class="mt-8 inline-block bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-full transition">Get in Touch</a>
+<nav class="sticky top-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <img src="./logo.png" class="h-12" alt="Ice cream CT Logo">
+        <div class="hidden md:flex gap-6 items-center">
+            <a href="#home" class="hover:text-[#1e40af]">Home</a>
+            <a href="#about" class="hover:text-[#1e40af]">About</a>
+            <a href="#services" class="hover:text-[#1e40af]">Services</a>
+            <a href="#contact" class="hover:text-[#1e40af]">Contact</a>
         </div>
-    </section>
+        <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="my-8 md:my-12 lg:my-16">
-        <div class="container max-w-7xl mx-auto px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">Our Mission</h2>
-                    <p class="text-base md:text-lg mt-4">To bring the joy of ice cream to every corner of the community, providing a wide range of delicious flavors and exceptional service.</p>
-                </div>
-                <div>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">About Us</h2>
-                    <p class="text-base md:text-lg mt-4">Located at 5 Marigold Street, Ice Cream CT is committed to crafting the finest ice creams using premium ingredients, ensuring a delightful experience for all our customers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+    <button id="close-menu" class="mb-8 text-2xl">✖</button>
+    <a href="#home" class="text-xl mb-4 hover:text-[#1e40af]">Home</a>
+    <a href="#about" class="text-xl mb-4 hover:text-[#1e40af]">About</a>
+    <a href="#services" class="text-xl mb-4 hover:text-[#1e40af]">Services</a>
+    <a href="#contact" class="text-xl mb-4 hover:text-[#1e40af]">Contact</a>
+</div>
 
-    <!-- Services Section -->
-    <section id="services" class="my-8 md:my-12 lg:my-16">
-        <div class="container max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-8">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-                    <div class="text-4xl">🍦</div>
-                    <h3 class="text-xl font-bold mt-4">Ice Cream</h3>
-                    <p class="text-base md:text-lg mt-2">All Flavours</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('./banner.jpg');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Ice cream CT</h1>
+        <p class="text-xl md:text-2xl mb-8">Professional services</p>
+        <a href="#contact" class="inline-block px-8 py-3 rounded-full text-white font-bold transition" style="background-color: #1e40af">Get Started</a>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="my-8 md:my-12 lg:my-16">
-        <div class="container max-w-7xl mx-auto px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">Contact Us</h2>
-                    <form id="contact-form" action="#" method="POST" class="space-y-4">
-                        <div>
-                            <label for="name" class="block text-base md:text-lg font-semibold">Name</label>
-                            <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-2 focus:border-primary focus:outline-none" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-base md:text-lg font-semibold">Email</label>
-                            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-2 focus:border-primary focus:outline-none" required>
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-base md:text-lg font-semibold">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-lg p-2 focus:border-primary focus:outline-none">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-base md:text-lg font-semibold">Message</label>
-                            <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-lg p-2 focus:border-primary focus:outline-none" required></textarea>
-                        </div>
-                        <button type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full transition">Send Message</button>
-                    </form>
-                </div>
-                <div>
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">Get in Touch</h2>
-                    <p class="text-base md:text-lg"><strong>Address:</strong> 5 Marigold Street</p>
-                    <p class="text-base md:text-lg"><strong>Phone:</strong> +27724354591</p>
-                    <p class="text-base md:text-lg"><strong>Email:</strong> <a href="mailto:tanyaz@sitehub.co.za" class="text-primary hover:text-secondary">tanyaz@sitehub.co.za</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white p-4 md:p-8">
-        <div class="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-                <p>&copy; 2023 Ice Cream CT. All rights reserved.</p>
-            </div>
-            <div>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-secondary">Facebook</a>
-                    <a href="#" class="hover:text-secondary">Twitter</a>
-                    <a href="#" class="hover:text-secondary">Instagram</a>
-                </div>
-            </div>
-            <div>
-                <p>Design by Ice Cream CT</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
+                <p>Welcome to Ice cream CT, where we offer professional services in the ice cream business with all flavors you can imagine. Our mission is to delight our customers with the finest ice cream experience.</p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- JavaScript -->
-    <script>
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
+<section class="py-16 px-4 bg-gray-50">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <i class="fas fa-ice-cream text-4xl text-[#1e40af] mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">All Flavours</h3>
+            <p>Explore a variety of flavors crafted with passion and precision to satisfy your ice cream cravings.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <i class="fas fa-utensils text-4xl text-[#1e40af] mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Custom Orders</h3>
+            <p>We provide tailored ice cream orders for events and parties to make your occasion special.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <i class="fas fa-coffee text-4xl text-[#1e40af] mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Café Services</h3>
+            <p>Enjoy our ice creams with a cup of freshly brewed coffee in a cozy setting.</p>
+        </div>
+    </div>
+</section>
 
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+<section class="py-16 px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div>
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2 text-sm font-bold">Name</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-md" placeholder="Your name">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 text-sm font-bold">Email</label>
+                    <input type="email" class="w-full px-3 py-2 border rounded-md" placeholder="Your email">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 text-sm font-bold">Message</label>
+                    <textarea class="w-full px-3 py-2 border rounded-md" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="bg-[#1e40af] text-white px-4 py-2 rounded-md">Send Message</button>
+            </form>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Contact Details</h3>
+            <p><i class="fas fa-map-marker-alt mr-2"></i>123 Ice Cream St, Flavor Town</p>
+            <p><i class="fas fa-phone mr-2"></i>+27724354591</p>
+            <p><i class="fas fa-envelope mr-2"></i>tanyaz@sitehub.co.za</p>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-8 text-center">
+    <p>&copy; 2023 Ice cream CT. All rights reserved.</p>
+</footer>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+
+    document.querySelectorAll('nav a, footer a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
             });
         });
+    });
+</script>
 
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Form validation logic here
-            alert('Form submitted successfully!');
-        });
-    </script>
 </body>
 </html>
