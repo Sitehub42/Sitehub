@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice cream CT — Professional Services</title>
-    <meta name="description" content="Ice cream CT offers a wide range of delicious ice cream flavors in Cape Town. Visit us for a delightful treat!">
+    <meta name="description" content="Ice cream CT offers a delightful range of handcrafted ice creams in Cape Town. Experience the taste of joy with every scoop.">
     <meta property="og:title" content="Ice cream CT — Professional Services">
-    <meta property="og:description" content="Ice cream CT offers a wide range of delicious ice cream flavors in Cape Town. Visit us for a delightful treat!">
+    <meta property="og:description" content="Ice cream CT offers a delightful range of handcrafted ice creams in Cape Town. Experience the taste of joy with every scoop.">
     <meta property="og:type" content="website">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="nav-inner">
             <img src="logo.png" alt="Ice cream CT Logo" class="logo">
+            <button id="hamburger">☰</button>
             <nav>
-                <button id="hamburger">☰</button>
                 <ul id="nav-links">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#offerings">Our Services</a></li>
@@ -36,22 +36,20 @@
     <section id="about">
         <div class="container">
             <h2>About Ice cream CT</h2>
-            <div class="about-text">
-                <p>Ice cream CT is your go-to destination for a delightful array of ice cream flavors in Cape Town. We cater to ice cream enthusiasts of all ages, offering a unique taste experience with every scoop.</p>
-                <p>Founded with a passion for quality and flavor, Ice cream CT has grown from a small local shop to a beloved community staple. Our approach is simple: use the finest ingredients to create unforgettable ice cream.</p>
-                <p>At Ice cream CT, we value freshness, flavor, and fun. Our promise to you is a delicious and joyful experience, whether you're indulging in a classic flavor or trying something new.</p>
-            </div>
+            <p>Ice cream CT is dedicated to crafting the finest ice cream using locally sourced ingredients. We serve the vibrant community of Cape Town, offering a wide array of flavors that cater to every palate. Our mission is to bring joy and sweetness to every occasion with our delicious ice cream.</p>
+            <p>Founded in the heart of Cape Town, Ice cream CT began as a small family-run business. Our passion for quality and creativity has driven us to expand our offerings and reach more ice cream enthusiasts. We believe in the power of a good scoop to brighten your day.</p>
+            <p>At Ice cream CT, we value quality, community, and innovation. Our promise is to deliver exceptional ice cream that not only tastes great but also supports local producers. We are committed to sustainability and strive to make a positive impact in our community.</p>
         </div>
     </section>
     <section id="offerings">
         <div class="container">
             <h2>Our Services</h2>
-            <p>Explore our wide range of ice cream flavors, crafted to delight your taste buds with every bite.</p>
+            <p>Explore our delightful range of ice cream flavors, each crafted with precision and passion. Whether you crave classic vanilla or adventurous new flavors, Ice cream CT has something to satisfy your sweet tooth.</p>
             <div class="cards-grid">
                 <div class="card">
                     <i class="fas fa-ice-cream"></i>
                     <h3>All Flavours</h3>
-                    <p>From classic vanilla to exotic mango, our selection of flavors will satisfy every craving. Each scoop is made with care and the finest ingredients.</p>
+                    <p>Indulge in our diverse selection of ice cream flavors, from timeless classics to innovative creations. Each scoop is a testament to our dedication to quality and taste.</p>
                 </div>
             </div>
         </div>
@@ -70,14 +68,12 @@
         </div>
     </section>
     <footer>
-        <p>© <span id="year"></span> Ice cream CT. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></p>
+        © <span id="year"></span> Ice cream CT. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('open');
         });
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
