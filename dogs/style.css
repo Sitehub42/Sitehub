@@ -24,7 +24,9 @@ h1, h2, h3, h4 { font-family: var(--font-heading); }
 header { position: sticky; top: 0; z-index: 1000; background: var(--color-primary); }
 header .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 20px;
   display: flex; justify-content: space-between; align-items: center; min-height: 70px; }
-header img.logo { max-height: 60px; width: auto; }
+header img.logo { max-height: 50px; width: auto; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-name { color: white; font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; white-space: nowrap; letter-spacing: 0.01em; }
 nav #nav-links { display: flex; list-style: none; gap: 30px; }
 nav #nav-links a { color: white; text-decoration: none; font-weight: 500; font-family: var(--font-body); font-size: 0.9rem; letter-spacing: 0.02em; }
 #hamburger { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; font-family: inherit; }
