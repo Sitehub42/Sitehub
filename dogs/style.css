@@ -1,6 +1,8 @@
 :root {
   --color-primary: #ea580c;
   --color-secondary: #f59e0b;
+  --nav-fg: #ffffff;
+  --logo-filter: brightness(0) invert(1);
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
   --section-padding: 80px 20px;
@@ -24,12 +26,12 @@ h1, h2, h3, h4 { font-family: var(--font-heading); }
 header { position: sticky; top: 0; z-index: 1000; background: var(--color-primary); }
 header .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 20px;
   display: flex; justify-content: space-between; align-items: center; min-height: 70px; }
-header img.logo { max-height: 50px; width: auto; }
+header img.logo { max-height: 50px; width: auto; filter: var(--logo-filter); }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.brand-name { color: white; font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; white-space: nowrap; letter-spacing: 0.01em; }
+.brand-name { color: var(--nav-fg); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; white-space: nowrap; letter-spacing: 0.01em; }
 nav #nav-links { display: flex; list-style: none; gap: 30px; }
-nav #nav-links a { color: white; text-decoration: none; font-weight: 500; font-family: var(--font-body); font-size: 0.9rem; letter-spacing: 0.02em; }
-#hamburger { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; font-family: inherit; }
+nav #nav-links a { color: var(--nav-fg); text-decoration: none; font-weight: 500; font-family: var(--font-body); font-size: 0.9rem; letter-spacing: 0.02em; }
+#hamburger { display: none; background: none; border: none; color: var(--nav-fg); font-size: 1.5rem; cursor: pointer; font-family: inherit; }
 
 /* HERO */
 #hero { position: relative; min-height: 100vh; background-image: url('hero-800x400.png');
