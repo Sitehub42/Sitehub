@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs — Professional Services</title>
+    <meta name="description" content="Dogs provides top-notch business services tailored to enhance your operations in Marigold Street.">
+    <meta property="og:title" content="Dogs — Professional Services">
+    <meta property="og:description" content="Dogs provides top-notch business services tailored to enhance your operations in Marigold Street.">
+    <meta property="og:type" content="website">
+    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <img src="logo.png" alt="Dogs Logo" class="logo">
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#offerings">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="hamburger">☰</button>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Dogs</h1>
+            <p>Enhancing Your Business Operations with Tailored Solutions</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Dogs</h2>
+            <p>At Dogs, we specialize in providing comprehensive business services designed to optimize your operations. Our team is dedicated to helping companies like yours succeed by offering tailored solutions that meet your unique needs. Whether you are looking to streamline processes or enhance productivity, Dogs is here to assist.</p>
+            <p>Founded in the heart of Marigold Street, Dogs has grown from a small consultancy into a leading provider of business services. Our journey began with a simple mission: to empower businesses with the tools and strategies they need to thrive in a competitive market. Today, we continue to uphold this mission by delivering exceptional service and innovative solutions.</p>
+            <p>We believe in building strong relationships with our clients based on trust, transparency, and mutual success. Our commitment to these values ensures that every project we undertake is executed with the highest level of professionalism and integrity. At Dogs, your success is our priority.</p>
+        </div>
+    </section>
+    <section id="offerings">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Explore our range of services tailored to enhance your business operations and drive success.</p>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Business Consulting</h3>
+                    <p>Our expert consultants provide strategic insights and actionable plans to help your business grow and overcome challenges effectively.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Process Optimization</h3>
+                    <p>Streamline your operations with our tailored process optimization services, designed to boost efficiency and reduce costs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>Team Development</h3>
+                    <p>Enhance team performance and collaboration with our customized development programs, fostering a productive work environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>5 Marigold Street</span></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+                <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+27724354591">+27724354591</a></div>
+            </div>
+            <div class="form-wrapper">
+                <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © <span id="year"></span> Dogs. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
