@@ -73,7 +73,7 @@ section h2 { font-size: clamp(1.3rem, 2.5vw, 1.9rem); margin-bottom: 1.5rem; col
 .contact-item span { font-size: 0.9rem; }
 .social-links { display: flex; gap: 12px; }
 .social-links a { color: var(--color-primary); font-size: 1.2rem; }
-.form-wrapper { max-width: 400px; overflow: hidden; border-radius: var(--border-radius); border: 1px solid #e5e7eb; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.form-wrapper { width: 100%; overflow: hidden; border-radius: var(--border-radius); border: 1px solid #e5e7eb; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 .form-wrapper iframe { display: block; }
 
 /* FOOTER */
@@ -93,10 +93,29 @@ footer a { color: rgba(255,255,255,0.8); }
 @media (min-width: 768px) {
   .cards-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-  .contact-grid { grid-template-columns: 1fr 1fr; align-items: start; }
+  .contact-grid { grid-template-columns: 1fr 3fr; align-items: start; }
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
   .cards-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
+
+/* MANDATORY CREATIVE EXTENSIONS — implement ALL that apply to your design choices */
+
+/* 1. Section h2 decoration: add a visual accent — e.g. a short coloured underline using ::after, or a coloured left-border for side-aligned headings */
+section h2::after { content:''; display:block; width:48px; height:3px; background:var(--color-primary); margin-top:10px; }
+
+/* 2. Adjust --border-radius globally to match your personality: BOLD/MINIMAL=4px, WARM/ORGANIC=20px, ELEGANT=2px, VIBRANT=16px, CLASSIC=8px */
+
+/* 3. If SPLIT SCREEN hero: .hero-split { display:grid; grid-template-columns:1fr 1fr; min-height:100vh; } .hero-split-text { background:var(--color-primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:60px 40px; } .hero-split-image { background-image:url('hero-800x400.png'); background-size:cover; background-position:center; }
+
+/* 4. If STATS HIGHLIGHT about: .about-stats { display:flex; flex-direction:column; gap:24px; justify-content:center; } .stat-item { text-align:center; } .stat-number { display:block; font-size:2.5rem; font-weight:800; color:var(--color-primary); line-height:1; } .stat-label { display:block; font-size:0.85rem; color:#666; margin-top:4px; }
+
+/* 5. If ALTERNATING ROWS offerings: .offerings-list { display:flex; flex-direction:column; gap:48px; } .offering-row { display:flex; align-items:center; gap:40px; } .offering-row:nth-child(even) { flex-direction:row-reverse; } .offering-icon i { font-size:3rem; color:var(--color-primary); flex-shrink:0; }
+
+/* 6. If NUMBERED SHOWCASE: .offerings-list { display:flex; flex-direction:column; gap:32px; } .offering-item { display:flex; gap:24px; align-items:flex-start; } .offering-num { font-size:4rem; font-weight:900; color:var(--color-primary); opacity:0.15; line-height:1; flex-shrink:0; min-width:64px; }
+
+/* 7. If VIBRANT/ENERGETIC personality: add angled dividers e.g. #hero { clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%); padding-bottom:80px; } or alternate section background with a light tint: background:rgba(var(--color-primary-rgb, 0,0,0),0.04) */
+
+/* Add any further creative CSS here that makes this site feel custom-designed for Figs */
