@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shells for Africa — Professional Services</title>
-    <meta name="description" content="Shells for Africa offers unique shell services in Africa. Contact us at +27724354591 or email tanyaz@sitehub.co.za.">
+    <meta name="description" content="Shells for Africa offers a unique collection of shells, bringing the beauty of the ocean to your home or business.">
     <meta property="og:title" content="Shells for Africa — Professional Services">
-    <meta property="og:description" content="Shells for Africa offers unique shell services in Africa. Contact us at +27724354591 or email tanyaz@sitehub.co.za.">
+    <meta property="og:description" content="Shells for Africa offers a unique collection of shells, bringing the beauty of the ocean to your home or business.">
     <meta property="og:type" content="website">
     <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +16,6 @@
     <header>
         <div class="nav-inner">
             <a href="#" class="brand"><img src="logo.png" alt="Shells for Africa logo" class="logo"><span class="brand-name">Shells for Africa</span></a>
-            <button id="hamburger">☰</button>
             <nav>
                 <ul id="nav-links">
                     <li><a href="#hero">Home</a></li>
@@ -24,13 +23,14 @@
                     <li><a href="#offerings">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button id="hamburger">☰</button>
             </nav>
         </div>
     </header>
     <section id="hero">
         <div class="hero-content">
             <h1>Shells for Africa</h1>
-            <p>Discover the beauty of African shells with our expertly curated collection.</p>
+            <p>Discover the exquisite beauty of ocean treasures, curated for your space.</p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
@@ -38,35 +38,35 @@
         <h2>About Shells for Africa</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Shells for Africa is dedicated to sourcing and providing the finest shells from the African continent. Our mission is to connect shell enthusiasts and collectors with the unique beauty of African seashells.</p>
-                <p>Founded with a passion for marine treasures, we have grown from a small local business to a trusted supplier across Africa. Our approach combines sustainability with a deep respect for nature, ensuring that our shells are ethically sourced.</p>
-                <p>We promise our customers authenticity and quality. Each shell is carefully selected and inspected to meet our high standards, ensuring that you receive only the best specimens.</p>
+                <p>Shells for Africa specializes in sourcing and supplying a stunning variety of shells from the African coastline. We cater to collectors, decorators, and businesses looking to enhance their spaces with natural beauty.</p>
+                <p>Founded by a passionate team with a love for the ocean, we have built a reputation for quality and authenticity. Our approach is centered around sustainable sourcing and supporting local communities.</p>
+                <p>Our promise is to deliver unique, high-quality shells that inspire and captivate. We believe in the power of nature's creations to transform environments and uplift spirits.</p>
             </div>
             <div class="about-stats">
-                <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Years in Business</span></div>
-                <div class="stat-item"><span class="stat-number">300+</span><span class="stat-label">Clients Served</span></div>
-                <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Satisfaction Rate</span></div>
+                <div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">Years in Business</span></div>
+                <div class="stat-item"><span class="stat-number">500+</span><span class="stat-label">Clients Served</span></div>
+                <div class="stat-item"><span class="stat-number">98%</span><span class="stat-label">Satisfaction Rate</span></div>
             </div>
         </div>
     </section>
     <section id="offerings">
         <h2>Our Services</h2>
-        <p>Explore our diverse range of services tailored to shell collectors and enthusiasts.</p>
+        <p>Our collection of shells is perfect for a variety of uses, from home decor to corporate gifts. Explore our offerings below:</p>
         <div class="cards-grid">
             <div class="card">
-                <div class="card-icon"><i class="fas fa-seedling"></i></div>
-                <h3>Shell Curation</h3>
-                <p>Our expert team curates a selection of the finest shells, ensuring each piece is unique and of the highest quality.</p>
+                <div class="card-icon"><i class="fas fa-anchor"></i></div>
+                <h3>Decorative Shells</h3>
+                <p>Enhance your interior spaces with our selection of decorative shells, perfect for adding a touch of nature's elegance to any room.</p>
             </div>
             <div class="card">
-                <div class="card-icon"><i class="fas fa-shipping-fast"></i></div>
-                <h3>Worldwide Shipping</h3>
-                <p>We offer reliable worldwide shipping, ensuring your shells arrive safely and promptly at your doorstep.</p>
+                <div class="card-icon"><i class="fas fa-gift"></i></div>
+                <h3>Corporate Gifts</h3>
+                <p>Our unique shells make for memorable corporate gifts that reflect sophistication and a connection to the natural world.</p>
             </div>
             <div class="card">
                 <div class="card-icon"><i class="fas fa-leaf"></i></div>
                 <h3>Sustainable Sourcing</h3>
-                <p>We prioritize sustainability in our sourcing practices, ensuring that our shells are ethically and responsibly collected.</p>
+                <p>We are committed to sustainable practices, ensuring that our shells are sourced responsibly and ethically from the African coast.</p>
             </div>
         </div>
     </section>
@@ -88,11 +88,13 @@
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.getElementById('nav-links').classList.toggle('open');
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
         });
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
