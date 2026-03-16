@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice cream CT — Professional Services</title>
-    <meta name="description" content="Ice cream CT, offering a wide range of delectable ice cream flavors in Cape Town. Contact us to indulge in our handcrafted delights.">
-    <meta property="og:title" content="Ice cream CT — Professional Services">
-    <meta property="og:description" content="Ice cream CT, offering a wide range of delectable ice cream flavors in Cape Town. Contact us to indulge in our handcrafted delights.">
+    <meta name="description" content="Ice cream CT offers a wide range of delicious ice cream flavors made fresh daily in Cape Town.">
+    <meta property="og:title" content="Ice cream CT">
+    <meta property="og:description" content="Ice cream CT offers a wide range of delicious ice cream flavors made fresh daily in Cape Town.">
     <meta property="og:type" content="website">
-    <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,68 +18,72 @@
             <a href="#" class="brand"><img src="logo.png" alt="Ice cream CT logo" class="logo"><span class="brand-name">Ice cream CT</span></a>
             <nav>
                 <ul id="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#offerings">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#offerings">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
-                <button id="hamburger">☰</button>
             </nav>
+            <button id="hamburger" aria-label="Menu">☰</button>
         </div>
     </header>
-    <section id="hero">
-        <div class="hero-content">
+    <section id="hero" class="hero-split">
+        <div class="hero-split-text">
             <h1>Ice cream CT</h1>
             <p>Handcrafted ice cream made fresh daily in Cape Town</p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
+        <div class="hero-split-image"></div>
     </section>
     <section id="about">
-        <h2>About Ice cream CT</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>Ice cream CT is a local favorite in Cape Town, known for its artisanal ice cream made with the freshest ingredients. We serve a diverse clientele ranging from families to foodies, all of whom appreciate the quality and creativity of our flavors.</p>
-                <p>Founded by a passionate ice cream enthusiast, our journey began with a simple mission: to bring joy and sweetness to every scoop. Over the years, we have perfected our recipes, ensuring each flavor is an explosion of taste and texture.</p>
-                <p>Our commitment to quality is unwavering. We promise our customers not just ice cream, but an experience that delights the senses. From classic vanilla to exotic mango, every flavor is crafted to perfection.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Years in Business</span></div>
-                <div class="stat-item"><span class="stat-number">300+</span><span class="stat-label">Flavors Created</span></div>
-                <div class="stat-item"><span class="stat-number">95%</span><span class="stat-label">Customer Satisfaction</span></div>
-            </div>
+        <div class="container">
+            <h2>About Ice cream CT</h2>
+            <p>Ice cream CT is dedicated to serving the finest quality ice cream in Cape Town. Our customers range from local residents to tourists looking for a sweet treat to enjoy the vibrant city. We offer a variety of flavors to cater to every taste, ensuring that every scoop is a delightful experience.</p>
+            <p>Founded with the passion for creating exceptional ice cream, Ice cream CT has quickly become a local favorite. Our approach is simple: use the freshest ingredients and traditional methods to create a product that is both authentic and delicious. We are proud to contribute to the local economy by sourcing ingredients from nearby farms.</p>
+            <p>Our promise to our customers is unwavering quality and service. We believe in creating memorable moments with every scoop, whether it's a family outing or a solo indulgence. At Ice cream CT, we are committed to bringing joy to our community one cone at a time.</p>
         </div>
     </section>
     <section id="offerings">
-        <h2>Our Services</h2>
-        <p>At Ice cream CT, we offer a wide array of ice cream flavors to tantalize your taste buds. Each scoop is a testament to our dedication to quality and innovation.</p>
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-ice-cream"></i></div>
-                <h3>Classic Flavors</h3>
-                <p>Enjoy our range of classic flavors like vanilla, chocolate, and strawberry, each crafted with premium ingredients for a rich and creamy taste.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-lemon"></i></div>
-                <h3>Fruity Delights</h3>
-                <p>Indulge in our fruity creations, from tangy lemon to sweet mango, perfect for those who love a refreshing twist in their ice cream.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-seedling"></i></div>
-                <h3>Vegan Options</h3>
-                <p>Our vegan ice creams are made with plant-based ingredients, ensuring everyone can enjoy our delicious flavors without compromise.</p>
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>At Ice cream CT, we offer a wide selection of ice cream flavors, each crafted with care to provide a unique tasting experience. Explore our diverse range of offerings and find your new favorite flavor.</p>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-ice-cream"></i></div>
+                    <h3>Classic Flavors</h3>
+                    <p>Enjoy timeless classics like vanilla, chocolate, and strawberry, made with premium ingredients for a rich and satisfying taste.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-lemon"></i></div>
+                    <h3>Fruit Delights</h3>
+                    <p>Experience the freshness of our fruit flavors, including mango, raspberry, and lemon gelato, made with real fruit for a refreshing taste.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Vegan Options</h3>
+                    <p>Our vegan ice creams are crafted without dairy, offering creamy flavors like coconut and almond that everyone can enjoy.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-birthday-cake"></i></div>
+                    <h3>Custom Creations</h3>
+                    <p>Create your own ice cream masterpiece with our custom creation options, perfect for special occasions or just because.</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>5 Marigold Street</span></div>
-                <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
-                <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+27724354591">+27724354591</a></div>
-            </div>
-            <div class="form-wrapper" style="width:100%;">
-                <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:580px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you — reach out to us anytime.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Get In Touch</h3>
+                    <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>5 Marigold Street</span></div>
+                    <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+                    <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:+27724354591">+27724354591</a></div>
+                </div>
+                <div class="form-wrapper" style="width:100%;">
+                    <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+                </div>
             </div>
         </div>
     </section>
