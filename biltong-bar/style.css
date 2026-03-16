@@ -7,7 +7,7 @@
   --font-body: 'Nunito', sans-serif;
   --section-padding: 80px 20px;
   --max-width: 1100px;
-  --border-radius: 20px;
+  --border-radius: 2px;
 }
 
 /* Reset */
@@ -34,9 +34,9 @@ nav #nav-links a { color: var(--nav-fg); text-decoration: none; font-weight: 500
 #hamburger { display: none; background: none; border: none; color: var(--nav-fg); font-size: 1.5rem; cursor: pointer; font-family: inherit; }
 
 /* HERO */
-#hero { position: relative; min-height: 100vh; background-image: url('hero-800x400.png');
-  background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
-#hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
+.hero-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+.hero-split-text { background: var(--color-primary); color: white; display: flex; flex-direction: column; justify-content: center; padding: 60px 40px; }
+.hero-split-image { background-image: url('hero-800x400.png'); background-size: cover; background-position: center; }
 #hero .hero-content { position: relative; z-index: 1; max-width: 800px; padding: 20px; }
 #hero h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1rem; }
 #hero p { font-size: clamp(0.95rem, 1.8vw, 1.15rem); margin-bottom: 2rem; }
@@ -101,5 +101,24 @@ footer a { color: rgba(255,255,255,0.8); }
   .cards-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
 
-/* MANDATORY CREATIVE EXTENSIONS */
+/* MANDATORY CREATIVE EXTENSIONS — implement ALL that apply to your design choices */
+
+/* 1. Section h2 decoration: add a visual accent — e.g. a short coloured underline using ::after, or a coloured left-border for side-aligned headings */
 section h2::after { content:''; display:block; width:48px; height:3px; background:var(--color-primary); margin-top:10px; }
+
+/* 2. Adjust --border-radius globally to match your personality: BOLD/MINIMAL=4px, WARM/ORGANIC=20px, ELEGANT=2px, VIBRANT=16px, CLASSIC=8px */
+
+/* 3. If SPLIT SCREEN hero: .hero-split { display:grid; grid-template-columns:1fr 1fr; min-height:100vh; } .hero-split-text { background:var(--color-primary); color:white; display:flex; flex-direction:column; justify-content:center; padding:60px 40px; } .hero-split-image { background-image:url('hero-800x400.png'); background-size:cover; background-position:center; } */
+
+/* 4. If STATS HIGHLIGHT about: .about-stats { display:flex; flex-direction:column; gap:24px; justify-content:center; } .stat-item { text-align:center; } .stat-number { display:block; font-size:2.5rem; font-weight:800; color:var(--color-primary); line-height:1; } .stat-label { display:block; font-size:0.85rem; color:#666; margin-top:4px; } */
+
+/* 5. If ALTERNATING ROWS offerings: .offerings-list { display:flex; flex-direction:column; gap:48px; } .offering-row { display:flex; align-items:center; gap:40px; } .offering-row:nth-child(even) { flex-direction:row-reverse; } .offering-icon i { font-size:3rem; color:var(--color-primary); flex-shrink:0; } */
+
+/* 6. If NUMBERED SHOWCASE: .offerings-list { display:flex; flex-direction:column; gap:32px; } .offering-item { display:flex; gap:24px; align-items:flex-start; } .offering-num { font-size:4rem; font-weight:900; color:var(--color-primary); opacity:0.15; line-height:1; flex-shrink:0; min-width:64px; } */
+
+/* 7. If VIBRANT/ENERGETIC personality: add angled dividers e.g. #hero { clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%); padding-bottom:80px; } or alternate section background with a light tint: background:rgba(var(--color-primary-rgb, 0,0,0),0.04) */
+
+/* Add any further creative CSS here that makes this site feel custom-designed for Biltong Bar */
+/* ── SiteHub font enforcement (post-processed) ── */
+h1, h2, h3, h4, .brand-name { font-family: 'Pacifico', cursive !important; }
+body, p, li, a, span, label, input, textarea, button, nav a, .nav-links a { font-family: 'Nunito', sans-serif !important; }
