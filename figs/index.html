@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figs — Professional Services</title>
+  <meta name="description" content="Figs offers premium fig products and services, including fresh figs and fig jam, in a bold and minimalistic style.">
+  <meta property="og:title" content="Figs — Professional Services">
+  <meta property="og:description" content="Figs offers premium fig products and services, including fresh figs and fig jam.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="brand"><img src="logo.png" alt="Figs logo" class="logo"><span class="brand-name">Figs</span></a>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#offerings">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Discover the Finest Figs and Fig Products</h1>
+      <p>Experience the rich taste and quality of our exclusive fig offerings, crafted just for you.</p>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Figs</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Figs is dedicated to providing the highest quality figs and fig-based products to gourmet enthusiasts and health-conscious consumers alike. Our selection includes fresh figs and delicious fig jam, each crafted with care to deliver exceptional taste and nutrition.</p>
+        <p>Established in the heart of Cape Town, Figs started as a small family business with a passion for quality produce. Over the years, we have grown our operations, yet remain committed to our roots—ensuring every product is crafted with the same love and attention as when we began.</p>
+        <p>At Figs, our mission is to enrich your culinary experiences with premium fig products. We promise authenticity, sustainability, and excellence in every aspect of our business, from sourcing to the final product.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years in Business</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="offerings">
+    <h2>Our Services</h2>
+    <p>Figs offers a range of high-quality fig products to delight your palate and elevate your dining experience.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-apple-alt"></i></div>
+        <h3>Figs</h3>
+        <p>Our finest selection of fresh figs, handpicked to ensure the best taste and quality for your enjoyment.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-jam"></i></div>
+        <h3>Fig Jam</h3>
+        <p>Indulge in our rich, flavorful fig jam, perfect for spreading, baking, or enjoying straight from the jar.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3 class="contact-heading">Get In Touch</h3>
+        <div class="contact-details">
+          <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>5 Marigold Street</span></div>
+          <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+          <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:+27724354591">+27724354591</a></div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-wrapper" style="width:100%;">
+          <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; <span id="year"></span> Figs. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

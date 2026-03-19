@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone covers — Technology</title>
+    <meta name="description" content="Phone covers - Technology solutions selling phone covers and gadgets throughout Africa.">
+    <meta property="og:title" content="Phone covers">
+    <meta property="og:description" content="Explore our range of phone covers and gadgets tailored for the African market.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <a href="#" class="brand"><img src="logo.png" alt="Phone covers logo" class="logo"><span class="brand-name">Phone covers</span></a>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#offerings">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger" aria-label="Menu">☰</button>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Phone covers</h1>
+            <p>Protect your phone with style and durability, crafted for the African terrain.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Phone covers</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Phone covers is dedicated to providing the best in phone protection and technology accessories across Africa. Our products are designed to withstand the diverse climates and lifestyles of the continent, ensuring your devices stay safe and stylish.</p>
+                <p>Founded in the heart of South Africa, our journey began with a simple mission: to make phone protection accessible and affordable for everyone. Over the years, we've expanded our offerings to include a variety of gadgets that complement the modern mobile lifestyle.</p>
+                <p>Our commitment to quality and customer satisfaction is unwavering. We believe in providing not just products, but solutions that enhance everyday life. Our team works tirelessly to innovate and deliver products that meet the highest standards of excellence.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years in Business</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Clients Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Satisfaction Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="offerings">
+        <h2>Our Services</h2>
+        <p>Discover our range of products, designed to protect and enhance your phone experience.</p>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Phone Covers</h3>
+                <p>Our phone covers are crafted to provide maximum protection and style, tailored for devices of all sizes and brands.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-headphones-alt"></i></div>
+                <h3>Gadgets for Phones</h3>
+                <p>From power banks to wireless headphones, our selection of gadgets is designed to complement your mobile lifestyle.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you — reach out to us anytime.</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3 class="contact-heading">Get In Touch</h3>
+                <div class="contact-item">
+                    <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                    <span>5 Marigold Street</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon-circle"><i class="fas fa-envelope"></i></div>
+                    <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
+                    <a href="tel:+27724354591">+27724354591</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-circle" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-wrapper" style="width:100%;">
+                    <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © <span id="year"></span> Phone covers. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('open');
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

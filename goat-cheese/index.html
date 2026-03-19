@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goat Cheese — Professional Services</title>
+  <meta name="description" content="Goat Cheese offers premium business solutions in the heart of the industry. Contact us today to learn more about our services.">
+  <meta property="og:title" content="Goat Cheese — Professional Services">
+  <meta property="og:description" content="Goat Cheese offers premium business solutions in the heart of the industry. Contact us today to learn more about our services.">
+  <meta property="og:type" content="website">
+  <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-inner container">
+      <a href="#" class="brand"><img src="logo.png" alt="Goat Cheese logo" class="logo"><span class="brand-name">Goat Cheese</span></a>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#offerings">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="hamburger">☰</button>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Goat Cheese</h1>
+      <p>Delivering Unique Business Solutions with a Personal Touch</p>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Goat Cheese</h2>
+      <p>Goat Cheese specializes in providing tailored business solutions that meet the unique needs of our clients. We serve a diverse range of industries, ensuring that each solution is as unique as the clients we serve. Our approach is centered around understanding the specific challenges and opportunities faced by our clients.</p>
+      <p>Founded in the heart of the business district, Goat Cheese has grown from a small consultancy to a leading provider of innovative business services. Our team of experts brings a wealth of experience and a passion for helping businesses thrive. We believe in building strong relationships with our clients, allowing us to deliver solutions that truly make a difference.</p>
+      <p>At Goat Cheese, we value integrity, innovation, and excellence. Our promise to our clients is to deliver solutions that are not only effective but also sustainable. We are committed to continuous improvement and staying ahead of industry trends to provide our clients with the best possible service.</p>
+    </div>
+  </section>
+  <section id="offerings">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>At Goat Cheese, we offer a comprehensive range of business services designed to help your company succeed. Our services are crafted to meet the specific needs of each client, ensuring maximum impact and efficiency.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Business Strategy</h3>
+          <p>Our business strategy services are designed to help you define your goals and create a roadmap for success. We work closely with you to identify opportunities and develop strategies that align with your vision.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Innovation Consulting</h3>
+          <p>Innovation is at the heart of what we do. Our consulting services help you harness the power of innovation to drive growth and stay ahead of the competition. We provide insights and strategies to foster a culture of innovation within your organization.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-handshake"></i></div>
+          <h3>Partnership Development</h3>
+          <p>Building strong partnerships is essential for business success. We assist you in identifying and developing strategic partnerships that enhance your business capabilities and open new avenues for growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>5 Marigold Street</span></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+          <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+27724354591">+27724354591</a></div>
+        </div>
+        <div class="form-wrapper" style="width:100%;"><iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:580px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © <span id="year"></span> Goat Cheese. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

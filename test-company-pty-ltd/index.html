@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Company Pty Ltd — Technology</title>
+  <meta name="description" content="Test Company Pty Ltd offers innovative web design services to elevate your digital presence.">
+  <meta property="og:title" content="Test Company Pty Ltd — Technology">
+  <meta property="og:description" content="Test Company Pty Ltd offers innovative web design services to elevate your digital presence.">
+  <meta property="og:type" content="website">
+  <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="brand"><img src="logo.png" alt="Test Company Pty Ltd logo" class="logo"><span class="brand-name">Test Company Pty Ltd</span></a>
+      <button id="hamburger">☰</button>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#offerings">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Test Company Pty Ltd</h1>
+      <p>Transforming your vision into digital reality with innovative web design.</p>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Test Company Pty Ltd</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Test Company Pty Ltd specializes in creating visually stunning and highly functional websites tailored to our clients' unique needs. We serve businesses of all sizes, helping them establish a strong online presence and connect with their audiences effectively.</p>
+        <p>Founded in the heart of the tech hub, our company has grown from a small startup to a leading provider of web design services. Our approach combines cutting-edge technology with creative design to deliver exceptional results for our clients.</p>
+        <p>We value innovation, collaboration, and customer satisfaction above all. Our promise is to deliver websites that not only look great but also perform seamlessly, ensuring a superior user experience.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">Years in Business</span></div>
+        <div class="stat-item"><span class="stat-number">200+</span><span class="stat-label">Happy Clients</span></div>
+        <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Satisfaction Rate</span></div>
+      </div>
+    </div>
+  </section>
+  <section id="offerings">
+    <h2>Our Services</h2>
+    <p>At Test Company Pty Ltd, we offer a comprehensive range of web design services to meet the diverse needs of our clients.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Web Design</h3>
+        <p>Our web design services focus on creating aesthetically pleasing and user-friendly websites that engage visitors and drive conversions.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>123 Tech Street, Tech City</span></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:testuser@example.com">testuser@example.com</a></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+27821234567">+27821234567</a></div>
+      </div>
+      <div class="form-wrapper" style="width:100%;">
+        <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:580px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+      </div>
+    </div>
+  </section>
+  <footer>© <span id="year"></span> Test Company Pty Ltd. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
