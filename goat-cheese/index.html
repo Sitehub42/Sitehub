@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goat Cheese — Professional Services</title>
-  <meta name="description" content="Goat Cheese offers premium business solutions in the heart of the industry. Contact us today to learn more about our services.">
-  <meta property="og:title" content="Goat Cheese — Professional Services">
-  <meta property="og:description" content="Goat Cheese offers premium business solutions in the heart of the industry. Contact us today to learn more about our services.">
-  <meta property="og:type" content="website">
-  <script src="https://kit.fontawesome.com/02a24273c1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <title>Goat Cheese — Professional Services</title>
+  <meta name="description" content="Goat Cheese, providing exceptional business services in a classic style.">
+  <meta property="og:title" content="Goat Cheese — Professional Services">
+  <meta property="og:description" content="Goat Cheese, providing exceptional business services in a classic style.">
+  <meta property="og:type" content="website">
 </head>
 <body>
   <header>
-    <div class="nav-inner container">
+    <div class="nav-inner">
       <a href="#" class="brand"><img src="logo.png" alt="Goat Cheese logo" class="logo"><span class="brand-name">Goat Cheese</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#offerings">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#offerings">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
-        <button id="hamburger">☰</button>
+        <button id="hamburger" aria-label="Menu">☰</button>
       </nav>
     </div>
   </header>
-  <section id="hero">
-    <div class="hero-content">
+  <section id="hero" class="hero-split">
+    <div class="hero-split-text">
       <h1>Goat Cheese</h1>
-      <p>Delivering Unique Business Solutions with a Personal Touch</p>
+      <p>Delivering tailor-made business solutions with a touch of elegance and precision.</p>
       <a href="#contact" class="cta-button">Get In Touch</a>
     </div>
+    <div class="hero-split-image"></div>
   </section>
   <section id="about">
-    <div class="container">
-      <h2>About Goat Cheese</h2>
-      <p>Goat Cheese specializes in providing tailored business solutions that meet the unique needs of our clients. We serve a diverse range of industries, ensuring that each solution is as unique as the clients we serve. Our approach is centered around understanding the specific challenges and opportunities faced by our clients.</p>
-      <p>Founded in the heart of the business district, Goat Cheese has grown from a small consultancy to a leading provider of innovative business services. Our team of experts brings a wealth of experience and a passion for helping businesses thrive. We believe in building strong relationships with our clients, allowing us to deliver solutions that truly make a difference.</p>
-      <p>At Goat Cheese, we value integrity, innovation, and excellence. Our promise to our clients is to deliver solutions that are not only effective but also sustainable. We are committed to continuous improvement and staying ahead of industry trends to provide our clients with the best possible service.</p>
-    </div>
+    <h2>About Goat Cheese</h2>
+    <p>At Goat Cheese, we specialize in crafting bespoke business solutions that cater to the unique needs of our clients. Our team of experts is dedicated to providing services that enhance operational efficiency and drive growth. We serve a wide range of industries, ensuring that each solution is as unique as the business it supports.</p>
+    <p>Founded on the principles of innovation and excellence, Goat Cheese has grown from a small startup to a respected name in the business services sector. Our journey is marked by a commitment to quality and a passion for helping businesses succeed. We pride ourselves on our ability to adapt to the ever-changing business landscape, ensuring our clients remain ahead of the curve.</p>
+    <p>Our promise is to deliver value through every interaction, ensuring our clients receive the best possible service. We believe in building long-term relationships based on trust and mutual success. At Goat Cheese, we are more than just service providers; we are partners in your business journey.</p>
   </section>
   <section id="offerings">
-    <div class="container">
-      <h2>Our Services</h2>
-      <p>At Goat Cheese, we offer a comprehensive range of business services designed to help your company succeed. Our services are crafted to meet the specific needs of each client, ensuring maximum impact and efficiency.</p>
-      <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-          <h3>Business Strategy</h3>
-          <p>Our business strategy services are designed to help you define your goals and create a roadmap for success. We work closely with you to identify opportunities and develop strategies that align with your vision.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
-          <h3>Innovation Consulting</h3>
-          <p>Innovation is at the heart of what we do. Our consulting services help you harness the power of innovation to drive growth and stay ahead of the competition. We provide insights and strategies to foster a culture of innovation within your organization.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-handshake"></i></div>
-          <h3>Partnership Development</h3>
-          <p>Building strong partnerships is essential for business success. We assist you in identifying and developing strategic partnerships that enhance your business capabilities and open new avenues for growth.</p>
-        </div>
+    <h2>Our Services</h2>
+    <p>Explore our range of services designed to elevate your business to new heights.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Business Consulting</h3>
+        <p>Our consulting services provide strategic insights and actionable plans to streamline your operations and drive business growth.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Project Management</h3>
+        <p>We offer comprehensive project management solutions that ensure timely delivery and quality results, tailored to your specific needs.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>IT Solutions</h3>
+        <p>Our IT solutions are designed to enhance your technological infrastructure, providing robust and reliable support for your business operations.</p>
       </div>
     </div>
   </section>
   <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>5 Marigold Street</span></div>
-          <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
-          <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+27724354591">+27724354591</a></div>
-        </div>
-        <div class="form-wrapper" style="width:100%;"><iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:580px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe></div>
-      </div>
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="contact-details-row">
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>5 Marigold Street</span></div>
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:+27724354591">+27724354591</a></div>
     </div>
+    
+    <div class="map-wrapper">
+        <iframe
+          title="Find us on the map"
+          width="100%"
+          height="300"
+          style="border:0;border-radius:var(--border-radius);"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjnVpyZod_QDd24Jr5XKQl9ED34_M_FiI&q=5%20Marigold%20Street"
+        ></iframe>
+      </div>
+    <div class="form-wrapper" style="width:100%;max-width:700px;margin:2rem auto 0;"><iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe></div>
   </section>
   <footer>
     © <span id="year"></span> Goat Cheese. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
   </footer>
+  
   <script>
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('hamburger').addEventListener('click', function() {
-      document.getElementById('nav-links').classList.toggle('open');
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+    // Hamburger toggle
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
       });
     });
   </script>
-</body>
+  </body>
 </html>
