@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Plumber Milnerton — Plumbing</title>
+  <meta name="description" content="Plumber Milnerton offers expert plumbing services in Milnerton, ensuring reliable repairs and installations.">
+  <meta property="og:title" content="Plumber Milnerton — Plumbing">
+  <meta property="og:description" content="Plumber Milnerton offers expert plumbing services in Milnerton, ensuring reliable repairs and installations.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="brand"><img src="logo.png" alt="Plumber Milnerton logo" class="logo"><span class="brand-name">Plumber Milnerton</span></a>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#offerings">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Plumber Milnerton</h1>
+      <p>Your reliable partner for all plumbing needs in Milnerton.</p>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Plumber Milnerton</h2>
+    <p>Plumber Milnerton is dedicated to providing top-notch plumbing services to the local community. We cater to residential and commercial clients, ensuring that their plumbing systems operate smoothly and efficiently.</p>
+    <p>With years of experience in the industry, our team of expert plumbers is equipped with the knowledge and skills to handle any plumbing challenge. We pride ourselves on our prompt service and attention to detail, ensuring that every job is completed to the highest standards.</p>
+    <p>Our commitment to customer satisfaction drives us to go the extra mile for our clients. We believe in transparent communication and providing solutions that meet the specific needs of each client. Trust Plumber Milnerton for dependable plumbing services you can count on.</p>
+  </section>
+  <section id="offerings">
+    <h2>Our Services</h2>
+    <p>At Plumber Milnerton, we offer a comprehensive range of plumbing services designed to address any issue you may face.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-wrench"></i></div>
+        <h3>Plumbing</h3>
+        <p>Our expert plumbers are here to tackle all your plumbing needs, from installations to maintenance and repairs. We ensure efficient water flow and functionality.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-tools"></i></div>
+        <h3>Repairs</h3>
+        <p>We provide fast and reliable repair services to fix leaks, blockages, and other issues, preventing further damage and ensuring your peace of mind.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="contact-details-row">
+      <div class="contact-item">
+        <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+        <span>5 Marigold Street, Milnerton, 7441</span>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon-circle"><i class="fas fa-envelope"></i></div>
+        <a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
+        <a href="tel:+27724354591">+27724354591</a>
+      </div>
+    </div>
+    
+    <div class="map-wrapper">
+        <iframe
+          title="Find us on the map"
+          width="100%"
+          height="300"
+          style="border:0;border-radius:var(--border-radius);"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjnVpyZod_QDd24Jr5XKQl9ED34_M_FiI&q=5%20Marigold%20Street%2C%20Milnerton%2C%207441"
+        ></iframe>
+      </div>
+    <div class="form-wrapper">
+      <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+    </div>
+  </section>
+  <footer>
+    © <span id="year"></span> Plumber Milnerton. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+  </footer>
+  
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Hamburger toggle
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+  </body>
+</html>
