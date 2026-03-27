@@ -4,9 +4,9 @@
     --secondary-color: #0a9396; /* Medium Teal */
     --accent-color: #94d2bd; /* Light Mint Green */
     --text-color: #333;
-    --text-light: #f8f9fa;
+    --text-light: #1e1f20;
     --background-light: #f4f7f6;
-    --background-dark: #001219; /* Very Dark Blue */
+    --background-dark: #ffffff; /* Very Dark Blue */
     --border-color: #e0e0e0;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3.5em;
-    color: var(--text-light);
+    color: var(--secondary-color);
 }
 
 h2 {
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: var(--background-light);
     color: var(--text-light);
 }
 
@@ -231,7 +231,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: var(--text-light);
+    color: #ffffff;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -254,6 +254,7 @@ a:hover {
     font-size: 4.5em;
     margin-bottom: 20px;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .hero-section .tagline {
