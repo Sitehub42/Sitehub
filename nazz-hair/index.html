@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Nazz Hair — Hairdresser</title>
+  <meta name="description" content="Nazz Hair - Expert Hairdresser in Cape Town with over 20 years of experience. Haircuts, blow dry, and color services tailored to your style.">
+  <meta property="og:title" content="Nazz Hair — Hairdresser">
+  <meta property="og:description" content="Nazz Hair - Expert Hairdresser in Cape Town with over 20 years of experience. Haircuts, blow dry, and color services tailored to your style.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="brand"><img src="logo.png" alt="Nazz Hair logo" class="logo"><span class="brand-name">Nazz Hair</span></a>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#offerings">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <section id="hero" class="hero-split">
+    <div class="hero-split-text">
+      <h1>Nazz Hair</h1>
+      <p>Transform your look with expert styling in Cape Town.</p>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+    <div class="hero-split-image"></div>
+  </section>
+  <section id="about">
+    <h2>About Nazz Hair</h2>
+    <p>Nazz Hair is a premier hairdressing service located in the heart of Cape Town. With over 20 years of experience, we specialize in crafting styles that not only reflect the latest trends but also are tailored to your individual personality and lifestyle.</p>
+    <p>Our story began with a passion for hair artistry and a commitment to excellence. Over the years, we have built a reputation for delivering personalized services to a diverse clientele, ensuring each visit is a unique experience.</p>
+    <p>At Nazz Hair, we believe in fostering a warm and welcoming environment where creativity and quality go hand in hand. Our promise is to enhance your natural beauty with our expertise.</p>
+  </section>
+  <section id="offerings">
+    <h2>Our Services</h2>
+    <p>Explore our range of professional hair services designed to help you achieve your dream look.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-cut"></i></div>
+        <h3>Cutting</h3>
+        <p>Precision cuts tailored to your face shape and hair texture, ensuring a fresh, modern look.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-wind"></i></div>
+        <h3>Blow Dry</h3>
+        <p>Experience a voluminous and silky blowout that will leave you feeling fabulous.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-palette"></i></div>
+        <h3>Colour</h3>
+        <p>Professional color services to enhance and complement your natural beauty with vibrant and lasting hues.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="contact-details-row">
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Cape town, 8000</span></div>
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:+27724354591">+27724354591</a></div>
+    </div>
+    
+    <div class="map-wrapper">
+        <iframe
+          title="Find us on the map"
+          width="100%"
+          height="300"
+          style="border:0;border-radius:var(--border-radius);"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjnVpyZod_QDd24Jr5XKQl9ED34_M_FiI&q=Cape%20town%2C%208000"
+        ></iframe>
+      </div>
+    <div class="form-wrapper" style="width:100%;max-width:700px;margin:2rem auto 0;"><iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=ZOHO_SITE_ID_PLACEHOLDER'></iframe></div>
+  </section>
+  <footer>
+    © <span id="year"></span> Nazz Hair. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+  </footer>
+  
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Hamburger toggle
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+  </body>
+</html>
