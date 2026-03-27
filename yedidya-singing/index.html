@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Yedidya Singing — Singing</title>
+  <meta name="description" content="Yedidya Singing, professional singing services for events. Contact us for an unforgettable musical experience.">
+  <meta property="og:title" content="Yedidya Singing — Singing">
+  <meta property="og:description" content="Yedidya Singing, professional singing services for events. Contact us for an unforgettable musical experience.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="brand"><img src="logo.png" alt="Yedidya Singing logo" class="logo"><span class="brand-name">Yedidya Singing</span></a>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#offerings">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-split">
+      <div class="hero-split-text">
+        <h1>Yedidya Singing</h1>
+        <p>Transform your event with captivating voice and memorable moments.</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+      <div class="hero-split-image"></div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Yedidya Singing</h2>
+    <p>Hello, I'm Yedidya, a passionate singer dedicated to bringing musical delight to your events. My journey into the world of music began at a young age, and I have nurtured my talent into a professional career that spans various genres and styles. Every performance is a testament to my dedication to craft and artistry.</p>
+    <p>My singing services are tailored to create unforgettable experiences, whether it's a wedding, corporate event, or private gathering. I believe in the power of music to evoke emotion and connect people, and I strive to bring that emotional depth to every performance I deliver.</p>
+    <p>Yedidya Singing promises professionalism, passion, and a personalized touch that ensures your event is memorable. I am committed to delivering performances that not only entertain but also resonate with audiences, leaving a lasting impression.</p>
+  </section>
+  <section id="offerings">
+    <h2>Our Services</h2>
+    <p>Explore the range of services I offer to make your event special.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-microphone"></i></div>
+        <h3>Singing</h3>
+        <p>Offering live singing performances tailored to your event's theme. From classical to contemporary, enjoy music that captivates and entertains.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-comments"></i></div>
+        <h3>Speaking</h3>
+        <p>Engage your audience with inspiring speeches and presentations. Whether motivational or educational, I deliver with clarity and passion.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="contact-details-row">
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:tanyaz@sitehub.co.za">tanyaz@sitehub.co.za</a></div>
+    </div>
+    <div class="form-wrapper">
+      <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI'></iframe>
+    </div>
+  </section>
+  <footer>© <span id="year"></span> Yedidya Singing. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a></footer>
+  
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Hamburger toggle
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+  </body>
+</html>
