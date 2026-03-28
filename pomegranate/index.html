@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomegranate — Gift delivery service</title>
+    <meta name="description" content="Pomegranate offers exquisite gift packs delivered to your doorstep in Cape Town. Perfect for any occasion.">
+    <meta property="og:title" content="Pomegranate — Gift delivery service">
+    <meta property="og:description" content="Pomegranate offers exquisite gift packs delivered to your doorstep in Cape Town.">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <a href="#" class="brand"><img src="logo.png" alt="Pomegranate logo" class="logo"><span class="brand-name">Pomegranate</span></a>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#offerings">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="hamburger" aria-label="Menu">☰</button>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Pomegranate Gift Delivery</h1>
+            <p>Curated gift packs delivered with elegance and care in Cape Town.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Pomegranate</h2>
+        <p>Pomegranate specializes in delivering thoughtfully curated gift packs to the Cape Town area. Whether it’s a birthday, anniversary, or any special occasion, our gifts are crafted to make every moment memorable.</p>
+        <p>Our journey began with a passion for creating meaningful connections through gifts. Our team carefully selects each item, ensuring that every pack tells a unique story and brings joy to both the giver and receiver.</p>
+        <p>At Pomegranate, we promise quality, creativity, and a personal touch in every delivery. We believe in the power of thoughtful gifting and strive to exceed your expectations with our exceptional service.</p>
+    </section>
+    <section id="offerings">
+        <h2>Our Services</h2>
+        <p>Explore our range of beautifully crafted gift options designed to suit any occasion and preference.</p>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-gift"></i></div>
+                <h3>Baskets</h3>
+                <p>Our baskets are filled with a delightful assortment of gourmet treats and artisanal products, perfect for any celebration.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-box"></i></div>
+                <h3>Boxes</h3>
+                <p>Elegant boxes featuring handpicked items that cater to the tastes and preferences of your loved ones.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-tray"></i></div>
+                <h3>Trays</h3>
+                <p>Our trays offer a sophisticated presentation of gourmet selections, perfect for gifting or entertaining guests.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you — reach out to us anytime.</p>
+        <div class="contact-details-row">
+            <div class="contact-item">
+                <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                <span>Cape Town</span>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon-circle"><i class="fas fa-envelope"></i></div>
+                <a href="mailto:adeles@polka.co.za">adeles@polka.co.za</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
+                <a href="tel:0823377252">0823377252</a>
+            </div>
+        </div>
+        <div class="form-wrapper" style="width:100%;max-width:700px;margin:2rem auto 0;"><iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=7030006000003047002'></iframe></div>
+    </section>
+    <footer>
+        © <span id="year"></span> Pomegranate. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+    </footer>
+    
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Hamburger toggle
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+  </body>
+</html>
