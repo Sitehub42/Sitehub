@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Naas — carpentr and yatch fiting</title>
+  <meta name="description" content="Naas carpentry and yacht fitting services, delivering bespoke craftsmanship and tailored solutions.">
+  <meta property="og:title" content="Naas — carpentry and yacht fitting">
+  <meta property="og:description" content="Naas specializes in custom carpentry and yacht fitting services.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a href="#" class="brand"><img src="logo.png" alt="Naas logo" class="logo"><span class="brand-name">Naas</span></a>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#offerings">Our Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-split">
+      <div class="hero-split-text">
+        <h1>Naas</h1>
+        <p>Crafting your yacht with precision and elegance.</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+      <div class="hero-split-image"></div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Naas</h2>
+      <p>Naas specializes in providing high-quality carpentry and yacht fitting services. We cater to yacht owners and marine enthusiasts who value precision and craftsmanship. Our team is dedicated to ensuring that every project is completed to the highest standards.</p>
+      <p>Founded with a passion for the sea and fine craftsmanship, Naas has been serving the marine community with bespoke solutions that marry functionality with luxury. Our approach is centered around understanding our clients' unique needs and delivering results that surpass expectations.</p>
+      <p>At Naas, we believe in integrity, excellence, and a commitment to quality. These core values drive everything we do, from the materials we select to the meticulous attention we pay to every detail of our work. Our promise is to transform your vision into a reality that enhances your yachting experience.</p>
+    </div>
+  </section>
+  <section id="offerings">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>Explore our range of services designed to enhance the functionality and aesthetics of your yacht.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-hammer"></i></div>
+          <h3>Custom Carpentry</h3>
+          <p>Our expert carpenters create custom-made furniture and fixtures tailored to your yacht's unique style and space requirements.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Yacht Fitting</h3>
+          <p>We provide comprehensive yacht fitting services, ensuring every element is perfectly installed and finished to the highest standard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="gallery-1.jpg" alt="Naas gallery 1" loading="lazy"></figure>
+        <figure class="gallery-item"><img src="gallery-2.jpg" alt="Naas gallery 2" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <div class="contact-details-row">
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:nasisomdaka@gmail.com">nasisomdaka@gmail.com</a></div>
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:"></a></div>
+      </div>
+      <div class="social-links">
+        <a href="lzk somdaka" target="_blank" rel="noopener" aria-label="Facebook" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+        <a href="naas" target="_blank" rel="noopener" aria-label="TikTok" class="social-circle"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="form-wrapper">
+        <iframe aria-label='Client Contact Us' frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src='https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=ZOHO_SITE_ID_PLACEHOLDER'></iframe>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © <span id="year"></span> Naas. All rights reserved. | Created by <a href="https://www.sitehub.co.za">SiteHub</a>
+  </footer>
+  
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Hamburger toggle
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() { navLinks.classList.toggle('open'); });
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+  </body>
+</html>
