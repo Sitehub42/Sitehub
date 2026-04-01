@@ -2,3 +2,12 @@
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Open Sans', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', sans-serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+}
+
+/* === END CUSTOM STYLING === */
