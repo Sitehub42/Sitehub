@@ -125,3 +125,22 @@ footer a { color: rgba(255,255,255,0.8); }
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Open Sans', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', sans-serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #f0d8a3 !important;
+  --primary-color: #f0d8a3 !important;
+  --primary-blue: #f0d8a3 !important;
+  --color-secondary: #cb8306 !important;
+  --secondary-color: #cb8306 !important;
+  --secondary-blue: #cb8306 !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
