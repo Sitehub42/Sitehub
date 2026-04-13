@@ -152,9 +152,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
 /* Auto-generated from user styling preferences */
 
 :root {
-  --color-primary: #58acbb !important;
-  --primary-color: #58acbb !important;
-  --primary-blue: #58acbb !important;
+  --color-primary: #027679 !important;
+  --primary-color: #027679 !important;
+  --primary-blue: #027679 !important;
   --color-secondary: #129ad9 !important;
   --secondary-color: #129ad9 !important;
   --secondary-blue: #129ad9 !important;
@@ -165,4 +165,5 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
 }
 
 /* === END CUSTOM STYLING === */
+
 
