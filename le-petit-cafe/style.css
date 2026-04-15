@@ -7,7 +7,7 @@
   --font-body: 'Nunito', sans-serif;
   --section-padding: 80px 20px;
   --max-width: 1100px;
-  --border-radius: 16px;
+  --border-radius: 20px;
 }
 
 /* Reset */
@@ -41,14 +41,12 @@ nav #nav-links a:hover { opacity: 0.8; }
 #hamburger { display: none; background: none; border: none; color: var(--nav-fg); font-size: 1.5rem; cursor: pointer; font-family: inherit; }
 
 /* HERO */
-#hero { position: relative; min-height: 100vh; background-image: url('hero-800x400.jpg');
-  background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
-#hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
-#hero .hero-content { position: relative; z-index: 1; max-width: 800px; padding: 20px; }
-#hero h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1rem; }
-#hero p { font-size: clamp(0.95rem, 1.8vw, 1.15rem); margin-bottom: 2rem; }
+#hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+.hero-split { display:grid; grid-template-columns:1fr 1fr; min-height:100vh; }
+.hero-split-text { background:var(--color-primary); color:white; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:60px 40px; }
+.hero-split-image { background-image:url('hero-800x400.jpg'); background-size:cover; background-position:center; }
 .cta-button { display: inline-block; background: var(--color-secondary); color: white;
-  padding: 14px 32px; border-radius: var(--border-radius); font-weight: 600; text-decoration: none;
+  padding: 14px 40px; border-radius: 50px; font-weight: 600; text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s; }
 .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
 
@@ -70,6 +68,7 @@ section > p:first-of-type { text-align: center; max-width: 700px; margin-left: a
 .card { background: white; padding: 28px; border-radius: var(--border-radius); border-top: 4px solid var(--color-primary);
   box-shadow: 0 2px 12px rgba(0,0,0,0.07); transition: transform 0.3s, box-shadow 0.3s; }
 .card:hover { transform: translateY(-6px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+.card-photo { width:100%; height:180px; object-fit:cover; border-radius:var(--border-radius) var(--border-radius) 0 0; margin-bottom:1rem; display:block; }
 .card-icon { width: 56px; height: 56px; border-radius: 50%; background: rgba(0,0,0,0.06);
   display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; }
 .card-icon i { font-size: 1.4rem; color: var(--color-primary); }
@@ -92,23 +91,6 @@ section > p:first-of-type { text-align: center; max-width: 700px; margin-left: a
 /* FOOTER */
 footer { background: var(--color-primary); color: white; text-align: center; padding: 24px 20px; }
 footer a { color: rgba(255,255,255,0.8); }
-
-/* TESTIMONIALS */
-.testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 2rem; }
-.testimonial-card { background: white; border-radius: var(--border-radius); padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); border-left: 4px solid var(--color-primary); }
-.testimonial-card blockquote { font-style: italic; color: #555; margin-bottom: 1rem; line-height: 1.7; }
-.testimonial-card cite { font-weight: 600; color: var(--color-primary); font-style: normal; }
-
-/* GALLERY */
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
-.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius); display: block; }
-
-/* ABOUT PHOTO */
-.about-photo { width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--border-radius); margin: 1.5rem 0; }
-
-/* MAP */
-.map-wrapper { margin: 1.5rem 0; border-radius: var(--border-radius); overflow: hidden; }
-.map-wrapper iframe { display: block; border: 0; }
 
 /* MOBILE — optimised for touch devices */
 @media (max-width: 767px) {
@@ -141,13 +123,13 @@ footer a { color: rgba(255,255,255,0.8); }
   .cards-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
   .contact-details-row { flex-direction: row; }
-  .testimonials-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
   .cards-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 }
+
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Nunito', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans-serif !important; }
