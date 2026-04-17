@@ -216,7 +216,7 @@ p {
     position: relative;
     height: 80vh; /* viewport height */
     min-height: 500px;
-    background: url('hero-800x400.png') no-repeat center center/cover;
+    background: url('tiles/WhatsApp%20Image%202026-04-09%20at%2016.50.50.jpeg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,6 +371,34 @@ p {
 .social-media a:hover {
     color: var(--primary-color);
     transform: translateY(-5px);
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    display: block;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
 
 /* Form Section */
