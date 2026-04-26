@@ -2,3 +2,22 @@
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Open Sans', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Merriweather', serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #073b1a !important;
+  --primary-color: #073b1a !important;
+  --primary-blue: #073b1a !important;
+  --color-secondary: #65a30d !important;
+  --secondary-color: #65a30d !important;
+  --secondary-blue: #65a30d !important;
+  --font-heading: 'Merriweather', serif !important;
+  --heading-font: 'Merriweather', serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
