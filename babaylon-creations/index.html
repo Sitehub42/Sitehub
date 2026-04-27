@@ -99,6 +99,10 @@
   margin: 0 auto 15px auto;
   display: block;
 }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
 </style>
 </head>
 <body>
@@ -109,7 +113,8 @@
         <ul id="nav-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         </ul>
         <button id="hamburger" aria-label="Menu">☰</button>
       </nav>
@@ -156,16 +161,24 @@
                         <p><p>Handed crafted soft warm Snowball wool, cup holders. Fun and colorful. made by Linda from Malawi, living in Hout Bay. Loving being able to add to family value.  Chose your color and or design. Babylon creations will create  for you.</p>
                         <ul class="service-features"><li>Cup Holders.  Made for all religions. warm, fun table decor</li></ul>
                     </div>
-                    <div class="service-item">
-                        <i class="fa-solid fa-star icon-large" style="color: #3B82F6" aria-hidden="true"></i>
-                        <h3></h3>
-                        <p><p>Beautifully,  colorfully,  beaded judicia  Candle Sticks, Made by Bernard from Malawi.   </p></p>
-                        <ul class="service-features"><li>African colorful judicia candle sticks, beaming African sun. </li></ul>
-                    </div>
                 </div>
     </div>
   </section>
-  <section id="contact">
+  
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <figure class="gallery-item"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
       <p>We'd love to hear from you — reach out to us anytime.</p>
