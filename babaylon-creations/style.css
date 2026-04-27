@@ -135,14 +135,15 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 /* Auto-generated from user styling preferences */
 
 :root {
-  --color-primary: #1e40af !important;
-  --primary-color: #1e40af !important;
-  --primary-blue: #1e40af !important;
-  --color-secondary: #3b82f6 !important;
-  --secondary-color: #3b82f6 !important;
-  --secondary-blue: #3b82f6 !important;
-  --accent-color: #f97316 !important !important;
-  --text-color: #0f172a !important !important;
+  --color-primary: #059669 !important;
+  --primary-color: #059669 !important;
+  --primary-blue: #059669 !important;
+  --color-secondary: #0891b2 !important;
+  --secondary-color: #0891b2 !important;
+  --secondary-blue: #0891b2 !important;
+  --accent-color: #f97316 !important;
+  --text-color: #0f172a !important;
+  --background-color: #ffffff !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -150,6 +151,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
