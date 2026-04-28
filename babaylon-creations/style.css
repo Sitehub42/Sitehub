@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --accent-color: #f97316 !important;
   --text-color: #0f172a !important;
   --background-color: #ffffff !important;
+  --logo-filter: none !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -151,6 +152,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
