@@ -46,6 +46,62 @@
   "email": "natscc@gmail.com"
 }
 </script>
+<style>
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -53,7 +109,7 @@
       <a href="#" class="brand"><img src="logo.png" alt="Natalie's House Sitting logo" class="logo"><span class="brand-name">Natalie's House Sitting</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -65,12 +121,12 @@
     <div class="hero-split-text">
       <h1>Natalie's House Sitting</h1>
       <p>Reliable long-term care for your home and pets in Cape Town.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
-    <h2>About Natalie's House Sitting</h2>
+    <h2>About Me</h2>
     <p>Natalie's House Sitting offers dedicated house and pet sitting services to homeowners in the vibrant city of Cape Town. Whether you're traveling for a month or longer, you can trust us to look after your home and furry friends with the utmost care.</p>
     <p>Founded on a love for animals and a commitment to excellent service, Natalie's House Sitting emerged from the need for reliable home care services in the area. We understand the importance of having peace of mind while you're away, and we strive to provide just that.</p>
     <p>Our core values include trust, reliability, and compassion. We promise to treat your home and pets as if they were our own, ensuring they receive the care and attention they deserve. Your satisfaction and peace of mind are our top priorities.</p>
@@ -79,16 +135,17 @@
     <h2>Our Services</h2>
     <p>We offer comprehensive house and pet sitting services tailored to meet your needs in Cape Town.</p>
     <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-home"></i></div>
-        <h3>House Sitting</h3>
-        <p>Ensure your home remains secure and well-maintained during your absence. We handle everything from collecting mail to watering plants.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-paw"></i></div>
-        <h3>Pet Sitting</h3>
-        <p>We provide loving care for your pets, including feeding, walking, and companionship, ensuring they feel comfortable and loved while you're away.</p>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-home icon-large" aria-hidden="true"></i>
+                        <h3>House Sitting</h3>
+                        <p><p>Relax knowing your home is secure and flourishing; we handle tasks like mail collection and plant care with precision and care.</p></p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-paw icon-large" aria-hidden="true"></i>
+                        <h3>Pet Sitting</h3>
+                        <p><p>Trust our dedicated service to pamper your pets with affection and attention, ensuring their comfort and joy in your absence.</p></p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="contact">
