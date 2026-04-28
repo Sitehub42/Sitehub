@@ -141,15 +141,14 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 /* Auto-generated from user styling preferences */
 
 :root {
-  --color-primary: #7c3aed !important;
-  --primary-color: #7c3aed !important;
-  --primary-blue: #7c3aed !important;
-  --color-secondary: #ec4899 !important;
-  --secondary-color: #ec4899 !important;
-  --secondary-blue: #ec4899 !important;
-  --accent-color: #06d6a0 !important;
-  --text-color: #111827 !important;
-  --background-color: #f9fafb !important;
+  --color-primary: #8674d4 !important;
+  --primary-color: #8674d4 !important;
+  --primary-blue: #8674d4 !important;
+  --color-secondary: #ccc96e !important;
+  --secondary-color: #ccc96e !important;
+  --secondary-blue: #ccc96e !important;
+  --accent-color: #06d6a0 !important !important;
+  --text-color: #111827 !important !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -157,3 +156,110 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 }
 
 /* === END CUSTOM STYLING === */
+
+
+
+
+
+
+
+/* === CUSTOM STYLING START === */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat|Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #8674d4;
+  --secondary-color: #ccc96e;
+  --accent-color: #06d6a0 !important;
+  --text-color: #111827 !important;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+}
+
+.btn, button[type="submit"], .cta-button, .button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover, button[type="submit"]:hover, .cta-button:hover, .button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header, .navbar, .nav {
+  background-color: var(--primary-color);
+}
+
+.link, a:not(.btn):not(.button) {
+  color: var(--primary-color);
+}
+
+.link:hover, a:not(.btn):not(.button):hover {
+  color: var(--accent-color);
+}
+
+.icon, .service-icon, .feature-icon {
+  color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+.highlight, .accent, .accent-text {
+  color: var(--accent-color);
+}
+
+.badge, .tag, .label {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.border-accent {
+  border-color: var(--accent-color);
+}
+
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  .container, .main-content {
+    padding: 0 16px;
+  }
+  
+  section, .section {
+    padding: calc(var(--section-spacing) * 0.6) 0;
+  }
+  
+  .btn, button, .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .logo, .site-logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container, .main-content {
+    padding: 0 12px;
+  }
+  
+  .card, .service-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* === CUSTOM STYLING END === */

@@ -44,6 +44,66 @@
   "email": "shelleykann987@gmail.com"
 }
 </script>
+<style>
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -51,9 +111,10 @@
       <a href="#" class="brand"><img src="logo.png" alt="Babaylon Creations logo" class="logo"><span class="brand-name">Babaylon Creations</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">creation of Biblical art </a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#gallery">Some of our few examples. </a></li>
+        <li><a href="#contact">Shelley 0824292137</a></li>
         </ul>
         <button id="hamburger" aria-label="Menu">☰</button>
       </nav>
@@ -63,7 +124,7 @@
     <div class="hero-split-text">
       <h1>Babaylon Creations</h1>
       <p>Experience the blend of softness and strength with our unique religious art creations.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Shelley 0824292137</a>
     </div>
     <div class="hero-split-image"></div>
   </section>
@@ -80,16 +141,61 @@
       <h2>Our Services</h2>
       <p>Explore our diverse range of handmade art pieces, each uniquely crafted to reflect the beauty and depth of religious symbolism.</p>
       <div class="cards-grid">
-        <div class="card">
-          <img src="service-1.jpg" alt="Blue white Yammika" class="card-photo">
-          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
-          <h3>Blue white Yammika</h3>
-          <p>These amazing art pieces are crafted from wire and crochet, showcasing the fusion of textile softness and metallic strength in spiritual symbolism.</p>
-        </div>
-      </div>
+                    <div class="service-item" data-category="Other Services">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/babaylon-creations/service-image-1.jpg" alt="Vibrant Yarmulke Set" class="service-image">
+                        <h3>Vibrant Yarmulke Set</h3>
+                        <span class="service-price">R175</span>
+                        <p><p>Experience the spiritual elegance of our handcrafted yarmulke and matching bag, woven with love and vibrant colors by Esther, a passionate Malawian artist.</p></p>
+                        <ul class="service-features"><li>Handcrafted with vibrant colors</li><li>Elegant matching bag included</li><li>Embrace cultural artistry</li></ul>
+                    </div>
+                    <div class="service-item" data-category="Products">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/babaylon-creations/service-image-2.jpg" alt="Beaded Chanukah Holder" class="service-image">
+                        <h3>Beaded Chanukah Holder</h3>
+                        <span class="service-price">R850.00 each</span>
+                        <p><p>Illuminate your home with our African-inspired beaded Chanukah candle holder, a vibrant masterpiece crafted by Bernard and his wife, symbolizing art as light.</p></p>
+                        <ul class="service-features"><li>African-inspired design</li><li>Symbolizes light and art</li><li>Perfect for festive decor</li></ul>
+                    </div>
+                    <div class="service-item" data-category="Products">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/babaylon-creations/service-image-3.jpg" alt="Wool Cup Coasters" class="service-image">
+                        <h3>Wool Cup Coasters</h3>
+                        <span class="service-price">R150 each</span>
+                        <p><p>Add a splash of color to your table with our snowball wool cup holders, custom-made by Linda to enhance family moments with warmth and style.</p></p>
+                        <ul class="service-features"><li>Custom-made for unique style</li><li>Warmth for family moments</li><li>Colorful table enhancement</li></ul>
+                    </div>
+                    <div class="service-item" data-category="Products">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/babaylon-creations/service-image-4.jpg" alt="African Candle Sticks" class="service-image">
+                        <h3>African Candle Sticks</h3>
+                        <span class="service-price">R220 each   R400. set </span>
+                        <p><p>Adorn your space with Bernard's exquisite Judaica African Candle Sticks, meticulously crafted to capture the sun's glow and elevate your decor.</p></p>
+                        <ul class="service-features"><li>Captures the sun's glow</li><li>Elevates home decor</li><li>Meticulous craftsmanship</li></ul>
+                    </div>
+                    <div class="service-item" data-category="Products">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/babaylon-creations/gallery-1.jpg" alt="Festive Utensil Holders" class="service-image">
+                        <h3>Festive Utensil Holders</h3>
+                        <span class="service-price">R175 each</span>
+                        <p><p>Bring festive cheer to your table with Josie's vibrant crochet X-mas tree utensil holders, designed to match your unique taste and holiday spirit.</p></p>
+                        <span class="service-duration">can come in sets, </span>
+                        <ul class="service-features"><li>Festive and cheerful design</li><li>Matches holiday spirit</li><li>Unique crochet artistry</li></ul>
+                    </div>
+                </div>
     </div>
   </section>
-  <section id="contact">
+  
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Some of our few examples. </h2>
+        <div class="gallery-grid">
+            <figure class="gallery-item"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-6.jpg" alt="Gallery photo 6" loading="lazy"></figure>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
       <p>We'd love to hear from you — reach out to us anytime.</p>

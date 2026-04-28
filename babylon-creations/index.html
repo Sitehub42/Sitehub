@@ -17,7 +17,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Babylon Creations</title>
-  <meta name="description" content="Babylon Creations offers unique African style religious products in Cape Town, including beaded candlesticks and yarmulkes.">
+  <meta name="description" content="Babylon Creations offers unique African style religious products in Cape Town, including beaded candlesticks and yarmulkes." />
   
   
   
@@ -50,6 +50,66 @@
   }
 }
 </script>
+<style>
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -86,17 +146,17 @@
       <h2>Our Services</h2>
       <p>Discover our exquisite range of religious products that blend African style with traditional craftsmanship, designed to elevate your spiritual experience.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-candle-holder"></i></div>
-          <h3>Candlesticks</h3>
-          <p>Our African beaded wire art candlesticks are the perfect fusion of tradition and modern art, bringing warmth and elegance to your sacred spaces.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-hat-cowboy"></i></div>
-          <h3>Yarmulke</h3>
-          <p>Experience the unique style of our African-inspired yarmulkes, crafted to combine cultural richness with spiritual heritage.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-candle-holder icon-large" aria-hidden="true"></i>
+                        <h3>Candlesticks</h3>
+                        <p><p>Our African beaded wire art candlesticks are the perfect fusion of tradition and modern art, bringing warmth and elegance to your sacred spaces.</p></p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-hat-cowboy icon-large" aria-hidden="true"></i>
+                        <h3>Yarmulke</h3>
+                        <p>Experience the unique style of our African-inspired yarmulkes, crafted to combine cultural richness with spiritual heritage.</p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="gallery">
