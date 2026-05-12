@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/waterfall-health-farms/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waterfall Health Farms — Buchu</title>
-  <meta name="description" content="Waterfall Health Farms, a family-run business, offers high-quality Buchu products in South Africa. Discover our sustainable Buchu cultivation.">
+  <title>Waterfall Health Farms</title>
+  <meta name="description" content="Waterfall Health Farms, a family-run business, offers high-quality Buchu products in South Africa. Discover our sustainable Buchu cultivation." />
   
   
   
@@ -54,6 +54,66 @@
   ]
 }
 </script>
+<style>
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -61,7 +121,7 @@
       <a href="#" class="brand"><img src="logo.png" alt="Waterfall Health Farms logo" class="logo"><span class="brand-name">Waterfall Health Farms</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Waterfall Health Farms</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -74,13 +134,13 @@
     <div class="hero-content">
       <h1>Waterfall Health Farms</h1>
       <p>Experience the purity and power of Buchu from the heart of South Africa</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About Waterfall Health Farms</h2>
-      <img src="about.jpg" alt="Waterfall Health Farms team" class="about-photo">
+      <img src="about.jpg?v=1778579955938" alt="Waterfall Health Farms team" class="about-photo">
       <p>Waterfall Health Farms, located on the scenic slopes of the Du-Toitskloof mountains, has been a beacon of quality and sustainability in the Buchu industry since 1969. We pride ourselves on producing high-quality Buchu oil and products, serving a diverse clientele from the flavor and fragrance sectors to the expanding medicinal market.</p>
       <p>Our journey began when Edward Godfrey, our founder, discovered the unique properties of Buchu. Through dedication and innovation, he established a legacy that has withstood challenges such as fire and market fluctuations, making us one of the oldest Buchu farms in South Africa.</p>
       <p>At Waterfall Health Farms, our commitment extends beyond cultivation. We cherish the relationships with our community and customers, striving to create a thriving environment for everyone connected to our farm. Our focus on sustainability ensures that we preserve this precious resource for future generations while enhancing the well-being of those who experience our Buchu products.</p>
@@ -91,19 +151,17 @@
       <h2>Our Services</h2>
       <p>Discover our range of Buchu products, each crafted to enhance health and wellness through nature’s finest ingredients.</p>
       <div class="cards-grid">
-        <div class="card">
-          <img src="service-1.jpg" alt="Services 1" class="card-photo">
-          <div class="card-icon"><i class="fas fa-leaf"></i></div>
-          <h3>Loose Leaf Buchu Tea Leaves</h3>
-          <p>Our organically grown Buchu tea leaves offer a pure, caffeine-free beverage option. Simply steep a teaspoon in boiling water for a revitalizing drink that can be enjoyed hot or cold, with optional lemon or honey.</p>
-        </div>
-        <div class="card">
-          <img src="service-2.jpg" alt="Services 2" class="card-photo">
-          <div class="card-icon"><i class="fas fa-water"></i></div>
-          <h3>Spring Distilled Buchu Water</h3>
-          <p>Experience the natural health benefits of our Buchu water, a tonic rich in vitamins and antioxidants. It supports a range of health needs from lowering blood pressure to improving urinary health.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/waterfall-health-farms/service-image-1.jpg" alt="Loose Leaf Buchu Tea Leaves" class="service-image">
+                        <h3>Loose Leaf Buchu Tea Leaves</h3>
+                        <p><p>Our organically grown Buchu tea leaves offer a pure, caffeine-free beverage option. Simply steep a teaspoon in boiling water for a revitalizing drink that can be enjoyed hot or cold, with optional lemon or honey.</p></p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/waterfall-health-farms/service-image-2.jpg" alt="Spring Distilled Buchu Water" class="service-image">
+                        <h3>Spring Distilled Buchu Water</h3>
+                        <p><p>Experience the natural health benefits of our Buchu water, a tonic rich in vitamins and antioxidants. It supports a range of health needs from lowering blood pressure to improving urinary health.</p></p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="gallery">
@@ -124,7 +182,7 @@
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Paarl, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:waterfall@whf.co.za">waterfall@whf.co.za</a></div>
-        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:+27218683470">+27 21 868-3470</a></div>
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:+27218683470">+27218683470</a></div>
       </div>
       <div class="social-links">
         <a href="https://www.instagram.com/waterfallhealthfarms?igsh=MWF3bjF2NHhob2xqaA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="social-circle"><i class="fab fa-instagram"></i></a>
