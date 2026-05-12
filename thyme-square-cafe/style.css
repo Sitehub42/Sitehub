@@ -2,3 +2,25 @@
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Open Sans', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', sans-serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #1f2937 !important;
+  --primary-color: #1f2937 !important;
+  --primary-blue: #1f2937 !important;
+  --color-secondary: #d4af37 !important;
+  --secondary-color: #d4af37 !important;
+  --secondary-blue: #d4af37 !important;
+  --accent-color: #dc2626 !important;
+  --text-color: #374151 !important;
+  --background-color: #f8fafc !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
