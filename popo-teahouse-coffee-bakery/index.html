@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/popo-teahouse-coffee-bakery/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POPO Teahouse coffee & bakery — Coffee Shop</title>
-  <meta name="description" content="POPO Teahouse coffee & bakery offers cozy homemade food in Sandton, South Africa. Enjoy our deliciously crafted coffee and baked goods with love.">
+  <title>POPO Teahouse coffee & bakery</title>
+  <meta name="description" content="POPO Teahouse coffee & bakery offers cozy homemade food in Sandton, South Africa. Enjoy our deliciously crafted coffee and baked goods with love." />
   
   
   
@@ -54,6 +54,77 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -61,9 +132,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="POPO Teahouse coffee & bakery logo" class="logo"><span class="brand-name">POPO Teahouse coffee & bakery</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About POPO Teahouse coffee & bakery</a></li>
           <li><a href="#offerings">Our Products</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -75,68 +146,57 @@
     <div class="hero-content">
       <h1>POPO Teahouse coffee & bakery</h1>
       <p>Cozy homemade food crafted with love in Sandton.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About POPO Teahouse coffee & bakery</h2>
-      <p>POPO Teahouse coffee & bakery is a local gem situated in the heart of Rivonia, Sandton. Our passion is to bring you a delightful experience with our homemade food and beverages. Whether you're stopping by for a quick coffee or enjoying a leisurely afternoon with friends, we have something special for everyone.</p>
-      <p>Our journey began with a simple idea — to create a warm and inviting space where you can enjoy freshly baked goods and expertly brewed coffee. Over the years, we've grown into a beloved part of the community, known for our friendly service and delicious offerings.</p>
-      <p>At POPO Teahouse coffee & bakery, we are committed to using quality ingredients and traditional recipes to ensure every bite is a taste of comfort. Our promise is to deliver a cozy atmosphere paired with exceptional homemade food, crafted with care and served with a smile.</p>
-    </div>
+<p>POPO Teahouse coffee & bakery is a local gem situated in the heart of Rivonia, Sandton. Our passion is to bring you a delightful experience with our homemade food and beverages. Whether you're stopping by for a quick coffee or enjoying a leisurely afternoon with friends, we have something special for everyone.</p><p>Our journey began with a simple idea — to create a warm and inviting space where you can enjoy freshly baked goods and expertly brewed coffee. Over the years, we've grown into a beloved part of the community, known for our friendly service and delicious offerings.</p><p>At POPO Teahouse coffee & bakery, we are committed to using quality ingredients and traditional recipes to ensure every bite is a taste of comfort. Our promise is to deliver a cozy atmosphere paired with exceptional homemade food, crafted with care and served with a smile.</p>
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Products</h2>
       <p>Discover our range of delicious homemade offerings, crafted to bring warmth and joy to every visit.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-coffee"></i></div>
-          <h3>Specialty Coffee</h3>
-          <p>Experience the rich flavors of our freshly brewed coffee, made from the finest beans sourced from around the world.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-bread-slice"></i></div>
-          <h3>Fresh Baked Goods</h3>
-          <p>Indulge in our selection of freshly baked pastries, breads, and cakes. Each piece is lovingly made in-house daily.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-ice-cream"></i></div>
-          <h3>Asian-Flavored Ice Cream</h3>
-          <p>Enjoy unique flavors with our Asian-inspired ice creams, including matcha, taro, and earl grey tea.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-coffee icon-large" aria-hidden="true"></i>
+                        <h3>Specialty Coffee</h3>
+                        <p>Experience the rich flavors of our freshly brewed coffee, made from the finest beans sourced from around the world.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-bread-slice icon-large" aria-hidden="true"></i>
+                        <h3>Fresh Baked Goods</h3>
+                        <p>Indulge in our selection of freshly baked pastries, breads, and cakes. Each piece is lovingly made in-house daily.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-ice-cream icon-large" aria-hidden="true"></i>
+                        <h3>Asian-Flavored Ice Cream</h3>
+                        <p>Enjoy unique flavors with our Asian-inspired ice creams, including matcha, taro, and earl grey tea.</p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <p>Here is what our clients say about us.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <blockquote>"Ordered my birthday cake from Popos and the cake was amazing. We just had some problems with the service and the cake came a day late. Nonetheless the cake was amazing and everyone loved it. Would order again. Just double check to see if they get the time and place right."</blockquote>
-          <cite>— Christina, ⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"The baked goods that come out of this place are very literally unbelievable. The swiss roll is a personal favourite. The Oreo crepe cake is also divine. I absolutely recommend this place. Expect to eat some of the best dessert of your life."</blockquote>
-          <cite>— Ruan van Jaarsveld, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Rebranded to POPO Teahouse coffee & bakery from Iris Garden in Rivonia. They have moved to Oriental City Mall on the second floor. The coffee shop is beautifully decorated - vintage, traditional Japanese meet with English-wooden style. They have more variety of their famous sliced miniature Taiwanese cakes, which are light chiffon cakes and freshly made creams. Remember, Taiwanese cakes are not overly sweet and heavy icing/fondant. They use ingredients like fresh fruits and Asian flavours (matcha, taro, earl grey tea, etc.). They also offer coffees, teas, and even Asian-flavoured ice cream. They also have freshly baked breads like milk toast, melon pan bread, raisin bread, etc. You can even order their whole cakes from different sizes and different flavours. You can add them in-store. As for their cake prices, it is a bit higher from R58 per slice, but remember these are chiffon cakes with ingredients that are not your typical toppings. As mentioned, they are instagramable, so you will definitely get some beautiful photos and memorable experience there!!! PS: You can takeaway the cakes, or you can sit down."</blockquote>
-          <cite>— Annie Chu, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"The chocolate cake it to die for! Oolong tea, Jasmin Gelato and seasonal fruit sorbet are a must in summer!"</blockquote>
-          <cite>— Kevin Tsai, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"This place is a hidden gem! My partner ordered a birthday cake from them - it was THE best cake we have ever had. It was so delicious that we went back on Saturday and had some cake and coffee at the teahouse. The service is good with a lovely atmosphere."</blockquote>
-          <cite>— Rachel Glass, ⭐⭐⭐⭐⭐</cite>
-        </div>
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"The baked goods that come out of this place are very literally unbelievable. The swiss roll is a personal favourite. The Oreo crepe cake is also divine. I absolutely recommend this place. Expect to eat some of the best dessert of your life."</blockquote>
+        <cite>— Ruan van Jaarsveld, ⭐⭐⭐⭐⭐</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"The chocolate cake it to die for! Oolong tea, Jasmin Gelato and seasonal fruit sorbet are a must in summer!"</blockquote>
+        <cite>— Kevin Tsai, ⭐⭐⭐⭐⭐</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"This place is a hidden gem! My partner ordered a birthday cake from them - it was THE best cake we have ever had. It was so delicious that we went back on Saturday and had some cake and coffee at the teahouse. The service is good with a lovely atmosphere."</blockquote>
+        <cite>— Rachel Glass, ⭐⭐⭐⭐⭐</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
@@ -155,7 +215,7 @@
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Oriental City Mall, Rivonia corner of Rivonia Boulevard, 9th Ave, Rivonia, Sandton, 2128, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:mivi.r.rn@gmail.com">mivi.r.rn@gmail.com</a></div>
-        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0780116501">078 011 6501</a></div>
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0780116501">0780116501</a></div>
       </div>
       
       <div class="map-wrapper">
