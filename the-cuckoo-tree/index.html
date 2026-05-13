@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/the-cuckoo-tree/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Cuckoo Tree — Restaurant</title>
-  <meta name="description" content="The Cuckoo Tree offers a unique dining experience in Hermanus, South Africa, with a Victorian setting and delicious, hearty food.">
+  <title>The Cuckoo Tree</title>
+  <meta name="description" content="The Cuckoo Tree offers a unique dining experience in Hermanus, South Africa, with a Victorian setting and delicious, hearty food." />
   
   
   
@@ -54,6 +54,77 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -61,9 +132,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="The Cuckoo Tree logo" class="logo"><span class="brand-name">The Cuckoo Tree</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About The Cuckoo Tree</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -76,7 +147,7 @@
       <div class="hero-split-text">
         <h1>The Cuckoo Tree</h1>
         <p>Experience the charm of Victorian elegance with every meal.</p>
-        <a href="#contact" class="cta-button">Get In Touch</a>
+        <a href="#contact" class="cta-button">Contact Us</a>
       </div>
       <div class="hero-split-image"></div>
     </div>
@@ -84,62 +155,51 @@
   <section id="about">
     <div class="container">
       <h2>About The Cuckoo Tree</h2>
-      <p>The Cuckoo Tree is a beloved restaurant nestled in the heart of Hermanus, serving the community with a unique blend of traditional charm and modern culinary excellence. Our establishment is housed in a beautiful semi-Victorian building, offering a perfect backdrop for a dining experience filled with warmth and character.</p>
-      <p>Our story began with a simple idea: to create a space where people can gather to enjoy delicious food and genuine hospitality. Over the years, we have become a staple in the local dining scene, known for our hearty dishes and welcoming atmosphere. Whether you are a local or a visitor, we strive to make you feel at home.</p>
-      <p>At The Cuckoo Tree, we believe in the power of good food to bring people together. Our menu is crafted with care, featuring dishes that celebrate local ingredients and timeless recipes. We are committed to providing each guest with a memorable dining experience, guided by our core values of quality, integrity, and community.</p>
-    </div>
+<p>The Cuckoo Tree is a beloved restaurant nestled in the heart of Hermanus, serving the community with a unique blend of traditional charm and modern culinary excellence. Our establishment is housed in a beautiful semi-Victorian building, offering a perfect backdrop for a dining experience filled with warmth and character.</p><p>Our story began with a simple idea: to create a space where people can gather to enjoy delicious food and genuine hospitality. Over the years, we have become a staple in the local dining scene, known for our hearty dishes and welcoming atmosphere. Whether you are a local or a visitor, we strive to make you feel at home.</p><p>At The Cuckoo Tree, we believe in the power of good food to bring people together. Our menu is crafted with care, featuring dishes that celebrate local ingredients and timeless recipes. We are committed to providing each guest with a memorable dining experience, guided by our core values of quality, integrity, and community.</p>
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
       <p>Discover our delightful offerings that cater to every palate, ensuring a memorable dining experience.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-utensils"></i></div>
-          <h3>Delicious Dining</h3>
-          <p>Indulge in our carefully crafted menu featuring classic dishes with a modern twist, all prepared with fresh local ingredients.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-coffee"></i></div>
-          <h3>Warm Drinks</h3>
-          <p>Enjoy a selection of comforting beverages, from rich coffees to soothing teas, perfect for any time of day.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-tree"></i></div>
-          <h3>Victorian Setting</h3>
-          <p>Relax in our semi-Victorian setting that offers a unique ambiance, making every visit special and unforgettable.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-utensils icon-large" aria-hidden="true"></i>
+                        <h3>Delicious Dining</h3>
+                        <p>Indulge in our carefully crafted menu featuring classic dishes with a modern twist, all prepared with fresh local ingredients.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-coffee icon-large" aria-hidden="true"></i>
+                        <h3>Warm Drinks</h3>
+                        <p>Enjoy a selection of comforting beverages, from rich coffees to soothing teas, perfect for any time of day.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-tree icon-large" aria-hidden="true"></i>
+                        <h3>Victorian Setting</h3>
+                        <p>Relax in our semi-Victorian setting that offers a unique ambiance, making every visit special and unforgettable.</p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <p>Here is what our clients say about us.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <blockquote>"Went for dinner with my partner. Home cooked type of menu with hearty dishes. Think slow cooked meat and 2 veg. These dishes are absolutely brilliantly executed, super tasty and served with a friendly chat. I had the lemon meringue pie for desert Homemade and delicious. Well worth visiting."</blockquote>
-          <cite>— Ian Johnston, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Fantastic menu and our food excellent. I had lambs liver,mash, union and peas and my wife quiche of the day. The service fantastic. Will become regulars. Back again and fantastic every time"</blockquote>
-          <cite>— Abie Marais, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Thoroughly enjoyed our lunch here.  The lovely garden seating is very tranquil, we all enjoyed our meals.  Mom can't stop talking about how fresh and delicious her fish was. We had great conversation and fun interaction w Michelle.  Wish we live nearby, we'd be here regularly!!"</blockquote>
-          <cite>— Phoenix Grant, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Such a lovely experience. Good food, friendly hosts! And an excellent fresh veggie juice. Can’t wait to be back ✨"</blockquote>
-          <cite>— Sharne Geel, ⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"🌟🌟🌟🌟🌟 If you're ever in Hermanus and looking for a vintage, cozy, and quiet lunch spot—look no further. I asked ChatGPT for just that, and it led us straight to this little gem. Spot on! From the moment my mom and I stepped inside, we were wrapped in the kind of warmth you don’t often find—like visiting an old friend’s home on a rainy day. The air smelled of freshly brewed coffee and something hearty and savoury from the kitchen—grilled onions, simmering sauces, and comfort in the making. Every corner seemed to tell a story. The iced cappuccino was rich, creamy, and comforting—the kind of drink you sip slowly, just to make it last. The burger? Homemade patty, thick and juicy, covered in your choice of fresh, flavourful sauce. Crispy-on-the-outside, fluffy-on-the-inside chips, and a salad that was anything but an afterthought—bursting with colour, crunch, and brightness. But then came dessert... and wow. We couldn’t choose just one, so we didn’t. We shared their famous lemon meringue, a gooey brownie, a generous scoop of ice cream and cream, and the most incredible warm roasted almond tart—sweet, nutty, and perfectly comforting. If nothing else, go for that tart. I promise it’ll stay with you long after the last bite. The owner and her mom (the chef!) made us feel right at home—welcoming, kind, and clearly proud of the experience they’ve created. Whether it’s a chilly, misty Hermanus afternoon or a golden sunny day, this place just works. Highly, highly recommend."</blockquote>
-          <cite>— Johleen Taljaard, ⭐⭐⭐⭐⭐</cite>
-        </div>
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"Went for dinner with my partner. Home cooked type of menu with hearty dishes. Think slow cooked meat and 2 veg. These dishes are absolutely brilliantly executed, super tasty and served with a friendly chat. I had the lemon meringue pie for desert Homemade and delicious. Well worth visiting."</blockquote>
+        <cite>— Ian Johnston, ⭐⭐⭐⭐⭐</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"Fantastic menu and our food excellent. I had lambs liver,mash, union and peas and my wife quiche of the day. The service fantastic. Will become regulars. Back again and fantastic every time"</blockquote>
+        <cite>— Abie Marais, ⭐⭐⭐⭐⭐</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"Thoroughly enjoyed our lunch here.  The lovely garden seating is very tranquil, we all enjoyed our meals.  Mom can't stop talking about how fresh and delicious her fish was. We had great conversation and fun interaction w Michelle.  Wish we live nearby, we'd be here regularly!!"</blockquote>
+        <cite>— Phoenix Grant, ⭐⭐⭐⭐⭐</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
@@ -158,7 +218,7 @@
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Rothnick Croft Building, 155 High St, Hermanus, 7200, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:powers@telkom.sa.net">powers@telkom.sa.net</a></div>
-        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0283123430">028 312 3430</a></div>
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0283123430">0283123430</a></div>
       </div>
       
       <div class="map-wrapper">
