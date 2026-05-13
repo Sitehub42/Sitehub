@@ -2,3 +2,22 @@
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Inter', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans-serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #24b9c9 !important;
+  --primary-color: #24b9c9 !important;
+  --primary-blue: #24b9c9 !important;
+  --color-secondary: #adadad !important;
+  --secondary-color: #adadad !important;
+  --secondary-blue: #adadad !important;
+  --font-heading: 'Poppins', sans-serif !important;
+  --heading-font: 'Poppins', sans-serif !important;
+  --font-body: 'Inter', sans-serif !important;
+  --body-font: 'Inter', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
