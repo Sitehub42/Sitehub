@@ -2,3 +2,22 @@
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Nunito', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans-serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #dc2626 !important;
+  --primary-color: #dc2626 !important;
+  --primary-blue: #dc2626 !important;
+  --color-secondary: #f59e0b !important;
+  --secondary-color: #f59e0b !important;
+  --secondary-blue: #f59e0b !important;
+  --font-heading: 'Poppins', sans-serif !important;
+  --heading-font: 'Poppins', sans-serif !important;
+  --font-body: 'Nunito', sans-serif !important;
+  --body-font: 'Nunito', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
