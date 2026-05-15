@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/the-station-bistro/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE STATION BISTRO — Bistro</title>
-  <meta name="description" content="Enjoy beautiful views and elegant seating at THE STATION BISTRO in Hermanus. Delight in fresh air, amazing food, and company.">
+  <title>THE STATION BISTRO</title>
+  <meta name="description" content="Enjoy beautiful views and elegant seating at THE STATION BISTRO in Hermanus. Delight in fresh air, amazing food, and company." />
   
   
   
@@ -53,6 +53,77 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -60,9 +131,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="THE STATION BISTRO logo" class="logo"><span class="brand-name">THE STATION BISTRO</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About THE STATION BISTRO</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -76,7 +147,7 @@
       <div class="hero-split-text">
         <h1>THE STATION BISTRO</h1>
         <p>Restaurant </p>
-        <a href="#contact" class="cta-button">Get In Touch</a>
+        <a href="#contact" class="cta-button">Contact Us</a>
       </div>
       <div class="hero-split-image"></div>
     </div>
@@ -85,10 +156,8 @@
   <section id="about">
     <div class="container">
       <h2>About THE STATION BISTRO</h2>
-      <p>Nestled in the beautiful town of Hermanus, THE STATION BISTRO offers a dining experience that combines stunning views, fresh air, and delectable food. Our bistro is a haven for locals and visitors alike who appreciate a cozy atmosphere and fresh ingredients.</p>
-      <p>Founded with a passion for quality and community, our bistro has become a beloved spot in the heart of Hermanus. We pride ourselves on using locally sourced ingredients to create dishes that are not only delicious but also reflect the vibrant flavors of South Africa.</p>
-      <p>At THE STATION BISTRO, we are committed to providing our guests with an unforgettable dining experience. Our team is dedicated to ensuring that every visit is a delightful journey of taste and comfort, making us a trusted choice for both casual meals and special occasions.</p>
-    </div>
+<p>Nestled in the beautiful town of Hermanus, THE STATION BISTRO offers a dining experience that combines stunning views, fresh air, and delectable food. Our bistro is a haven for locals and visitors alike who appreciate a cozy atmosphere and fresh ingredients.</p><p>Founded with a passion for quality and community, our bistro has become a beloved spot in the heart of Hermanus. We pride ourselves on using locally sourced ingredients to create dishes that are not only delicious but also reflect the vibrant flavors of South Africa.</p><p>At THE STATION BISTRO, we are committed to providing our guests with an unforgettable dining experience. Our team is dedicated to ensuring that every visit is a delightful journey of taste and comfort, making us a trusted choice for both casual meals and special occasions.</p>
+                </div>
   </section>
 
   <section id="offerings">
@@ -96,58 +165,35 @@
       <h2>Our Services</h2>
       <p>Explore our offerings at THE STATION BISTRO, where every dish is crafted to perfection.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-utensils"></i></div>
-          <h3>Restaurant</h3>
-          <p>Enjoy a delightful dining experience with stunning views and fresh air, complemented by our expertly crafted dishes and warm company.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-utensils icon-large" aria-hidden="true"></i>
+                        <h3>Restaurant</h3>
+                        <p>Enjoy a delightful dining experience with stunning views and fresh air, complemented by our expertly crafted dishes and warm company.</p>
+                    </div>
+                </div>
     </div>
   </section>
 
   <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <p>Here is what our clients say about us.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <blockquote>"A unique and atmosphere rich, but conveniently located restaurant with one of a kind breakfast choices (Tokyo Benedict for example), fresh juices and craft beer. They also have the run of the mills like an English breakfast, pizza or burgers, with the option to get a bit more adventurous if preferred."</blockquote>
-          <cite>— Harrie Esterhuyse, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"We had an absolutely outstanding experience at The Station in Hermanus. The highlight of our evening was without a doubt our waiter, Johann. His knowledge about the food was exceptional – he could tell us in detail how each dish was prepared, the origin of the ingredients, and even explained the process behind the salt they use. He made spot-on recommendations and guided us through the menu with so much passion and professionalism, which truly elevated our dining experience.
-
-The vibe of the restaurant strikes the perfect balance between laid-back and sophisticated – relaxed enough to feel comfortable, yet with a touch of elegance that makes the evening feel special. The food itself was simply excellent, beautifully presented, and bursting with flavor.
-
-Thanks to Johann’s attentiveness and expertise, combined with the amazing atmosphere and cuisine, this was one of the best dining experiences we’ve had in South Africa. Highly recommended!"</blockquote>
-          <cite>— Lena, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"A hidden gem in the heart of Hermanus!
-
-I usually head out of town for a decent breakfast, but my husband and I decided to give this place a try and we absolutely loved it. So much so, we went back again for breakfast, and it was just as impressive.
-
-You can tell from the generous portions and rich toppings that they truly care about the quality and overall food experience  not just churning out the same generic offerings like so many others.
-
-What really stood out was the attention to detail in the preparation, presentation, and most importantly, the taste. Without great flavour, a meal is easily forgotten  just another Saturday morning regret and wasted spend. But here, the food lingers in memory for all the right reasons.
-
-Johan was absolutely lovely and added to the entire experience. He shared how they source their ingredients and how much of what they serve is made from scratch — and you can really taste the difference.
-
-It was an absolute delight to visit. I was thoroughly impressed and would 100% recommend this spot to anyone looking for a standout breakfast in Hermanus. A true gem!"</blockquote>
-          <cite>— Gaby Alexfa, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"⭐️⭐️⭐️⭐️⭐️
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"A unique and atmosphere rich, but conveniently located restaurant with one of a kind breakfast choices (Tokyo Benedict for example), fresh juices and craft beer. They also have the run of the mills like an English breakfast, pizza or burgers, with the option to get a bit more adventurous if preferred."</blockquote>
+        <cite>— Harrie Esterhuyse, ⭐⭐⭐⭐⭐</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"⭐️⭐️⭐️⭐️⭐️
 The café is beautifully decorated – really cute and full of lovely details! 🩷 The breakfast was absolutely delicious: the coffee was perfect, the orange juice fresh, and the granola simply amazing. The staff were super friendly and welcoming, and the whole atmosphere was so cozy and inviting. Definitely a place I’d love to come back to – highly recommended!"</blockquote>
-          <cite>— Schelly, ⭐⭐⭐⭐⭐</cite>
-        </div>
-        <div class="testimonial-card">
-          <blockquote>"Excellent food and service. I would highly recommend to anyone who wants a relaxed evening with good wine and food. I tried their roasted courgette and anchovy pizza (Thursdays are 2 pizzas or 2 burgers for R250) and it was delicious! I can’t wait to return and try out all the other dishes."</blockquote>
-          <cite>— Abby Raymer, ⭐⭐⭐⭐⭐</cite>
-        </div>
+        <cite>— Schelly, ⭐⭐⭐⭐⭐</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"Excellent food and service. I would highly recommend to anyone who wants a relaxed evening with good wine and food. I tried their roasted courgette and anchovy pizza (Thursdays are 2 pizzas or 2 burgers for R250) and it was delicious! I can’t wait to return and try out all the other dishes."</blockquote>
+        <cite>— Abby Raymer, ⭐⭐⭐⭐⭐</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="gallery">
     <div class="container">
@@ -176,7 +222,7 @@ The café is beautifully decorated – really cute and full of lovely details! �
         </div>
         <div class="contact-item">
           <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-          <a href="tel:0615177564">061 517 7564</a>
+          <a href="tel:0615177564">0615177564</a>
         </div>
       </div>
       
