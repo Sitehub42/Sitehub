@@ -521,14 +521,16 @@ body.no-scroll {
   --color-primary: #FFD700 !important;
   --primary-color: #FFD700 !important;
   --primary-blue: #FFD700 !important;
-  --color-secondary: #222222 !important;
-  --secondary-color: #222222 !important;
-  --secondary-blue: #222222 !important;
-  --text-color: #333333 !important;
+  --color-secondary: #000000 !important;
+  --secondary-color: #000000 !important;
+  --secondary-blue: #000000 !important;
+  --accent-color: #ffffff !important;
+  --text-color: #949494 !important;
   --logo-filter: none !important;
 }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
