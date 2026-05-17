@@ -526,10 +526,11 @@ body.no-scroll {
   --secondary-blue: #000000 !important;
   --accent-color: #ffffff !important;
   --text-color: #949494 !important;
-  --logo-filter: none !important;
+  --logo-filter: brightness(0) invert(1) !important;
 }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
