@@ -1,7 +1,7 @@
 :root {
   --color-primary: #303030;
-  --color-secondary: #9f8141;
-  --nav-fg: #ffffff;
+  --color-secondary: #030303;
+  --nav-fg: #030303;
   --logo-filter: brightness(0) invert(1);
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
@@ -105,7 +105,7 @@ footer a { color: rgba(255,255,255,0.8); }
 @media (max-width: 767px) {
   #hamburger { display: block !important; }
   nav #nav-links { display: none !important; flex-direction: column !important; gap: 0 !important; position: absolute !important;
-    top: 70px; left: 0; right: 0; background: var(--color-primary); padding: 10px 20px; z-index: 999; }
+    top: 70px; left: 0; right: 0; background: var(--color-primary) !important; padding: 10px 20px; z-index: 999; }
   nav #nav-links.open { display: flex !important; }
   nav #nav-links li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
   nav #nav-links a { font-size: 1rem; padding: 8px 0; display: flex; align-items: center; min-height: 44px; }
