@@ -103,6 +103,17 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
 </style>
 </head>
 <body>
@@ -131,10 +142,8 @@
   <section id="about">
     <div class="container">
       <h2>About Babaylon Creations</h2>
-      <p>Babaylon Creations is dedicated to crafting religious art that resonates with spiritual significance, using the unique combination of crochet and wire. Our pieces are more than just decorative items; they are handcrafted symbols of faith that inspire and uplift.</p>
-      <p>Founded by artisans passionate about blending traditional techniques with contemporary design, our journey began with a desire to create art that speaks to the soul. Each creation is meticulously crafted to ensure that it embodies the essence of spirituality and artistic expression.</p>
-      <p>We believe in the power of art to tell stories and bring spaces to life. Our commitment to quality and authenticity is reflected in every piece we produce, promising to add a touch of spirituality and elegance to your environment.</p>
-    </div>
+<p>Babaylon Creations is dedicated to crafting religious art that resonates with spiritual significance, using the unique combination of crochet and wire. Our pieces are more than just decorative items; they are handcrafted symbols of faith that inspire and uplift.</p><p>Founded by artisans passionate about blending traditional techniques with contemporary design, our journey began with a desire to create art that speaks to the soul. Each creation is meticulously crafted to ensure that it embodies the essence of spirituality and artistic expression.</p><p>We believe in the power of art to tell stories and bring spaces to life. Our commitment to quality and authenticity is reflected in every piece we produce, promising to add a touch of spirituality and elegance to your environment.</p>
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
@@ -176,6 +185,18 @@
                         <p><p>Bring festive cheer to your table with Josie's vibrant crochet X-mas tree utensil holders, designed to match your unique taste and holiday spirit.</p>
                         <span class="service-duration">can come in sets,</span>
                         <ul class="service-features"><li>Festive and cheerful design</li><li>Matches holiday spirit</li><li>Unique crochet artistry</li></ul>
+                    </div>
+                    <div class="service-item" data-category="Products">
+                        <i class="fa-solid fa-star icon-large" style="color: #3B82F6" aria-hidden="true"></i>
+                        <h3>Gorgeous cross candle sticks, beautiful colors </h3>
+                        <span class="service-price">R250 for the set R450</span>
+                        <p><p>Beautifully hand crafted in many magical colors brightening up any room, cross candle sticks </p></p>
+                        <ul class="service-features"><li>Religious  art decor </li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-solid fa-star icon-large" style="color: #3B82F6" aria-hidden="true"></i>
+                        <h3></h3>
+                        <p></p>
                     </div>
                 </div>
     </div>
