@@ -148,12 +148,12 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 /* Auto-generated from user styling preferences */
 
 :root {
-  --color-primary: #d6ad61 !important;
-  --primary-color: #d6ad61 !important;
-  --primary-blue: #d6ad61 !important;
-  --color-secondary: #878282 !important;
-  --secondary-color: #878282 !important;
-  --secondary-blue: #878282 !important;
+  --color-primary: #f9f6f1 !important;
+  --primary-color: #f9f6f1 !important;
+  --primary-blue: #f9f6f1 !important;
+  --color-secondary: #343232 !important;
+  --secondary-color: #343232 !important;
+  --secondary-blue: #343232 !important;
   --accent-color: #878282 !important;
   --text-color: #878282 !important;
   --logo-filter: brightness(0) !important;
@@ -168,6 +168,7 @@ body, p, li, td { color: #878282 !important; }
 a, .accent, .highlight { color: #878282 !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
