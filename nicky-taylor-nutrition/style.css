@@ -155,12 +155,13 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --secondary-color: #d7c6a7 !important;
   --secondary-blue: #d7c6a7 !important;
   --text-color: #d7c6a7 !important;
-  --font-heading: 'Montserrat', sans-serif !important;
-  --heading-font: 'Montserrat', sans-serif !important;
-  --font-body: 'Open Sans', sans-serif !important;
-  --body-font: 'Open Sans', sans-serif !important;
+  --font-heading: 'Merriweather', serif !important;
+  --heading-font: 'Merriweather', serif !important;
+  --font-body: 'Merriweather', serif !important;
+  --body-font: 'Merriweather', serif !important;
 }
 
 /* === END CUSTOM STYLING === */
+
 
 
