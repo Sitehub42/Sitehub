@@ -1,21 +1,21 @@
-<html lang="en">
+﻿<html lang="en">
 <head>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://sitehub.co.za/nicky-taylor-nutrition/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Nicky Taylor Nutrition">
-  <meta property="og:title" content="Nicky Taylor Nutrition — Nutritional Therapist">
+  <meta property="og:title" content="Nicky Taylor Nutrition â€” Nutritional Therapist">
   <meta property="og:description" content="Root-cause nutrition and holistic healing for women. Specialising in gut health, hormones, and lasting transformation. Based in Cape Town.">
   <meta property="og:url" content="https://sitehub.co.za/nicky-taylor-nutrition/">
   <meta property="og:image" content="https://sitehub.co.za/nicky-taylor-nutrition/hero-800x400.jpg">
   <meta property="og:locale" content="en_ZA">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nicky Taylor Nutrition — Nutritional Therapist">
+  <meta name="twitter:title" content="Nicky Taylor Nutrition â€” Nutritional Therapist">
   <meta name="twitter:description" content="Root-cause nutrition and holistic healing for women. Specialising in gut health, hormones, and lasting transformation.">
   <meta name="twitter:image" content="https://sitehub.co.za/nicky-taylor-nutrition/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nicky Taylor Nutrition — Nutritional Therapy for Women</title>
+  <title>Nicky Taylor Nutrition â€” Nutritional Therapy for Women</title>
   <meta name="description" content="Nicky Taylor is a Nutritional Therapist specialising in gut health, hormonal balance, and root-cause healing for women. Based in Kommetjie, Cape Town." />
   
   
@@ -62,7 +62,7 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; font-size: 16px; }
+  html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: var(--nav-height); }
   body {
     background: var(--warm-white);
     color: var(--text-dark);
@@ -110,9 +110,7 @@
   .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
   .nav-toggle span { display: block; width: 24px; height: 1px; background: var(--text-dark); transition: all 0.3s; }
 
-  /* PAGES */
-  .page { display: none; }
-  .page.active { display: block; }
+  /* single-page layout */
 
   /* BUTTONS */
   .btn { display: inline-block; font-family: var(--sans); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; padding: 1rem 2.4rem; border-radius: 2px; cursor: pointer; transition: all 0.25s ease; border: none; }
@@ -183,38 +181,14 @@
   .home-cta p { color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 2.5rem; }
 
   /* ABOUT */
-  .about-hero { padding-top: calc(var(--nav-height) + 6rem); padding-bottom: 4rem; background: var(--cream); }
+  .about-section { background: var(--cream); padding-top: calc(var(--nav-height) + 4rem); padding-bottom: 6rem; padding-left: 5vw; padding-right: 5vw; }
   .about-hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 5vw; }
   .about-hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .about-hero-image .img-block { aspect-ratio: 3/4; overflow: hidden; }
   .about-hero-content .eyebrow { margin-bottom: 1rem; display: block; }
-  .about-hero-content h1 { margin-bottom: 1.5rem; font-size: clamp(2.4rem, 4.5vw, 4rem); }
-  .about-hero-content h1 em { color: var(--dusty-blue); font-style: italic; }
+  .about-hero-content h2 { margin-bottom: 1.5rem; }
+  .about-hero-content h2 em { color: var(--dusty-blue); font-style: italic; }
   .about-hero-content p { margin-bottom: 1.2rem; }
-
-  .about-philosophy { background: var(--warm-white); }
-  .philosophy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
-  .philosophy-item .number { font-family: var(--serif); font-size: 3rem; font-weight: 300; color: var(--beige-dark); line-height: 1; margin-bottom: 0.8rem; }
-  .philosophy-item h4 { font-size: 1.1rem; margin-bottom: 0.6rem; }
-  .philosophy-item p { font-size: 0.88rem; }
-
-  .about-approach { background: var(--cream); }
-  .approach-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1100px; margin: 0 auto; }
-  .approach-steps { display: flex; flex-direction: column; gap: 2rem; }
-  .approach-step { display: flex; gap: 1.5rem; align-items: flex-start; }
-  .step-num { font-family: var(--serif); font-size: 2.2rem; font-weight: 300; color: var(--gold); line-height: 1; flex-shrink: 0; width: 2.5rem; text-align: center; padding-top: 4px; }
-  .step-content h4 { font-size: 1.05rem; margin-bottom: 0.4rem; }
-  .step-content p { font-size: 0.88rem; }
-  .approach-image { overflow: hidden; }
-  .approach-image img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 500px; }
-
-  /* SERVICES PAGE */
-  .services-hero { padding-top: calc(var(--nav-height) + 5rem); padding-bottom: 3rem; text-align: center; background: var(--cream); }
-  .services-hero .eyebrow { margin-bottom: 1rem; display: block; }
-  .services-hero h1 { margin-bottom: 1.2rem; }
-  .services-hero h1 em { color: var(--dusty-blue); font-style: italic; }
-  .services-hero p { max-width: 580px; margin: 0 auto; }
-  .services-list { background: var(--warm-white); }
   .service-full { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; padding: 4rem 0; border-bottom: 1px solid var(--beige); max-width: 1100px; margin: 0 auto; }
   .service-full:last-child { border-bottom: none; }
   .service-sidebar .eyebrow { display: block; margin-bottom: 0.8rem; }
@@ -226,36 +200,12 @@
   .service-includes ul { list-style: none; }
   .service-includes li { font-size: 0.88rem; color: var(--text-mid); padding: 0.35rem 0 0.35rem 1.2rem; position: relative; border-bottom: 1px solid var(--beige); }
   .service-includes li:last-child { border-bottom: none; }
-  .service-includes li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+  .service-includes li::before { content: 'â€”'; position: absolute; left: 0; color: var(--gold); }
   .service-for { font-style: italic; font-family: var(--serif); font-size: 1rem; color: var(--text-dark); margin: 1rem 0; }
   .services-note { background: var(--beige); text-align: center; padding: 5rem 5vw; }
   .services-note p { max-width: 560px; margin: 0 auto 2rem; }
 
-  /* BOOKING */
-  .booking-hero { padding-top: calc(var(--nav-height) + 5rem); padding-bottom: 3rem; text-align: center; background: var(--cream); }
-  .booking-hero .eyebrow { display: block; margin-bottom: 1rem; }
-  .booking-hero h1 { margin-bottom: 1.2rem; }
-  .booking-hero h1 em { color: var(--dusty-blue); font-style: italic; }
-  .booking-hero p { max-width: 560px; margin: 0 auto; }
-  .booking-section { background: var(--warm-white); }
-  .booking-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start; }
-  .booking-info h3 { font-size: 1.6rem; margin-bottom: 1.2rem; }
-  .booking-info p { font-size: 0.9rem; margin-bottom: 1.5rem; }
-  .booking-details { list-style: none; margin: 1.5rem 0; }
-  .booking-details li { font-size: 0.88rem; color: var(--text-mid); padding: 0.6rem 0; border-bottom: 1px solid var(--beige); display: flex; gap: 0.8rem; }
-  .booking-details li span:first-child { color: var(--gold); font-weight: 500; }
-  .booking-embed { background: var(--cream); padding: 3rem 2.5rem; text-align: center; border-top: 2px solid var(--gold); }
-  .booking-embed .eyebrow { display: block; margin-bottom: 1rem; }
-  .booking-embed h3 { font-size: 1.6rem; margin-bottom: 1rem; }
-  .booking-embed p { font-size: 0.88rem; margin-bottom: 2rem; }
-  .booking-embed-note { font-size: 0.75rem; color: var(--text-light); margin-top: 1rem; font-style: italic; }
-
   /* CONTACT */
-  .contact-hero { padding-top: calc(var(--nav-height) + 5rem); padding-bottom: 3rem; background: var(--cream); text-align: center; }
-  .contact-hero .eyebrow { display: block; margin-bottom: 1rem; }
-  .contact-hero h1 { margin-bottom: 1.2rem; }
-  .contact-hero h1 em { color: var(--dusty-blue); font-style: italic; }
-  .contact-hero p { max-width: 520px; margin: 0 auto; }
   .contact-section { background: var(--warm-white); }
   .contact-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start; }
   .contact-info h3 { font-size: 1.5rem; margin-bottom: 1rem; }
@@ -269,7 +219,7 @@
 
   /* FOOTER */
   footer { background: var(--text-dark); color: rgba(255,255,255,0.6); padding: 4rem 5vw 2rem; }
-  .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
   .footer-brand h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; color: var(--warm-white); margin-bottom: 1rem; }
   .footer-brand h3 span { color: var(--dusty-blue); }
   .footer-brand p { font-size: 0.85rem; line-height: 1.7; }
@@ -298,7 +248,7 @@
     .nav-toggle { display: flex; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-image { min-height: 60vw; }
-    .about-hero-inner, .approach-inner, .booking-inner, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-hero-inner, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
     .footer-inner { grid-template-columns: 1fr 1fr; }
     .service-full { grid-template-columns: 1fr; gap: 2rem; }
     h1 { font-size: 2.5rem; }
@@ -316,517 +266,167 @@
 
 <!-- NAV -->
 <nav id="navbar">
-  <a class="nav-logo" onclick="showPage('home')">Nicky Taylor <span>Nutrition</span></a>
+  <a class="nav-logo" href="#">Nicky Taylor <span>Nutrition</span></a>
   <ul class="nav-links" id="navLinks">
-    <li><a onclick="showPage('home'); closeNav()">Home</a></li>
-    <li><a onclick="showPage('about'); closeNav()">About</a></li>
-    <li><a onclick="showPage('services'); closeNav()">Services</a></li>
-    <li><a onclick="showPage('contact'); closeNav()">Contact</a></li>
-    <li><a onclick="showPage('booking'); closeNav()" class="nav-cta">Book Now</a></li>
+    <li><a href="#about" onclick="closeNav()">About</a></li>
+    <li><a href="#services" onclick="closeNav()">Services</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+    <li><a href="#contact" onclick="closeNav()" class="nav-cta">Book Now</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- ═══ HOME ═══ -->
-<div id="page-home" class="page active">
-
-  <section class="hero">
-    <div class="hero-content">
-      <span class="eyebrow fade-up">Nutritional Therapy &amp; Holistic Healing</span>
-      <h1 class="fade-up fade-up-delay-1">Your body has the answers.<br><em>Let's find them together.</em></h1>
-      <p class="fade-up fade-up-delay-2">Personalised, root-cause nutrition for women navigating gut issues, hormonal imbalances, chronic symptoms, and the feeling that something just isn't right.</p>
-      <div class="hero-buttons fade-up fade-up-delay-3">
-        <button class="btn btn-dark" onclick="showPage('booking')">Book a Consultation</button>
-        <button class="btn btn-outline" onclick="showPage('about')">Learn My Approach</button>
-      </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow fade-up">Nutritional Therapy &amp; Holistic Healing</span>
+    <h1 class="fade-up fade-up-delay-1">Your body has the answers.<br><em>Let's find them together.</em></h1>
+    <p class="fade-up fade-up-delay-2">Personalised, root-cause nutrition for women navigating gut issues, hormonal imbalances, chronic symptoms, and the feeling that something just isn't right.</p>
+    <div class="hero-buttons fade-up fade-up-delay-3">
+      <a href="#contact" class="btn btn-dark">Book a Consultation</a>
+      <a href="#about" class="btn btn-outline">Learn My Approach</a>
     </div>
-    <div class="hero-image">
-      <img src="hero-800x400.jpg" alt="Nicky Taylor, Nutritional Therapist">
-    </div>
-  </section>
-
-  <div class="intro-strip">
-    <h2 class="fade-up">You deserve answers — not just <em>management</em></h2>
-    <p class="fade-up fade-up-delay-1">I'm Nicky, a passionate nutritional therapist dedicated to empowering women through root-cause nutrition therapy. My work is rooted in the belief that true healing begins with understanding why — not just masking symptoms. Through evidence-based nutrition and deep personal investigation, I help women reclaim their health from the inside out.</p>
-    <button class="btn btn-light fade-up fade-up-delay-2" onclick="showPage('about')">Meet Nicky</button>
   </div>
+  <div class="hero-image">
+    <img src="hero-800x400.jpg" alt="Nicky Taylor, Nutritional Therapist">
+  </div>
+</section>
 
-  <section class="problems">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="eyebrow">You're in the right place if…</span>
-        <h2>Sound familiar?</h2>
-        <div class="divider"></div>
-        <p>Many women spend years searching for answers. These are some of the challenges I work with every day.</p>
-      </div>
-      <div class="problems-grid">
-        <div class="problem-item fade-up">
-          <div class="problem-icon">🌿</div>
-          <h4>Gut Issues &amp; Bloating</h4>
-          <p>SIBO, IBS, chronic bloating, food intolerances — the discomfort that disrupts your every day.</p>
-        </div>
-        <div class="problem-item fade-up fade-up-delay-1">
-          <div class="problem-icon">🌸</div>
-          <h4>Hormonal Imbalances</h4>
-          <p>PMS, irregular cycles, PCOS, or simply feeling like your hormones have a life of their own.</p>
-        </div>
-        <div class="problem-item fade-up fade-up-delay-2">
-          <div class="problem-icon">🔥</div>
-          <h4>Menopause &amp; Perimenopause</h4>
-          <p>Navigating the transition with support, clarity, and strategies that actually work for your body.</p>
-        </div>
-        <div class="problem-item fade-up fade-up-delay-3">
-          <div class="problem-icon">💙</div>
-          <h4>Chronic UTIs</h4>
-          <p>Recurring urinary tract infections and bladder issues that antibiotics alone haven't resolved.</p>
-        </div>
-        <div class="problem-item fade-up">
-          <div class="problem-icon">⚡</div>
-          <h4>Fatigue &amp; Low Energy</h4>
-          <p>Exhaustion that sleep doesn't fix and the persistent sense that you're running on empty.</p>
-        </div>
-        <div class="problem-item fade-up fade-up-delay-1">
-          <div class="problem-icon">✨</div>
-          <h4>Skin, Mood &amp; Clarity</h4>
-          <p>Brain fog, anxiety, skin breakouts — the seemingly unrelated symptoms that are often connected.</p>
-        </div>
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-hero-inner">
+    <div class="about-hero-image">
+      <div class="img-block">
+        <img src="about.jpg" alt="Nicky Taylor, Nutritional Therapist">
       </div>
     </div>
-  </section>
-
-  <section class="services-overview">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="eyebrow">How I can help</span>
-        <h2>My Services</h2>
-        <div class="divider"></div>
-        <p>Tailored programmes and one-to-one support designed around you — not a generic protocol.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card fade-up">
-          <span class="eyebrow">Foundation</span>
-          <h3>Initial Consultation</h3>
-          <p>A deep-dive into your full health history, lifestyle, and goals. We build your personalised nutrition plan from the ground up.</p>
-          <button class="btn btn-outline" onclick="showPage('services')">Learn More</button>
-        </div>
-        <div class="service-card fade-up fade-up-delay-1">
-          <span class="eyebrow">Most Popular</span>
-          <h3>3-Month Healing Programme</h3>
-          <p>Sustained support across twelve weeks — regular check-ins, adjusted protocols, functional testing, and ongoing guidance.</p>
-          <button class="btn btn-outline" onclick="showPage('services')">Learn More</button>
-        </div>
-        <div class="service-card fade-up fade-up-delay-2">
-          <span class="eyebrow">Intensive</span>
-          <h3>6-Month Transformation</h3>
-          <p>For those ready to commit to deep, lasting change. Comprehensive investigation, testing, and full ongoing support.</p>
-          <button class="btn btn-outline" onclick="showPage('services')">Learn More</button>
-        </div>
-      </div>
+    <div class="about-hero-content">
+      <span class="eyebrow fade-up">About Nicky</span>
+      <h2 class="fade-up fade-up-delay-1">A different kind of <em>health conversation</em></h2>
+      <div class="divider" style="margin: 1.2rem 0;"></div>
+      <p class="fade-up fade-up-delay-2">I'm Nicky Taylor â€” a passionate nutritional therapist with a deep commitment to helping women understand and heal their bodies. My own health journey taught me that symptoms are signals, not sentences. That belief shapes everything I do.</p>
+      <p class="fade-up fade-up-delay-3">I work with women navigating gut health, hormonal imbalances, menopause, chronic fatigue, and more â€” providing personalised support at every stage of their journey. I bring evidence-based nutrition together with genuine compassion and curiosity.</p>
+      <p class="fade-up fade-up-delay-3">My practice is built around one core belief: when you understand what your body is telling you, you have the power to change it.</p>
+      <a href="#contact" class="btn btn-dark fade-up fade-up-delay-4" style="margin-top:1.8rem; display:inline-block;">Get in Touch</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="testimonials">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="eyebrow">Client Stories</span>
-        <h2>Words from women I've worked with</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-up">
-          <div class="quote-mark">"</div>
-          <div class="stars">★★★★★</div>
-          <p>After years of being told my bloating and fatigue were 'just stress', Nicky finally gave me real answers. Within three months I felt like myself again. Her approach is thorough, compassionate, and genuinely life-changing.</p>
-          <span class="testimonial-author">— Sarah M. | Gut Health Programme</span>
-        </div>
-        <div class="testimonial-card fade-up fade-up-delay-1">
-          <div class="quote-mark">"</div>
-          <div class="stars">★★★★★</div>
-          <p>I came to Nicky struggling with perimenopause symptoms I didn't even realise were related to nutrition. Her knowledge is extraordinary, and her support felt deeply personal. I cannot recommend her highly enough.</p>
-          <span class="testimonial-author">— Claire H. | Menopause Support</span>
-        </div>
-        <div class="testimonial-card fade-up fade-up-delay-2">
-          <div class="quote-mark">"</div>
-          <div class="stars">★★★★★</div>
-          <p>Dealing with SIBO was exhausting and isolating. Nicky made me feel heard from the very first session. Her personalised plan was practical, clear, and it worked. I'm now free from symptoms I thought I'd have forever.</p>
-          <span class="testimonial-author">— Emma T. | SIBO Recovery</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-cta">
-    <h2 class="fade-up">Ready to feel <em>truly well</em>?</h2>
-    <p class="fade-up fade-up-delay-1">Book your initial consultation and take the first step toward understanding your body — and healing it.</p>
-    <button class="btn btn-light fade-up fade-up-delay-2" onclick="showPage('booking')">Book a Consultation</button>
-  </section>
-
-</div><!-- end home -->
-
-
-<!-- ═══ ABOUT ═══ -->
-<div id="page-about" class="page">
-
-  <section class="about-hero">
-    <div class="about-hero-inner">
-      <div class="about-hero-image">
-        <div class="img-block">
-          <img src="about.jpg" alt="Nicky Taylor, Nutritional Therapist">
-        </div>
-      </div>
-      <div class="about-hero-content">
-        <span class="eyebrow">About Nicky</span>
-        <h1>A different kind of <em>health conversation</em></h1>
-        <p>I'm Nicky Taylor — a passionate nutritional therapist with a deep commitment to helping women understand and heal their bodies. My own health journey taught me that symptoms are signals, not sentences. That belief shapes everything I do.</p>
-        <p>I work with women navigating gut health, hormonal imbalances, menopause, chronic fatigue, and more — providing personalised support at every stage of their journey. I bring evidence-based nutrition together with genuine compassion and curiosity.</p>
-        <p>My practice is built around one core belief: when you understand what your body is telling you, you have the power to change it.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-philosophy">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="eyebrow">My Philosophy</span>
-        <h2>What I believe about healing</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="philosophy-grid">
-        <div class="philosophy-item fade-up">
-          <div class="number">01</div>
-          <h4>Root Cause, Not Band-Aids</h4>
-          <p>Symptoms are your body asking for help. I dig deeper to find the underlying imbalances — because masking symptoms doesn't create lasting change.</p>
-        </div>
-        <div class="philosophy-item fade-up fade-up-delay-1">
-          <div class="number">02</div>
-          <h4>You Are Unique</h4>
-          <p>No two women are the same. Your history, genetics, environment, and lifestyle all matter. My approach is always deeply personal and never one-size-fits-all.</p>
-        </div>
-        <div class="philosophy-item fade-up fade-up-delay-2">
-          <div class="number">03</div>
-          <h4>The Whole Person</h4>
-          <p>Physical symptoms rarely exist in isolation. I look at the whole picture — gut, hormones, stress, sleep, and mindset — to support you fully.</p>
-        </div>
-        <div class="philosophy-item fade-up fade-up-delay-3">
-          <div class="number">04</div>
-          <h4>Evidence &amp; Intuition</h4>
-          <p>I blend the latest nutritional science with a genuine listening ear. The best outcomes come from rigorous knowledge and genuine connection.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-approach">
-    <div class="container">
-      <div class="approach-inner">
-        <div class="approach-content fade-up">
-          <span class="eyebrow">My Method</span>
-          <h2>How I work with you</h2>
-          <div class="divider" style="margin: 1.5rem 0;"></div>
-          <p>Every client journey begins with deep listening. Before I make a single recommendation, I want to understand you — your full history, your daily rhythms, your relationship with food, and your deepest health goals.</p>
-          <div class="approach-steps" style="margin-top: 2rem;">
-            <div class="approach-step">
-              <div class="step-num">1</div>
-              <div class="step-content">
-                <h4>Deep Intake &amp; Investigation</h4>
-                <p>A thorough assessment of your health history, symptoms, diet, lifestyle, and goals.</p>
-              </div>
-            </div>
-            <div class="approach-step">
-              <div class="step-num">2</div>
-              <div class="step-content">
-                <h4>Personalised Protocol</h4>
-                <p>A bespoke nutrition and lifestyle plan designed specifically for you, with clear, manageable steps.</p>
-              </div>
-            </div>
-            <div class="approach-step">
-              <div class="step-num">3</div>
-              <div class="step-content">
-                <h4>Ongoing Support &amp; Refinement</h4>
-                <p>Regular follow-ups, adjustments as your body responds, and unwavering support every step of the way.</p>
-              </div>
-            </div>
-            <div class="approach-step">
-              <div class="step-num">4</div>
-              <div class="step-content">
-                <h4>Long-Term Empowerment</h4>
-                <p>You leave our work together not just feeling better, but understanding your body — with the knowledge to sustain your health for life.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="approach-image fade-up fade-up-delay-2">
-          <img src="about.jpg" alt="Nicky Taylor in consultation">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-cta">
-    <h2 class="fade-up">Ready to begin your <em>healing journey</em>?</h2>
-    <p class="fade-up fade-up-delay-1">Take the first step. Book a consultation and let's find out what your body has been trying to tell you.</p>
-    <button class="btn btn-light fade-up fade-up-delay-2" onclick="showPage('booking')">Book a Consultation</button>
-  </section>
-
-</div><!-- end about -->
-
-
-<!-- ═══ SERVICES ═══ -->
-<div id="page-services" class="page">
-
-  <section class="services-hero">
-    <div class="container-narrow fade-up">
+<!-- SERVICES -->
+<section id="services" class="services-overview">
+  <div class="container">
+    <div class="section-header fade-up">
       <span class="eyebrow">How I Can Help</span>
-      <h1>Services designed around <em>you</em></h1>
+      <h2>My Services</h2>
       <div class="divider"></div>
-      <p>Every offering is built on the same foundation: deep personalisation, root-cause investigation, and real, lasting results.</p>
+      <p>Tailored programmes and one-to-one support designed around you â€” not a generic protocol.</p>
     </div>
-  </section>
-
-  <section class="services-list">
-    <div class="container">
-
-      <div class="service-full fade-up">
-        <div class="service-sidebar">
-          <span class="eyebrow">Getting Started</span>
-          <h3>Initial Consultation</h3>
-          <div class="service-price">Get in touch for pricing</div>
-          <p style="font-size:0.85rem; color: var(--text-light);">60–75 minutes · In-person or video call</p>
-          <button class="btn btn-dark" style="margin-top:1.5rem;" onclick="showPage('booking')">Book Now</button>
-        </div>
-        <div class="service-body">
-          <p>Your first consultation is where everything begins. This is a thorough, unhurried conversation where I take the time to truly understand your health story. We cover your symptoms, medical history, diet, lifestyle, stress, sleep, and goals — because all of it matters.</p>
-          <p class="service-for">"Ideal for anyone ready to take a personalised, investigative approach to their health for the first time."</p>
-          <div class="service-includes">
-            <h4>What's included</h4>
-            <ul>
-              <li>Comprehensive health and lifestyle assessment</li>
-              <li>Detailed personal nutrition and supplement protocol</li>
-              <li>Functional testing recommendations where appropriate</li>
-              <li>Tailored meal planning guidance</li>
-              <li>Follow-up support via email for 2 weeks</li>
-              <li>Resource library access</li>
-            </ul>
-          </div>
-        </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <span class="eyebrow">Foundation</span>
+        <h3>Initial Consultation</h3>
+        <p>A deep-dive into your full health history, lifestyle, and goals. We build your personalised nutrition plan from the ground up. 60â€“75 minutes, in-person or video call.</p>
+        <a href="#contact" class="btn btn-outline">Book Now</a>
       </div>
-
-      <div class="service-full fade-up">
-        <div class="service-sidebar">
-          <span class="eyebrow">Most Popular</span>
-          <h3>3-Month Healing Programme</h3>
-          <div class="service-price">Get in touch for pricing</div>
-          <p style="font-size:0.85rem; color: var(--text-light);">Initial consultation + 3 follow-ups · 3 months</p>
-          <button class="btn btn-dark" style="margin-top:1.5rem;" onclick="showPage('booking')">Book Now</button>
-        </div>
-        <div class="service-body">
-          <p>Real, sustainable healing takes time — and consistency. This programme gives you the depth of investigation and the sustained support to see your health genuinely transform over three months.</p>
-          <p class="service-for">"Perfect for women committed to addressing a specific health concern — gut issues, hormonal symptoms, low energy, or recurrent infections — with structured, ongoing support."</p>
-          <div class="service-includes">
-            <h4>What's included</h4>
-            <ul>
-              <li>Initial 75-minute deep-dive consultation</li>
-              <li>Three 45-minute follow-up sessions (monthly)</li>
-              <li>Full personalised nutrition and lifestyle protocol</li>
-              <li>Functional testing interpretation (where ordered)</li>
-              <li>Supplement and lifestyle recommendations</li>
-              <li>Ongoing email support between sessions</li>
-              <li>Personalised recipe and meal plan guidance</li>
-              <li>Access to resources and handouts</li>
-            </ul>
-          </div>
-        </div>
+      <div class="service-card fade-up fade-up-delay-1">
+        <span class="eyebrow">Most Popular</span>
+        <h3>3-Month Healing Programme</h3>
+        <p>Sustained support across twelve weeks â€” regular check-ins, adjusted protocols, functional testing, and ongoing guidance. Initial consultation plus 3 follow-ups.</p>
+        <a href="#contact" class="btn btn-outline">Book Now</a>
       </div>
-
-      <div class="service-full fade-up">
-        <div class="service-sidebar">
-          <span class="eyebrow">Deep Transformation</span>
-          <h3>6-Month Programme</h3>
-          <div class="service-price">Get in touch for pricing</div>
-          <p style="font-size:0.85rem; color: var(--text-light);">Comprehensive support · 6 months</p>
-          <button class="btn btn-dark" style="margin-top:1.5rem;" onclick="showPage('booking')">Book Now</button>
-        </div>
-        <div class="service-body">
-          <p>For women with complex, long-standing health challenges or those ready to make deep, lasting transformation, this six-month intensive provides the most comprehensive support I offer.</p>
-          <p class="service-for">"Best suited for those dealing with complex, multi-layered health concerns, or anyone who wants maximum support and the most thorough, personalised approach possible."</p>
-          <div class="service-includes">
-            <h4>What's included</h4>
-            <ul>
-              <li>Initial 90-minute comprehensive intake consultation</li>
-              <li>Six 45-minute follow-up sessions</li>
-              <li>Extensive functional testing coordination and interpretation</li>
-              <li>Evolving, personalised protocols adjusted monthly</li>
-              <li>Priority email support throughout</li>
-              <li>Full meal planning and recipe library</li>
-              <li>Supplement protocol with dosing guidance</li>
-              <li>Lifestyle coaching integration (sleep, stress, movement)</li>
-              <li>End-of-programme review and long-term maintenance plan</li>
-            </ul>
-          </div>
-        </div>
+      <div class="service-card fade-up fade-up-delay-2">
+        <span class="eyebrow">Intensive</span>
+        <h3>6-Month Transformation</h3>
+        <p>For those ready to commit to deep, lasting change. Comprehensive investigation, functional testing, evolving protocols, and full ongoing support for 6 months.</p>
+        <a href="#contact" class="btn btn-outline">Book Now</a>
       </div>
-
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="services-note">
-    <div class="container-narrow fade-up">
-      <span class="eyebrow" style="display:block; margin-bottom:1rem;">A note on investment</span>
-      <h2>This is an investment in you</h2>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">Client Stories</span>
+      <h2>Words from women I've worked with</h2>
       <div class="divider"></div>
-      <p>I understand that investing in your health is a significant decision. Every programme is designed to reflect the depth of time, care, and expertise I bring — and I am committed to offering genuine value and lasting results. If you're unsure which option is right for you, please don't hesitate to get in touch.</p>
-      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem;">
-        <button class="btn btn-dark" onclick="showPage('booking')">Book a Consultation</button>
-        <button class="btn btn-outline" onclick="showPage('contact')">Ask a Question</button>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="quote-mark">"</div>
+        <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p>After years of being told my bloating and fatigue were 'just stress', Nicky finally gave me real answers. Within three months I felt like myself again. Her approach is thorough, compassionate, and genuinely life-changing.</p>
+        <span class="testimonial-author">â€” Sarah M. | Gut Health Programme</span>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-1">
+        <div class="quote-mark">"</div>
+        <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p>I came to Nicky struggling with perimenopause symptoms I didn't even realise were related to nutrition. Her knowledge is extraordinary, and her support felt deeply personal. I cannot recommend her highly enough.</p>
+        <span class="testimonial-author">â€” Claire H. | Menopause Support</span>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-2">
+        <div class="quote-mark">"</div>
+        <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+        <p>Dealing with SIBO was exhausting and isolating. Nicky made me feel heard from the very first session. Her personalised plan was practical, clear, and it worked. I'm now free from symptoms I thought I'd have forever.</p>
+        <span class="testimonial-author">â€” Emma T. | SIBO Recovery</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-</div><!-- end services -->
-
-
-<!-- ═══ BOOKING ═══ -->
-<div id="page-booking" class="page">
-
-  <section class="booking-hero">
-    <div class="container-narrow fade-up">
-      <span class="eyebrow">Book Your Consultation</span>
-      <h1>Your healing begins <em>here</em></h1>
-      <div class="divider"></div>
-      <p>I'm so glad you're here. Reaching out is the first — and most important — step toward truly understanding your body. Let's begin.</p>
-    </div>
-  </section>
-
-  <section class="booking-section">
-    <div class="container">
-      <div class="booking-inner">
-        <div class="booking-info fade-up">
-          <h3>Before you book</h3>
-          <p>All consultations are held in-person or via video call, whichever you prefer. Sessions are warm, unhurried, and completely confidential.</p>
-          <ul class="booking-details">
-            <li><span>⏱</span><span>Initial consultations: 60–90 minutes</span></li>
-            <li><span>📋</span><span>Health intake form sent in advance</span></li>
-            <li><span>📍</span><span>In-person (Kommetjie, Cape Town) or video call</span></li>
-            <li><span>📩</span><span>Protocols delivered within 3 working days</span></li>
-            <li><span>✉️</span><span>Email support included with all programmes</span></li>
-          </ul>
-          <p style="font-size:0.85rem; margin-top:1rem;">Not sure which option is right for you? <a onclick="showPage('contact')" style="color:var(--dusty-blue); cursor:pointer; text-decoration:underline;">Send me a message</a> — I'm happy to help.</p>
-        </div>
-        <div class="booking-embed fade-up fade-up-delay-1">
-          <span class="eyebrow">Schedule your session</span>
-          <h3>Get in Touch to Book</h3>
-          <p>Reach out via email or phone to discuss your needs and arrange your appointment at a time that suits you.</p>
-          <a href="mailto:nickytaylor0101@gmail.com" class="btn btn-dark" style="display:inline-block; margin-bottom:1rem;">Email to Book</a>
-          <p class="booking-embed-note">All information shared is strictly confidential. I read and respond to every message personally, typically within 1–2 working days.</p>
-          <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid var(--beige);">
-            <p style="font-size:0.85rem; margin-bottom:0.6rem;">Or reach me directly:</p>
-            <p style="font-size:0.9rem; margin-bottom:1rem;"><a href="tel:0608754079" style="color:var(--dusty-blue);">060 875 4079</a></p>
-            <button class="btn btn-outline" onclick="showPage('contact')">Send a Message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:var(--beige); padding: 5rem 5vw; text-align:center;">
-    <div class="container-narrow fade-up">
-      <span class="eyebrow" style="display:block; margin-bottom:1rem;">What happens next</span>
-      <h2>After you reach out</h2>
-      <div class="divider"></div>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; margin-top:3rem; text-align:left;">
-        <div>
-          <div style="font-family:var(--serif); font-size:2.5rem; color:var(--gold); margin-bottom:0.5rem;">1</div>
-          <h4 style="font-size:1rem; margin-bottom:0.5rem;">We Connect</h4>
-          <p style="font-size:0.85rem;">I'll respond to your message and we'll arrange a time for your consultation that works for you.</p>
-        </div>
-        <div>
-          <div style="font-family:var(--serif); font-size:2.5rem; color:var(--gold); margin-bottom:0.5rem;">2</div>
-          <h4 style="font-size:1rem; margin-bottom:0.5rem;">Intake Form</h4>
-          <p style="font-size:0.85rem;">You'll receive a detailed health intake form to complete before your appointment.</p>
-        </div>
-        <div>
-          <div style="font-family:var(--serif); font-size:2.5rem; color:var(--gold); margin-bottom:0.5rem;">3</div>
-          <h4 style="font-size:1rem; margin-bottom:0.5rem;">Your Consultation</h4>
-          <p style="font-size:0.85rem;">A warm, thorough session where we explore your health in depth. No rushing — this is your time.</p>
-        </div>
-        <div>
-          <div style="font-family:var(--serif); font-size:2.5rem; color:var(--gold); margin-bottom:0.5rem;">4</div>
-          <h4 style="font-size:1rem; margin-bottom:0.5rem;">Your Protocol</h4>
-          <p style="font-size:0.85rem;">Within 3 working days, you'll receive your personalised nutrition and lifestyle protocol.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</div><!-- end booking -->
-
-
-<!-- ═══ CONTACT ═══ -->
-<div id="page-contact" class="page">
-
-  <section class="contact-hero">
-    <div class="container-narrow fade-up">
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header fade-up">
       <span class="eyebrow">Get in Touch</span>
-      <h1>I'd love to <em>hear from you</em></h1>
+      <h2>I'd love to <em style="color:var(--dusty-blue);">hear from you</em></h2>
       <div class="divider"></div>
-      <p>Whether you have a question about my services, want to find out if we're a good fit, or simply want to say hello — please reach out. I read and reply to every message personally.</p>
+      <p>Whether you want to book a consultation, have a question, or just want to find out if we're a good fit â€” please reach out. I read and reply to every message personally.</p>
     </div>
-  </section>
-
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="contact-info fade-up">
-          <h3>Let's connect</h3>
-          <p>I offer a free 15-minute discovery call for anyone unsure about whether nutritional therapy is right for them. No pressure, no obligation — just an honest conversation.</p>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">✉</div>
-            <div class="contact-detail-text">
-              <span class="label">Email</span>
-              <a href="mailto:nickytaylor0101@gmail.com">nickytaylor0101@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📞</div>
-            <div class="contact-detail-text">
-              <span class="label">Phone</span>
-              <a href="tel:0608754079">060 875 4079</a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📍</div>
-            <div class="contact-detail-text">
-              <span class="label">Location</span>
-              <span>Kommetjie, Cape Town · Online consultations available</span>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">⏱</div>
-            <div class="contact-detail-text">
-              <span class="label">Response time</span>
-              <span>Within 1–2 working days</span>
-            </div>
-          </div>
-          <div style="margin-top:2rem; padding:1.5rem; background:var(--cream); border-left:2px solid var(--gold);">
-            <p style="font-size:0.88rem; font-style:italic; color:var(--text-dark); font-family:var(--serif);">"Not sure if this is right for you? Just ask. I believe everyone deserves to feel well — and I'm happy to help you figure out the best path forward."</p>
-            <p style="font-size:0.8rem; margin-top:0.5rem; color:var(--text-light);">— Nicky</p>
+    <div class="contact-inner">
+      <div class="contact-info fade-up">
+        <h3>Let's connect</h3>
+        <p>I offer a free 15-minute discovery call for anyone unsure about whether nutritional therapy is right for them. No pressure, no obligation.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">âœ‰</div>
+          <div class="contact-detail-text">
+            <span class="label">Email</span>
+            <a href="mailto:nickytaylor0101@gmail.com">nickytaylor0101@gmail.com</a>
           </div>
         </div>
-        <div class="contact-form-wrap fade-up fade-up-delay-1">
-          <iframe aria-label="Client Contact Us" frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=7030006000004216007" title="Contact form"></iframe>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">ðŸ“ž</div>
+          <div class="contact-detail-text">
+            <span class="label">Phone</span>
+            <a href="tel:0608754079">060 875 4079</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">ðŸ“</div>
+          <div class="contact-detail-text">
+            <span class="label">Location</span>
+            <span>Kommetjie, Cape Town Â· Online consultations available</span>
+          </div>
+        </div>
+        <div style="margin-top:2rem; padding:1.5rem; background:var(--cream); border-left:2px solid var(--gold);">
+          <p style="font-size:0.88rem; font-style:italic; color:var(--text-dark); font-family:var(--serif);">"Not sure if this is right for you? Just ask. I believe everyone deserves to feel well â€” and I'm happy to help you figure out the best path forward."</p>
+          <p style="font-size:0.8rem; margin-top:0.5rem; color:var(--text-light);">â€” Nicky</p>
         </div>
       </div>
+      <div class="contact-form-wrap fade-up fade-up-delay-1">
+        <iframe aria-label="Client Contact Us" frameborder="0" scrolling="no" style="height:800px;width:100%;border:none;display:block;" src="https://forms.zohopublic.com/sitehubsystems1/form/ContactUs1/formperma/FVnoiN1nra9NMA76DLjD11ayx0EPm-w6KW14YYL22RI?zid=7030006000004216007" title="Contact form"></iframe>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section style="padding:0;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.173787214532!2d18.3307369!3d-34.1418957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6c9e4ebc644d%3A0xdc77369ccc64293a!2s46%20Teubes%20Rd%2C%20Kommetjie%2C%20Cape%20Town%2C%207976!5e0!3m2!1sen!2sza!4v1779108834667!5m2!1sen!2sza" width="100%" height="400" style="display:block; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nicky Taylor Nutrition location"></iframe>
-  </section>
-
-</div><!-- end contact -->
-
+<!-- MAP -->
+<section style="padding:0;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.173787214532!2d18.3307369!3d-34.1418957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6c9e4ebc644d%3A0xdc77369ccc64293a!2s46%20Teubes%20Rd%2C%20Kommetjie%2C%20Cape%20Town%2C%207976!5e0!3m2!1sen!2sza!4v1779108834667!5m2!1sen!2sza" width="100%" height="400" style="display:block; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Nicky Taylor Nutrition location"></iframe>
+</section>
 
 <!-- FOOTER -->
 <footer>
@@ -838,21 +438,10 @@
     <div class="footer-col">
       <h4>Navigate</h4>
       <ul>
-        <li><a onclick="showPage('home')">Home</a></li>
-        <li><a onclick="showPage('about')">About</a></li>
-        <li><a onclick="showPage('services')">Services</a></li>
-        <li><a onclick="showPage('booking')">Book Now</a></li>
-        <li><a onclick="showPage('contact')">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Specialisms</h4>
-      <ul>
-        <li><a>Gut Health &amp; IBS</a></li>
-        <li><a>SIBO &amp; Bloating</a></li>
-        <li><a>Hormonal Balance</a></li>
-        <li><a>Menopause</a></li>
-        <li><a>Chronic UTIs</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -865,26 +454,17 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© <span id="year"></span> Nicky Taylor Nutrition. All rights reserved.</span>
+    <span>Â© 2026 Nicky Taylor Nutrition. All rights reserved.</span>
     <span>Created by <a href="https://www.sitehub.co.za" target="_blank" rel="noopener">SiteHub</a></span>
   </div>
   <p class="footer-disclaimer">Nutritional therapy is not a substitute for medical advice or treatment. If you have a medical condition, please consult your GP or healthcare provider alongside any nutritional therapy. The information on this website is for educational purposes only.</p>
 </footer>
 
 <script>
-  function showPage(id) {
-    document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-    var page = document.getElementById('page-' + id);
-    if (page) {
-      page.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      setTimeout(observeFadeUps, 100);
-    }
-  }
   function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
   function closeNav() { document.getElementById('navLinks').classList.remove('open'); }
   function observeFadeUps() {
-    var els = document.querySelectorAll('.page.active .fade-up');
+    var els = document.querySelectorAll('.fade-up:not(.visible)');
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(e) {
         if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
@@ -892,9 +472,7 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     els.forEach(function(el) { observer.observe(el); });
   }
-  document.getElementById('year').textContent = new Date().getFullYear();
-  window.addEventListener('load', function() { observeFadeUps(); });
+  window.addEventListener('load', observeFadeUps);
 </script>
 </body>
 </html>
-
