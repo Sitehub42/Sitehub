@@ -151,7 +151,14 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --body-font: 'Open Sans', sans-serif !important;
 }
 
+body, p, li, td { color: #0f172a !important; }
+
+a, .accent, .highlight { color: #f97316 !important; }
+
+body { background-color: #ffffff !important; }
+
 /* === END CUSTOM STYLING === */
+
 
 
 
