@@ -16,7 +16,7 @@
   <meta name="twitter:image" content="https://sitehub.co.za/j-eagle-construction/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J Eagle Construction</title>
+  <title>J EAGLE CONSTRUCTION (PTY)LTD</title>
   <meta name="description" content="J Eagle Construction offers specialized thatch and Harvey tile roofing services in Roslyn, ensuring durability and elegance." />
   
   
@@ -120,6 +120,10 @@
   margin: 0 auto 15px auto;
   display: block;
 }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
 </style>
 </head>
 <body>
@@ -130,7 +134,8 @@
         <ul id="nav-links">
           <li><a href="#about">About J Eagle Construction</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         </ul>
         <button id="hamburger" aria-label="Menu">☰</button>
       </nav>
@@ -147,25 +152,42 @@
   <section id="about">
     <h2>About J Eagle Construction</h2>
 <p>J Eagle Construction has been a proud provider of specialized roofing services, focusing on thatch and Harvey tile solutions. Based in Roslyn, we strive to enhance the aesthetics and functionality of homes in our community.</p><p>Our team is composed of skilled craftsmen dedicated to excellence in every project. We believe that a roof is not just a necessity but an opportunity to add character and value to your property. This belief drives us to deliver meticulous attention to detail and quality craftsmanship in all our work.</p><p>At J Eagle Construction, customer satisfaction is paramount. We promise to deliver personalized service, ensuring each project meets your unique needs and expectations. Trust us to bring elegance and durability to your roofing projects.</p>
-    </div>
+                </div>
                 </section>
   <section id="offerings">
     <h2>Our Services</h2>
     <p>Explore our range of specialized roofing services designed to protect and beautify your home.</p>
     <div class="cards-grid">
                     <div class="service-item">
-                        <img src="service-1.jpg" alt="Thatch Roof" class="service-image">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/j-eagle-construction/service-image-1.jpg" alt="Thatch Roof" class="service-image">
                         <h3>Thatch Roof</h3>
-                        <p>Experience the charm and natural insulation of thatch roofing, expertly installed by our seasoned professionals.</p>
+                        <p><p>Experience the charm and natural insulation of thatch roofing, expertly installed by our seasoned professionals.</p></p>
+                        <ul class="service-features"><li>Natural insulation advantage</li><li>Expert installation team</li><li>Eco-friendly materials used</li></ul>
                     </div>
                     <div class="service-item">
-                        <img src="service-1.jpg" alt="Harvey Tiles Roof" class="service-image">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/j-eagle-construction/service-image-2.jpg" alt="Harvey Tiles Roof" class="service-image">
                         <h3>Harvey Tiles Roof</h3>
-                        <p>Opt for the durability and timeless appeal of Harvey tiles, perfectly suited for a variety of architectural styles.</p>
+                        <p><p>Opt for the durability and timeless appeal of Harvey tiles, perfectly suited for a variety of architectural styles.</p></p>
+                        <ul class="service-features"><li>Exceptional durability promise</li><li>Fits diverse design styles</li><li>Low maintenance requirement</li></ul>
                     </div>
                 </div>
   </section>
-  <section id="contact">
+  
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <figure class="gallery-item"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-6.jpg" alt="Gallery photo 6" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
     <h2>Contact Us</h2>
     <p>We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
