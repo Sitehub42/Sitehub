@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/roleen-mostert-physiotherapy/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roleen Mostert Physiotherapy — Physical Therapist</title>
-  <meta name="description" content="Roleen Mostert Physiotherapy provides expert physiotherapy services in Stellenbosch, enhancing mobility and relieving pain.">
+  <title>Roleen Mostert Physiotherapy</title>
+  <meta name="description" content="Roleen Mostert Physiotherapy provides expert physiotherapy services in Stellenbosch, enhancing mobility and relieving pain." />
   
   
   
@@ -53,6 +53,77 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -63,9 +134,9 @@
       </a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Roleen Mostert Physiotherapy</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -77,29 +148,29 @@
     <div class="hero-content">
       <h1>Roleen Mostert Physiotherapy</h1>
       <p>Your path to improved mobility and pain-free living.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <h2>About Roleen Mostert Physiotherapy</h2>
-    <p>Roleen Mostert Physiotherapy offers dedicated physiotherapy services to the community of Stellenbosch. Our mission is to help you achieve optimal physical health and mobility through personalized treatment plans. We understand the unique needs of our clients and are committed to providing high-quality care.</p>
-    <p>Founded by Roleen Mostert, our practice combines years of expertise with a compassionate approach. Our team is skilled in addressing a wide range of physical ailments, from sports injuries to chronic pain conditions. We believe in a holistic approach, focusing not only on immediate relief but also on long-term well-being.</p>
-    <p>At Roleen Mostert Physiotherapy, we value trust, integrity, and excellence. Our promise is to support you every step of the way on your journey to recovery. We are proud to serve the Stellenbosch community and look forward to helping you achieve your health goals.</p>
-  </section>
+<p>Roleen Mostert Physiotherapy offers dedicated physiotherapy services to the community of Stellenbosch. Our mission is to help you achieve optimal physical health and mobility through personalized treatment plans. We understand the unique needs of our clients and are committed to providing high-quality care.</p><p>Founded by Roleen Mostert, our practice combines years of expertise with a compassionate approach. Our team is skilled in addressing a wide range of physical ailments, from sports injuries to chronic pain conditions. We believe in a holistic approach, focusing not only on immediate relief but also on long-term well-being.</p><p>At Roleen Mostert Physiotherapy, we value trust, integrity, and excellence. Our promise is to support you every step of the way on your journey to recovery. We are proud to serve the Stellenbosch community and look forward to helping you achieve your health goals.</p>
+    </div>
+                </section>
   <section id="offerings">
     <h2>Our Services</h2>
     <p>Explore our range of physiotherapy services designed to enhance your physical health and well-being.</p>
     <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
-        <h3>Physiotherapy</h3>
-        <p>Our physiotherapy sessions are tailored to your specific needs, focusing on pain relief, improved mobility, and prevention of future injuries.</p>
-      </div>
-    </div>
+                    <div class="service-item">
+                        <i class="fas fa-heartbeat icon-large" aria-hidden="true"></i>
+                        <h3>Physiotherapy</h3>
+                        <p><p>Experience personalized physiotherapy that alleviates pain, enhances mobility, and safeguards against future injuries, empowering you to regain your active lifestyle.</p></p>
+                        <ul class="service-features"><li>Tailored treatment plans</li><li>Boosts mobility and strength</li><li>Prevents future injuries</li></ul>
+                    </div>
+                </div>
   </section>
   <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"Man these ladies can dish out some pain, but professionally and with a smile. 10/10 will always recommend."</blockquote>
@@ -122,7 +193,8 @@
         <cite>— Charl Deacon, ⭐⭐⭐⭐⭐</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
@@ -147,7 +219,7 @@
       </div>
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-        <a href="tel:0218839425">021 883 9425</a>
+        <a href="tel:0218839425">0218839425</a>
       </div>
     </div>
     
