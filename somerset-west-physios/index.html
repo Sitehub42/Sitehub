@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/somerset-west-physios/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Somerset West Physios — Physical Therapist</title>
-  <meta name="description" content="Somerset West Physios provides expert physiotherapy services for scholars, young professionals, and the elderly in Heldervue, Cape Town.">
+  <title>Healing Hands for Every Generation</title>
+  <meta name="description" content="Somerset West Physios provides expert physiotherapy services for scholars, young professionals, and the elderly in Heldervue, Cape Town." />
   
   
   
@@ -53,6 +53,77 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -60,9 +131,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="Somerset West Physios logo" class="logo"><span class="brand-name">Somerset West Physios</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Somerset West Physios</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -74,51 +145,50 @@
     <div class="hero-split-text">
       <h1>Healing Hands for Every Generation</h1>
       <p>Expert physiotherapy services tailored for scholars, young professionals, and the elderly in Heldervue, Cape Town.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
     <h2>About Somerset West Physios</h2>
-    <p>At Somerset West Physios, we specialize in providing top-notch physiotherapy services tailored to each age group. Our clinic, located in the heart of Heldervue, Cape Town, is dedicated to serving scholars, young professionals, and the elderly with personalized care.</p>
-    <p>Founded with a commitment to improve lives through effective physiotherapy, our approach is rooted in understanding the unique needs of our local community. We pride ourselves on creating a welcoming environment where patients can feel at ease.</p>
-    <p>Our values center on trust, empathy, and excellence in care. We promise to deliver comprehensive treatment plans that foster quick recovery and long-term wellness for every individual we serve.</p>
-  </section>
+<p>At Somerset West Physios, we specialize in providing top-notch physiotherapy services tailored to each age group. Our clinic, located in the heart of Heldervue, Cape Town, is dedicated to serving scholars, young professionals, and the elderly with personalized care.</p><p>Founded with a commitment to improve lives through effective physiotherapy, our approach is rooted in understanding the unique needs of our local community. We pride ourselves on creating a welcoming environment where patients can feel at ease.</p><p>Our values center on trust, empathy, and excellence in care. We promise to deliver comprehensive treatment plans that foster quick recovery and long-term wellness for every individual we serve.</p>
+    </div>
+                </section>
   <section id="offerings">
     <h2>Our Services</h2>
     <p>Discover our range of specialized physiotherapy services designed to meet the diverse needs of our community.</p>
     <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-child"></i></div>
-        <h3>Physiotherapy for Scholars</h3>
-        <p>Our youth-focused treatments are tailored to address common issues faced by students, ensuring they remain active and healthy through their educational journey.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
-        <h3>Physiotherapy for Young Professionals</h3>
-        <p>Designed to relieve stress and prevent work-related injuries, our services help professionals maintain peak physical condition amidst hectic schedules.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
-        <h3>Physiotherapy for the Elderly</h3>
-        <p>We offer compassionate care aimed at enhancing mobility and reducing pain, ensuring a better quality of life for our senior patients.</p>
-      </div>
-    </div>
+                    <div class="service-item">
+                        <i class="fas fa-child icon-large" aria-hidden="true"></i>
+                        <h3>Physiotherapy for Scholars</h3>
+                        <p>Our youth-focused treatments are tailored to address common issues faced by students, ensuring they remain active and healthy through their educational journey.</p>
+                        <ul class="service-features"><li>Youth-centric treatment plans</li><li>Enhances student performance</li><li>Promotes lifelong health habits</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-briefcase icon-large" aria-hidden="true"></i>
+                        <h3>Physiotherapy for Young Professionals</h3>
+                        <p>Designed to relieve stress and prevent work-related injuries, our services help professionals maintain peak physical condition amidst hectic schedules.</p>
+                        <ul class="service-features"><li>Stress-busting techniques</li><li>Injury prevention strategies</li><li>Optimizes work-life balance</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-heartbeat icon-large" aria-hidden="true"></i>
+                        <h3>Physiotherapy for the Elderly</h3>
+                        <p>We offer compassionate care aimed at enhancing mobility and reducing pain, ensuring a better quality of life for our senior patients.</p>
+                        <ul class="service-features"><li>Pain management solutions</li><li>Mobility enhancement focus</li><li>Improves daily living</li></ul>
+                    </div>
+                </div>
   </section>
   <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"Excellent experience, good advise and overall quality service. Went in for my knee and ankle ligaments. Really good advise, tips and treatment."</blockquote>
         <cite>— Caleb Kellerman, ⭐⭐⭐⭐⭐</cite>
       </div>
-      <div class="testimonial-card">
-        <blockquote>""</blockquote>
-        <cite>— Tashreeq Julius, ⭐⭐⭐⭐⭐</cite>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
@@ -144,7 +214,7 @@
       </div>
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-        <a href="tel:0218554077">021 855 4077</a>
+        <a href="tel:0218554077">0218554077</a>
       </div>
     </div>
     
