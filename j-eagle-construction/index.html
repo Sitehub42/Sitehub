@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/j-eagle-construction/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J Eagle Construction — Construction</title>
-  <meta name="description" content="J Eagle Construction offers specialized thatch and Harvey tile roofing services in Roslyn, ensuring durability and elegance.">
+  <title>J Eagle Construction</title>
+  <meta name="description" content="J Eagle Construction offers specialized thatch and Harvey tile roofing services in Roslyn, ensuring durability and elegance." />
   
   
   
@@ -54,6 +54,73 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -61,7 +128,7 @@
       <a href="#" class="brand"><img src="logo.png" alt="J Eagle Construction logo" class="logo"><span class="brand-name">J Eagle Construction</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About J Eagle Construction</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -73,33 +140,30 @@
     <div class="hero-split-text">
       <h1>J Eagle Construction</h1>
       <p>Enhance your home with expert thatch and Harvey tile roofing solutions.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
     <h2>About J Eagle Construction</h2>
-    <p>J Eagle Construction has been a proud provider of specialized roofing services, focusing on thatch and Harvey tile solutions. Based in Roslyn, we strive to enhance the aesthetics and functionality of homes in our community.</p>
-    <p>Our team is composed of skilled craftsmen dedicated to excellence in every project. We believe that a roof is not just a necessity but an opportunity to add character and value to your property. This belief drives us to deliver meticulous attention to detail and quality craftsmanship in all our work.</p>
-    <p>At J Eagle Construction, customer satisfaction is paramount. We promise to deliver personalized service, ensuring each project meets your unique needs and expectations. Trust us to bring elegance and durability to your roofing projects.</p>
-  </section>
+<p>J Eagle Construction has been a proud provider of specialized roofing services, focusing on thatch and Harvey tile solutions. Based in Roslyn, we strive to enhance the aesthetics and functionality of homes in our community.</p><p>Our team is composed of skilled craftsmen dedicated to excellence in every project. We believe that a roof is not just a necessity but an opportunity to add character and value to your property. This belief drives us to deliver meticulous attention to detail and quality craftsmanship in all our work.</p><p>At J Eagle Construction, customer satisfaction is paramount. We promise to deliver personalized service, ensuring each project meets your unique needs and expectations. Trust us to bring elegance and durability to your roofing projects.</p>
+    </div>
+                </section>
   <section id="offerings">
     <h2>Our Services</h2>
     <p>Explore our range of specialized roofing services designed to protect and beautify your home.</p>
     <div class="cards-grid">
-      <div class="card">
-        <img src="service-1.jpg" alt="Thatch Roofing" class="card-photo">
-        <div class="card-icon"><i class="fas fa-home"></i></div>
-        <h3>Thatch Roof</h3>
-        <p>Experience the charm and natural insulation of thatch roofing, expertly installed by our seasoned professionals.</p>
-      </div>
-      <div class="card">
-        <img src="service-1.jpg" alt="Harvey Tiles Roofing" class="card-photo">
-        <div class="card-icon"><i class="fas fa-tools"></i></div>
-        <h3>Harvey Tiles Roof</h3>
-        <p>Opt for the durability and timeless appeal of Harvey tiles, perfectly suited for a variety of architectural styles.</p>
-      </div>
-    </div>
+                    <div class="service-item">
+                        <img src="service-1.jpg" alt="Thatch Roof" class="service-image">
+                        <h3>Thatch Roof</h3>
+                        <p>Experience the charm and natural insulation of thatch roofing, expertly installed by our seasoned professionals.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="service-1.jpg" alt="Harvey Tiles Roof" class="service-image">
+                        <h3>Harvey Tiles Roof</h3>
+                        <p>Opt for the durability and timeless appeal of Harvey tiles, perfectly suited for a variety of architectural styles.</p>
+                    </div>
+                </div>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
@@ -107,7 +171,7 @@
     <div class="contact-details-row">
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Roslyn</span></div>
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:eaglethatch5@gmail.com">eaglethatch5@gmail.com</a></div>
-      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0782742202">078 274 2202</a></div>
+      <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0782742202">0782742202</a></div>
     </div>
     <div class="social-links">
       <a href="CK Johannes" class="social-circle" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
