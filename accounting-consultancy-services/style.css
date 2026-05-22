@@ -2,3 +2,22 @@
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Source Sans 3', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Playfair Display', serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #085985 !important;
+  --primary-color: #085985 !important;
+  --primary-blue: #085985 !important;
+  --color-secondary: #5a4491 !important;
+  --secondary-color: #5a4491 !important;
+  --secondary-blue: #5a4491 !important;
+  --font-heading: 'Playfair Display', serif !important;
+  --heading-font: 'Playfair Display', serif !important;
+  --font-body: 'Source Sans 3', sans-serif !important;
+  --body-font: 'Source Sans 3', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
