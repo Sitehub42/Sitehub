@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/pj-painters-renovations/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PJ Painters & Renovations — Construction Company</title>
-  <meta name="description" content="PJ Painters & Renovations offers quality renovations, painting, and construction services in Knysna, South Africa.">
+  <title>PJ Painters & Renovations</title>
+  <meta name="description" content="PJ Painters & Renovations offers quality renovations, painting, and construction services in Knysna, South Africa." />
   
   
   
@@ -53,6 +53,73 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -63,7 +130,7 @@
       </a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About PJ Painters & Renovations</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -75,66 +142,64 @@
     <div class="hero-split-text">
       <h1>PJ Painters & Renovations</h1>
       <p>Your vision transformed into reality with expert craftsmanship.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
     <h2>About PJ Painters & Renovations</h2>
-    <p>PJ Painters & Renovations is dedicated to providing top-notch renovation and construction services to the Knysna community. We specialize in transforming residential and commercial spaces with our comprehensive range of services, including painting, plumbing, and tiling. Our team of skilled professionals is committed to delivering exceptional results tailored to each client's vision.</p>
-    <p>Founded in the heart of Knysna, we take pride in our local roots and the strong relationships we've built with our clients. Our approach combines cutting-edge techniques with tried-and-true methods, ensuring every project meets the highest standards of quality and durability. At PJ Painters & Renovations, we believe in maintaining open communication and transparency throughout the renovation process, making sure our clients are informed and satisfied at every step.</p>
-    <p>We value integrity, quality, and customer satisfaction above all else. Our promise is to treat every project as if it were our own, with meticulous attention to detail and a commitment to excellence. Whether you're looking to renovate your home or enhance your business premises, PJ Painters & Renovations is here to bring your ideas to life with unmatched expertise and dedication.</p>
-  </section>
+<p>PJ Painters & Renovations is dedicated to providing top-notch renovation and construction services to the Knysna community. We specialize in transforming residential and commercial spaces with our comprehensive range of services, including painting, plumbing, and tiling. Our team of skilled professionals is committed to delivering exceptional results tailored to each client's vision.</p><p>Founded in the heart of Knysna, we take pride in our local roots and the strong relationships we've built with our clients. Our approach combines cutting-edge techniques with tried-and-true methods, ensuring every project meets the highest standards of quality and durability. At PJ Painters & Renovations, we believe in maintaining open communication and transparency throughout the renovation process, making sure our clients are informed and satisfied at every step.</p><p>We value integrity, quality, and customer satisfaction above all else. Our promise is to treat every project as if it were our own, with meticulous attention to detail and a commitment to excellence. Whether you're looking to renovate your home or enhance your business premises, PJ Painters & Renovations is here to bring your ideas to life with unmatched expertise and dedication.</p>
+    </div>
+                </section>
   <section id="offerings">
     <h2>Our Services</h2>
-    <p>At PJ Painters & Renovations, we offer a wide array of construction and renovation services designed to meet the diverse needs of our clients in Knysna, South Africa.</p>
+    <p class="sitehub-section-intro">At PJ Painters & Renovations, we offer a wide array of construction and renovation services designed to meet the diverse needs of our clients in Knysna, South Africa.</p>
     <div class="cards-grid">
-      <div class="card">
-        <img src="service-1.jpg" alt="Services 1" class="card-photo">
-        <div class="card-icon"><i class="fas fa-house"></i></div>
-        <h3>Renovations</h3>
-        <p>Our renovation services encompass everything from minor updates to major overhauls, tailored to enhance the functionality and aesthetic of your space.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
-        <h3>Painting</h3>
-        <p>We provide professional painting services that breathe new life into your interiors and exteriors, ensuring a flawless finish every time.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-road"></i></div>
-        <h3>Paving</h3>
-        <p>Our expert paving solutions combine durability with aesthetic appeal, perfect for driveways, patios, and walkways.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-water"></i></div>
-        <h3>Plumbing</h3>
-        <p>Our comprehensive plumbing services ensure your systems function efficiently, from installation to maintenance and repairs.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-home"></i></div>
-        <h3>Roofing</h3>
-        <p>We offer reliable roofing solutions that protect your property while complementing its style and architecture.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-tint"></i></div>
-        <h3>Waterproofing</h3>
-        <p>Our waterproofing services safeguard your structures against water damage, ensuring long-lasting protection.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-brush"></i></div>
-        <h3>Skimming</h3>
-        <p>We provide expert skimming services to create smooth and even surfaces, ideal for any painting or decorating project.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-border-all"></i></div>
-        <h3>Tiling</h3>
-        <p>Our tiling services offer precision and attention to detail, ensuring a perfect fit and finish for your floors and walls.</p>
-      </div>
-    </div>
+                    <div class="service-item">
+                        <img src="service-1.jpg" alt="Renovations" class="service-image">
+                        <h3>Renovations</h3>
+                        <p>Our renovation services encompass everything from minor updates to major overhauls, tailored to enhance the functionality and aesthetic of your space.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-paint-brush icon-large" aria-hidden="true"></i>
+                        <h3>Painting</h3>
+                        <p>We provide professional painting services that breathe new life into your interiors and exteriors, ensuring a flawless finish every time.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-road icon-large" aria-hidden="true"></i>
+                        <h3>Paving</h3>
+                        <p>Our expert paving solutions combine durability with aesthetic appeal, perfect for driveways, patios, and walkways.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-water icon-large" aria-hidden="true"></i>
+                        <h3>Plumbing</h3>
+                        <p>Our comprehensive plumbing services ensure your systems function efficiently, from installation to maintenance and repairs.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-home icon-large" aria-hidden="true"></i>
+                        <h3>Roofing</h3>
+                        <p>We offer reliable roofing solutions that protect your property while complementing its style and architecture.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-tint icon-large" aria-hidden="true"></i>
+                        <h3>Waterproofing</h3>
+                        <p>Our waterproofing services safeguard your structures against water damage, ensuring long-lasting protection.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-brush icon-large" aria-hidden="true"></i>
+                        <h3>Skimming</h3>
+                        <p>We provide expert skimming services to create smooth and even surfaces, ideal for any painting or decorating project.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-border-all icon-large" aria-hidden="true"></i>
+                        <h3>Tiling</h3>
+                        <p>Our tiling services offer precision and attention to detail, ensuring a perfect fit and finish for your floors and walls.</p>
+                    </div>
+                </div>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
@@ -146,7 +211,7 @@
       </div>
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-        <a href="tel:0810791100">081 079 1100</a>
+        <a href="tel:0810791100">0810791100</a>
       </div>
     </div>
     <div class="social-links">
