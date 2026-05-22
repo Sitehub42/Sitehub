@@ -127,3 +127,22 @@ footer a { color: rgba(255,255,255,0.8); }
 /* ── SiteHub font enforcement (post-processed) ── */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Source Sans 3', sans-serif !important; }
 h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Playfair Display', serif !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #1e3d75 !important;
+  --primary-color: #1e3d75 !important;
+  --primary-blue: #1e3d75 !important;
+  --color-secondary: #304563 !important;
+  --secondary-color: #304563 !important;
+  --secondary-blue: #304563 !important;
+  --font-heading: 'Playfair Display', serif !important;
+  --heading-font: 'Playfair Display', serif !important;
+  --font-body: 'Source Sans 3', sans-serif !important;
+  --body-font: 'Source Sans 3', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
