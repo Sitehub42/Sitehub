@@ -119,6 +119,10 @@
   margin: 0 auto 15px auto;
   display: block;
 }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
 </style>
 </head>
 <body>
@@ -132,7 +136,8 @@
         <ul id="nav-links">
           <li><a href="#about">About PJ Painters & Renovations</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">☰</button>
@@ -149,7 +154,7 @@
   <section id="about">
     <h2>About PJ Painters & Renovations</h2>
 <p>PJ Painters & Renovations is dedicated to providing top-notch renovation and construction services to the Knysna community. We specialize in transforming residential and commercial spaces with our comprehensive range of services, including painting, plumbing, and tiling. Our team of skilled professionals is committed to delivering exceptional results tailored to each client's vision.</p><p>Founded in the heart of Knysna, we take pride in our local roots and the strong relationships we've built with our clients. Our approach combines cutting-edge techniques with tried-and-true methods, ensuring every project meets the highest standards of quality and durability. At PJ Painters & Renovations, we believe in maintaining open communication and transparency throughout the renovation process, making sure our clients are informed and satisfied at every step.</p><p>We value integrity, quality, and customer satisfaction above all else. Our promise is to treat every project as if it were our own, with meticulous attention to detail and a commitment to excellence. Whether you're looking to renovate your home or enhance your business premises, PJ Painters & Renovations is here to bring your ideas to life with unmatched expertise and dedication.</p>
-    </div>
+                </div>
                 </section>
   <section id="offerings">
     <h2>Our Services</h2>
@@ -197,7 +202,19 @@
                     </div>
                 </div>
   </section>
-  <section id="contact">
+  
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <figure class="gallery-item"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
     <h2>Contact Us</h2>
     <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
