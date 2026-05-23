@@ -180,3 +180,9 @@ a, .accent, .highlight { color: #878282 !important; }
 
 
 
+
+/* ── SiteHub mobile nav enforcement (post-processed) ── */
+@media (max-width: 767px) {
+  nav #nav-links, #nav-links { background: var(--color-primary) !important; }
+  nav #nav-links a, #nav-links a { color: var(--nav-fg) !important; }
+}
