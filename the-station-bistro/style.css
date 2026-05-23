@@ -170,3 +170,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 }
 
 /* === END CUSTOM STYLING === */
+
+/* ── SiteHub mobile nav enforcement (post-processed) ── */
+@media (max-width: 767px) {
+  nav #nav-links, #nav-links { background: var(--color-primary) !important; }
+  nav #nav-links a, #nav-links a { color: var(--nav-fg) !important; }
+}
