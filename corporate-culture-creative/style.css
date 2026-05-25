@@ -8,3 +8,22 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   nav #nav-links, #nav-links { background: var(--color-primary) !important; }
   nav #nav-links a, #nav-links a { color: var(--nav-fg) !important; }
 }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #4f4f4f !important;
+  --primary-color: #4f4f4f !important;
+  --primary-blue: #4f4f4f !important;
+  --color-secondary: #87c92c !important;
+  --secondary-color: #87c92c !important;
+  --secondary-blue: #87c92c !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
