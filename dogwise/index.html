@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/dogwise/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DogWise — Dog behaviour specialist ,Dod training </title>
-  <meta name="description" content="DogWise specializes in understanding canine behavior and fostering a harmonious relationship between dogs and their owners through tailored behavioral plans and holistic training methods.">
+  <title>DogWise</title>
+  <meta name="description" content="DogWise specializes in understanding canine behavior and fostering a harmonious relationship between dogs and their owners through tailored behavioral plans and holistic training methods." />
   
   
   
@@ -51,6 +51,73 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -58,9 +125,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="DogWise logo" class="logo"><span class="brand-name">DogWise</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About DogWise</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -71,58 +138,55 @@
     <div class="hero-content">
       <h1>DogWise</h1>
       <p>True harmony with a dog doesn't come from a place of control; it comes from a place of understanding</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About DogWise</h2>
-      <p>DogWise is dedicated to transforming the relationship between dogs and their owners. We focus on understanding the unique behavioral challenges of each dog and crafting personalized solutions that foster trust and respect. Our services cater to dog owners who wish to deepen their bond and communicate effectively with their canine companions.</p>
-      <p>Founded by a passionate dog behavior specialist, DogWise operates on the principle that true harmony is achieved through understanding and communication, not control. Our approach is rooted in reading canine body language and addressing psychological needs, ensuring a peaceful coexistence within the household.</p>
-      <p>At DogWise, we promise to guide you in building a stable and loving relationship with your dog. Our methods emphasize holistic, bond-based adjustments rather than traditional command-based obedience training, setting the foundation for a balanced and fulfilling life together.</p>
-      <img src="about.jpg" alt="DogWise team" class="about-photo">
-    </div>
+<p>DogWise is dedicated to transforming the relationship between dogs and their owners. We focus on understanding the unique behavioral challenges of each dog and crafting personalized solutions that foster trust and respect. Our services cater to dog owners who wish to deepen their bond and communicate effectively with their canine companions.</p><p>Founded by a passionate dog behavior specialist, DogWise operates on the principle that true harmony is achieved through understanding and communication, not control. Our approach is rooted in reading canine body language and addressing psychological needs, ensuring a peaceful coexistence within the household.</p><p>At DogWise, we promise to guide you in building a stable and loving relationship with your dog. Our methods emphasize holistic, bond-based adjustments rather than traditional command-based obedience training, setting the foundation for a balanced and fulfilling life together.</p>
+                    <img src="about.jpg" alt="DogWise team" class="about-photo">
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>Explore our comprehensive range of services designed to resolve behavioral issues and enhance your relationship with your dog.</p>
+      <p class="sitehub-section-intro">Unlock a happier, more harmonious bond with your furry friend through our expert dog behavior solutions and training services.</p>
       <div class="cards-grid">
-        <div class="card">
-          <img src="service-1.jpg" alt="Services 1" class="card-photo">
-          <div class="card-icon"><i class="fas fa-paw"></i></div>
-          <h3>Behavioral Modification Plans</h3>
-          <p>Our customized plans address the unique dynamics of your household, focusing on communication and understanding to tackle behavioral challenges.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-brain"></i></div>
-          <h3>Canine Psychology Education</h3>
-          <p>Gain insights into canine psychology and learn how to align your energy with your dog’s needs, fostering a relationship built on trust and respect.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-heart"></i></div>
-          <h3>Holistic Bond-Based Training</h3>
-          <p>Focus on holistic adjustments that strengthen the bond between you and your dog, moving away from traditional command-based obedience training.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fa-solid fa-calendar icon-large" style="color: #000000" aria-hidden="true"></i>
+                        <h3>Behavioral Modification Plans</h3>
+                        <p><p>Our customized plans address the unique dynamics of your household, focusing on communication and understanding to tackle behavioral challenges.</p></p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-brain icon-large" style="color: #000000" aria-hidden="true"></i>
+                        <h3>Canine Psychology Education</h3>
+                        <p>Gain insights into canine psychology and learn how to align your energy with your dog’s needs, fostering a relationship built on trust and respect.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-heart icon-large" style="color: #000000" aria-hidden="true"></i>
+                        <h3>Holistic Bond-Based Training</h3>
+                        <p>Focus on holistic adjustments that strengthen the bond between you and your dog, moving away from traditional command-based obedience training.</p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <p>Here is what our clients say about us.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <blockquote>"DogWise has transformed our household. We now understand our dog’s needs better and have a much more peaceful home life."</blockquote>
-          <cite>— Happy Client, ⭐⭐⭐⭐⭐</cite>
-        </div>
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+<p class="sitehub-section-intro">Discover how DogWise has transformed tails and tales for our delighted clients.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"DogWise has transformed our household. We now understand our dog’s needs better and have a much more peaceful home life."</blockquote>
+        <cite>— Happy Client, ⭐⭐⭐⭐⭐</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Address</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:yehugold@gmail.com">yehugold@gmail.com</a></div>
