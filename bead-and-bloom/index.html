@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/bead-and-bloom/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bead and Bloom — Handmade semi precious, stainless steel jewelry </title>
-  <meta name="description" content="Bead and Bloom offers handmade semi-precious jewelry crafted with durable stainless steel, perfect for those seeking hypoallergenic options.">
+  <title>Bead and Bloom</title>
+  <meta name="description" content="Bead and Bloom offers handmade semi-precious jewelry crafted with durable stainless steel, perfect for those seeking hypoallergenic options." />
   
   
   
@@ -44,6 +44,73 @@
   "email": "beadandbloomwithme@gmail.com"
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -51,7 +118,7 @@
       <a href="#" class="brand"><img src="logo.png" alt="Bead and Bloom logo" class="logo"><span class="brand-name">Bead and Bloom</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Bead and Bloom</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -65,7 +132,7 @@
       <div class="hero-split-text">
         <h1>Bead and Bloom</h1>
         <p>Bead and Bloom with Me!</p>
-        <a href="#contact" class="cta-button">Get In Touch</a>
+        <a href="#contact" class="cta-button">Contact Us</a>
       </div>
       <div class="hero-split-image"></div>
     </div>
@@ -73,27 +140,26 @@
 
   <section id="about">
     <h2>About Bead and Bloom</h2>
-    <p>At Bead and Bloom, we specialize in creating exquisite handmade jewelry from semi-precious stones and durable stainless steel. Our pieces are designed to be hypoallergenic, ensuring they are both beautiful and suitable for sensitive skin. Each piece is crafted with care and precision, reflecting our commitment to quality and style.</p>
-    <p>Our journey began with a passion for jewelry and a desire to provide customers with pieces that are not only aesthetically pleasing but also durable. The name 'Bead and Bloom' embodies our philosophy of growth and transformation, as we hope our creations will accompany our customers through their own personal journeys.</p>
-    <p>We believe in the power of personalization and connection. Our jewelry repair services are available to breathe new life into cherished pieces, allowing us to maintain the sentimental value of each item. At Bead and Bloom, we promise to deliver exceptional craftsmanship and a personalized experience for each customer.</p>
-  </section>
+<p>At Bead and Bloom, we specialize in creating exquisite handmade jewelry from semi-precious stones and durable stainless steel. Our pieces are designed to be hypoallergenic, ensuring they are both beautiful and suitable for sensitive skin. Each piece is crafted with care and precision, reflecting our commitment to quality and style.</p><p>Our journey began with a passion for jewelry and a desire to provide customers with pieces that are not only aesthetically pleasing but also durable. The name 'Bead and Bloom' embodies our philosophy of growth and transformation, as we hope our creations will accompany our customers through their own personal journeys.</p><p>We believe in the power of personalization and connection. Our jewelry repair services are available to breathe new life into cherished pieces, allowing us to maintain the sentimental value of each item. At Bead and Bloom, we promise to deliver exceptional craftsmanship and a personalized experience for each customer.</p>
+    </div>
+                </section>
 
   <section id="offerings">
     <h2>Our Services</h2>
-    <p>Discover our range of handmade jewelry offerings, each crafted with precision and care to bring you unique beauty and lasting quality.</p>
+    <p class="sitehub-section-intro">Explore our exquisite collection of handmade semi-precious and stainless steel jewelry, where each piece is a testament to unique artistry and enduring elegance.</p>
     <div class="cards-grid">
-      <div class="card">
-        <img src="service-1.jpg" alt="Services 1" class="card-photo">
-        <div class="card-icon"><i class="fas fa-gem"></i></div>
-        <h3>Amythest Beaded Bracelet</h3>
-        <p>Our Amethyst Beaded Bracelet is a perfect blend of elegance and durability. Crafted with high-quality amethyst stones and hypoallergenic stainless steel, this bracelet is designed to be both stunning and comfortable for everyday wear.</p>
-      </div>
-    </div>
+                    <div class="service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/bead-and-bloom/service-1.jpg" alt="Amythest Beaded Bracelet" class="service-image">
+                        <h3>Amythest Beaded Bracelet</h3>
+                        <p><p>Experience timeless elegance with our Amethyst Beaded Bracelet, designed for comfort and crafted to uplift your style with durable, hypoallergenic beauty.</p></p>
+                        <ul class="service-features"><li>Timeless elegance guaranteed</li><li>Hypoallergenic for sensitive skin</li><li>Durable design for everyday wear</li></ul>
+                    </div>
+                </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
@@ -105,7 +171,7 @@
       </div>
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-        <a href="tel:">Phone unavailable</a>
+        <a href="tel:703000600000439">703000600000439</a>
       </div>
     </div>
     <div class="form-wrapper">
