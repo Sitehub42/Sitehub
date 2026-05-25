@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/select-beauty-studio/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Select Beauty Studio — Hair and beauty salon</title>
-  <meta name="description" content="Select Beauty Studio offers exceptional hair and beauty services in Milnerton, Cape Town. Experience luxurious treatments tailored for you.">
+  <title>Select Beauty Studio</title>
+  <meta name="description" content="Select Beauty Studio offers exceptional hair and beauty services in Milnerton, Cape Town. Experience luxurious treatments tailored for you." />
   
   
   
@@ -54,6 +54,73 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -63,7 +130,7 @@
         <ul id="nav-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -74,66 +141,69 @@
     <div class="hero-content">
       <h1>Select Beauty Studio</h1>
       <p>Your luxury hair transformation awaits in Milnerton, Cape Town.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <div class="container">
-      <h2>About Select Beauty Studio</h2>
-      <p>Select Beauty Studio is a premier hair and beauty salon located in the heart of Milnerton, Cape Town. We specialize in creating stunning hair transformations that leave our clients feeling confident and beautiful. Our team is dedicated to providing personalized services to meet every client's unique needs.</p>
-      <p>Founded with a passion for beauty and style, our salon offers a welcoming and relaxing atmosphere where you can enjoy top-notch hair treatments and services. We believe in using high-quality products and the latest techniques to ensure the best results for our clients.</p>
-      <p>At Select Beauty Studio, we value trust, quality, and exceptional customer service. We strive to build long-lasting relationships with our clients by delivering outstanding hair care solutions that enhance their natural beauty.</p>
-    </div>
+      <h2>About Us</h2>
+<p>Welcome to Select Beauty Studio, your premier destination for hair and beauty transformations in the heart of Milnerton, Cape Town. We specialize in crafting stunning hair experiences that leave you feeling both confident and radiant. Our dedicated team is here to provide <strong>personalized services</strong> tailored to your unique style and needs.</p><p>Born from a passion for beauty and style, our salon offers a warm, relaxing atmosphere where you can indulge in top-tier hair treatments. We pride ourselves on using <strong>high-quality products</strong> and the latest techniques to deliver exceptional results every time.</p><p>At Select Beauty Studio, we cherish trust, quality, and outstanding customer service. Our goal is to build lasting relationships with you by offering <strong>exceptional hair care solutions</strong> that enhance your natural beauty. We invite you to experience the difference and join our community of satisfied clients.</p>
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>Discover our range of hair services designed to bring out the best in you. From cutting-edge techniques to timeless styles, we cater to all your hair needs.</p>
+      <p class="sitehub-section-intro">Unveil your true beauty with our expert hair and beauty services, crafted to transform and elevate your style in a warm, inviting atmosphere.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-cut"></i></div>
-          <h3>Hair Treatments</h3>
-          <p>Indulge in our luxurious hair treatments that nourish and revitalize your hair, leaving it healthy and radiant.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-expand-arrows-alt"></i></div>
-          <h3>Hair Extensions</h3>
-          <p>Explore our range of extensions, including weft and taped-in extensions, to add volume and length effortlessly.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
-          <h3>Balayage</h3>
-          <p>Experience the art of balayage, a technique that creates a natural, sun-kissed effect for a stunning look.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-scissors"></i></div>
-          <h3>Hair Cutting</h3>
-          <p>Get a fresh new look with our expert hair cutting services, tailored to suit your style and personality.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-tint"></i></div>
-          <h3>Hair Highlights</h3>
-          <p>Brighten your look with our professional highlighting services that add dimension and depth to your hair.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-cut icon-large" aria-hidden="true"></i>
+                        <h3>Luxurious Hair Revitalization</h3>
+                        <p>Indulge in our luxurious hair treatments that nourish and revitalize your hair, leaving it healthy and radiant.</p>
+                        <ul class="service-features"><li>Deep nourishment guaranteed</li><li>Boosts hair health instantly</li><li>Radiant shine every time</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-expand-arrows-alt icon-large" aria-hidden="true"></i>
+                        <h3>Effortless Extensions</h3>
+                        <p>Explore our range of extensions, including weft and taped-in extensions, to add volume and length effortlessly.</p>
+                        <ul class="service-features"><li>Instant volume boost</li><li>Seamless blend with natural hair</li><li>Long-lasting and lightweight</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-paint-brush icon-large" aria-hidden="true"></i>
+                        <h3>Sun-Kissed Balayage</h3>
+                        <p>Experience the art of balayage, a technique that creates a natural, sun-kissed effect for a stunning look.</p>
+                        <ul class="service-features"><li>Natural sunlit glow</li><li>Effortlessly chic style</li><li>Customizable color blends</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-scissors icon-large" aria-hidden="true"></i>
+                        <h3>Custom Style Cuts</h3>
+                        <p>Get a fresh new look with our expert hair cutting services, tailored to suit your style and personality.</p>
+                        <ul class="service-features"><li>Tailored to your personality</li><li>Precision cutting techniques</li><li>Trendy and timeless looks</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-tint icon-large" aria-hidden="true"></i>
+                        <h3>Dimensional Highlights</h3>
+                        <p>Brighten your look with our professional highlighting services that add dimension and depth to your hair.</p>
+                        <ul class="service-features"><li>Enhanced hair depth</li><li>Vibrant, eye-catching hues</li><li>Natural-looking transitions</li></ul>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <p>Here is what our clients say about us.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <blockquote>"Jamie is the absolute best! Walked in with a botched haircut, and she put me to ease immediately, I left feeling so confident. She’s AMAZING at what she does. Highly recommend 🤍"</blockquote>
-          <cite>— Justine Stafford , ⭐⭐⭐⭐⭐</cite>
-        </div>
+  <div class="container">
+    <h2 class="section-title">Reviews</h2>
+<p class="sitehub-section-intro">Discover the glowing experiences our cherished clients have enjoyed at Select Beauty Studio.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"Jamie is the absolute best! Walked in with a botched haircut, and she put me to ease immediately, I left feeling so confident. She’s AMAZING at what she does. Highly recommend 🤍"</blockquote>
+        <cite>— Justine Stafford, ⭐⭐⭐⭐⭐</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">Let's create your perfect look—get in touch with Select Beauty Studio today!</p>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>4 School St, Milnerton, Cape Town, 7441</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:joziadams78+hair@gmail.com">joziadams78+hair@gmail.com</a></div>
