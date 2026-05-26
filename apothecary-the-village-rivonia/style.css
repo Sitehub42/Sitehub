@@ -23,7 +23,14 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --body-font: 'Open Sans', sans-serif !important;
 }
 
+body, p, li, td { color: #374151 !important; }
+
+a, .accent, .highlight { color: #dc2626 !important; }
+
+body { background-color: #f8fafc !important; }
+
 /* === END CUSTOM STYLING === */
+
 
 /* ── SiteHub mobile nav enforcement (post-processed) ── */
 @media (max-width: 767px) {
