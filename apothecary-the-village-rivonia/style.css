@@ -11,10 +11,10 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --color-primary: #1f2937 !important;
   --primary-color: #1f2937 !important;
   --primary-blue: #1f2937 !important;
-  --color-secondary: #7fc964 !important;
-  --secondary-color: #7fc964 !important;
-  --secondary-blue: #7fc964 !important;
-  --accent-color: #dc2626 !important;
+  --color-secondary: #d7ddd5 !important;
+  --secondary-color: #d7ddd5 !important;
+  --secondary-blue: #d7ddd5 !important;
+  --accent-color: #7fc964 !important;
   --text-color: #374151 !important;
   --background-color: #f8fafc !important;
   --font-heading: 'Montserrat', sans-serif !important;
@@ -25,11 +25,12 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 
 body, p, li, td { color: #374151 !important; }
 
-a, .accent, .highlight { color: #dc2626 !important; }
+a, .accent, .highlight { color: #7fc964 !important; }
 
 body { background-color: #f8fafc !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 /* ── SiteHub mobile nav enforcement (post-processed) ── */
