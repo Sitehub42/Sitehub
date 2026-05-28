@@ -120,6 +120,10 @@
   margin: 0 auto 15px auto;
   display: block;
 }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
 </style>
 </head>
 <body>
@@ -130,7 +134,8 @@
         <ul id="nav-links">
           <li><a href="#about">About KF Funeral Services</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">☰</button>
@@ -146,11 +151,11 @@
   <section id="about">
     <h2>About KF Funeral Services</h2>
 <p>At KF Funeral Services, we understand the profound impact of loss and the importance of honoring loved ones with dignity. Serving the community of Brits, North West, we offer comprehensive funeral services tailored to meet the unique needs of each family we serve.</p><p>Our journey began with a commitment to provide compassionate support and guidance during life’s most challenging moments. Over the years, we have built a reputation for our unwavering dedication to care and respect, ensuring every farewell is as unique as the life it celebrates.</p><p>We believe in treating every family as our own, offering personalized services that reflect individual wishes and cultural traditions. Our promise is to handle every detail with the utmost care, providing peace of mind when it is needed most.</p>
-    </div>
+                </div>
                 </section>
   <section id="offerings">
     <h2>Our Services</h2>
-    <p class="sitehub-section-intro">We offer a range of services designed to meet the diverse needs of our community, ensuring every detail is managed with care and professionalism.</p>
+    <p class="sitehub-section-intro">We offer a range of services designed to meet the diverse needs of our community, ensuring every detail is managed with care and professionalism. Wreaths, fresh flowers, coffins and more.</p>
     <div class="cards-grid">
                     <div class="service-item">
                         <img src="service-1.jpg" alt="Funeral Services" class="service-image">
@@ -159,7 +164,20 @@
                     </div>
                 </div>
   </section>
-  <section id="contact">
+  
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <figure class="gallery-item"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
     <h2>Contact Us</h2>
     <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
