@@ -167,10 +167,10 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --color-primary: #06b6d4 !important;
   --primary-color: #06b6d4 !important;
   --primary-blue: #06b6d4 !important;
-  --color-secondary: #ffffff !important;
-  --secondary-color: #ffffff !important;
-  --secondary-blue: #ffffff !important;
-  --accent-color: #0ea5e9 !important;
+  --color-secondary: #0ea5e9 !important;
+  --secondary-color: #0ea5e9 !important;
+  --secondary-blue: #0ea5e9 !important;
+  --accent-color: #000000 !important;
   --logo-filter: brightness(0) invert(1) !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
@@ -178,9 +178,10 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --body-font: 'Open Sans', sans-serif !important;
 }
 
-a, .accent, .highlight { color: #0ea5e9 !important; }
+a, .accent, .highlight { color: #000000 !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
