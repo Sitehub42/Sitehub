@@ -232,16 +232,21 @@ a, .accent, .highlight { color: #050505 !important; }
 
 
 
+
+
 /* === CUSTOM STYLING START === */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat|Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --primary-color: #06b6d4;
   --secondary-color: #0ea5e9;
+  --accent-color: #050505;
+  --text-color: #000000;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -278,6 +283,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-primary {
   border-color: var(--primary-color);
+}
+
+.highlight, .accent, .accent-text {
+  color: var(--accent-color);
+}
+
+.badge, .tag, .label {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.border-accent {
+  border-color: var(--accent-color);
 }
 
 
