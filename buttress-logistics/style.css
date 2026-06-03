@@ -8,3 +8,31 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   nav #nav-links, #nav-links { background: var(--color-primary) !important; }
   nav #nav-links a, #nav-links a { color: var(--nav-fg) !important; }
 }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #ffffff !important;
+  --primary-color: #ffffff !important;
+  --primary-blue: #ffffff !important;
+  --color-secondary: #696f72 !important;
+  --secondary-color: #696f72 !important;
+  --secondary-blue: #696f72 !important;
+  --text-color: #1c1c1c !important;
+  --nav-fg: #764ba2 !important;
+  --logo-filter: none !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+}
+
+nav #nav-links a, .brand-name, #hamburger { color: #764ba2 !important; }
+
+#hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #ffffff !important; }
+
+body, p, li, td { color: #1c1c1c !important; }
+
+/* === END CUSTOM STYLING === */
