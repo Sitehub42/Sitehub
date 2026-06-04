@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
   --body-font: 'Open Sans', sans-serif !important;
+  --max-width: 1100px !important;
+  --section-padding: 80px 20px !important;
 }
 
 nav #nav-links a, .brand-name, #hamburger { color: #ffffff !important; }
@@ -40,3 +42,4 @@ nav #nav-links a, .brand-name, #hamburger { color: #ffffff !important; }
 a, .accent, .highlight { color: #e6c9ad !important; }
 
 /* === END CUSTOM STYLING === */
+
