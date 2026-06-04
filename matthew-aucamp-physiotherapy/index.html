@@ -16,7 +16,7 @@
   <meta name="twitter:image" content="https://sitehub.co.za/matthew-aucamp-physiotherapy/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew Aucamp Physiotherapy — Physiotherapy</title>
+  <title>Matthew Aucamp Physiotherapy</title>
   <meta name="description" content="Matthew Aucamp Physiotherapy offers specialized physiotherapy services in Gqeberha, focusing on men's health, musculoskeletal, orthopaedic, and geriatric care.">
   
   
@@ -56,6 +56,77 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -63,12 +134,12 @@
       <a href="#" class="brand"><img src="logo.png" alt="Matthew Aucamp Physiotherapy logo" class="logo"><span class="brand-name">Matthew Aucamp Physiotherapy</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Matthew Aucamp Physiotherapy</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Book Now</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Contact Us</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -78,60 +149,77 @@
     <div class="hero-split-text">
       <h1>Matthew Aucamp Physiotherapy</h1>
       <p>Empowering recovery and enhancing quality of life with personalized physiotherapy care.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About Matthew Aucamp Physiotherapy</h2>
-      <p>Matthew Aucamp Physiotherapy is dedicated to providing comprehensive care focused on men's health, musculoskeletal, orthopaedic, and geriatric needs. Located in Gqeberha, we extend our services to hospitals, old-age homes, and offer home visits and online consultations to ensure flexibility and convenience for our valued clients.</p>
-      <p>Founded by Matthew Aucamp, our practice has developed a reputation for patient-centered care that is both compassionate and effective. Our approach combines the latest physiotherapeutic techniques with a personalized touch, ensuring each treatment plan is tailored to meet the unique needs of each patient.</p>
-      <p>Our mission is to empower individuals through improved mobility and pain management, promoting overall well-being and enhancing quality of life. We believe in treating every patient with dignity, respect, and the utmost professionalism.</p>
-      <img src="about.jpg" alt="Matthew Aucamp Physiotherapy team" class="about-photo">
-    </div>
+<p>Matthew Aucamp Physiotherapy is dedicated to providing comprehensive care focused on men's health, musculoskeletal, orthopaedic, and geriatric needs. Located in Gqeberha, we extend our services to hospitals, old-age homes, and offer home visits and online consultations to ensure flexibility and convenience for our valued clients.</p><p>Founded by Matthew Aucamp, our practice has developed a reputation for patient-centered care that is both compassionate and effective. Our approach combines the latest physiotherapeutic techniques with a personalized touch, ensuring each treatment plan is tailored to meet the unique needs of each patient.</p><p>Our mission is to empower individuals through improved mobility and pain management, promoting overall well-being and enhancing quality of life. We believe in treating every patient with dignity, respect, and the utmost professionalism.</p>
+                    <img src="about.jpg?v=1780567474499" alt="Matthew Aucamp Physiotherapy team" class="about-photo">
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>At Matthew Aucamp Physiotherapy, we offer a range of specialized services to cater to diverse physiotherapy needs, ensuring effective treatment and recovery.</p>
+      <p class="sitehub-section-intro">Discover personalized physiotherapy solutions at Matthew Aucamp Physiotherapy, where your journey to effective treatment and recovery begins.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-male"></i></div>
-          <h3>Men's Health</h3>
-          <p>Our men's health physiotherapy services address specific issues like pelvic pain, incontinence, and post-prostate surgery recovery, tailored to enhance quality of life.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-bone"></i></div>
-          <h3>Musculoskeletal Care</h3>
-          <p>We provide comprehensive treatment for musculoskeletal conditions, focusing on pain relief, injury recovery, and improving physical function.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-walking"></i></div>
-          <h3>Orthopaedic Rehabilitation</h3>
-          <p>Our orthopaedic rehabilitation services help patients recover from surgeries, fractures, and other injuries, restoring strength and mobility.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-user-clock"></i></div>
-          <h3>Geriatric Care</h3>
-          <p>We offer specialized geriatric physiotherapy to address age-related conditions, focusing on improving balance, coordination, and overall mobility.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <i class="fas fa-male icon-large" aria-hidden="true"></i>
+                        <h3>Men's Vitality Care</h3>
+                        <p><p>Boost your vitality with tailored care for pelvic pain and post-prostate recovery, enhancing your overall well-being and quality of life.</p></p>
+                        <ul class="service-features"><li>Custom pelvic pain solutions</li><li>Boost post-prostate recovery</li><li>Enhance vitality and lifestyle</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-bone icon-large" aria-hidden="true"></i>
+                        <h3>Comprehensive Musculoskeletal Relief</h3>
+                        <p>Experience effective relief from musculoskeletal pain and regain your physical function with our targeted treatment plans, designed for optimal recovery.</p>
+                        <ul class="service-features"><li>Targeted pain relief plans</li><li>Optimal physical function restoration</li><li>Effective musculoskeletal treatments</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-walking icon-large" aria-hidden="true"></i>
+                        <h3>Orthopaedic Recovery Solutions</h3>
+                        <p>Accelerate your recovery from surgeries or injuries with our orthopaedic solutions, restoring your strength and mobility efficiently.</p>
+                        <ul class="service-features"><li>Speedy post-surgery recovery</li><li>Strength and mobility restoration</li><li>Efficient injury healing</li></ul>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-clock icon-large" aria-hidden="true"></i>
+                        <h3>Senior Mobility Enhancement</h3>
+                        <p>Enhance your senior years with our geriatric physiotherapy, improving balance, coordination, and mobility for a more active lifestyle.</p>
+                        <ul class="service-features"><li>Improved balance and coordination</li><li>Active senior lifestyle support</li><li>Enhanced geriatric mobility</li></ul>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <p>Here is what our clients say about us.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card"><blockquote>"I visited Matthew Aucamp Physiotherapy during the time when I suffered from extreme back pain, as well as after my back operation. Matthew is an absolute jewel who always puts his patients first and ensure that they receive the best treatment. He is a real gentleman and treats his patients with utmost respect. With Matthew you are not just a number, but a very valuable patient. I strongly recommend Matthew Aucamp Physiotherapy!"</blockquote><cite>— Marie van Rooyen, ★★★★★</cite></div>
-        <div class="testimonial-card"><blockquote>"We were so blessed when Matthew was suggested to us and we could not have asked for a better Physiotherapist. If I could give a million stars I would have. He really goes above and beyond for his clients. My father in law is showing more and more improvement and we could not have done this without him. I would suggest Matthew to each and everyone out there. So friendly and very easy to talk to."</blockquote><cite>— Soné Strydom, ★★★★★</cite></div>
-        <div class="testimonial-card"><blockquote>"Matthew Aucamp is an amazing physiotherapist. He’s extremely friendly, professional, and makes you feel comfortable from the start. He does a great job explaining exercises and treatment, and you can tell he truly cares about his patients progress. I highly recommend him!"</blockquote><cite>— Niki Fouche, ★★★★★</cite></div>
-        <div class="testimonial-card"><blockquote>"Matthew AuCamp is in amazing physio who helped me recover from a fractured ankle in record time. He provided a personalized treatment plan, clear guidance, and constant encouragement helping me regain strength and mobility much faster than I expected. Each session was professional, focused, and tailored to my progress. Thanks to Matt, I’m back on my feet and feeling stronger than ever. Highly recommend!"</blockquote><cite>— Kay Brandt, ★★★★★</cite></div>
-        <div class="testimonial-card"><blockquote>"My Dad was severely injured in a car accident and suffered a spinal injury. Matt has been working with him for the past while. He has been brilliant - his knowledge, understanding of various muscle groups and exercises have been very thorough and specific to my dad’s injury and progress. He is very calm but also very motivating at the same time. He understands how far to push the patient and also has a very high EQ when dealing with various situations, such as managing expectations."</blockquote><cite>— Michael Rushmere, ★★★★★</cite></div>
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+<p class="sitehub-section-intro">Here is what our clients say about us.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"I visited Matthew Aucamp Physiotherapy during the time when I suffered from extreme back pain, as well as after my back operation. Matthew is an absolute jewel who always puts his patients first and ensure that they receive the best treatment. He is a real gentleman and treats his patients with utmost respect. With Matthew you are not just a number, but a very valuable patient. I strongly recommend Matthew Aucamp Physiotherapy!"</blockquote>
+        <cite>&mdash; Marie van Rooyen, &#9733;&#9733;&#9733;&#9733;&#9733;</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"We were so blessed when Matthew was suggested to us and we could not have asked for a better Physiotherapist. If I could give a million stars I would have. He really goes above and beyond for his clients. My father in law is showing more and more improvement and we could not have done this without him. I would suggest Matthew to each and everyone out there. So friendly and very easy to talk to."</blockquote>
+        <cite>&mdash; Soné Strydom, &#9733;&#9733;&#9733;&#9733;&#9733;</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"Matthew Aucamp is an amazing physiotherapist. He’s extremely friendly, professional, and makes you feel comfortable from the start. He does a great job explaining exercises and treatment, and you can tell he truly cares about his patients progress. I highly recommend him!"</blockquote>
+        <cite>&mdash; Niki Fouche, &#9733;&#9733;&#9733;&#9733;&#9733;</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"Matthew AuCamp is in amazing physio who helped me recover from a fractured ankle in record time. He provided a personalized treatment plan, clear guidance, and constant encouragement helping me regain strength and mobility much faster than I expected. Each session was professional, focused, and tailored to my progress. Thanks to Matt, I’m back on my feet and feeling stronger than ever. Highly recommend!"</blockquote>
+        <cite>&mdash; Kay Brandt, &#9733;&#9733;&#9733;&#9733;&#9733;</cite>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"My Dad was severely injured in a car accident and suffered a spinal injury. Matt has been working with him for the past while. He has been brilliant - his knowledge, understanding of various muscle groups and exercises have been very thorough and specific to my dad’s injury and progress. He is very calm but also very motivating at the same time. He understands how far to push the patient and also has a very high EQ when dealing with various situations, such as managing expectations."</blockquote>
+        <cite>&mdash; Michael Rushmere, &#9733;&#9733;&#9733;&#9733;&#9733;</cite>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
@@ -146,11 +234,11 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>64 Main Rd, Walmer, Gqeberha, 6065, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:ziegler.tanya+matthewAucamp@gmail.com">ziegler.tanya+matthewAucamp@gmail.com</a></div>
-        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0832933445">083 293 3445</a></div>
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0832933445">0832933445</a></div>
       </div>
       <div class="social-links">
         <a href="https://www.facebook.com/profile.php?id=61587139964061" target="_blank" rel="noopener" class="social-circle" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
