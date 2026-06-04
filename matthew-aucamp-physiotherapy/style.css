@@ -9,3 +9,30 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   nav #nav-links a, #nav-links a { color: var(--nav-fg) !important; }
   #nav-links .nav-cta, nav #nav-links .nav-cta { color: white !important; display: block !important; background: var(--color-cta, var(--color-secondary)) !important; }
 }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #18307b !important;
+  --primary-color: #18307b !important;
+  --primary-blue: #18307b !important;
+  --color-secondary: #d9d9d9 !important;
+  --secondary-color: #d9d9d9 !important;
+  --secondary-blue: #d9d9d9 !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+  --max-width: 1100px !important;
+  --section-padding: 80px 20px !important;
+}
+
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
+.nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { background: #d9d9d9 !important; }
+
+/* === END CUSTOM STYLING === */
