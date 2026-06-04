@@ -42,6 +42,10 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta), .accent, .h
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #18307b !important; }
 
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #18307b !important; }
+#hero .cta-button:hover, #hero .btn:hover, #hero .btn-primary:hover, #hero a[class*="btn"]:hover { color: #18307b !important; }
+
 /* === END CUSTOM STYLING === */
+
 
 
