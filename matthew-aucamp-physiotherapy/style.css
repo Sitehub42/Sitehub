@@ -165,3 +165,101 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 }
 
 /* === END CUSTOM STYLING === */
+
+
+/* === CUSTOM STYLING START === */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat|Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #18307b;
+  --color-primary: #18307b;
+  --color-heading: #18307b;
+  --color-cta: #d9d9d9;
+  --secondary-color: #d9d9d9;
+  --color-secondary: #d9d9d9;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section h2, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-heading) !important;
+}
+
+section h2::after { background: var(--color-heading) !important; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: white !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: white !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: white !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: white !important; } }
+
+.nav-cta { background: #d9d9d9 !important; }
+#nav-links .nav-cta, nav #nav-links .nav-cta { background: #d9d9d9 !important; }
+
+.btn, button[type="submit"], .cta-button, .button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover, button[type="submit"]:hover, .cta-button:hover, .button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header, .navbar, .nav {
+  background-color: var(--primary-color);
+}
+
+a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta) {
+  color: var(--color-primary);
+}
+
+.icon, .service-icon, .feature-icon {
+  color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  .container, .main-content {
+    padding: 0 16px;
+  }
+  
+  section, .section {
+    padding: calc(var(--section-spacing) * 0.6) 0;
+  }
+  
+  .btn, button, .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .logo, .site-logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container, .main-content {
+    padding: 0 12px;
+  }
+  
+  .card, .service-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* === CUSTOM STYLING END === */
