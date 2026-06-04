@@ -49,8 +49,11 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta), .accent, .h
 
 .nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { color: #497068 !important; }
 
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #e6c9ad !important; border-color: #e6c9ad !important; }
+
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #497068 !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
