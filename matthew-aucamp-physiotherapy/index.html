@@ -126,6 +126,13 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: white !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: white !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: white !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: white !important; } }
 </style>
 </head>
 <body>
@@ -158,7 +165,7 @@
       <h2>About Matthew Aucamp Physiotherapy</h2>
 <p>Matthew Aucamp Physiotherapy is dedicated to providing comprehensive care focused on men's health, musculoskeletal, orthopaedic, and geriatric needs. Located in Gqeberha, we extend our services to hospitals, old-age homes, and offer home visits and online consultations to ensure flexibility and convenience for our valued clients.</p><p>Founded by Matthew Aucamp, our practice has developed a reputation for patient-centered care that is both compassionate and effective. Our approach combines the latest physiotherapeutic techniques with a personalized touch, ensuring each treatment plan is tailored to meet the unique needs of each patient.</p><p>Our mission is to empower individuals through improved mobility and pain management, promoting overall well-being and enhancing quality of life. We believe in treating every patient with dignity, respect, and the utmost professionalism.</p>
                     <img src="about.jpg?v=1780567963926" alt="Matthew Aucamp Physiotherapy team" class="about-photo">
-    </div>
+                </div>
                 </section>
   <section id="offerings">
     <div class="container">
