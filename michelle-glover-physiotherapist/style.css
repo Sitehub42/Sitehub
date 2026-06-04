@@ -51,14 +51,18 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #497068 !important; border-color: #497068 !important; }
 
-#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #e6c9ad !important; }
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #e6c9ad !important; -webkit-text-fill-color: #e6c9ad !important; }
+#hero .cta-button *, #hero .btn *, #hero .btn-primary *, #hero a[class*="btn"] * { color: #e6c9ad !important; -webkit-text-fill-color: #e6c9ad !important; fill: #e6c9ad !important; }
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #497068 !important; border-color: #497068 !important; }
 
-#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #e6c9ad !important; }
-#hero .cta-button:hover, #hero .btn:hover, #hero .btn-primary:hover, #hero a[class*="btn"]:hover { color: #e6c9ad !important; }
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #e6c9ad !important; -webkit-text-fill-color: #e6c9ad !important; }
+#hero .cta-button *, #hero .btn *, #hero .btn-primary *, #hero a[class*="btn"] * { color: #e6c9ad !important; -webkit-text-fill-color: #e6c9ad !important; fill: #e6c9ad !important; }
+#hero .cta-button:hover, #hero .btn:hover, #hero .btn-primary:hover, #hero a[class*="btn"]:hover { color: #e6c9ad !important; -webkit-text-fill-color: #e6c9ad !important; }
+#hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #e6c9ad !important; -webkit-text-fill-color: #e6c9ad !important; fill: #e6c9ad !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
