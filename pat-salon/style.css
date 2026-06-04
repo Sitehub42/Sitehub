@@ -9,3 +9,22 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Lora', serif !
   nav #nav-links a, #nav-links a { color: var(--nav-fg) !important; }
   #nav-links .nav-cta, nav #nav-links .nav-cta { color: white !important; display: block !important; background: var(--color-cta, var(--color-secondary)) !important; }
 }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #000000 !important;
+  --primary-color: #000000 !important;
+  --primary-blue: #000000 !important;
+  --color-secondary: #6b7280 !important;
+  --secondary-color: #6b7280 !important;
+  --secondary-blue: #6b7280 !important;
+  --font-heading: 'Lora', serif !important;
+  --heading-font: 'Lora', serif !important;
+  --font-body: 'Source Sans 3', sans-serif !important;
+  --body-font: 'Source Sans 3', sans-serif !important;
+}
+
+/* === END CUSTOM STYLING === */
