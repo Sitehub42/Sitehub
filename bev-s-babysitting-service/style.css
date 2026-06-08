@@ -56,3 +56,4 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #000000 !important; -webkit-text-fill-color: #000000 !important; fill: #000000 !important; }
 
 /* === END CUSTOM STYLING === */
+
