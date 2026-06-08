@@ -17,9 +17,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --color-primary: #000000 !important;
   --primary-color: #000000 !important;
   --primary-blue: #000000 !important;
-  --color-secondary: #3b82f6 !important;
-  --secondary-color: #3b82f6 !important;
-  --secondary-blue: #3b82f6 !important;
+  --color-secondary: #eb5e00 !important;
+  --secondary-color: #eb5e00 !important;
+  --secondary-blue: #eb5e00 !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -33,4 +33,5 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 #hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
 
 /* === END CUSTOM STYLING === */
+
 
