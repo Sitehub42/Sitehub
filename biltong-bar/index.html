@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/biltong-bar/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biltong bar — Biltong</title>
-  <meta name="description" content="Biltong bar offers authentic South African biltong, crafted with passion in Cape Town, South Africa.">
+  <title>Biltong bar</title>
+  <meta name="description" content="Explore the delightful taste of authentic South African biltong at Biltong bar in Cape Town." />
   
   
   
@@ -50,6 +50,73 @@
   }
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -57,9 +124,8 @@
       <a href="#" class="brand"><img src="logo.png" alt="Biltong bar logo" class="logo"><span class="brand-name">Biltong bar</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Biltong bar</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Order Online</a></li>
         </ul>
@@ -71,47 +137,34 @@
     <div class="hero-content">
       <h1>Biltong bar</h1>
       <p>Indulge in the flavors of South Africa, right here in Cape Town.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About Biltong bar</h2>
-      <p>Biltong bar is your destination for authentic South African biltong, meticulously crafted in Cape Town. Our passion for biltong is matched only by our commitment to quality, ensuring every bite brings you closer to the rich traditions of our homeland.</p>
-      <p>Founded by biltong enthusiasts, Biltong bar is dedicated to preserving the heritage of South African biltong while introducing it to new audiences. Our journey started with a simple love for this delicious snack, and has grown into a thriving business that prides itself on authenticity and taste.</p>
-      <p>Our values are rooted in quality, tradition, and customer satisfaction. We promise to deliver only the finest biltong, crafted with care and precision, ensuring a memorable experience with every purchase. Join us at Biltong bar and savor the taste of tradition.</p>
-      <img src="about.jpg" alt="Biltong bar team" class="about-photo">
-    </div>
+<p>Biltong bar is a Cape Town-based company dedicated to bringing the rich and savory flavors of traditional South African biltong to our customers. Whether you're a local or a visitor, our biltong is crafted to offer you a taste of home or a new culinary adventure.</p><p>Our journey began with a passion for authentic biltong, inspired by time-honored recipes and methods. We carefully source the highest quality meats, ensuring that each bite is packed with flavor and nutrition. Our team is committed to preserving the cultural heritage of biltong while embracing modern techniques to enhance its taste.</p><p>At Biltong bar, our values are rooted in quality, authenticity, and customer satisfaction. We promise to deliver biltong that not only delights your taste buds but also supports sustainable practices and the local community. Join us in celebrating the unique flavors of South Africa.</p>
+                    <img src="about.jpg" alt="Biltong bar team" class="about-photo">
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>Explore our diverse range of biltong products, each crafted to perfection for a unique taste experience.</p>
+      <p class="sitehub-section-intro">Explore our range of biltong products, crafted with care and precision to deliver a truly authentic taste experience.</p>
       <div class="cards-grid">
-        <div class="card">
-          <img src="service-1.jpg" alt="Services 1" class="card-photo">
-          <div class="card-icon"><i class="fas fa-utensils"></i></div>
-          <h3>Biltong</h3>
-          <p>Our biltong is made from the finest cuts of beef, seasoned with a blend of traditional spices to create a rich, savory flavor that is authentically South African.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/biltong-bar/favicon.png" alt="Biltong" class="service-image">
+                        <h3>Biltong</h3>
+                        <p><p>Our signature biltong is made from premium cuts of meat, marinated and air-dried to perfection. Enjoy the robust flavors and tender texture that make our biltong a favorite among connoisseurs.</p></p>
+                    </div>
+                </div>
     </div>
   </section>
-  <section id="gallery">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item"><img src="gallery-1.jpg" alt="Biltong bar — Biltong  photo 1" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-2.jpg" alt="Biltong bar — Biltong  photo 2" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-3.jpg" alt="Biltong bar — Biltong  photo 3" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-4.jpg" alt="Biltong bar — Biltong  photo 4" loading="lazy"></figure>
-      </div>
-    </div>
-  </section>
+  
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">Got questions or cravings? Connect with us today and let's chat about all things biltong!</p>
       <div class="contact-details-row">
         <div class="contact-item">
           <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
@@ -123,7 +176,7 @@
         </div>
         <div class="contact-item">
           <div class="contact-icon-circle"><i class="fas fa-phone"></i></div>
-          <a href="tel:">Phone</a>
+          <a href="tel:[phone]">[phone]</a>
         </div>
       </div>
       
