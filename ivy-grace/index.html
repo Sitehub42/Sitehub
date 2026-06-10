@@ -120,6 +120,13 @@
   margin: 0 auto 15px auto;
   display: block;
 }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -131,7 +138,7 @@
           <li><a href="#about">About Ivy Grace</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get In Touch</a></li>
         </ul>
         <button id="hamburger" aria-label="Menu">&#9776;</button>
       </nav>
@@ -147,7 +154,7 @@
   <section id="about">
     <h2>About Ivy Grace</h2>
 <p>Ivy Grace is dedicated to crafting unique handmade jewellery and handbags from recycled materials. Our creations are designed for those who appreciate artistry and sustainability in equal measure.</p><p>Founded in the heart of Cape Town, Ivy Grace began with a vision to transform discarded items into beautiful, wearable art. Each piece is a testament to our commitment to quality and creativity.</p><p>We believe in the power of transformation and the beauty of the unexpected. Our mission is to provide our customers with products that are not only eco-friendly but also a reflection of individual style and elegance.</p>
-    </div>
+                </div>
                 </section>
   <section id="offerings">
     <h2>Our Services</h2>
