@@ -162,6 +162,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --secondary-color: #e7d7c1 !important;
   --secondary-blue: #e7d7c1 !important;
   --accent-color: #333333 !important;
+  --nav-fg: #e7d7c1 !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -169,6 +170,11 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --max-width: 1100px !important;
   --section-padding: 80px 20px !important;
 }
+
+header, header.navbar, header.site-header { background: #7c5a3a !important; }
+@media (max-width: 767px) { nav #nav-links, #nav-links { background: #7c5a3a !important; } }
+
+nav #nav-links a, .brand-name, #hamburger { color: #e7d7c1 !important; }
 
 #hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #e7d7c1 !important; }
 
@@ -191,4 +197,5 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #7c5a3a !important; -webkit-text-fill-color: #7c5a3a !important; fill: #7c5a3a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
