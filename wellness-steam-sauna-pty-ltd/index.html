@@ -114,6 +114,13 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -126,7 +133,7 @@
           <li><a href="#offerings">Our Generators</a></li>
           <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get a Quote</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get a Quote</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -144,8 +151,8 @@
   </section>
   <section id="about">
     <h2>About Us</h2>
-<p>```html</p><p>At Wellness Steam &amp; Sauna (PTY) LTD, we pride ourselves on crafting <strong>top-tier Steamflo Steam Generators</strong> that cater to both domestic and commercial needs. With precision engineering and rigorous testing, our products deliver unmatched performance and reliability. We are passionate about meeting the distinct requirements of each client, ensuring that our steam solutions are as unique as you are.</p><p>Founded with a vision for innovation, our company has become a <strong>trusted leader in the steam generator industry</strong>. We are committed to excellence, continuously enhancing our products to stay ahead in technology and efficiency. This dedication means you receive only the most advanced and dependable steam solutions available today.</p><p>Your satisfaction is at the heart of our business. As a local manufacturer, we ensure that all parts are easily accessible while providing exceptional after-sales support. Our dedicated team is here to assist you every step of the way, guaranteeing a smooth and fulfilling experience from the moment you connect with us.</p><p>```</p>
-    </div>
+<p>At Wellness Steam &amp; Sauna (PTY) LTD, we pride ourselves on crafting <strong>top-tier Steamflo Steam Generators</strong> that cater to both domestic and commercial needs. With precision engineering and rigorous testing, our products deliver unmatched performance and reliability. We are passionate about meeting the distinct requirements of each client, ensuring that our steam solutions are as unique as you are.</p><p>Founded with a vision for innovation, our company has become a <strong>trusted leader in the steam generator industry</strong>. We are committed to excellence, continuously enhancing our products to stay ahead in technology and efficiency. This dedication means you receive only the most advanced and dependable steam solutions available today.</p><p>Your satisfaction is at the heart of our business. As a local manufacturer, we ensure that all parts are easily accessible while providing exceptional after-sales support. Our dedicated team is here to assist you every step of the way, guaranteeing a smooth and fulfilling experience from the moment you connect with us.</p>
+                </div>
                 </section>
   <section id="offerings">
     <h2>Our Generators</h2>
