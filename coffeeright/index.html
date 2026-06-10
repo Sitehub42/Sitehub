@@ -148,6 +148,84 @@
 #nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
 @media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
   #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
 </style>
 </head>
 <body>
@@ -179,8 +257,8 @@
             <h2>About Us</h2>
 <p>At Coffeeright, we transform events in Cape Town with our exquisite mobile coffee bar services, whether you're hosting a grand corporate conference or an intimate wedding. We provide more than just coffee; we deliver a unique experience that seamlessly blends high-quality brews with <strong>exceptional service</strong>, creating a memorable atmosphere for you and your guests.</p><p>Our story is fueled by a deep passion for coffee and a commitment to sharing that love with you. We believe coffee is more than a drink—it's a medium for connection, a catalyst for unforgettable moments. At Coffeeright, we're dedicated to crafting a <strong>warm and inviting</strong> environment that complements your event, ensuring every detail is tailored to your specific needs and preferences.</p>
                     <img src="about.jpg" alt="Coffeeright team" class="about-photo about-photo-medium">
-                </div>
-    </section>
+    </div>
+                </section>
     <section id="offerings">
         <div class="container">
             <h2>Our Services</h2>
@@ -208,14 +286,14 @@
         <div class="container">
             <h2>Gallery</h2>
 <p class="sitehub-section-intro">Explore our vibrant photo gallery to see how Coffeeright transforms ordinary events into unforgettable experiences.</p>
-            <div class="gallery-grid">
-                <figure class="gallery-item"><img src="gallery-1.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 1" loading="lazy"></figure>
-                <figure class="gallery-item"><img src="gallery-2.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 2" loading="lazy"></figure>
-                <figure class="gallery-item"><img src="gallery-3.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 3" loading="lazy"></figure>
-                <figure class="gallery-item"><img src="gallery-4.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 4" loading="lazy"></figure>
-                <figure class="gallery-item"><img src="gallery-5.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 5" loading="lazy"></figure>
-                <figure class="gallery-item"><img src="gallery-6.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 6" loading="lazy"></figure>
-            </div>
+            <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-6.jpg" alt="Gallery photo 6" loading="lazy"></figure>
+          </div>
         </div>
     </section>
     <section id="contact">
