@@ -126,6 +126,85 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -141,7 +220,7 @@
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get In Touch</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -158,23 +237,25 @@
   <section id="about">
     <h2>About Melton Cape Town</h2>
 <p>Melton Cape Town Adult Jewish Education is dedicated to providing high-quality, text-based courses that cover a wide range of topics including Jewish history, philosophy, literature, and more. Our expert faculty offers both online and in-person classes to cater to the needs of our diverse community.</p><p>Founded in the heart of Cape Town, we have become a trusted hub for adult Jewish education. Our approach is rooted in tradition and scholarship, aiming to enrich lives through the exploration of Jewish texts and ideas.</p><p>At Melton, we believe in lifelong learning and are committed to fostering a welcoming and inclusive environment for all. Our courses are designed to inspire, challenge, and engage learners of all backgrounds and levels of experience.</p>
-                    <img src="about.jpg" alt="Melton Cape Town Adult Jewish Education team" class="about-photo">
-    </div>
+                    <img src="about.jpg" alt="Melton Cape Town Adult Jewish Education team" class="about-photo about-photo-small">
+                </div>
                 </section>
   <section id="offerings">
     <h2>Our Services</h2>
-    <p class="sitehub-section-intro">Discover the breadth of knowledge available through our comprehensive course offerings at Melton Cape Town Adult Jewish Education.</p>
+    <p class="sitehub-section-intro">Embark on a journey of lifelong learning and community connection with our enriching courses at Melton Cape Town Adult Jewish Education.</p>
     <div class="cards-grid">
                     <div class="service-item">
-                        <img src="service-1.jpg" alt="Midrasha Melton School" class="service-image">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/melton-cape-town-adult-jewish-/service-image-1.jpg" alt="Midrasha Melton School" class="service-image service-image-medium">
                         <h3>Midrasha Melton School</h3>
-                        <p>Experience in-depth learning with our Midrasha Melton School, where we offer a variety of courses on Jewish learning, both online and in-person.</p>
+                        <p><p>Unlock the depths of Jewish wisdom with our Midrasha Melton School, offering interactive courses that enrich your knowledge both online and in-person.</p></p>
+                        <ul class="service-features"><li>Engage with expert educators</li><li>Flexible learning options available</li><li>Deepen your Jewish understanding</li></ul>
                     </div>
                 </div>
   </section>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
+<p class="sitehub-section-intro">Explore our vibrant photo gallery to glimpse the enriching experiences and warm community spirit at Melton Cape Town Adult Jewish Education.</p>
       <div class="gallery-grid">
         <figure class="gallery-item"><img src="gallery-1.jpg" alt="Melton Cape Town Adult Jewish Education — Adult Jewish Education photo 1" loading="lazy"></figure>
         <figure class="gallery-item"><img src="gallery-2.jpg" alt="Melton Cape Town Adult Jewish Education — Adult Jewish Education photo 2" loading="lazy"></figure>
