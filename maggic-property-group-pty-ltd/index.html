@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/maggic-property-group-pty-ltd/hero-800x400.jpg">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maggic Property Group (PTY) Ltd — Property Management</title>
-    <meta name="description" content="Maggic Property Group (PTY) Ltd offers personal property management services in Cape Town, helping you find the magic in managing your home.">
+    <title>Maggic Property Group (PTY) Ltd</title>
+    <meta name="description" content="Maggic Property Group (PTY) Ltd offers personal property management services in Cape Town, helping you find the magic in managing your home." />
     
     
     
@@ -51,6 +51,73 @@
   }
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
     <header>
@@ -58,7 +125,7 @@
             <a href="#" class="brand"><img src="logo.png" alt="Maggic Property Group (PTY) Ltd logo" class="logo"><span class="brand-name">Maggic Property Group (PTY) Ltd</span></a>
             <nav>
                 <ul id="nav-links">
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about">About Maggic Property Group (PTY) Ltd</a></li>
                     <li><a href="#offerings">Our Services</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                     <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
@@ -71,29 +138,28 @@
         <div class="hero-content">
             <h1>Maggic Property Group (PTY) Ltd</h1>
             <p>Find the Maggic in managing your home</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
     </section>
     <section id="about">
         <h2>About Maggic Property Group (PTY) Ltd</h2>
-        <p>Maggic Property Group (PTY) Ltd is dedicated to providing personalized property management services to the residents of Cape Town. With a keen understanding of the local market, we strive to offer solutions that cater to the unique needs of each client, ensuring their properties are well-maintained and managed.</p>
-        <p>Our journey began with a mission to bring a personal touch to property management. We believe in building relationships with our clients, offering transparency, and always prioritizing their needs. This commitment has allowed us to grow and become a trusted name in the industry.</p>
-        <p>At Maggic Property Group, our core values are integrity, communication, and excellence. We promise to treat each property as if it were our own, ensuring that every detail is handled with care and precision. Our team is always available to answer questions and provide support, making your property management experience as seamless as possible.</p>
-    </section>
+<p>Maggic Property Group (PTY) Ltd is dedicated to providing personalized property management services to the residents of Cape Town. With a keen understanding of the local market, we strive to offer solutions that cater to the unique needs of each client, ensuring their properties are well-maintained and managed.</p><p>Our journey began with a mission to bring a personal touch to property management. We believe in building relationships with our clients, offering transparency, and always prioritizing their needs. This commitment has allowed us to grow and become a trusted name in the industry.</p><p>At Maggic Property Group, our core values are integrity, communication, and excellence. We promise to treat each property as if it were our own, ensuring that every detail is handled with care and precision. Our team is always available to answer questions and provide support, making your property management experience as seamless as possible.</p>
+    </div>
+                </section>
     <section id="offerings">
         <h2>Our Services</h2>
-        <p>We offer comprehensive property management services designed to give you peace of mind and ensure the smooth operation of your property.</p>
+        <p class="sitehub-section-intro">We offer comprehensive property management services designed to give you peace of mind and ensure the smooth operation of your property.</p>
         <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-home"></i></div>
-                <h3>Property Management</h3>
-                <p>Our property management service handles everything from tenant screening to maintenance, ensuring your investment is protected and profitable. We provide detailed financial reporting and regular property inspections to keep you informed and your property in top condition.</p>
-            </div>
-        </div>
+                    <div class="service-item">
+                        <i class="fas fa-home icon-large" aria-hidden="true"></i>
+                        <h3>Property Management</h3>
+                        <p>Our property management service handles everything from tenant screening to maintenance, ensuring your investment is protected and profitable. We provide detailed financial reporting and regular property inspections to keep you informed and your property in top condition.</p>
+                    </div>
+                </div>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>We'd love to hear from you — reach out to us anytime.</p>
+        <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
         <div class="contact-details-row">
             <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Waterloo Rd, Kenwyn, Cape Town, 7780, South Africa</span></div>
             <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:admin@maggicpropertygroup.co.za">admin@maggicpropertygroup.co.za</a></div>
