@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/coffeeright/hero-800x400.jpg">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffeeright — Conferences, launches, parties, weddings</title>
-    <meta name="description" content="Coffeeright provides a full coffee bar for corporate and private functions in Cape Town, offering elegant solutions for conferences, launches, parties, and weddings.">
+    <title>Coffeeright</title>
+    <meta name="description" content="Coffeeright provides a full coffee bar for corporate and private functions in Cape Town, offering elegant solutions for conferences, launches, parties, and weddings." />
     
     
     
@@ -54,6 +54,94 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
     <header>
@@ -61,7 +149,7 @@
             <a href="#" class="brand"><img src="logo.png" alt="Coffeeright logo" class="logo"><span class="brand-name">Coffeeright</span></a>
             <nav>
                 <ul id="nav-links">
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about">About Coffeeright</a></li>
                     <li><a href="#offerings">Our Services</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact Us</a></li>
@@ -75,48 +163,44 @@
         <div class="hero-split-text">
             <h1>Coffeeright</h1>
             <p>Mobile coffee bar solutions for private and corporate functions</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
         <div class="hero-split-image"></div>
     </section>
     <section id="about">
         <div class="container">
             <h2>About Coffeeright</h2>
-            <p>Coffeeright specializes in providing exquisite mobile coffee bar services for events ranging from corporate conferences to intimate weddings. We serve clients in Cape Town, offering a unique experience that combines high-quality coffee with exceptional service.</p>
-            <p>Our journey began with a passion for coffee and a desire to share that passion with the world. At Coffeeright, we believe that coffee is not just a beverage, but a way to bring people together and create unforgettable moments.</p>
-            <p>We are committed to creating a warm and inviting atmosphere at every event we cater. Our promise is to deliver a personalized experience, tailored to meet the specific needs and preferences of each client.</p>
-            <img src="about.jpg" alt="Coffeeright team" class="about-photo">
-        </div>
+<p>Coffeeright specializes in providing exquisite mobile coffee bar services for events ranging from corporate conferences to intimate weddings. We serve clients in Cape Town, offering a unique experience that combines high-quality coffee with exceptional service.</p><p>Our journey began with a passion for coffee and a desire to share that passion with the world. At Coffeeright, we believe that coffee is not just a beverage, but a way to bring people together and create unforgettable moments.</p><p>We are committed to creating a warm and inviting atmosphere at every event we cater. Our promise is to deliver a personalized experience, tailored to meet the specific needs and preferences of each client.</p>
+                    <img src="about.jpg" alt="Coffeeright team" class="about-photo about-photo-medium">
+                </div>
     </section>
     <section id="offerings">
         <div class="container">
             <h2>Our Services</h2>
-            <p>Explore our range of services designed to elevate any event with our full-service coffee bar solutions.</p>
+            <p class="sitehub-section-intro">Explore our range of services designed to elevate any event with our full-service coffee bar solutions.</p>
             <div class="cards-grid">
-                <div class="card">
-                    <img src="service-1.jpg" alt="Services 1" class="card-photo">
-                    <div class="card-icon"><i class="fas fa-coffee"></i></div>
-                    <h3>Corporate Events</h3>
-                    <p>Enhance your corporate event with our premium coffee bar, perfect for conferences, launches, workshops, and corporate family days.</p>
+                    <div class="service-item">
+                        <img src="service-1.jpg" alt="Corporate Events" class="service-image service-image-medium">
+                        <h3>Corporate Events</h3>
+                        <p>Enhance your corporate event with our premium coffee bar, perfect for conferences, launches, workshops, and corporate family days.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="service-2.jpg" alt="Weddings" class="service-image service-image-medium">
+                        <h3>Weddings</h3>
+                        <p>Make your special day unforgettable with our elegant coffee bar service, tailored to suit your wedding theme and style.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="service-3.jpg" alt="Launch Events" class="service-image service-image-medium">
+                        <h3>Launch Events</h3>
+                        <p>Kickstart your product launch with our vibrant coffee solutions, designed to impress and energize your guests.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="service-2.jpg" alt="Services 2" class="card-photo">
-                    <div class="card-icon"><i class="fas fa-heart"></i></div>
-                    <h3>Weddings</h3>
-                    <p>Make your special day unforgettable with our elegant coffee bar service, tailored to suit your wedding theme and style.</p>
-                </div>
-                <div class="card">
-                    <img src="service-3.jpg" alt="Services 3" class="card-photo">
-                    <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
-                    <h3>Launch Events</h3>
-                    <p>Kickstart your product launch with our vibrant coffee solutions, designed to impress and energize your guests.</p>
-                </div>
-            </div>
         </div>
     </section>
     <section id="gallery">
         <div class="container">
             <h2>Gallery</h2>
+<p class="sitehub-section-intro">Explore our vibrant photo gallery to see how Coffeeright transforms ordinary events into unforgettable experiences.</p>
             <div class="gallery-grid">
                 <figure class="gallery-item"><img src="gallery-1.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 1" loading="lazy"></figure>
                 <figure class="gallery-item"><img src="gallery-2.jpg" alt="Coffeeright — Conferences, launches, parties, weddings photo 2" loading="lazy"></figure>
@@ -130,7 +214,7 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>We'd love to hear from you — reach out to us anytime.</p>
+            <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
             <div class="contact-details-row">
                 <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>8 Section St, Paarden Eiland, Cape Town, 7405, South Africa</span></div>
                 <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:ilana@coffeeright.co.za">ilana@coffeeright.co.za</a></div>
