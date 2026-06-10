@@ -141,6 +141,13 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -149,11 +156,11 @@
             <a href="#" class="brand"><img src="logo.png" alt="Coffeeright logo" class="logo"><span class="brand-name">Coffeeright</span></a>
             <nav>
                 <ul id="nav-links">
-                    <li><a href="#about">About Coffeeright</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#offerings">Our Services</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
+                    <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get In Touch</a></li>
                 </ul>
             </nav>
             <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -169,8 +176,8 @@
     </section>
     <section id="about">
         <div class="container">
-            <h2>About Coffeeright</h2>
-<p>Coffeeright specializes in providing exquisite mobile coffee bar services for events ranging from corporate conferences to intimate weddings. We serve clients in Cape Town, offering a unique experience that combines high-quality coffee with exceptional service.</p><p>Our journey began with a passion for coffee and a desire to share that passion with the world. At Coffeeright, we believe that coffee is not just a beverage, but a way to bring people together and create unforgettable moments.</p><p>We are committed to creating a warm and inviting atmosphere at every event we cater. Our promise is to deliver a personalized experience, tailored to meet the specific needs and preferences of each client.</p>
+            <h2>About Us</h2>
+<p>At Coffeeright, we transform events in Cape Town with our exquisite mobile coffee bar services, whether you're hosting a grand corporate conference or an intimate wedding. We provide more than just coffee; we deliver a unique experience that seamlessly blends high-quality brews with <strong>exceptional service</strong>, creating a memorable atmosphere for you and your guests.</p><p>Our story is fueled by a deep passion for coffee and a commitment to sharing that love with you. We believe coffee is more than a drink—it's a medium for connection, a catalyst for unforgettable moments. At Coffeeright, we're dedicated to crafting a <strong>warm and inviting</strong> environment that complements your event, ensuring every detail is tailored to your specific needs and preferences.</p>
                     <img src="about.jpg" alt="Coffeeright team" class="about-photo about-photo-medium">
                 </div>
     </section>
