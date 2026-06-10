@@ -164,3 +164,39 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 .gallery-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important; gap: 16px !important; }
 .gallery-item { aspect-ratio: 1 / 1 !important; overflow: hidden !important; border-radius: var(--border-radius) !important; }
 .gallery-item img { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #e8252d !important;
+  --primary-color: #e8252d !important;
+  --primary-blue: #e8252d !important;
+  --color-secondary: #74aabc !important;
+  --secondary-color: #74aabc !important;
+  --secondary-blue: #74aabc !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+  --max-width: 1100px !important;
+  --section-padding: 80px 20px !important;
+}
+
+header, header.navbar, header.site-header { background: #e8252d !important; }
+@media (max-width: 767px) { nav #nav-links, #nav-links { background: #e8252d !important; } }
+
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
+.nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { background: #74aabc !important; }
+
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #74aabc !important; border-color: #74aabc !important; }
+
+.icon, .icon-large, .service-icon, .feature-icon, .contact-icon-circle i, .social-links a, .social-circle { color: #e8252d !important; }
+
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #74aabc !important; border-color: #74aabc !important; }
+
+/* === END CUSTOM STYLING === */
