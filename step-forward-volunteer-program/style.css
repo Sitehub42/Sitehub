@@ -195,8 +195,9 @@ header, header.navbar, header.site-header { background: #e8252d !important; }
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #74aabc !important; border-color: #74aabc !important; }
 
-.icon, .icon-large, .service-icon, .feature-icon, .contact-icon-circle i, .social-links a, .social-circle { color: #e8252d !important; }
+.icon, .icon-large, .service-icon, .feature-icon, .contact-icon-circle i, .social-links a, .social-circle { color: #74aabc !important; }
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #74aabc !important; border-color: #74aabc !important; }
 
 /* === END CUSTOM STYLING === */
+
