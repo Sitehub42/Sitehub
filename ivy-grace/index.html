@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/ivy-grace/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ivy Grace — Handmade jewellery and handbags</title>
-  <meta name="description" content="Discover unique handmade jewellery and handbags crafted from recycled materials by Ivy Grace in Cape Town. Transforming trash into treasure.">
+  <title>Ivy Grace</title>
+  <meta name="description" content="Discover unique handmade jewellery and handbags crafted from recycled materials by Ivy Grace in Cape Town. Transforming trash into treasure." />
   
   
   
@@ -54,6 +54,73 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+</style>
 </head>
 <body>
   <header>
@@ -61,7 +128,7 @@
       <a href="#" class="brand"><img src="logo.png" alt="Ivy Grace logo" class="logo"><span class="brand-name">Ivy Grace</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Ivy Grace</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
@@ -74,36 +141,35 @@
     <div class="hero-content">
       <h1>Ivy Grace</h1>
       <p>You see trash, we see treasure</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
   <section id="about">
     <h2>About Ivy Grace</h2>
-    <p>Ivy Grace is dedicated to crafting unique handmade jewellery and handbags from recycled materials. Our creations are designed for those who appreciate artistry and sustainability in equal measure.</p>
-    <p>Founded in the heart of Cape Town, Ivy Grace began with a vision to transform discarded items into beautiful, wearable art. Each piece is a testament to our commitment to quality and creativity.</p>
-    <p>We believe in the power of transformation and the beauty of the unexpected. Our mission is to provide our customers with products that are not only eco-friendly but also a reflection of individual style and elegance.</p>
-  </section>
+<p>Ivy Grace is dedicated to crafting unique handmade jewellery and handbags from recycled materials. Our creations are designed for those who appreciate artistry and sustainability in equal measure.</p><p>Founded in the heart of Cape Town, Ivy Grace began with a vision to transform discarded items into beautiful, wearable art. Each piece is a testament to our commitment to quality and creativity.</p><p>We believe in the power of transformation and the beauty of the unexpected. Our mission is to provide our customers with products that are not only eco-friendly but also a reflection of individual style and elegance.</p>
+    </div>
+                </section>
   <section id="offerings">
     <h2>Our Services</h2>
-    <p>Explore our exclusive range of jewellery and handbags, each piece crafted with care from recycled materials.</p>
+    <p class="sitehub-section-intro">Discover the unique charm of Ivy Grace, where every handmade jewellery piece and handbag tells a story of elegance crafted from sustainable materials.</p>
     <div class="cards-grid">
-      <div class="card">
-        <img src="service-1.jpg" alt="Red bull Necklace" class="card-photo">
-        <div class="card-icon"><i class="fas fa-gem"></i></div>
-        <h3>Red bull Necklace — R200-00</h3>
-        <p>This piece is made from red bull tabs, crocheted with 100% pure cotton. It comes in different colours, offering versatility and style.</p>
-      </div>
-      <div class="card">
-        <img src="service-2.jpg" alt="Lula handbag" class="card-photo">
-        <div class="card-icon"><i class="fas fa-handbag"></i></div>
-        <h3>Lula handbag — R2000-00</h3>
-        <p>This bag is made from soda tabs and acrylic yarn. Over 700 tabs were meticulously woven to create this stunning piece.</p>
-      </div>
-    </div>
+                    <div class="service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/ivy-grace/service-1.jpg" alt="Red Bull Elegance Necklace" class="service-image">
+                        <h3>Red Bull Elegance Necklace</h3>
+                        <span class="service-price">R200</span>
+                        <p><p>Elevate your style with this unique necklace, crafted from red bull tabs and crocheted with pure cotton, available in a variety of vibrant colors.</p></p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/ivy-grace/service-2.jpg" alt="Lula Artisan Handbag" class="service-image">
+                        <h3>Lula Artisan Handbag</h3>
+                        <span class="service-price">R2000</span>
+                        <p>Make a bold statement with the Lula Artisan Handbag, intricately woven from over 700 soda tabs and durable acrylic yarn for unmatched elegance.</p>
+                    </div>
+                </div>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Umnga Cres, Langa, Cape Town, 7456, South Africa</span></div>
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:ivynhlapo@yahoo.com">ivynhlapo@yahoo.com</a></div>
