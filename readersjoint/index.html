@@ -17,7 +17,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Readersjoint</title>
-  <meta name="description" content="Discover Readersjoint: a Cape Town-based hub for book lovers with book sales, blogs, and book clubs. Dive into a world of books today." />
+  <meta name="description" content="Join Readersjoint, Cape Town's ultimate haven for book enthusiasts. Explore engaging blogs, vibrant book clubs, and a curated selection of must-read books." />
   
   
   
@@ -121,6 +121,13 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -129,11 +136,11 @@
       <a href="#" class="brand"><img src="logo.png" alt="Readersjoint logo" class="logo"><span class="brand-name">Readersjoint</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Readersjoint</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get In Touch</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -151,19 +158,20 @@
   </section>
   <section id="about">
     <div class="container">
-      <h2>About Readersjoint</h2>
-<p>I'm passionate about books and the stories they tell. At Readersjoint, I curate a collection of books that inspire, educate, and entertain. Whether you're a lifelong reader or just starting your literary journey, there's something here for everyone.</p><p>My journey began with a love for literature and a desire to share that passion with others. I started Readersjoint as a platform to connect with fellow book enthusiasts and to create a community around our shared love for reading. Through blogs, book clubs, and podcasts, I aim to spark meaningful conversations and foster a deeper appreciation for the written word.</p><p>At Readersjoint, I believe in the power of stories to change lives. My promise is to provide a space where readers can explore new ideas, discover new authors, and connect with like-minded individuals. Join me as we read our hearts away and explore the world through books.</p>
+      <h2>About Us</h2>
+<p>Welcome to Readersjoint, where your passion for books finds its perfect companion. As a book lover myself, I have curated a collection that is designed to <strong>inspire</strong>, <strong>educate</strong>, and <strong>entertain</strong> readers from all walks of life. Whether you're embarking on your first literary adventure or you're a seasoned bibliophile, you'll discover something here that speaks to your soul.</p><p>Readersjoint was born out of my deep-seated love for literature and a genuine desire to share that passion with you. This platform is your gateway to a vibrant community of fellow book enthusiasts. Through immersive blogs, dynamic book clubs, and thought-provoking podcasts, I strive to ignite meaningful discussions and nurture a greater appreciation for the written word.</p><p>Join me at Readersjoint and experience the transformative power of stories. Here, you can explore new ideas, uncover emerging authors, and connect with a network of like-minded individuals. Together, let's embark on this literary journey and explore the world, one page at a time.</p>
                 </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p class="sitehub-section-intro">Explore our range of services designed to enrich your reading experience and connect you with a vibrant community of book lovers.</p>
+      <p class="sitehub-section-intro">Dive into Readersjoint, your personal gateway to captivating stories, thought-provoking blogs, and a lively community of fellow book enthusiasts.</p>
       <div class="cards-grid">
                     <div class="service-item">
                         <img src="service-1.jpg" alt="Information" class="service-image">
                         <h3>Information</h3>
                         <p>For R80 monthly, gain access to exclusive content including book sales, curated subscriptions, and insightful blogs. Dive into a world of literary exploration and discussion tailored just for you.</p>
+                        <ul class="service-features"><li>Exclusive content at your fingertips</li><li>Curated subscriptions for book lovers</li><li>Insightful blogs for deep dives</li></ul>
                     </div>
                 </div>
     </div>
@@ -171,6 +179,7 @@
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
+<p class="sitehub-section-intro">Explore our photo gallery to dive into the vibrant world of Readersjoint, where books, community, and inspiration come to life.</p>
       <div class="gallery-grid">
         <figure class="gallery-item"><img src="gallery-1.jpg" alt="Readersjoint — books, bookclub, blogs, information photo 1" loading="lazy"></figure>
         <figure class="gallery-item"><img src="gallery-2.jpg" alt="Readersjoint — books, bookclub, blogs, information photo 2" loading="lazy"></figure>
@@ -183,7 +192,7 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">Connect with us and share your literary passion—your thoughts and inquiries are always welcome!</p>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>11 Princess Margaret St, Ruyterwacht, Cape Town, 7460, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:sicolonomtandazo@gmail.com">sicolonomtandazo@gmail.com</a></div>
