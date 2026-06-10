@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/readersjoint/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Readersjoint — books, bookclub, blogs, information</title>
-  <meta name="description" content="Discover Readersjoint: a Cape Town-based hub for book lovers with book sales, blogs, and book clubs. Dive into a world of books today.">
+  <title>Readersjoint</title>
+  <meta name="description" content="Discover Readersjoint: a Cape Town-based hub for book lovers with book sales, blogs, and book clubs. Dive into a world of books today." />
   
   
   
@@ -51,6 +51,77 @@
   }
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
+.gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+</style>
 </head>
 <body>
   <header>
@@ -58,7 +129,7 @@
       <a href="#" class="brand"><img src="logo.png" alt="Readersjoint logo" class="logo"><span class="brand-name">Readersjoint</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Readersjoint</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -73,7 +144,7 @@
       <div class="hero-split-text">
         <h1>Readersjoint</h1>
         <p>Read your heart away</p>
-        <a href="#contact" class="cta-button">Get In Touch</a>
+        <a href="#contact" class="cta-button">Contact Us</a>
       </div>
       <div class="hero-split-image" style="background-image: url('hero-800x400.jpg');"></div>
     </div>
@@ -81,23 +152,20 @@
   <section id="about">
     <div class="container">
       <h2>About Readersjoint</h2>
-      <p>I'm passionate about books and the stories they tell. At Readersjoint, I curate a collection of books that inspire, educate, and entertain. Whether you're a lifelong reader or just starting your literary journey, there's something here for everyone.</p>
-      <p>My journey began with a love for literature and a desire to share that passion with others. I started Readersjoint as a platform to connect with fellow book enthusiasts and to create a community around our shared love for reading. Through blogs, book clubs, and podcasts, I aim to spark meaningful conversations and foster a deeper appreciation for the written word.</p>
-      <p>At Readersjoint, I believe in the power of stories to change lives. My promise is to provide a space where readers can explore new ideas, discover new authors, and connect with like-minded individuals. Join me as we read our hearts away and explore the world through books.</p>
-    </div>
+<p>I'm passionate about books and the stories they tell. At Readersjoint, I curate a collection of books that inspire, educate, and entertain. Whether you're a lifelong reader or just starting your literary journey, there's something here for everyone.</p><p>My journey began with a love for literature and a desire to share that passion with others. I started Readersjoint as a platform to connect with fellow book enthusiasts and to create a community around our shared love for reading. Through blogs, book clubs, and podcasts, I aim to spark meaningful conversations and foster a deeper appreciation for the written word.</p><p>At Readersjoint, I believe in the power of stories to change lives. My promise is to provide a space where readers can explore new ideas, discover new authors, and connect with like-minded individuals. Join me as we read our hearts away and explore the world through books.</p>
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>Explore our range of services designed to enrich your reading experience and connect you with a vibrant community of book lovers.</p>
+      <p class="sitehub-section-intro">Explore our range of services designed to enrich your reading experience and connect you with a vibrant community of book lovers.</p>
       <div class="cards-grid">
-        <div class="card">
-          <img src="service-1.jpg" alt="Services 1" class="card-photo">
-          <div class="card-icon"><i class="fas fa-book"></i></div>
-          <h3>Information</h3>
-          <p>For R80 monthly, gain access to exclusive content including book sales, curated subscriptions, and insightful blogs. Dive into a world of literary exploration and discussion tailored just for you.</p>
-        </div>
-      </div>
+                    <div class="service-item">
+                        <img src="service-1.jpg" alt="Information" class="service-image">
+                        <h3>Information</h3>
+                        <p>For R80 monthly, gain access to exclusive content including book sales, curated subscriptions, and insightful blogs. Dive into a world of literary exploration and discussion tailored just for you.</p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="gallery">
@@ -115,7 +183,7 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>11 Princess Margaret St, Ruyterwacht, Cape Town, 7460, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:sicolonomtandazo@gmail.com">sicolonomtandazo@gmail.com</a></div>
