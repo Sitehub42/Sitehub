@@ -160,3 +160,30 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 .gallery-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important; gap: 16px !important; }
 .gallery-item { aspect-ratio: 1 / 1 !important; overflow: hidden !important; border-radius: var(--border-radius) !important; }
 .gallery-item img { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #ffab01 !important;
+  --primary-color: #ffab01 !important;
+  --primary-blue: #ffab01 !important;
+  --color-secondary: #5c5c5c !important;
+  --secondary-color: #5c5c5c !important;
+  --secondary-blue: #5c5c5c !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+  --max-width: 1100px !important;
+  --section-padding: 80px 20px !important;
+}
+
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
+.nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { background: #5c5c5c !important; }
+
+/* === END CUSTOM STYLING === */
