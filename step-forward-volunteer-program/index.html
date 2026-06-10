@@ -138,6 +138,13 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -150,7 +157,7 @@
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get In Touch</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -170,8 +177,8 @@
     <div class="container">
       <h2>About</h2>
 <p>At Step Forward Volunteer Programme Cape Town, we are passionately committed to uniting and empowering the Jewish community through a robust volunteer network. Whether you're a new or seasoned volunteer, our intuitive online platform streamlines your journey, enabling you to connect with meaningful community projects effortlessly.</p><p>Our program emerged from an in-depth analysis of past initiatives, revealing the need for a centralized volunteer hub. By collaborating with 19 esteemed organizations and gathering insights from 45 dedicated participants, we have crafted a comprehensive solution that ensures smooth and efficient volunteer onboarding and participation.</p><p>We place the utmost importance on your safety and growth. Through our rigorous onboarding process, we ensure that you are well-prepared and matched with opportunities that align with your unique skills and interests. Join us in fostering a vibrant and impactful volunteer community, where your contributions truly make a difference.</p>
-                    <img src="about.jpg?v=1781098955956" alt="About" class="about-photo about-photo-small" loading="lazy">
-    </div>
+                    <img src="about.jpg?v=1781099577924" alt="About" class="about-photo about-photo-small" loading="lazy">
+                </div>
                 </section>
   <section id="offerings">
     <div class="container">
@@ -220,7 +227,7 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">Connect with us to start your volunteer journey and make a difference in Cape Town today!</p>
       <div class="contact-details-row">
         <div class="contact-item">
           <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
