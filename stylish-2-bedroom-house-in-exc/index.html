@@ -133,6 +133,13 @@
 .service-item .service-image-small { max-width: 120px; max-height: 90px; }
 .service-item .service-image-medium { max-width: 200px; max-height: 150px; }
 .service-item .service-image-large { max-width: 100%; max-height: 240px; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -144,7 +151,7 @@
           <li><a href="#about">About </a></li>
           <li><a href="#offerings">Holiday Home</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Book Now</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Book Now</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -161,7 +168,7 @@
   <section id="about">
     <h2>About </h2>
 <p>Our stylish and spacious 2-bedroom house in Sea Point, Cape Town, is designed to offer guests a comfortable and modern living experience. Each room is equipped with ceiling fans and en suite bathrooms, ensuring privacy and convenience for all guests.</p><p>Located on a quiet street, this home is a stone's throw away from the bustling Adelphi Shopping Centre and the beautiful beachfront promenade. Whether you're here for a short stay or an extended visit, our house provides the perfect base to explore the city's attractions.</p><p>We prioritize your safety and comfort, offering high-speed uncapped fiber internet with battery backup, as well as security features like a comprehensive alarm system and secure off-street parking.</p>
-                </div>
+    </div>
                 </section>
   <section id="offerings">
     <h2>Holiday Home</h2>
@@ -170,17 +177,20 @@
                     <div class="service-item">
                         <i class="fas fa-bed icon-large" aria-hidden="true"></i>
                         <h3>Holiday Short Term Let</h3>
-                        <p>Stay in our modern, comfortable house located just minutes from the beach. Perfect for your Cape Town getaway, accommodating up to 4 adults.</p>
+                        <p><p>Stay in our modern, comfortable house located just minutes from the beach. Perfect for your Cape Town getaway, accommodating up to 4 adults.</p></p>
+                        <ul class="service-features"><li>Beachside proximity</li><li>Modern comfort</li><li>Ideal for 4 adults</li></ul>
                     </div>
                     <div class="service-item">
                         <i class="fas fa-wifi icon-large" aria-hidden="true"></i>
                         <h3>High-Speed Internet</h3>
                         <p>Enjoy high-speed uncapped fiber internet with a 35/25 Mbps connection, perfect for remote work or streaming your favorite shows.</p>
+                        <ul class="service-features"><li>Seamless remote work</li><li>Stream without buffering</li><li>Unlimited internet access</li></ul>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-shield-alt icon-large" aria-hidden="true"></i>
+                        <i class="fas fa-shield-alt icon-large" style="color: #000000" aria-hidden="true"></i>
                         <h3>Security Features</h3>
-                        <p>Rest easy with our comprehensive security system, featuring an alarm, secure access, and off-street parking to ensure peace of mind.</p>
+                        <p><p>Rest easy with our comprehensive security system, featuring an alarm, secure access, and off-street parking to ensure peace of mind.</p></p>
+                        <ul class="service-features"><li>Comprehensive security system</li><li>Secure off-street parking</li><li>Peace of mind assured</li></ul>
                     </div>
                 </div>
   </section>
