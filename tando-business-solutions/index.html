@@ -144,6 +144,13 @@
 .gallery-item-small img { aspect-ratio: 1 / 1; }
 .gallery-item-medium img { aspect-ratio: 1 / 1; }
 .gallery-item-large img { aspect-ratio: 4 / 3; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
 </style>
 </head>
 <body>
@@ -152,11 +159,11 @@
       <a href="#" class="brand"><img src="logo.png" alt="Tando Business Solutions logo" class="logo"><span class="brand-name">Tando Business Solutions</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Tando Business Solutions</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#offerings">Our Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get a Quote</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get a Quote</a></li>
         </ul>
         <button id="hamburger" aria-label="Menu">&#9776;</button>
       </nav>
@@ -173,10 +180,10 @@
   </section>
 
   <section id="about">
-    <h2>About Tando Business Solutions</h2>
+    <h2>About</h2>
 <p>Tando Business Solutions specializes in crafting innovative IT solutions tailored to the needs of businesses in Cape Town. With a deep understanding of the digital landscape, we offer services ranging from software development to website creation, ensuring that each solution is personalized to fit the unique demands of our clients.</p><p>Founded with a vision to empower businesses through technology, Tando Business Solutions takes a client-first approach in everything we do. Our team of experienced professionals works collaboratively to deliver projects that not only meet but exceed expectations, ensuring a seamless integration of technology into your business processes.</p><p>At Tando Business Solutions, we value integrity, innovation, and customer satisfaction above all. We promise to deliver high-quality IT solutions that enhance business efficiency and drive growth, ensuring that our clients are equipped with the tools they need to succeed in an ever-evolving digital world.</p>
                     <img src="about.jpg" alt="Tando Business Solutions team" class="about-photo about-photo-medium">
-    </div>
+                </div>
                 </section>
 
   <section id="offerings">
