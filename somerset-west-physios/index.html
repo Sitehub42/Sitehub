@@ -123,12 +123,90 @@
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 2rem; }
 .gallery-item img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--border-radius, 8px); display: block; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
 </style>
 </head>
 <body>
   <header>
     <div class="nav-inner">
-      <a href="#" class="brand"><img src="logo.png" alt="Somerset West Physios logo" class="logo"><span class="brand-name">Somerset West Physios</span></a>
+      <a href="#" class="brand"><img src="logo.png" alt="Somerset West Physios logo" class="logo"><span class="brand-name">Healing Hands for Every Generation</span></a>
       <nav>
         <ul id="nav-links">
           <li><a href="#about">About Us</a></li>
@@ -152,26 +230,26 @@
   <section id="about">
     <h2>About Us</h2>
 <p>At Somerset West Physios, we specialize in providing top-notch physiotherapy services tailored to each age group. Our clinic, located in the heart of Heldervue, Cape Town, is dedicated to serving scholars, young professionals, and the elderly with personalized care.</p><p>Founded with a commitment to improve lives through effective physiotherapy, our approach is rooted in understanding the unique needs of our local community. We pride ourselves on creating a welcoming environment where patients can feel at ease.</p><p>Our values center on trust, empathy, and excellence in care. We promise to deliver comprehensive treatment plans that foster quick recovery and long-term wellness for every individual we serve.</p>
-                </div>
+    </div>
                 </section>
   <section id="offerings">
     <h2>Our Services</h2>
-    <p>Discover our range of specialized physiotherapy services designed to meet the diverse needs of our community.</p>
+    <p class="sitehub-section-intro">Discover our range of specialized physiotherapy services designed to meet the diverse needs of our community.</p>
     <div class="cards-grid">
                     <div class="service-item">
-                        <i class="fas fa-child icon-large" aria-hidden="true"></i>
+                        <div class="card-icon"><i class="fas fa-child icon-large" aria-hidden="true"></i></div>
                         <h3>Physiotherapy for Scholars</h3>
                         <p>Our youth-focused treatments are tailored to address common issues faced by students, ensuring they remain active and healthy through their educational journey.</p>
                         <ul class="service-features"><li>Youth-centric treatment plans</li><li>Enhances student performance</li><li>Promotes lifelong health habits</li></ul>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-briefcase icon-large" aria-hidden="true"></i>
+                        <div class="card-icon"><i class="fas fa-briefcase icon-large" aria-hidden="true"></i></div>
                         <h3>Physiotherapy for Young Professionals</h3>
                         <p>Designed to relieve stress and prevent work-related injuries, our services help professionals maintain peak physical condition amidst hectic schedules.</p>
                         <ul class="service-features"><li>Stress-busting techniques</li><li>Injury prevention strategies</li><li>Optimizes work-life balance</li></ul>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-heartbeat icon-large" aria-hidden="true"></i>
+                        <div class="card-icon"><i class="fas fa-heartbeat icon-large" aria-hidden="true"></i></div>
                         <h3>Physiotherapy for the Elderly</h3>
                         <p>We offer compassionate care aimed at enhancing mobility and reducing pain, ensuring a better quality of life for our senior patients.</p>
                         <ul class="service-features"><li>Pain management solutions</li><li>Mobility enhancement focus</li><li>Improves daily living</li></ul>
@@ -184,7 +262,7 @@
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"Excellent experience, good advise and overall quality service. Went in for my knee and ankle ligaments. Really good advise, tips and treatment."</blockquote>
-        <cite>— Caleb Kellerman, ⭐⭐⭐⭐⭐</cite>
+        <cite>&mdash; Caleb Kellerman, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
@@ -192,17 +270,16 @@
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item"><img src="gallery-1.jpg" alt="Somerset West Physios — Physical Therapist photo 1" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-2.jpg" alt="Somerset West Physios — Physical Therapist photo 2" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-3.jpg" alt="Somerset West Physios — Physical Therapist photo 3" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-4.jpg" alt="Somerset West Physios — Physical Therapist photo 4" loading="lazy"></figure>
-      </div>
+      <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+          </div>
     </div>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
       <div class="contact-item">
         <div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div>
