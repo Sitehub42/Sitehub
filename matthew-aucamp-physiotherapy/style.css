@@ -139,7 +139,7 @@ footer a { color: rgba(255,255,255,0.8); }
   .about-grid { grid-template-columns: 1fr; }
 
   .cta-button { padding: 14px 28px; font-size: 1rem; min-height: 48px; }
-  .hero-split { grid-template-columns: 1fr; }
+  #hero, .hero-split { grid-template-columns: 1fr; }
   .hero-split-text { padding: 40px 20px; min-height: 50vh; }
   .hero-split-image { min-height: 40vh; }
   .form-wrapper iframe { height: 700px; }
