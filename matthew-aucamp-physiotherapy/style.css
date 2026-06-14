@@ -1,12 +1,12 @@
 :root {
   --color-primary: #18307b;
-  --color-heading: #18307b;
+  --color-heading: #1b1a1a;
   --color-cta: #d9d9d9;
   --color-secondary: #d9d9d9;
   --nav-fg: #ffffff;
   --logo-filter: brightness(0) invert(1);
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
   --section-padding: 80px 20px;
   --max-width: 1100px;
   --border-radius: 12px;
@@ -35,7 +35,7 @@ header img.logo { max-height: 50px; width: auto; filter: var(--logo-filter); }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; flex-shrink: 1; }
 .brand-name { color: var(--nav-fg); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; white-space: normal; letter-spacing: 0.01em; line-height: 1.2; }
 /* Desktop nav ??? MUST be horizontal flex row; do NOT override these rules */
-nav { display: flex; align-items: center; }
+nav { display: flex; align-items: center; flex-shrink: 0; }
 nav #nav-links { display: flex !important; flex-direction: row !important; list-style: none !important; gap: 30px; padding: 0; margin: 0; background: transparent !important; position: static !important; }
 nav #nav-links li { padding: 0; border: none; }
 nav #nav-links a { color: var(--nav-fg); text-decoration: none; font-weight: 500; font-family: var(--font-body); font-size: 0.9rem; letter-spacing: 0.02em; }
@@ -96,7 +96,7 @@ footer a { color: rgba(255,255,255,0.8); }
 
 /* NAV CTA BUTTON */
 .nav-cta-item { list-style: none; }
-.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: white !important; padding: 8px 20px; border-radius: var(--border-radius); font-weight: 600; font-size: 0.85rem; font-family: var(--font-body); text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: #1b1a1a !important; padding: 8px 20px; border-radius: var(--border-radius); font-weight: 700; font-size: 0.85rem; font-family: var(--font-body); text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
 .nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
 @media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: white !important; } }
 
@@ -160,7 +160,7 @@ footer a { color: rgba(255,255,255,0.8); }
 }
 /* ?????? SiteHub font enforcement (post-processed) ?????? */
 body, p, li, a, span, div, button, input, textarea, label, select, td, th, blockquote, figcaption, nav, ul, ol, dl, dt, dd, address, small, strong, em, b, footer, header, main, section, article, aside, figure, details, summary { font-family: 'Open Sans', sans-serif !important; }
-h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', sans-serif !important; }
+h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans-serif !important; }
 
 /* ?????? SiteHub mobile nav enforcement (post-processed) ?????? */
 @media (max-width: 767px) {
@@ -195,9 +195,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
   --nav-fg: #ffffff !important;
   --hamburger-bg: #d4af37 !important;
   --logo-filter: brightness(0) invert(1) !important;
-  --font-heading: 'Montserrat', sans-serif !important;
-  --heading-font: 'Montserrat', sans-serif !important;
-  --font-body: 'Open Sans', sans-serif !important;
+  --font-heading: 'Poppins', sans-serif !important;
+  --heading-font: 'Poppins', sans-serif !important;
+  --font-body: 'Poppins', sans-serif !important;
   --body-font: 'Open Sans', sans-serif !important;
   --max-width: 1100px !important;
   --section-padding: 80px 20px !important;
