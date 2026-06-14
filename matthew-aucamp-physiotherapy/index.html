@@ -16,7 +16,7 @@
   <meta name="twitter:image" content="https://sitehub.co.za/matthew-aucamp-physiotherapy/hero-800x400.jpg">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Aucamp Physiotherapy — Physiotherapy</title>
+    <title>Matthew Aucamp Physiotherapy</title>
     <meta name="description" content="Matthew Aucamp Physiotherapy in Gqeberha offers men's health, musculoskeletal, orthopaedic, and geriatric care with a patient-centred approach.">
     
     
@@ -56,6 +56,103 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
+</style>
 </head>
   <body>
     <header>
@@ -66,12 +163,12 @@
         </a>
         <nav>
           <ul id="nav-links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#offerings">Our Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About Mathew</a></li>
+            <li><a href="#offerings">Services & Pricing</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact Us</a></li>
-            <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Book Now</a></li>
+            <li class="nav-cta-item"><a href="#contact" class="nav-cta">Book Now</a></li>
           </ul>
           <button id="hamburger" aria-label="Menu">&#9776;</button>
         </nav>
@@ -81,71 +178,88 @@
       <div class="hero-split-text">
         <h1>Matthew Aucamp Physiotherapy</h1>
         <p>Empowering your recovery with personalized physiotherapy care.</p>
-        <a href="#contact" class="cta-button">Get In Touch</a>
+        <a href="#contact" class="cta-button">Contact Us</a>
       </div>
       <div class="hero-split-image"></div>
     </section>
     <section id="about">
       <div class="container">
-        <h2>About Matthew Aucamp Physiotherapy</h2>
-        <p>Matthew Aucamp Physiotherapy focuses on providing specialized care in men's health, musculoskeletal issues, orthopaedic recovery, and geriatric care. We cater to patients in hospitals, old-age homes, and offer convenient home visits and online consultations.</p>
-        <p>Founded by Matthew Aucamp, our practice is committed to delivering personalized, patient-centered care. We believe in empowering our patients through education and tailored treatment plans that address their unique needs and health goals.</p>
-        <p>At Matthew Aucamp Physiotherapy, our core values revolve around compassion, integrity, and excellence in service. We strive to create a supportive environment where patients feel valued and motivated throughout their recovery journey.</p>
-        <img src="about.jpg" alt="Matthew Aucamp Physiotherapy team" class="about-photo">
-      </div>
+        <h2>About Mathew</h2>
+<h2>Dedicated to your Recovery</h2><p><br></p><p>Welcome to Matthew Aucamp Physiotherapy, where your well-being is our paramount focus. Situated in the heart of Gqeberha, we specialize in comprehensive care tailored to your specific needs, whether it's men's health, musculoskeletal, orthopaedic, or geriatric concerns. To accommodate your lifestyle, we offer flexible services that include hospital visits, support for old-age homes, home visits, and even online consultations, ensuring you receive care when and where you need it.</p><p>Founded by myself, Matthew Aucamp, our practice is renowned for its compassionate and effective patient-centered approach. I combine the latest in physiotherapeutic techniques with a personalized touch, crafting treatment plans uniquely suited to your individual journey. My mission is to empower you through enhanced mobility and pain management, promoting not just recovery, but a better quality of life. You can expect to be treated with the utmost <strong>dignity</strong>, <strong>respect</strong>, and <strong>professionalism</strong> every step of the way.</p>
+                </div>
     </section>
     <section id="offerings">
       <div class="container">
-        <h2>Our Services</h2>
-        <p>Explore our range of specialized physiotherapy services designed to meet your health and wellness needs.</p>
+        <h2>Services & Pricing</h2>
+        <p class="sitehub-section-intro">Discover personalized physiotherapy solutions at Matthew Aucamp Physiotherapy, where your journey to effective treatment and recovery begins.
+
+Contracted in with medical aids including discovery spinal conservative care program.</p>
         <div class="cards-grid">
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-male"></i></div>
-            <h3>Men's Health</h3>
-            <p>Our men's health program addresses specific concerns such as prostate health, pelvic pain, and post-surgical rehabilitation to improve quality of life.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-dumbbell"></i></div>
-            <h3>Musculoskeletal Care</h3>
-            <p>We provide comprehensive treatment for musculoskeletal disorders, helping you regain strength, mobility, and function.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-bone"></i></div>
-            <h3>Orthopaedic Care</h3>
-            <p>Our orthopaedic services focus on post-surgery rehabilitation, injury prevention, and treatment for conditions affecting bones and joints.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-blind"></i></div>
-            <h3>Geriatric Care</h3>
-            <p>We offer tailored physiotherapy for seniors, promoting independence, balance, and overall well-being in their golden years.</p>
-          </div>
-        </div>
+                    <div class="card service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/matthew-aucamp-physiotherapy/service-images/service-comprehensive-musculoskeletal-relief-1780567870852.jpg" alt="Targeted Pain Relief" class="service-image service-image-medium">
+                        <h3>Targeted Pain Relief</h3>
+                        <p><p>Experience effective relief from musculoskeletal pain and regain your physical function with our targeted treatment plans, designed for optimal recovery.</p></p>
+                        <ul class="service-features"><li>Targeted pain relief plans</li><li>Optimal physical function restoration</li><li>Effective musculoskeletal treatments</li></ul>
+                    </div>
+                    <div class="card service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/matthew-aucamp-physiotherapy/service-images/service-orthopaedic-recovery-solutions-1780571028850.jpg" alt="Swift Orthopaedic Recovery" class="service-image service-image-medium">
+                        <h3>Swift Orthopaedic Recovery</h3>
+                        <p><p>Accelerate your recovery from surgeries or injuries with our orthopaedic solutions, restoring your strength and mobility efficiently.</p></p>
+                        <ul class="service-features"><li>Speedy post-surgery recovery</li><li>Strength and mobility restoration</li><li>Efficient injury healing</li></ul>
+                    </div>
+                    <div class="card service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/matthew-aucamp-physiotherapy/service-images/service-senior-mobility-enhancement-1780571158540.jpg" alt="Active Senior Mobility" class="service-image service-image-medium">
+                        <h3>Active Senior Mobility</h3>
+                        <p><p>Enhance your senior years with our geriatric physiotherapy, improving balance, coordination, and mobility for a more active lifestyle.</p></p>
+                        <ul class="service-features"><li>Improved balance and coordination</li><li>Active senior lifestyle support</li><li>Enhanced geriatric mobility</li></ul>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fa-solid fa-calendar icon-large" style="color: #000000" aria-hidden="true"></i></div>
+                        <h3>Initial </h3>
+                        <span class="service-price">R850</span>
+                        <p></p>
+                        <span class="service-duration">1 Hour</span>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fa-solid fa-chart-line icon-large" style="color: #000000" aria-hidden="true"></i></div>
+                        <h3>Follow Up</h3>
+                        <span class="service-price">R650</span>
+                        <p></p>
+                        <span class="service-duration">45 mins</span>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fa-solid fa-home icon-large" style="color: #000000" aria-hidden="true"></i></div>
+                        <h3>Home Visit</h3>
+                        <span class="service-price">R1000</span>
+                        <p></p>
+                    </div>
+                </div>
       </div>
     </section>
     <section id="testimonials">
   <div class="container">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+    <h2 class="section-title">Reviews</h2>
+<p class="sitehub-section-intro">Discover how Matthew Aucamp Physiotherapy has transformed the lives of our clients through their inspiring stories.</p>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"I visited Matthew Aucamp Physiotherapy during the time when I suffered from extreme back pain, as well as after my back operation. Matthew is an absolute jewel who always puts his patients first and ensure that they receive the best treatment. He is a real gentleman and treats his patients with utmost respect. With Matthew you are not just a number, but a very valuable patient. I strongly recommend Matthew Aucamp Physiotherapy!"</blockquote>
-        <cite>&mdash; Marie van Rooyen, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Marie van Rooyen, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"We were so blessed when Matthew was suggested to us and we could not have asked for a better Physiotherapist. If I could give a million stars I would have. He really goes above and beyond for his clients. My father in law is showing more and more improvement and we could not have done this without him. I would suggest Matthew to each and everyone out there. So friendly and very easy to talk to."</blockquote>
-        <cite>&mdash; Soné Strydom, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Soné Strydom, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Matthew Aucamp is an amazing physiotherapist. He’s extremely friendly, professional, and makes you feel comfortable from the start. He does a great job explaining exercises and treatment, and you can tell he truly cares about his patients progress. I highly recommend him!"</blockquote>
-        <cite>&mdash; Niki Fouche, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Niki Fouche, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Matthew AuCamp is in amazing physio who helped me recover from a fractured ankle in record time. He provided a personalized treatment plan, clear guidance, and constant encouragement helping me regain strength and mobility much faster than I expected. Each session was professional, focused, and tailored to my progress. Thanks to Matt, I’m back on my feet and feeling stronger than ever. Highly recommend!"</blockquote>
-        <cite>&mdash; Kay Brandt, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Kay Brandt, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"My Dad was severely injured in a car accident and suffered a spinal injury. Matt has been working with him for the past while. He has been brilliant - his knowledge, understanding of various muscle groups and exercises have been very thorough and specific to my dad’s injury and progress. He is very calm but also very motivating at the same time. He understands how far to push the patient and also has a very high EQ when dealing with various situations, such as managing expectations."</blockquote>
-        <cite>&mdash; Michael Rushmere, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Michael Rushmere, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
@@ -153,26 +267,35 @@
     <section id="gallery">
       <div class="container">
         <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <figure class="gallery-item"><img src="gallery-1.jpg" alt="Matthew Aucamp Physiotherapy — Physiotherapy photo 1" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="gallery-2.jpg" alt="Matthew Aucamp Physiotherapy — Physiotherapy photo 2" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="gallery-3.jpg" alt="Matthew Aucamp Physiotherapy — Physiotherapy photo 3" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="gallery-4.jpg" alt="Matthew Aucamp Physiotherapy — Physiotherapy photo 4" loading="lazy"></figure>
-        </div>
+<p class="sitehub-section-intro">Explore our gallery to catch a glimpse of the healing environment and personalized care at Matthew Aucamp Physiotherapy.</p>
+        <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-6.jpg" alt="Gallery photo 6" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-7.jpg" alt="Gallery photo 7" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-8.jpg" alt="Gallery photo 8" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-9.jpg" alt="Gallery photo 9" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-10.jpg" alt="Gallery photo 10" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-11.jpg" alt="Gallery photo 11" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-12.jpg" alt="Gallery photo 12" loading="lazy"></figure>
+          </div>
       </div>
     </section>
     <section id="contact">
       <div class="container">
         <h2>Contact Us</h2>
-        <p>We'd love to hear from you — reach out to us anytime.</p>
+        <p class="sitehub-section-intro">Feel better, move better—connect with Matthew Aucamp Physiotherapy today!</p>
         <div class="contact-details-row">
           <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>64 Main Rd, Walmer, Gqeberha, 6065, South Africa</span></div>
           <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:aucampphysiotherapy@gmail.com">aucampphysiotherapy@gmail.com</a></div>
-          <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0832933445">083 293 3445</a></div>
+          <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0832933445">0832933445</a></div>
         </div>
         <div class="social-links">
-          <a href="https://www.facebook.com/profile.php?id=61587139964061" target="_blank" rel="noopener" class="social-circle" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/matthew_aucamp_physiotherapy/" target="_blank" rel="noopener" class="social-circle" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1DzWx46YtX/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-circle" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/matthew_aucamp_physiotherapy?utm_source=qr" target="_blank" rel="noopener" class="social-circle" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         
         <div class="map-wrapper">
