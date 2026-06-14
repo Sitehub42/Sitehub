@@ -32,8 +32,8 @@ header { position: sticky; top: 0; z-index: 1000; background: var(--color-primar
 header .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 20px;
   display: flex !important; justify-content: space-between; align-items: center; min-height: 90px; }
 header img.logo { max-height: 50px; width: auto; filter: var(--logo-filter); }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.brand-name { color: var(--nav-fg); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; white-space: nowrap; letter-spacing: 0.01em; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; flex-shrink: 1; }
+.brand-name { color: var(--nav-fg); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; white-space: normal; letter-spacing: 0.01em; line-height: 1.2; }
 /* Desktop nav ??? MUST be horizontal flex row; do NOT override these rules */
 nav { display: flex; align-items: center; }
 nav #nav-links { display: flex !important; flex-direction: row !important; list-style: none !important; gap: 30px; padding: 0; margin: 0; background: transparent !important; position: static !important; }
@@ -122,8 +122,9 @@ footer a { color: rgba(255,255,255,0.8); }
 /* MOBILE ??? optimised for touch devices */
 @media (max-width: 767px) {
   #hamburger { display: block !important; }
+  .brand-name { font-size: 0.95rem; }
   nav #nav-links { display: none !important; flex-direction: column !important; gap: 0 !important; position: absolute !important;
-    top: 70px; left: 0; right: 0; background: var(--color-primary) !important; padding: 10px 20px; z-index: 999; }
+    top: 90px; left: 0; right: 0; background: var(--color-primary) !important; padding: 10px 20px; z-index: 999; }
   nav #nav-links.open { display: flex !important; }
   nav #nav-links li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
   nav #nav-links a { font-size: 1rem; padding: 8px 0; display: flex; align-items: center; min-height: 44px; color: var(--nav-fg) !important; }
@@ -182,6 +183,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 
 :root {
   --color-primary: #1b1a1a !important;
+  --color-cta: #d4af37 !important;
   --primary-color: #1b1a1a !important;
   --primary-blue: #1b1a1a !important;
   --color-secondary: #d4af37 !important;
