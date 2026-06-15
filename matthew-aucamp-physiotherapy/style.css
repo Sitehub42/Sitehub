@@ -183,7 +183,6 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
 
 :root {
   --color-primary: #1b1a1a !important;
-  --color-cta: #d4af37 !important;
   --primary-color: #1b1a1a !important;
   --primary-blue: #1b1a1a !important;
   --color-secondary: #d4af37 !important;
@@ -195,9 +194,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
   --nav-fg: #ffffff !important;
   --hamburger-bg: #d4af37 !important;
   --logo-filter: brightness(0) invert(1) !important;
-  --font-heading: 'Poppins', sans-serif !important;
-  --heading-font: 'Poppins', sans-serif !important;
-  --font-body: 'Poppins', sans-serif !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
   --body-font: 'Open Sans', sans-serif !important;
   --max-width: 1100px !important;
   --section-padding: 80px 20px !important;
@@ -229,7 +228,7 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; }
 #hero .cta-button *, #hero .btn *, #hero .btn-primary *, #hero a[class*="btn"] * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
 
-.icon, .icon-large, .service-icon, .feature-icon, .contact-icon-circle i, .social-links a, .social-circle { color: #1b1a1a !important; }
+.icon, .icon-large, .service-icon, .feature-icon, .contact-icon-circle i, .social-links a, .social-circle { color: #d4af37 !important; }
 
 body { background-color: #f8fafc !important; }
 
@@ -241,6 +240,8 @@ body { background-color: #f8fafc !important; }
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
 
 /* === END CUSTOM STYLING === */
+
+
 
 
 
