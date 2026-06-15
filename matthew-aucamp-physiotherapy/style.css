@@ -185,14 +185,14 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
   --color-primary: #1b1a1a !important;
   --primary-color: #1b1a1a !important;
   --primary-blue: #1b1a1a !important;
-  --color-secondary: #d4af37 !important;
-  --secondary-color: #d4af37 !important;
-  --secondary-blue: #d4af37 !important;
+  --color-secondary: #dfddd7 !important;
+  --secondary-color: #dfddd7 !important;
+  --secondary-blue: #dfddd7 !important;
   --accent-color: #d4af37 !important;
   --text-color: #1b1a1a !important;
-  --background-color: #d4af37  !important;
+  --background-color: #f8fafc !important;
   --nav-fg: #ffffff !important;
-  --hamburger-bg: #d4af37 !important;
+  --hamburger-bg: #dfddd7 !important;
   --logo-filter: brightness(0) invert(1) !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
@@ -207,7 +207,7 @@ header, header.navbar, header.site-header { background: #1b1a1a !important; }
 
 nav #nav-links a, .brand-name, #hamburger { color: #ffffff !important; }
 
-#hamburger { background: #d4af37 !important; border-radius: 4px; padding: 6px 8px; }
+#hamburger { background: #dfddd7 !important; border-radius: 4px; padding: 6px 8px; }
 
 #hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #ffffff !important; }
 
@@ -219,11 +219,11 @@ body, p, li, td { color: #1b1a1a !important; }
 
 a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-button):not([class*="btn"]), .accent, .highlight { color: #d4af37 !important; }
 
-.nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { background: #d4af37 !important; }
+.nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { background: #dfddd7 !important; }
 
 .nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { color: #1b1a1a !important; }
 
-#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #d4af37 !important; border-color: #d4af37 !important; }
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #dfddd7 !important; border-color: #dfddd7 !important; }
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; }
 #hero .cta-button *, #hero .btn *, #hero .btn-primary *, #hero a[class*="btn"] * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
@@ -232,7 +232,7 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 
 body { background-color: #f8fafc !important; }
 
-#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #d4af37 !important; border-color: #d4af37 !important; }
+#hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #dfddd7 !important; border-color: #dfddd7 !important; }
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; }
 #hero .cta-button *, #hero .btn *, #hero .btn-primary *, #hero a[class*="btn"] * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
@@ -240,6 +240,7 @@ body { background-color: #f8fafc !important; }
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
