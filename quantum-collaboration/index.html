@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/quantum-collaboration/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantum Collaboration — Life coaching</title>
-  <meta name="description" content="Quantum Collaboration offers team development consulting and antianxiety coaching in Cape Town. Empowering teams and individuals to thrive.">
+  <title>Quantum Collaboration</title>
+  <meta name="description" content="Quantum Collaboration offers team development consulting and antianxiety coaching in Cape Town. Empowering teams and individuals to thrive." />
   
   
   
@@ -31,7 +31,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -51,16 +51,107 @@
   }
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+</style>
 </head>
 <body>
   <header>
     <div class="nav-inner">
-      <a href="#" class="brand"><img src="logo.png" alt="Quantum Collaboration logo" class="logo"><span class="brand-name">Quantum Collaboration </span></a>
+      <a href="#" class="brand"><img src="logo.png" alt="Quantum Collaboration logo" class="logo"><span class="brand-name">Quantum Collaboration</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Quantum Collaboration</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
         </ul>
       </nav>
@@ -72,42 +163,55 @@
     <div class="hero-content">
       <h1>Quantum Collaboration</h1>
       <p>Empowering teams and individuals to thrive through targeted coaching and development.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">Contact Us</a>
     </div>
   </section>
 
   <section id="about">
     <div class="container">
       <h2>About Quantum Collaboration</h2>
-      <p>I am Natasha, a passionate life coach based in Cape Town, dedicated to helping individuals and teams unleash their full potential. At Quantum Collaboration, I specialize in antianxiety coaching and team development consulting, empowering my clients to navigate life's challenges with confidence and resilience.</p>
-      <p>My journey into life coaching began with my own experiences of overcoming anxiety and learning the importance of cohesive team dynamics. This personal journey inspired me to help others achieve similar breakthroughs, leading to the creation of Quantum Collaboration. My approach combines empathy, strategic insight, and a deep commitment to personal growth.</p>
-      <p>At the heart of Quantum Collaboration is a promise to provide tailored coaching that resonates with each client's unique needs. I am committed to fostering a supportive environment where individuals and teams can explore their potential, build meaningful connections, and achieve lasting transformation.</p>
-    </div>
+<p>I am Natasha, a passionate life coach based in Cape Town, dedicated to helping individuals and teams unleash their full potential. At Quantum Collaboration, I specialize in antianxiety coaching and team development consulting, empowering my clients to navigate life's challenges with confidence and resilience.</p><p>My journey into life coaching began with my own experiences of overcoming anxiety and learning the importance of cohesive team dynamics. This personal journey inspired me to help others achieve similar breakthroughs, leading to the creation of Quantum Collaboration. My approach combines empathy, strategic insight, and a deep commitment to personal growth.</p><p>At the heart of Quantum Collaboration is a promise to provide tailored coaching that resonates with each client's unique needs. I am committed to fostering a supportive environment where individuals and teams can explore their potential, build meaningful connections, and achieve lasting transformation.</p>
+                </div>
   </section>
 
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>Discover our specialized services designed to empower you and your team to thrive in any environment.</p>
+      <p class="sitehub-section-intro">Discover our specialized services designed to empower you and your team to thrive in any environment.</p>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-heart"></i></div>
-          <h3>Antianxiety Coaching</h3>
-          <p>Through personalized coaching sessions, I help you tackle anxiety and stress, employing techniques that promote calmness and enhance mental well-being.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-users"></i></div>
-          <h3>Team Development Consulting</h3>
-          <p>My consulting services focus on enhancing team dynamics, fostering collaboration, and building a cohesive environment for peak performance.</p>
-        </div>
-      </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-heart icon-large" aria-hidden="true"></i></div>
+                        <h3>Calm Mind Coaching</h3>
+                        <p>Experience tranquility and clarity as I guide you through personalized strategies to conquer anxiety and stress, unlocking your path to mental serenity.</p>
+                        <ul class="service-features"><li>Personalized stress management techniques</li><li>Enhance mental clarity daily</li><li>Unlock inner peace easily</li></ul>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-users icon-large" aria-hidden="true"></i></div>
+                        <h3>Dynamic Team Synergy</h3>
+                        <p>Elevate your team's success with tailored consulting that transforms dynamics, ignites collaboration, and crafts a powerhouse of unified performance.</p>
+                        <ul class="service-features"><li>Boost team productivity quickly</li><li>Enhance workplace communication</li><li>Foster collaborative innovation</li></ul>
+                    </div>
+                </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">Reviews</h2>
+<p class="sitehub-section-intro">Discover how lives have transformed through Quantum Collaboration as our clients share their inspiring journeys and successes.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"I loved the experience"</blockquote>
+        <cite>&mdash; Tanya, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Cape Town</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:natasha@quantumcollaboration.co.za">natasha@quantumcollaboration.co.za</a></div>
