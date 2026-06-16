@@ -154,3 +154,32 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 .gallery-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important; gap: 16px !important; }
 .gallery-item { aspect-ratio: 1 / 1 !important; overflow: hidden !important; border-radius: var(--border-radius) !important; }
 .gallery-item img { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #334155 !important;
+  --primary-color: #334155 !important;
+  --primary-blue: #334155 !important;
+  --color-secondary: #cbd5e1 !important;
+  --secondary-color: #cbd5e1 !important;
+  --secondary-blue: #cbd5e1 !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+  --max-width: 1100px !important;
+  --section-padding: 80px 20px !important;
+}
+
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
+.nav-cta, #nav-links .nav-cta, nav #nav-links .nav-cta { background: #cbd5e1 !important; }
+
+/* === END CUSTOM STYLING === */
