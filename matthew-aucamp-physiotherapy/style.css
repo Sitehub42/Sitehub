@@ -181,19 +181,21 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
 /* === SITEHUB CUSTOM STYLING === */
 /* Auto-generated from user styling preferences */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 :root {
-  --color-primary: #1b1a1a !important;
-  --primary-color: #1b1a1a !important;
-  --primary-blue: #1b1a1a !important;
+  --color-primary: #ffffff !important;
+  --primary-color: #ffffff !important;
+  --primary-blue: #ffffff !important;
   --color-secondary: #dfddd7 !important;
   --secondary-color: #dfddd7 !important;
   --secondary-blue: #dfddd7 !important;
   --accent-color: #d4af37 !important;
   --text-color: #1b1a1a !important;
   --background-color: #f8fafc !important;
-  --nav-fg: #ffffff !important;
+  --nav-fg: #000000 !important;
   --hamburger-bg: #dfddd7 !important;
-  --logo-filter: brightness(0) invert(1) !important;
+  --logo-filter: brightness(0) !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -202,14 +204,14 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
   --section-padding: 80px 20px !important;
 }
 
-header, header.navbar, header.site-header { background: #1b1a1a !important; }
-@media (max-width: 767px) { nav #nav-links, #nav-links { background: #1b1a1a !important; } }
+header, header.navbar, header.site-header { background: #ffffff !important; }
+@media (max-width: 767px) { nav #nav-links, #nav-links { background: #ffffff !important; } }
 
-nav #nav-links a, .brand-name, #hamburger { color: #ffffff !important; }
+nav #nav-links a, .brand-name, #hamburger { color: #000000 !important; }
 
 #hamburger { background: #dfddd7 !important; border-radius: 4px; padding: 6px 8px; }
 
-#hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #ffffff !important; }
+#hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #000000 !important; }
 
 #hero { position: relative !important; isolation: isolate !important; }
 #hero::before { z-index: 0 !important; }
@@ -240,6 +242,7 @@ body { background-color: #f8fafc !important; }
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
