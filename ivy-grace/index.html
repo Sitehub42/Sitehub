@@ -31,7 +31,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -199,6 +199,84 @@
 .service-item .service-image-small { max-width: 120px; max-height: 90px; }
 .service-item .service-image-medium { max-width: 200px; max-height: 150px; }
 .service-item .service-image-large { max-width: 100%; max-height: 240px; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
 </style>
 </head>
 <body>
@@ -208,8 +286,9 @@
       <nav>
         <ul id="nav-links">
           <li><a href="#about">About Ivy Grace</a></li>
-          <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#offerings">Handmade Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact" class="nav-cta">Get In Touch</a></li>
         </ul>
         <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -220,33 +299,48 @@
     <div class="hero-content">
       <h1>Ivy Grace</h1>
       <p>You see trash, we see treasure</p>
-      <a href="#contact" class="cta-button">Contact Us</a>
+      <a href="#contact" class="cta-button">
+                    Contact Us <i class="fas fa-arrow-right"></i>
+                </a>
     </div>
   </section>
   <section id="about">
     <h2>About Ivy Grace</h2>
 <p>At Ivy Grace, we are passionate about crafting <strong>unique handmade jewellery and handbags</strong>, meticulously designed from <strong>recycled materials</strong>. Our creations are perfect for those who cherish both artistry and sustainability, offering you a blend of elegance and eco-consciousness.</p><p>Founded in the vibrant heart of Cape Town, Ivy Grace emerged from a vision to transform discarded items into stunning, wearable art. Each piece we create is a testament to our unwavering commitment to quality and creativity, ensuring that you receive products that are as exceptional as they are sustainable.</p><p>We invite you to experience the power of transformation and the allure of the unexpected. Our mission is to provide you with products that not only champion eco-friendly principles but also reflect your <strong>individual style and sophistication</strong>. Discover elegance reimagined with Ivy Grace.</p>
-                </div>
+    </div>
                 </section>
   <section id="offerings">
-    <h2>Our Services</h2>
+    <h2>Handmade Products</h2>
     <p class="sitehub-section-intro">Discover the unique charm of Ivy Grace, where every handmade jewellery piece and handbag tells a story of elegance crafted from sustainable materials.</p>
     <div class="cards-grid">
                     <div class="service-item">
-                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/ivy-grace/service-1.jpg" alt="Red Bull Elegance Necklace" class="service-image service-image-medium">
-                        <h3>Red Bull Elegance Necklace</h3>
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/ivy-grace/service-image-1.jpg" alt="Vibrant Tab Necklaces" class="service-image service-image-medium">
+                        <h3>Vibrant Tab Necklaces</h3>
                         <span class="service-price">R200</span>
                         <p><p>Elevate your style with this unique necklace, crafted from red bull tabs and crocheted with pure cotton, available in a variety of vibrant colors.</p></p>
                     </div>
                     <div class="service-item">
-                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/ivy-grace/service-2.jpg" alt="Lula Artisan Handbag" class="service-image service-image-medium">
-                        <h3>Lula Artisan Handbag</h3>
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/ivy-grace/service-image-2.jpg" alt="Lula Artisan Bags" class="service-image service-image-medium">
+                        <h3>Lula Artisan Bags</h3>
                         <span class="service-price">R2000</span>
-                        <p>Make a bold statement with the Lula Artisan Handbag, intricately woven from over 700 soda tabs and durable acrylic yarn for unmatched elegance.</p>
+                        <p><p>Make a bold statement with the Lula Artisan Handbag, intricately woven from over 700 soda tabs and durable acrylic yarn for unmatched elegance.</p></p>
                     </div>
                 </div>
   </section>
-  <section id="contact">
+  
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+<p class="sitehub-section-intro">Explore our curated gallery to discover the artistry and elegance behind Ivy Grace's handmade jewellery and handbags.</p>
+        <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
     <h2>Contact Us</h2>
     <p class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</p>
     <div class="contact-details-row">
