@@ -33,7 +33,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -119,6 +119,84 @@
   margin: 0 auto 15px auto;
   display: block;
 }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
 </style>
 </head>
 <body>
@@ -141,15 +219,17 @@
     <div class="hero-content">
       <h1>DogWise</h1>
       <p>True harmony with a dog doesn't come from a place of control; it comes from a place of understanding</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
+      <a href="#contact" class="cta-button">
+                    Get in Touch <i class="fas fa-arrow-right"></i>
+                </a>
     </div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About DogWise</h2>
 <p>True harmony with a dog doesn’t come from a place of control or rigid obedience; it comes from a place of deep understanding.</p><p>Many owners spend months or even years feeling frustrated as they try to manage behavioral challenges with a series of forced commands. At Dogwise, we take a different approach. We focus on bridging the communication gap between you and your dog.</p><p><br></p><h3>Meet Yehuda Goldstuck</h3><p>My name is Yehuda Goldstuck, and I am an expert in dog behavior and guiding owners on how to speak "dog." With 20 years of experience in the dog world, I have dedicated myself to extensive research on how to communicate with dogs effectively to achieve the fastest, most well-balanced results.</p><p>Dogwise was founded to provide owners with a clear roadmap away from daily stress and confusion, and toward a naturally stable, peaceful life together. We don't just train dogs; we empower owners with the behavioral insights and communication tools needed to build an unbreakable bond.</p><h3>Our Philosophy</h3><p><strong>Trust, Respect, and Love don't come from commands; they come from communicating with your dog the right way.</strong></p><h3>Speaking Their Language for Fast Results</h3><p>Dogs are incredibly intuitive, but they don't think or communicate like humans. When you learn to see the world through their eyes, read their subtle body language, and project calm, clear leadership, the shift is profound.</p><p>By shifting the focus away from forcing commands and instead learning to speak the right language, you will experience surprisingly fast results. Behavioral hurdles that once felt permanent naturally begin to dissolve. When you learn to listen, lead, and connect with your dog the right way, true transformation happens faster than you think.</p>
-                    <img src="about.jpg?v=1779786140419" alt="DogWise team" class="about-photo">
-    </div>
+                    <img src="about.jpg?v=1779786140419" alt="DogWise team" class="about-photo about-photo-medium">
+                </div>
                 </section>
   <section id="offerings">
     <div class="container">
@@ -157,19 +237,19 @@
       <p class="sitehub-section-intro">Strengthen the connection with your canine companion using DogWise's personalized training and behavior expertise.</p>
       <div class="cards-grid">
                     <div class="service-item" data-category="Professional Services">
-                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/dogwise/service-images/service-journey-to-harmony-course-1780218955483.jpg" alt="Journey to Harmony Course" class="service-image">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/dogwise/service-images/service-journey-to-harmony-course-1780218955483.jpg" alt="Journey to Harmony Course" class="service-image service-image-medium">
                         <h3>Journey to Harmony Course</h3>
                         <p><p>Forge a lasting, harmonious bond with your dog in just 4 weeks using our proven, holistic behavior transformation techniques.</p></p>
                         <ul class="service-features"><li>Strengthen dog-owner bond</li><li>Proven behavior techniques</li><li>Holistic transformation approach</li><li>Get fastest results</li></ul>
                     </div>
                     <div class="service-item" data-category="Products">
-                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/dogwise/service-images/service-puppy-foundation-course-1780219072570.jpg" alt="Puppy Foundation Course" class="service-image">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/dogwise/service-images/service-puppy-foundation-course-1780219072570.jpg" alt="Puppy Foundation Course" class="service-image service-image-medium">
                         <h3>Puppy Foundation Course</h3>
                         <p><p>Cultivate a foundation of trust and respect with your puppy through holistic strategies that build lifelong confidence and companionship.</p></p>
                         <ul class="service-features"><li>Build trust and respect</li><li>Confidence-boosting strategies</li><li>Lifelong companionship focus</li></ul>
                     </div>
                     <div class="service-item" data-category="Products">
-                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/dogwise/service-images/service-dog-consultation-1779782729943.png" alt="Perfect Dog Match Consultation" class="service-image">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/dogwise/service-images/service-dog-consultation-1779782729943.png" alt="Perfect Dog Match Consultation" class="service-image service-image-medium">
                         <h3>Perfect Dog Match Consultation</h3>
                         <p><p>Discover your ideal canine partner with expert guidance, ensuring a seamless match that complements your family's lifestyle and energy.</p></p>
                         <ul class="service-features"><li>Expert matching guidance</li><li>Seamless lifestyle integration</li><li>Find your perfect canine</li></ul>
@@ -184,16 +264,16 @@
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"Before working with DogWise, our home was in a constant state of stress with our dog guarding the front door and lunging at every visitor. We had tried traditional obedience, but repeating endless commands did nothing. Yehuda showed us how to target the root of the issue through canine psychology, and we were able to get the fastest results we’ve ever seen. By changing how we communicate, we completely reshaped our dog's nervous system and restored peace to our household in a matter of weeks."</blockquote>
-        <cite>— Sarah M, Beit Shemesh , ⭐⭐⭐⭐⭐</cite>
+        <cite>&mdash; Sarah M, Beit Shemesh , <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"We came to DogWise looking for a way to fix our dog's reactivity, but we walked away with a completely transformed relationship. The program doesn't just treat the symptoms; it uses proven behavior techniques to look at the whole picture, from spatial boundaries at home to energy on the leash. If you want to stop shouting commands and finally learn how to look at your dog’s psychological state, this is it. It is the absolute best way to strengthen the dog-owner bond and get the fastest results possible"</blockquote>
-        <cite>— David &amp; Linor K, Jerusalem, ⭐⭐⭐⭐⭐</cite>
+        <cite>&mdash; David &amp; Linor K, Jerusalem, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Yehuda truly lives by his philosophy that 'Trust, Respect, and Love don't come from commands; they come from communicating with your dog the right way.' Our German Shepherd used to claim ownership of the living room and entryway, treating every guest like a threat. Through the DogWise foundation course, we learned how to master non-verbal communication and threshold control. The turnaround was immediate. Our dog now completely relies on our leadership, and the off-leash freedom we achieved by Week 4 is something we never thought was possible.
 "</blockquote>
-        <cite>— Michael T, Modi'in, ⭐⭐⭐⭐⭐</cite>
+        <cite>&mdash; Michael T, Modi'in, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
