@@ -198,6 +198,8 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #7c5a3a !important; -webkit-text-fill-color: #7c5a3a !important; }
 #hero .cta-button *, #hero .btn *, #hero .btn-primary *, #hero a[class*="btn"] * { color: #7c5a3a !important; -webkit-text-fill-color: #7c5a3a !important; fill: #7c5a3a !important; }
 
+.icon, .icon-large, .service-icon, .feature-icon, .contact-icon-circle i, .social-links a, .social-circle { color: #e7d7c1 !important; }
+
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { background: #e7d7c1 !important; border-color: #e7d7c1 !important; }
 
 #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { color: #7c5a3a !important; -webkit-text-fill-color: #7c5a3a !important; }
@@ -206,6 +208,7 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #7c5a3a !important; -webkit-text-fill-color: #7c5a3a !important; fill: #7c5a3a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
