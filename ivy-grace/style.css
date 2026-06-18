@@ -154,6 +154,8 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 /* === SITEHUB CUSTOM STYLING === */
 /* Auto-generated from user styling preferences */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 :root {
   --color-primary: #7c5a3a !important;
   --primary-color: #7c5a3a !important;
@@ -197,5 +199,6 @@ a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-but
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #7c5a3a !important; -webkit-text-fill-color: #7c5a3a !important; fill: #7c5a3a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
