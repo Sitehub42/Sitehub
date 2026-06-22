@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/rene-victor/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rene Victor — Automotive Sales</title>
-  <meta name="description" content="Rene Victor offers personalized automotive sales assistance in Johannesburg, ensuring a smooth vehicle purchase experience with expert guidance.">
+  <title>Rene Victor</title>
+  <meta name="description" content="Rene Victor offers personalized automotive sales assistance in Johannesburg, ensuring a smooth vehicle purchase experience with expert guidance." />
   
   
   
@@ -30,7 +30,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -53,6 +53,99 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+/* === NAV CTA COLOUR OVERRIDE === */
+nav #nav-links .nav-cta, #nav-links .nav-cta, .nav-cta { background: #bfbfbf !important; }
+/* === END NAV CTA COLOUR OVERRIDE === */
+</style>
 </head>
 <body>
   <header>
@@ -60,9 +153,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="Rene Victor logo" class="logo"><span class="brand-name">Rene Victor</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Rene Victor</a></li>
           <li><a href="#offerings">Our Products</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
@@ -75,36 +168,37 @@
     <div class="hero-content">
       <h1>Rene Victor</h1>
       <p>To do more for the world and the world does for you that is success - Henry Ford</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">
+                    Get In Touch <i class="fas fa-arrow-right"></i>
+                </a>
     </div>
   </section>
   <section id="about">
     <h2>About Rene Victor</h2>
-    <p>Welcome to Rene Victor, where I leverage my 28 years of automotive industry experience to help you find the perfect vehicle. Starting my career as a New Vehicle Sales Executive at Eagle Ford Motors, I have honed my skills to guide you through a seamless car buying journey.</p>
-    <p>My journey in the automotive world began with a passion for cars and a desire to assist people in making informed decisions. Over the years, I progressed to become a New Ford Car Sales Manager, learning the intricacies of the industry and building strong relationships with clients and dealerships alike.</p>
-    <p>I am committed to offering exceptional service and trusted guidance, ensuring that every client drives away with confidence and satisfaction. At Rene Victor, your needs and preferences are prioritized to make your vehicle purchase experience enjoyable and stress-free.</p>
-    <img src="about.jpg" alt="Rene Victor team" class="about-photo">
-  </section>
+<p>Welcome to Rene Victor, where I leverage my 28 years of automotive industry experience to help you find the perfect vehicle. Starting my career as a New Vehicle Sales Executive at Eagle Ford Motors, I have honed my skills to guide you through a seamless car buying journey.</p><p>My journey in the automotive world began with a passion for cars and a desire to assist people in making informed decisions. Over the years, I progressed to become a New Ford Car Sales Manager, learning the intricacies of the industry and building strong relationships with clients and dealerships alike.</p><p>I am committed to offering exceptional service and trusted guidance, ensuring that every client drives away with confidence and satisfaction. At Rene Victor, your needs and preferences are prioritized to make your vehicle purchase experience enjoyable and stress-free.</p>
+                    <img src="about.jpg?v=1782145157007" alt="Rene Victor team" class="about-photo about-photo-medium">
+    </div>
+                </section>
   <section id="offerings">
     <h2>Our Products</h2>
-    <p>Discover our range of services tailored to meet your automotive needs. From expert consultations to seamless vehicle purchases, we are here to guide you.</p>
+    <div class="sitehub-section-intro"><p>Discover the seamless path to your perfect vehicle with Rene Victor, where personalized service transforms car buying into a delightful journey.</p></div>
     <div class="cards-grid">
-      <div class="card">
-        <img src="service-1.jpg" alt="Products 1" class="card-photo">
-        <div class="card-icon"><i class="fas fa-car"></i></div>
-        <h3>New Ford Car Sales Manager</h3>
-        <p>As a seasoned sales manager, I offer you a curated selection of new Ford vehicles, ensuring you find the right model that fits your lifestyle and budget.</p>
-      </div>
-    </div>
+                    <div class="card service-item">
+                        <img src="https://raw.githubusercontent.com/Sitehub42/Sitehub/main/rene-victor/service-1.jpg" alt="Ford Vehicle Expert" class="service-image service-image-large">
+                        <h3>Ford Vehicle Expert</h3>
+                        <p><p>Experience unmatched expertise in Ford vehicles, where I confidently guide you to the perfect model that complements your lifestyle and respects your budget.</p></p>
+                        <ul class="service-features"><li>Tailored model recommendations</li><li>Expert budget-friendly guidance</li><li>In-depth Ford knowledge</li></ul>
+                    </div>
+                </div>
   </section>
   <section id="testimonials">
   <div class="container">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+    <h2 class="section-title">What Our Clients Say</h2>
+<div class="sitehub-section-intro">Here is what our clients say about us.</div>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"Thanx to Rene and Andre for excellent and professional service and a special thanx to Mandy at financial departments. I would recommend everyone to go to Eagal ford in Santon."</blockquote>
-        <cite>&mdash; William Le Clus, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; William Le Clus, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
@@ -112,17 +206,18 @@
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item"><img src="gallery-1.jpg" alt="Rene Victor — Automotive Sales photo 1" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-2.jpg" alt="Rene Victor — Automotive Sales photo 2" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-3.jpg" alt="Rene Victor — Automotive Sales photo 3" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-4.jpg" alt="Rene Victor — Automotive Sales photo 4" loading="lazy"></figure>
-      </div>
+<div class="sitehub-section-intro"><p>Discover the sleek elegance and performance of Rene Victor's curated collection, where every vehicle tells a story of precision and passion.</p></div>
+      <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+          </div>
     </div>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="sitehub-section-intro"><p>Whether you're ready to rev up your journey or just have a question, we're here to connect with you.</p></div>
     <div class="contact-details-row">
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>229 Corlett Dr, Bramley, Johannesburg, 2090</span></div>
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:rene.victor@eagleford.co.za">rene.victor@eagleford.co.za</a></div>
