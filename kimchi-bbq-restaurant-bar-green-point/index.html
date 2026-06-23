@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/kimchi-bbq-restaurant-bar-green-point/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant</title>
-  <meta name="description" content="Experience authentic Korean barbecue at Kimchi BBQ restaurant & Bar Green Point, located in Cape Town, South Africa. Enjoy a warm, inviting atmosphere with delicious offerings.">
+  <title>Kimchi BBQ restaurant & Bar Green Point</title>
+  <meta name="description" content="Experience authentic Korean barbecue at Kimchi BBQ restaurant & Bar Green Point, located in Cape Town, South Africa. Enjoy a warm, inviting atmosphere with delicious offerings." />
   
   
   
@@ -31,7 +31,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -54,6 +54,99 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+/* === NAV CTA COLOUR OVERRIDE === */
+nav #nav-links .nav-cta, #nav-links .nav-cta, .nav-cta { background: #f1d2c3 !important; }
+/* === END NAV CTA COLOUR OVERRIDE === */
+</style>
 </head>
 <body>
   <header>
@@ -61,9 +154,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="Kimchi BBQ restaurant & Bar Green Point logo" class="logo"><span class="brand-name">Kimchi BBQ restaurant & Bar Green Point</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">About Kimchi BBQ restaurant & Bar Green Point</a></li>
           <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Reserve a Table</a></li>
@@ -76,74 +169,61 @@
     <div class="hero-split-text">
       <h1>Kimchi BBQ restaurant & Bar Green Point</h1>
       <p>Indulge in the vibrant flavors of authentic Korean barbecue right in the heart of Cape Town.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">
+                    Get In Touch <i class="fas fa-arrow-right"></i>
+                </a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About Kimchi BBQ restaurant & Bar Green Point</h2>
-      <p>Kimchi BBQ restaurant & Bar Green Point is your go-to place for authentic Korean barbecue in Cape Town. Situated at the picturesque Old Cape Quarter, we serve both locals and tourists, offering a delightful escape into the world of Korean cuisine.</p>
-      <p>Our journey began with a passion for sharing the rich flavors and traditions of Korean barbecue with the community. We pride ourselves on using the finest ingredients and traditional cooking techniques to deliver an unforgettable dining experience.</p>
-      <p>At Kimchi BBQ, we value hospitality, quality, and authenticity. Our dedicated team is committed to providing you with warm, personalized service and a taste of Korea that keeps you coming back for more.</p>
-      <img src="about.jpg" alt="Kimchi BBQ restaurant & Bar Green Point team" class="about-photo">
-    </div>
+<p>Kimchi BBQ restaurant &amp; Bar Green Point is your go-to place for authentic Korean barbecue in Cape Town. Situated at the picturesque Old Cape Quarter, we serve both locals and tourists, offering a delightful escape into the world of Korean cuisine.</p><p>Our journey began with a passion for sharing the rich flavors and traditions of Korean barbecue with the community. We pride ourselves on using the finest ingredients and traditional cooking techniques to deliver an unforgettable dining experience.</p><p>At Kimchi BBQ, we value hospitality, quality, and authenticity. Our dedicated team is committed to providing you with warm, personalized service and a taste of Korea that keeps you coming back for more.</p>
+                    <img src="about.jpg" alt="Kimchi BBQ restaurant & Bar Green Point team" class="about-photo about-photo-small">
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
       <h2>Our Services</h2>
-      <p>Discover the diverse offerings at Kimchi BBQ, where each dish is crafted to perfection, ensuring a memorable dining experience.</p>
+      <div class="sitehub-section-intro"><p>Discover the diverse offerings at Kimchi BBQ, where each dish is crafted to perfection, ensuring a memorable dining experience.</p></div>
       <div class="cards-grid">
-        <div class="card">
-          <img src="service-1.jpg" alt="Services 1" class="card-photo">
-          <div class="card-icon"><i class="fas fa-utensils"></i></div>
-          <h3>Korean BBQ Experience</h3>
-          <p>Enjoy an interactive dining experience with our table grills, allowing you to cook premium cuts of beef and pork to your liking.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-fish"></i></div>
-          <h3>Fresh Seafood</h3>
-          <p>Savor the taste of the ocean with our selection of fresh fish and seafood, carefully prepared to highlight their natural flavors.</p>
-        </div>
-      </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fa-solid fa-briefcase icon-large" aria-hidden="true"></i></div>
+                        <h3>Korean BBQ Experience</h3>
+                        <p><p>Enjoy an interactive dining experience with our table grills, allowing you to cook premium cuts of beef and pork to your liking.</p></p>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-fish icon-large" aria-hidden="true"></i></div>
+                        <h3>Fresh Seafood</h3>
+                        <p>Savor the taste of the ocean with our selection of fresh fish and seafood, carefully prepared to highlight their natural flavors.</p>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
   <div class="container">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+    <h2 class="section-title">What Our Clients Say</h2>
+<div class="sitehub-section-intro"><p>Discover why our guests can't stop raving about their unforgettable experiences at Kimchi BBQ Restaurant &amp; Bar in Green Point!</p></div>
     <div class="testimonials-grid">
       <div class="testimonial-card">
-        <blockquote>"Had an absolutely fantastic experience at Kimchi BBQ — easily a 5-star evening from start to finish.
-
-From the moment we walked in, the owner/manager greeted us warmly at the door with such genuine kindness, instantly making us feel welcome. That level of hospitality carried through the entire experience. The waiters were attentive, helpful, and always on hand to guide us through the menu and grilling process.
-
-The food was outstanding. The crispy Korean KFC wings were an absolute highlight — perfectly crunchy, flavour-packed, and completely moreish. The real fun, though, was the interactive grill at the table. There’s something special about cooking your own selection of beef and pork exactly to your liking — it adds a great sense of theatre to the meal. Everything was fresh, from the meats to the condiments, which complemented the dishes beautifully.
-
-What really stood out was the personal touch. As we were leaving, the owner/manager approached us again with a big smile, thanking us sincerely — a small gesture that left a lasting impression.
-
-A truly memorable dining experience with great food, warm service, and a lively atmosphere. We’ll definitely be back!"</blockquote>
-        <cite>&mdash; shaun marshall, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
-      </div>
-      <div class="testimonial-card">
         <blockquote>"What an experience! Beautiful restaurant, hidden in the Old Quarter in the best way possible. Food was great and service excellent. Definitely on the pricey side, but it forms part of the experience of it all. Would definitely suggest they add rice as one of the sides, quite enjoyed that and maybe some soy sauce on the table. Will definitely return, worth the visit!"</blockquote>
-        <cite>&mdash; René Basson, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; René Basson, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Kimchi is THE BEST Korean restaurant in Cape Town and their new location in De Waterkant is absolutely incredible. It’s modern, clean and bigger which means more patrons can enjoy a table! They have the best tteokbokki and crispy chicken. I recently tried some new menu items and the Osam Set is to-die-for. I also love how the quality is the same when you order on Uber Eats. 10/10 !!"</blockquote>
-        <cite>&mdash; Emma Carrington, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Emma Carrington, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"It’s been long time I’ve been looking for a proper authentic Korean restaurant, and I’ve tried a few around South Africa. This place by far surpassed my expectations. Then you renovated area, friendly staff, willing to go an extra mile, good location, and that all is besides the great food.
 Special note goes to their extractors, which are so good that there is literally no smoke coming from the food, it sucks it all! It was a great experience and I will definitely be back, over and over again."</blockquote>
-        <cite>&mdash; Irina, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Irina, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Modern restaurant, cozy but with a bit of a snack bar atmosphere.
 Friendly staff serve you quickly and professionally.
-All tables have a built-in grill with its own exhaust fan. Delicious grilled dishes that can be prepared to your liking. Thanks to the perfect technology, there is no unpleasant smell and your clothes won&#39;t smell of grease or smoke afterwards.
+All tables have a built-in grill with its own exhaust fan. Delicious grilled dishes that can be prepared to your liking. Thanks to the perfect technology, there is no unpleasant smell and your clothes won't smell of grease or smoke afterwards.
 The other dishes were also very tasty."</blockquote>
-        <cite>&mdash; Tom, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Tom, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
@@ -151,28 +231,28 @@ The other dishes were also very tasty."</blockquote>
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item"><img src="gallery-1.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 1" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-2.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 2" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-3.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 3" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-4.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 4" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-5.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 5" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-6.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 6" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-7.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 7" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-8.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 8" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-9.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 9" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-10.jpg" alt="Kimchi BBQ restaurant & Bar Green Point — Korean Barbecue Restaurant photo 10" loading="lazy"></figure>
-      </div>
+      <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-6.jpg" alt="Gallery photo 6" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-7.jpg" alt="Gallery photo 7" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-8.jpg" alt="Gallery photo 8" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-9.jpg" alt="Gallery photo 9" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-10.jpg" alt="Gallery photo 10" loading="lazy"></figure>
+          </div>
     </div>
   </section>
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <div class="sitehub-section-intro">We'd love to hear from you — reach out to us anytime.</div>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Old cape quater, 15 Dixon St, Green Point, Cape Town, 8001, South Africa</span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:ziegler.tanya+kimi@gmail.com">ziegler.tanya+kimi@gmail.com</a></div>
-        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0763598074">076 359 8074</a></div>
+        <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-phone"></i></div><a href="tel:0763598074">0763598074</a></div>
       </div>
       <div class="social-links"></div>
       
