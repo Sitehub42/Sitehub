@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/joes-biscuits/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joes Biscuits — biscuits</title>
-  <meta name="description" content="Joes Biscuits offers the best Choc brownie biscuits in Cape Town. Enjoy our delish brownies, hard and crisp rusks, and soft shortbread perfect with tea.">
+  <title>Joes Biscuits</title>
+  <meta name="description" content="Joes Biscuits offers the best Choc brownie biscuits in Cape Town. Enjoy our delish brownies, hard and crisp rusks, and soft shortbread perfect with tea." />
   
   
   
@@ -30,7 +30,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -53,6 +53,106 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+
+.nav-cta-item { list-style: none; }
+.nav-cta { display: inline-block; background: var(--color-cta, var(--color-secondary)); color: var(--color-cta-fg, white) !important; padding: 8px 20px; border-radius: var(--border-radius, 8px); font-weight: 600; font-size: 0.85rem; text-decoration: none !important; transition: opacity 0.2s, transform 0.2s; white-space: nowrap; cursor: pointer; }
+.nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+#nav-links .nav-cta, nav #nav-links .nav-cta { color: var(--color-cta-fg, white) !important; background: var(--color-cta, var(--color-secondary)) !important; }
+@media (max-width: 767px) { .nav-cta { display: block !important; width: 100%; text-align: center !important; padding: 10px 20px !important; margin-top: 4px; color: var(--color-cta-fg, white) !important; }
+  #nav-links .nav-cta, nav #nav-links .nav-cta { display: block !important; color: var(--color-cta-fg, white) !important; } }
+/* === NAV CTA COLOUR OVERRIDE === */
+nav #nav-links .nav-cta, #nav-links .nav-cta, .nav-cta { background: #d6d0c4 !important; color: #2f3437 !important; }
+/* === END NAV CTA COLOUR OVERRIDE === */
+</style>
 </head>
 <body>
   <header>
@@ -61,10 +161,10 @@
       <nav>
         <ul id="nav-links">
           <li><a href="#about">About Us</a></li>
-          <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#offerings">Biscuit Range</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Order Online</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="nav-cta">Order</a></li>
         </ul>
       </nav>
       <button id="hamburger" aria-label="Menu">&#9776;</button>
@@ -74,55 +174,56 @@
     <div class="hero-content">
       <h1>Joes Biscuits</h1>
       <p>Deliciously crafted Choc brownie biscuits in Cape Town.</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">
+                    Order <i class="fas fa-arrow-right"></i>
+                </a>
     </div>
   </section>
   <section id="about">
-    <h2>About Joes Biscuits</h2>
-    <p>Joes Biscuits specializes in creating the most delectable Choc brownie biscuits in Cape Town. Our focus is on delivering rich, flavorful biscuits that leave a lasting impression on your taste buds. We cater to all biscuit lovers seeking quality and taste in every bite.</p>
-    <p>Founded in the heart of Cape Town, Joes Biscuits has been committed to handcrafting biscuits with passion and dedication. Our journey began with a simple mission: to share our love for biscuits with the world, one delicious bite at a time. Over the years, our offerings have expanded to include a variety of biscuits, each crafted with care and precision.</p>
-    <p>At Joes Biscuits, we believe in using the finest ingredients to create products that satisfy and delight. Our commitment to quality and customer satisfaction is unwavering, and we strive to bring joy to our customers through our delightful range of biscuits.</p>
-  </section>
-  <section id="offerings">
-    <h2>Our Services</h2>
-    <p>Explore our delightful range of biscuits, each crafted to perfection to cater to different taste preferences. From rich Choc brownies to crisp rusks and soft shortbread, we have something for everyone.</p>
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-cookie-bite"></i></div>
-        <h3>Choc Brownies</h3>
-        <p>Rich and decadent, our Choc brownies are the perfect treat for chocolate lovers. Priced at R50, they are a delish indulgence you can't resist.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-bread-slice"></i></div>
-        <h3>Rusks</h3>
-        <p>Our rusks are hard and crisp, making them the perfect accompaniment to your morning coffee. Enjoy a pack for just R20.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><i class="fas fa-cookie"></i></div>
-        <h3>Shortbread</h3>
-        <p>Soft and buttery, our shortbread is great with tea. At R30, it's a delightful way to enjoy a quiet afternoon.</p>
-      </div>
+    <h2>About Us</h2>
+<p>Joes Biscuits specializes in creating the most delectable Choc brownie biscuits in Cape Town. Our focus is on delivering rich, flavorful biscuits that leave a lasting impression on your taste buds. We cater to all biscuit lovers seeking quality and taste in every bite.</p><p>Founded in the heart of Cape Town, Joes Biscuits has been committed to handcrafting biscuits with passion and dedication. Our journey began with a simple mission: to share our love for biscuits with the world, one delicious bite at a time. Over the years, our offerings have expanded to include a variety of biscuits, each crafted with care and precision.</p><p>At Joes Biscuits, we believe in using the finest ingredients to create products that satisfy and delight. Our commitment to quality and customer satisfaction is unwavering, and we strive to bring joy to our customers through our delightful range of biscuits.</p>
     </div>
+                </section>
+  <section id="offerings">
+    <h2>Biscuit Range</h2>
+    <div class="sitehub-section-intro"><p>Explore our delightful range of biscuits, each crafted to perfection to cater to different taste preferences. From rich Choc brownies to crisp rusks and soft shortbread, we have something for everyone.</p></div>
+    <div class="cards-grid">
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-cookie-bite icon-large" aria-hidden="true"></i></div>
+                        <h3>Choc Brownies</h3>
+                        <p>Rich and decadent, our Choc brownies are the perfect treat for chocolate lovers. Priced at R50, they are a delish indulgence you can't resist.</p>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-bread-slice icon-large" aria-hidden="true"></i></div>
+                        <h3>Rusks</h3>
+                        <p>Our rusks are hard and crisp, making them the perfect accompaniment to your morning coffee. Enjoy a pack for just R20.</p>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-cookie icon-large" aria-hidden="true"></i></div>
+                        <h3>Shortbread</h3>
+                        <p>Soft and buttery, our shortbread is great with tea. At R30, it's a delightful way to enjoy a quiet afternoon.</p>
+                    </div>
+                </div>
   </section>
   <section id="testimonials">
   <div class="container">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+    <h2 class="section-title">What Our Clients Say</h2>
+<div class="sitehub-section-intro">Here is what our clients say about us.</div>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"I loved the rusks, they are my morning favourite"</blockquote>
-        <cite>&mdash; Jane Doe, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Jane Doe, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"My favourite brownies, so delish!"</blockquote>
-        <cite>&mdash; Sarah, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Sarah, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
 </section>
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>We'd love to hear from you — reach out to us anytime.</p>
+    <div class="sitehub-section-intro"><p>Got a craving or a question? Connect with us and let's make your biscuit experience even sweeter!</p></div>
     <div class="contact-details-row">
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span>Cape Town, South Africa</span></div>
       <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:Joe@blogs.co.za">Joe@blogs.co.za</a></div>
