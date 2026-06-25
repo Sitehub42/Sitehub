@@ -421,3 +421,17 @@ nav a, nav #nav-links a, .brand-name, .brand-name a { color: #000000 !important;
 }
 
 /* === CUSTOM STYLING END === */
+
+/* SiteHub manual fixes */
+footer,
+footer p,
+footer span,
+footer li,
+footer small,
+footer strong {
+  color: #000000 !important;
+}
+
+.testimonial-card cite {
+  color: #000000 !important;
+}
