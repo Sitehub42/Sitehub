@@ -15,8 +15,8 @@
   <meta name="twitter:image" content="https://sitehub.co.za/natalie-davis-mindbody-coachin/hero-800x400.jpg">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natalie Davis Mindbody Coaching — Holistic Life coach</title>
-  <meta name="description" content="Natalie Davis Mindbody Coaching offers holistic life coaching to help individuals achieve emotional balance and personal transformation through evidence-informed coaching.">
+  <title>Natalie Davis Mindbody Coaching</title>
+  <meta name="description" content="Natalie Davis Mindbody Coaching offers holistic life coaching to help individuals achieve emotional balance and personal transformation through evidence-informed coaching." />
   
   
   
@@ -30,7 +30,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 <script type="application/ld+json">
@@ -49,6 +49,99 @@
   ]
 }
 </script>
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+/* === NAV CTA COLOUR OVERRIDE === */
+nav #nav-links .nav-cta, #nav-links .nav-cta, .nav-cta { background: #a1bfb5 !important; }
+/* === END NAV CTA COLOUR OVERRIDE === */
+</style>
 </head>
 <body>
   <header>
@@ -56,9 +149,9 @@
       <a href="#" class="brand"><img src="logo.png" alt="Natalie Davis Mindbody Coaching logo" class="logo"><span class="brand-name">Natalie Davis Mindbody Coaching</span></a>
       <nav>
         <ul id="nav-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#offerings">Our Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#about">About Natalie Davis Mindbody Coaching</a></li>
+          <li><a href="#offerings">My Services</a></li>
+          <li><a href="#testimonials">What Our Clients Say</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li class="nav-cta-item"><a href="#contact-form" class="nav-cta">Get In Touch</a></li>
@@ -71,41 +164,43 @@
     <div class="hero-split-text">
       <h1>Natalie Davis Mindbody Coaching</h1>
       <p>Life and Wellness Coach</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <a href="#contact" class="cta-button">
+                    Get In Touch <i class="fas fa-arrow-right"></i>
+                </a>
     </div>
     <div class="hero-split-image"></div>
   </section>
   <section id="about">
     <div class="container">
       <h2>About Natalie Davis Mindbody Coaching</h2>
-      <p>I’m Natalie — a certified life coach, counsellor, and mind-body practitioner dedicated to helping individuals achieve emotional balance, self-confidence, and lasting personal transformation. Drawing from a unique blend of expertise, empathy, and personal experience, I have developed a transformative coaching program to support clients through anxiety, trauma, and life transitions.</p>
-      <p>My journey began with my own experiences of overcoming anxiety and inner conflict. I understand the desire for profound change, and I’m here to offer clarity, compassion, and structured support. My approach is grounded, empathetic, and focused on building resilience and self-trust.</p>
-      <p>I believe transformation happens when we acknowledge how experiences have shaped us, learn tools to regulate emotions, and create meaningful, lasting changes in our lives. I promise to empower you with practical tools and insights so you can thrive in every area of your life.</p>
-      <img src="about.jpg" alt="Natalie Davis Mindbody Coaching team" class="about-photo">
-    </div>
+<p>I’m Natalie — a certified life coach, counsellor, and mind-body practitioner dedicated to helping individuals achieve emotional balance, self-confidence, and lasting personal transformation. Drawing from a unique blend of expertise, empathy, and personal experience, I have developed a transformative coaching program to support clients through anxiety, trauma, and life transitions.</p><p>My journey began with my own experiences of overcoming anxiety and inner conflict. I understand the desire for profound change, and I’m here to offer clarity, compassion, and structured support. My approach is grounded, empathetic, and focused on building resilience and self-trust.</p><p>I believe transformation happens when we acknowledge how experiences have shaped us, learn tools to regulate emotions, and create meaningful, lasting changes in our lives. I promise to empower you with practical tools and insights so you can thrive in every area of your life.</p>
+                    <img src="about.jpg" alt="Natalie Davis Mindbody Coaching team" class="about-photo about-photo-medium">
+                </div>
   </section>
   <section id="offerings">
     <div class="container">
-      <h2>Our Services</h2>
-      <p>At Natalie Davis Mindbody Coaching, we offer a range of services designed to help you achieve emotional balance and personal growth. Explore our personalized coaching sessions tailored to support your unique journey.</p>
+      <h2>My Services</h2>
+      <div class="sitehub-section-intro"><p>At Natalie Davis Mindbody Coaching, we offer a range of services designed to help you achieve emotional balance and personal growth. Explore our personalized coaching sessions tailored to support your unique journey.</p></div>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
-          <h3>BREAKTHROUGH INSIGHT SESSION</h3>
-          <p>This is a powerful introductory coaching session designed to help you gain deep clarity around the emotional, psychological, and life patterns shaping your current challenges.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-seedling"></i></div>
-          <h3>FOUR SESSION GROWTH COACHING PACKAGE</h3>
-          <p>This comprehensive package includes a Breakthrough Insight Session plus three follow-up sessions to integrate insights and create lasting change, empowering you towards resilience and confidence.</p>
-        </div>
-      </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-lightbulb icon-large" aria-hidden="true"></i></div>
+                        <h3>BREAKTHROUGH INSIGHT SESSION</h3>
+                        <p>Unlock profound clarity on emotional, psychological, and life patterns to transform challenges into opportunities in this empowering introductory session.</p>
+                        <ul class="service-features"><li>Gain deep emotional clarity</li><li>Transform challenges into opportunities</li><li>Kickstart your personal growth journey</li></ul>
+                    </div>
+                    <div class="card service-item">
+                        <div class="card-icon"><i class="fas fa-seedling icon-large" aria-hidden="true"></i></div>
+                        <h3>FOUR SESSION GROWTH COACHING PACKAGE</h3>
+                        <p>Embrace resilience and confidence with a transformative package combining deep insights and actionable strategies for lasting personal growth.</p>
+                        <ul class="service-features"><li>Build lasting resilience</li><li>Boost confidence and self-awareness</li><li>Actionable strategies for growth</li></ul>
+                    </div>
+                </div>
     </div>
   </section>
   <section id="testimonials">
   <div class="container">
-    <h2>What Our Clients Say</h2>
-    <p>Here is what our clients say about us.</p>
+    <h2 class="section-title">What Our Clients Say</h2>
+<div class="sitehub-section-intro">Here is what our clients say about us.</div>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <blockquote>"Dane Hansen
@@ -116,7 +211,7 @@ Natalie is extremely knowledgeable, deeply caring, and most importantly, empathe
 Combining her skills and supportive nature, she is extremely well-positioned to help people with myriad struggles with emotional and physical pain.​
 
 I’m looking forward to the journey ahead, and no longer so daunted by it. If you’ve been there and done that, and feel at a loss, reach out to Natalie like I did. ​"</blockquote>
-        <cite>&mdash; Dane Hansen, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Dane Hansen, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Natalie showed me how to start unpacking my suppressed emotions from my subconscious mind.​
@@ -124,7 +219,7 @@ I’m looking forward to the journey ahead, and no longer so daunted by it. If y
 I am now able to listen to my body and be mindful of what the physical symptoms are telling me.​​
 
 I will forever be grateful to Natalie for taking me on this journey and leading me along an entirely new path"</blockquote>
-        <cite>&mdash; Bonita Behr, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Bonita Behr, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"Natalie is extremely knowledgeable, supportive and encouraging. She has imparted such incredible insights, information and has shown such compassion throughout this “new journey of healing” to me. ​​
@@ -132,7 +227,7 @@ I will forever be grateful to Natalie for taking me on this journey and leading 
 I have started delving into the mind body connection and unpacking the emotional component of all my angst and body pain and I look forward to seeing and feeling the improvements each and every day.​
 
 I am very grateful for Natalie’s commitment and passion and am feeling very optimistic about the path ahead of me."</blockquote>
-        <cite>&mdash; Brenda Soicher Rostowsky, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Brenda Soicher Rostowsky, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
       <div class="testimonial-card">
         <blockquote>"I had a few online sessions with Natalie due to a couple of issues I was experiencing – both physical headaches and emotional strain.​
@@ -140,7 +235,7 @@ I am very grateful for Natalie’s commitment and passion and am feeling very op
 ​It was clear from as early as our first session that it was going to be extremely valuable time. Natalie is very knowledgeable and was able to answer all of my questions in a clear and easy to understand manner. ​
 
 My symptoms have without a doubt improved due to talking with Natalie and implementing her advice into my daily life. I would not hesitate to recommend her to anyone looking for coaching support. Thanks Natalie!​"</blockquote>
-        <cite>&mdash; Phil Brown, <span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
+        <cite>&mdash; Phil Brown, <span class="testimonial-stars" style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span></cite>
       </div>
     </div>
   </div>
@@ -148,18 +243,18 @@ My symptoms have without a doubt improved due to talking with Natalie and implem
   <section id="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item"><img src="gallery-1.jpg" alt="Natalie Davis Mindbody Coaching — Holistic Life coach photo 1" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-2.jpg" alt="Natalie Davis Mindbody Coaching — Holistic Life coach photo 2" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-3.jpg" alt="Natalie Davis Mindbody Coaching — Holistic Life coach photo 3" loading="lazy"></figure>
-        <figure class="gallery-item"><img src="gallery-4.jpg" alt="Natalie Davis Mindbody Coaching — Holistic Life coach photo 4" loading="lazy"></figure>
-      </div>
+      <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+          </div>
     </div>
   </section>
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you — reach out to us anytime.</p>
+      <div class="sitehub-section-intro"><p>Ready to embark on a journey of transformation? Connect with Natalie today to start your holistic growth experience.</p></div>
       <div class="contact-details-row">
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-map-marker-alt"></i></div><span></span></div>
         <div class="contact-item"><div class="contact-icon-circle"><i class="fas fa-envelope"></i></div><a href="mailto:nataliedavis028@gmail.com">nataliedavis028@gmail.com</a></div>
