@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="shcdp focuses on entrepreneurship, skills development and environmental projects in Hout Bay, Cape Town. Promoting sustainable growth and community empowerment.">
+    <meta name="description" content="shcdp focuses on entrepreneurship, skills development and environmental projects in Hout Bay, Cape Town. Promoting sustainable growth and community empowerment." />
     <meta name="keywords" content="shcdp, Small Harbor Community Development Projects, Hout Bay, Cape Town, entrepreneurship, skills development, environmental projects, community empowerment, sustainable growth">
     <meta name="author" content="shcdp">
 
@@ -21,7 +21,7 @@
     <meta property="twitter:description" content="shcdp focuses on entrepreneurship, skills development and environmental projects in Hout Bay, Cape Town. Promoting sustainable growth and community empowerment.">
     <meta property="twitter:image" content="https://sitehub.co.za/shcdp/hero-800x400.png"> <!-- Replace with actual image URL -->
 
-    <title>shcdp - Empowering Coastal Communities</title>
+    <title> Small Harbour Community Development Projects NPC</title>
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -34,6 +34,96 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+</style>
 </head>
 <body>
     <header class="header" role="banner">
@@ -49,7 +139,7 @@
                 </button>
                 <ul class="nav-links">
                     <li><a href="#about" aria-label="Learn more about us">About Us</a></li>
-                    <li><a href="#services" aria-label="Discover our services">Services/Products</a></li>
+                    <li><a href="#services" aria-label="Discover our services">Our Services</a></li>
                     <li><a href="#contact-info" aria-label="Find our contact information">Contact</a></li>
                     <li><a href="#form" class="btn btn-primary" aria-label="Fill out our contact form">Form</a></li>
                 </ul>
@@ -62,7 +152,7 @@
         <section id="hero" class="hero-section text-center" role="region" aria-labelledby="hero-heading">
             <div class="hero-overlay"></div>
             <div class="container">
-                <h1 id="hero-heading"> Small Harbour Community Development Projects NPC</h1>
+                <h1> Small Harbour Community Development Projects NPC</h1>
                 <p class="tagline">Empowering Coastal Communities, Fostering Sustainable Growth</p>
                 <a href="#form" class="btn btn-secondary" aria-label="Get in touch with us">Get in Touch</a>
             </div>
@@ -72,30 +162,28 @@
         <section id="about" class="about-section section-padding background-light" role="region" aria-labelledby="about-heading">
             <div class="container">
                 <h2 id="about-heading" class="text-center">About Us</h2>
-                <p>At Small Harbour Community Development Projects NPC, hereinafter referred to as SHCDP, we are dedicated to transforming small harbor communities in Hout Bay, Cape Town. Our mission is to uplift and empower these communities through entrepreneurship, skills development, and environmental stewardship, fostering sustainable growth and well-being.</p>
-                <p>We bring extensive expertise in Community Development, Entrepreneurship, Skills Training, and Environmental Conservation. Our approach is deeply rooted in the belief that local empowerment leads to lasting positive change.</p>
-                <p>We emphasize client success and apply agile methodologies in our projects, ensuring flexibility, efficiency, and measurable impact. Our commitment is to work collaboratively with community members, local businesses, and environmental partners to create vibrant, resilient, and self-sufficient coastal communities.</p>
-            </div>
+<p>At Small Harbour Community Development Projects NPC, hereinafter referred to as SHCDP, we are dedicated to transforming small harbor communities in Hout Bay, Cape Town. Our mission is to uplift and empower these communities through entrepreneurship, skills development, and environmental stewardship, fostering sustainable growth and well-being.</p><p>We bring extensive expertise in Community Development, Entrepreneurship, Skills Training, and Environmental Conservation. Our approach is deeply rooted in the belief that local empowerment leads to lasting positive change.</p><p>We emphasize client success and apply agile methodologies in our projects, ensuring flexibility, efficiency, and measurable impact. Our commitment is to work collaboratively with community members, local businesses, and environmental partners to create vibrant, resilient, and self-sufficient coastal communities.</p>
+                </div>
         </section>
 
         <!-- Services/Products Section -->
         <section id="services" class="services-section section-padding" role="region" aria-labelledby="services-heading">
             <div class="container">
                 <h2 id="services-heading" class="text-center">Our Services</h2>
-                <p class="text-center service-summary">At shcdp, we are dedicated to driving positive change in coastal communities. Our core focus areas include:</p>
+                <div class="sitehub-section-intro">At shcdp, we are dedicated to driving positive change in coastal communities. Our core focus areas include:</div>
                 <div class="services-grid">
                     <div class="service-item">
-                        <i class="fas fa-lightbulb service-icon" aria-hidden="true"></i>
+                        <div class="card-icon"><i class="fas fa-lightbulb icon-large" aria-hidden="true"></i></div>
                         <h3>Entrepreneurship Programs</h3>
                         <p>Providing resources, training, and mentorship to local entrepreneurs to help them establish and grow sustainable businesses.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-tools service-icon" aria-hidden="true"></i>
+                        <div class="card-icon"><i class="fas fa-tools icon-large" aria-hidden="true"></i></div>
                         <h3>Skills Development Workshops</h3>
                         <p>Offering practical skills training in various trades to enhance employability and create new economic opportunities for community members.</p>
                     </div>
                     <div class="service-item">
-                        <i class="fas fa-leaf service-icon" aria-hidden="true"></i>
+                        <div class="card-icon"><i class="fas fa-leaf icon-large" aria-hidden="true"></i></div>
                         <h3>Environmental Conservation Projects</h3>
                         <p>Engaging the community in initiatives aimed at preserving marine ecosystems, promoting sustainable fishing practices, and maintaining clean harbor environments.</p>
                     </div>
