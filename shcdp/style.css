@@ -476,3 +476,29 @@ a:hover {
         margin: 0 10px;
     }
 }
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #005f73 !important;
+  --primary-color: #005f73 !important;
+  --primary-blue: #005f73 !important;
+  --color-secondary: #0a9396 !important;
+  --secondary-color: #0a9396 !important;
+  --secondary-blue: #0a9396 !important;
+  --accent-color: #94d2bd !important;
+  --text-color: #333 !important;
+}
+
+#hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #ffffff !important; }
+
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
+body, p, li, td { color: #333 !important; }
+
+a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-button):not([class*="btn"]), .accent, .highlight { color: #94d2bd !important; }
+
+/* === END CUSTOM STYLING === */

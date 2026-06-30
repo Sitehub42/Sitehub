@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
   --background-color: #f8fafc !important;
   --nav-fg: #000000 !important;
   --hamburger-bg: #dfddd7 !important;
-  --logo-filter: brightness(0) !important;
+  --logo-filter: none !important;
   --font-heading: 'Montserrat', sans-serif !important;
   --heading-font: 'Montserrat', sans-serif !important;
   --font-body: 'Open Sans', sans-serif !important;
@@ -242,6 +242,7 @@ body { background-color: #f8fafc !important; }
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
