@@ -248,6 +248,16 @@ a:hover {
 .hero-section .container {
     position: relative;
     z-index: 2;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .hero-section h1 {
@@ -256,12 +266,28 @@ a:hover {
     font-weight: 700;
     color: #ffffff;
     line-height: 1.2;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 90vw !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .hero-section .tagline {
     font-size: 1.8em;
     margin-bottom: 40px;
     font-weight: 400;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 90vw !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* About Us Section */
@@ -491,7 +517,11 @@ a:hover {
   --text-color: #333 !important;
 }
 
-#hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #ffffff !important; }
+#hero h1, #hero p, #hero .hero-title, #hero .hero-subtitle, #hero .hero-tagline, #hero .hero-content h1, #hero .hero-content p { color: #ffffff !important; text-align: center !important; }
+
+#hero h1, #hero p, #hero .tagline, #hero [class*="align"] { text-align: center !important; }
+#hero .container { text-align: center !important; }
+#hero h1, #hero .tagline { display: block !important; }
 
 #hero { position: relative !important; isolation: isolate !important; }
 #hero::before { z-index: 0 !important; }
@@ -500,5 +530,9 @@ a:hover {
 body, p, li, td { color: #333 !important; }
 
 a:not(nav a):not(#nav-links a):not(.btn):not(.button):not(.nav-cta):not(.cta-button):not([class*="btn"]), .accent, .highlight { color: #94d2bd !important; }
+
+/* Force center alignment for hero */
+#hero .ql-align-right { text-align: center !important; }
+#hero h1, #hero p { text-align: center !important; margin-left: auto !important; margin-right: auto !important; }
 
 /* === END CUSTOM STYLING === */
