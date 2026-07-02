@@ -7,7 +7,26 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Montserrat', s
 /* === SITEHUB CUSTOM STYLING === */
 /* Auto-generated from user styling preferences */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 :root {
+  --color-primary: #dc2626 !important;
+  --primary-color: #dc2626 !important;
+  --primary-blue: #dc2626 !important;
+  --color-secondary: #e2be08 !important;
+  --secondary-color: #e2be08 !important;
+  --secondary-blue: #e2be08 !important;
+  --font-heading: 'Montserrat', sans-serif !important;
+  --heading-font: 'Montserrat', sans-serif !important;
+  --font-body: 'Open Sans', sans-serif !important;
+  --body-font: 'Open Sans', sans-serif !important;
+  --max-width: 1100px !important;
+  --section-padding: 80px 20px !important;
 }
 
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
 /* === END CUSTOM STYLING === */
+
