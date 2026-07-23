@@ -187,9 +187,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .stat-number { font-family: 'Poppins', sans
   --color-primary: #ffffff !important;
   --primary-color: #ffffff !important;
   --primary-blue: #ffffff !important;
-  --color-secondary: #dfddd7 !important;
-  --secondary-color: #dfddd7 !important;
-  --secondary-blue: #dfddd7 !important;
+  --color-secondary: #d4af37 !important;
+  --secondary-color: #d4af37 !important;
+  --secondary-blue: #d4af37 !important;
   --accent-color: #d4af37 !important;
   --text-color: #1b1a1a !important;
   --background-color: #f8fafc !important;
@@ -242,6 +242,7 @@ body { background-color: #f8fafc !important; }
 #hero .cta-button:hover *, #hero .btn:hover *, #hero .btn-primary:hover *, #hero a[class*="btn"]:hover * { color: #1b1a1a !important; -webkit-text-fill-color: #1b1a1a !important; fill: #1b1a1a !important; }
 
 /* === END CUSTOM STYLING === */
+
 
 
 
