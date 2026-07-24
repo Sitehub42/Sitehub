@@ -3,10 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yummi Organics - Fresh Organic Produce Delivered</title>
-    <meta name="description" content="Yummi Organics delivers fresh, seasonal organic fruits and vegetables directly to your door. Explore our range of nuts, seeds, grains, vegan meals, and fermented foods.">
+    <title>Yummi Organics</title>
+    <meta name="description" content="Yummi Organics delivers fresh, seasonal organic fruits and vegetables directly to your door. Explore our range of nuts, seeds, grains, vegan meals, and fermented foods." />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+/* SiteHub rich text alignment + about heading defaults */
+.ql-align-center { text-align: center !important; }
+.ql-align-right { text-align: right !important; }
+.ql-align-justify { text-align: justify !important; }
+#about h2, #about h3 { text-align: center; }
+#about .ql-align-left { text-align: left !important; }
+#about .ql-align-center { text-align: center !important; }
+#about .ql-align-right { text-align: right !important; }
+#about .ql-align-justify { text-align: justify !important; }
+.sitehub-section-intro { max-width: 720px; margin: -0.75rem auto 2rem auto; text-align: center; line-height: 1.7; }
+
+/* Service card additional fields */
+.service-item .service-price {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  margin: 0.75rem 0 0.5rem 0;
+}
+
+.service-item .service-duration {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin: 0.5rem 0;
+}
+
+.service-item .service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.service-item .service-features li {
+  padding: 0.3rem 0;
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 0.95em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.service-item .service-features li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.service-item .service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius-soft);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.about-photo-small { max-width: 320px; max-height: 240px; }
+.about-photo-medium { max-width: 520px; max-height: 360px; }
+.about-photo-large { max-width: 100%; max-height: 480px; }
+
+.service-item .service-image-small { max-width: 120px; max-height: 90px; }
+.service-item .service-image-medium { max-width: 200px; max-height: 150px; }
+.service-item .service-image-large { max-width: 100%; max-height: 240px; }
+.gallery-grid.gallery-grid-small { grid-template-columns: repeat(auto-fit, minmax(120px, 160px)); justify-content: center; }
+.gallery-grid.gallery-grid-medium { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.gallery-grid.gallery-grid-large { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.gallery-item-small img { aspect-ratio: 1 / 1; }
+.gallery-item-medium img { aspect-ratio: 1 / 1; }
+.gallery-item-large img { aspect-ratio: 4 / 3; }
+</style>
 </head>
 <body>
 
@@ -17,9 +107,10 @@
                 <img src="./images/logo.png" alt="Yummi Organics Logo">
             </div>
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Our Produce</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Yummi Organics</a></li>
+                <li><a href="#services">Our Delicious Offerings</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Get In Touch</a></li>
                 <li><a href="#form">Order Now</a></li>
             </ul>
         </nav>
@@ -31,9 +122,9 @@
                 </button>
             </div>
             <ul class="mobile-menu">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Our Produce</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Yummi Organics</a></li>
+                <li><a href="#services">Our Delicious Offerings</a></li>
+                <li><a href="#contact">Get In Touch</a></li>
                 <li><a href="#form">Order Now</a></li>
             </ul>
         </nav>
@@ -44,7 +135,9 @@
         <div class="hero-content">
             <h1>Yummi Organics</h1>
             <p>Your source for the freshest organic fruits and vegetables, delivered with a smile.</p>
-            <a href="#form" class="cta-button">Shop Now</a>
+            <a href="#form" class="cta-button">
+                    Shop Now <i class="fas fa-arrow-right"></i>
+                </a>
 
         </div>
 
@@ -55,11 +148,8 @@
     <section id="about" class="about-section">
         <h2>About Yummi Organics</h2>
         <div class="about-content">
-            <img src="./images/veg.jpg" class="about-image">
-            <div class="about-text">
-                <p>At Yummi Organics, we're passionate about bringing the goodness of nature directly to your table. We are a dedicated organic fruit and vegetable delivery service, committed to providing the freshest, highest-quality seasonal produce. Our mission is to make healthy eating easy and accessible, connecting you with wholesome, delicious food grown with care for the environment.</p>
-                <p>We believe in the power of organic food to nourish your body and support sustainable farming practices. From vibrant fruits and crisp vegetables to artisanal fermented foods and nutrient-rich nuts and seeds, every item we offer is a testament to our commitment to quality and your well-being.</p>
-            </div>
+<p>At Yummi Organics, we're passionate about bringing the goodness of nature directly to your table. We are a dedicated organic fruit and vegetable delivery service, committed to providing the freshest, highest-quality seasonal produce. Our mission is to make healthy eating easy and accessible, connecting you with wholesome, delicious food grown with care for the environment.</p><p>We believe in the power of organic food to nourish your body and support sustainable farming practices. From vibrant fruits and crisp vegetables to artisanal fermented foods and nutrient-rich nuts and seeds, every item we offer is a testament to our commitment to quality and your well-being.</p>
+                </div>
         </div>
     </section>
 
@@ -67,26 +157,46 @@
     <section id="services" class="services-section">
         <h2>Our Delicious Offerings</h2>
         <div class="services-grid">
-            <div class="service-item">
-                <img src="./images/fruitveg.jpg" alt="Organic seasonal fruits and vegetables">
-                <h3>Organic Produce</h3>
-                <p>Fresh, seasonal fruits and vegetables packed with flavor and nutrients.</p>
-            </div>
-            <div class="service-item">
-                <img src="./images/nuts.jpg" alt="Unsprayed nuts, seeds, grains and preservative free dried fruit">
-                <h3>Nuts</h3>
-                <p>Unsprayed nuts, seeds, and grains.</p>
-            </div>
-            <div class="service-item">
-                <img src="./images/meals.jpg" alt="Fermented foods like Miso, Tempeh and Sauerkraut">
-                <h3>Vegan Meals</h3>
-                <p>Authentic Miso, Tempeh, and Sauerkraut for gut health.</p>
-            </div>
-         
-        </div>
+                    <div class="service-item">
+                        <img src="./images/fruitveg.jpg" alt="Organic Produce" class="service-image service-image-medium">
+                        <h3>Organic Produce</h3>
+                        <p>Fresh, seasonal fruits and vegetables packed with flavor and nutrients.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/nuts.jpg" alt="Nuts" class="service-image service-image-medium">
+                        <h3>Nuts</h3>
+                        <p>Unsprayed nuts, seeds, and grains.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/meals.jpg" alt="Vegan Meals" class="service-image service-image-medium">
+                        <h3>Vegan Meals</h3>
+                        <p>Authentic Miso, Tempeh, and Sauerkraut for gut health.</p>
+                    </div>
+                </div>
     </section>
 
     <!-- Contact Us Section -->
+    
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid gallery-grid-medium">
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-5.jpg" alt="Gallery photo 5" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-6.jpg" alt="Gallery photo 6" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-7.jpg" alt="Gallery photo 7" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-8.jpg" alt="Gallery photo 8" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-9.jpg" alt="Gallery photo 9" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-10.jpg" alt="Gallery photo 10" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-11.jpg" alt="Gallery photo 11" loading="lazy"></figure>
+            <figure class="gallery-item gallery-item-medium"><img src="gallery-12.jpg" alt="Gallery photo 12" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact-section">
         <h2>Get In Touch</h2>
         <div class="contact-info">
@@ -112,7 +222,7 @@
     <section id="form" class="form-section">
         <h2>Place Your Order</h2>
         <p>Have a question or want to place a special order? Fill out the form below, and we'll get back to you soon!</p>
-        <form action="mailto:danielleklaff@gmail.com?subject=Website%20Contact%20Form%20Submission" method="post" enctype="text/plain" class="contact-form">
+        <form action="mailto:danielleklaff@gmail.com" method="post" enctype="text/plain" class="contact-form">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="Name" required>
