@@ -583,3 +583,24 @@ footer {
     font-size: 1.2em;
     vertical-align: middle;
 }
+
+/* === SITEHUB CUSTOM STYLING === */
+/* Auto-generated from user styling preferences */
+
+:root {
+  --color-primary: #4CAF50 !important;
+  --primary-color: #4CAF50 !important;
+  --primary-blue: #4CAF50 !important;
+  --color-secondary: #FF9800 !important;
+  --secondary-color: #FF9800 !important;
+  --secondary-blue: #FF9800 !important;
+  --text-color: #333 !important;
+}
+
+#hero { position: relative !important; isolation: isolate !important; }
+#hero::before { z-index: 0 !important; }
+#hero > *, #hero .hero-content, #hero .cta-button, #hero .btn, #hero .btn-primary, #hero a[class*="btn"] { position: relative; z-index: 1; }
+
+body, p, li, td { color: #333 !important; }
+
+/* === END CUSTOM STYLING === */
